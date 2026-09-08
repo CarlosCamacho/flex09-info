@@ -2,6 +2,8 @@
 
 A curated collection of FLEX/09 operating-system files, applications, development tools, documentation, and historical software.
 
+See the [archive index](archive-index/README.md) for the purpose, disk label, key files, and contents profile of every ZIP file.
+
 ## Repository navigation
 
 | Folder | Contents | Unique archived files |
@@ -22,7 +24,8 @@ A curated collection of FLEX/09 operating-system files, applications, developmen
 
 - Related files are grouped into product-specific subfolders, such as [DynaCalc](apps/dynacalc/), [Introl-C](dev/introl-c/), and [TSC FLEX source](flex-09/sourcecode/).
 - The original bytes of every retained file are unchanged. Files were moved and renamed by reusing their existing Git blob hashes.
-- Abbreviated ZIP names use the format `OriginalCode - Description.zip`; the original archive identifier is retained for provenance.
+- ZIP names use the format `OriginalCode - Product - Purpose.zip`; the original archive identifier is retained for provenance while the final phrase distinguishes system, program, source, documentation, diagnostic, data, and working disks.
+- The [archive index](archive-index/README.md) records all 1,194 ZIP files. Archives whose FLEX directory could not be read retain their existing names and are identified in the index rather than given speculative descriptions.
 - MACE, XMACE, and the combined PL9/MACE development disk are grouped under [dev/assemblers/mace](dev/assemblers/mace/).
 - 59 redundant copies from 57 duplicate sets were removed. See the [duplicate-removal log](misc/duplicate-removal-log.md).
 - ZIP duplicates were identified by their unpacked entry names and contents, so archives that differed only in ZIP container metadata or filename capitalization were treated as duplicates.
@@ -73,4 +76,3 @@ Drop location for newly added, not-yet-classified files.
 ### [misc](misc/)
 
 OS-9/UniFLEX material, unidentified disk sets, and uncategorized files. Subfolders: [archive-series](misc/archive-series/), [notes](misc/notes/), [os-9](misc/os-9/), [uncategorized](misc/uncategorized/), [uniflex](misc/uniflex/), [work-disks](misc/work-disks/).
-
