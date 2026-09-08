@@ -7,10 +7,10 @@ A curated collection of FLEX/09 operating-system files, applications, developmen
 | Folder | Contents | Unique archived files |
 | --- | --- | ---: |
 | [flex-09](flex-09/) | TSC FLEX/FLEX09 operating-system distributions and source | 176 |
-| [manuals](manuals/) | Generic FLEX manuals and reference material | 26 |
-| [apps](apps/) | End-user applications grouped by product | 202 |
+| [manuals](manuals/) | Generic FLEX manuals and reference material | 25 |
+| [apps](apps/) | End-user applications grouped by product | 201 |
 | [games](games/) | Games grouped by title or type | 11 |
-| [dev](dev/) | Compilers, assemblers, debuggers, emulators, and development tools | 242 |
+| [dev](dev/) | Compilers, assemblers, debuggers, emulators, and development tools | 240 |
 | [utilities](utilities/) | System, disk, editor, diagnostic, and communications utilities | 102 |
 | [newsletters](newsletters/) | FLEX newsletters and user-group publications | 11 |
 | [magazines](magazines/) | Magazine material | 0 |
@@ -21,7 +21,9 @@ A curated collection of FLEX/09 operating-system files, applications, developmen
 ## Organization notes
 
 - Related files are grouped into product-specific subfolders, such as [DynaCalc](apps/dynacalc/), [Introl-C](dev/introl-c/), and [TSC FLEX source](flex-09/sourcecode/).
-- The original bytes of every retained file are unchanged. Files were moved by reusing their existing Git blob hashes.
+- The original bytes of every retained file are unchanged. Files were moved and renamed by reusing their existing Git blob hashes.
+- Abbreviated ZIP names use the format `OriginalCode - Description.zip`; the original archive identifier is retained for provenance.
+- MACE, XMACE, and the combined PL9/MACE development disk are grouped under [dev/assemblers/mace](dev/assemblers/mace/).
 - 59 redundant copies from 57 duplicate sets were removed. See the [duplicate-removal log](misc/duplicate-removal-log.md).
 - ZIP duplicates were identified by their unpacked entry names and contents, so archives that differed only in ZIP container metadata or filename capitalization were treated as duplicates.
 - Add new, unclassified material to [incoming](incoming/) for later review.
@@ -46,7 +48,7 @@ Games grouped by title or type. Subfolders: [adventure](games/adventure/), [ches
 
 ### [dev](dev/)
 
-Compilers, assemblers, debuggers, emulators, and development tools. Subfolders: [assemblers](dev/assemblers/), [basic](dev/basic/), [compilers-misc](dev/compilers-misc/), [csc](dev/csc/), [debuggers](dev/debuggers/), [disassemblers](dev/disassemblers/), [dyna-c](dev/dyna-c/), [dynasoft-pascal](dev/dynasoft-pascal/), [emulators](dev/emulators/), [forth](dev/forth/), [introl-c](dev/introl-c/), [jcp](dev/jcp/), [linkers-loaders](dev/linkers-loaders/), [lucidata-pascal](dev/lucidata-pascal/), [mark-williams-c](dev/mark-williams-c/), [mccosh-c](dev/mccosh-c/), [omega-soft-pascal](dev/omega-soft-pascal/), [pascal](dev/pascal/), [pilot](dev/pilot/), [small-c](dev/small-c/), [splm](dev/splm/), [toolkits](dev/toolkits/), [tsc-pascal](dev/tsc-pascal/).
+Compilers, assemblers, debuggers, emulators, and development tools. MACE material is grouped in [assemblers/mace](dev/assemblers/mace/). Subfolders: [assemblers](dev/assemblers/), [basic](dev/basic/), [compilers-misc](dev/compilers-misc/), [csc](dev/csc/), [debuggers](dev/debuggers/), [disassemblers](dev/disassemblers/), [dyna-c](dev/dyna-c/), [dynasoft-pascal](dev/dynasoft-pascal/), [emulators](dev/emulators/), [forth](dev/forth/), [introl-c](dev/introl-c/), [jcp](dev/jcp/), [linkers-loaders](dev/linkers-loaders/), [lucidata-pascal](dev/lucidata-pascal/), [mark-williams-c](dev/mark-williams-c/), [mccosh-c](dev/mccosh-c/), [omega-soft-pascal](dev/omega-soft-pascal/), [pascal](dev/pascal/), [pilot](dev/pilot/), [small-c](dev/small-c/), [splm](dev/splm/), [toolkits](dev/toolkits/), [tsc-pascal](dev/tsc-pascal/).
 
 ### [utilities](utilities/)
 
