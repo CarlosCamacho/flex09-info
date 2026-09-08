@@ -1,0 +1,355 @@
+# Development tools archive index
+
+This index explains the purpose and contents of every ZIP archive in the repository. Purposes are derived from the FLEX directory stored in each disk image; when that directory could not be read, the entry says so rather than guessing.
+
+The code at the beginning of each filename is the original archive identifier retained for provenance.
+
+## `dev/assemblers`
+
+| Archive | Purpose | Disk label | Key files | Contents profile |
+| --- | --- | --- | --- | --- |
+| [680xAssemblerSetup.zip](../dev/assemblers/680xAssemblerSetup.zip) | Archived Files | — | 680xAssemblerSetup.exe | 0 disk images; FLEX directory unavailable |
+| [crasmb (1).zip](../dev/assemblers/crasmb%20%281%29.zip) | Programs, Source, and Build Files | BB, CRASMB | STDIO.H, SETJMP.H, C1.CMD, C2.CMD, C3.CMD, FLD.CMD | 10 programs; 33 text/source files; 9 binary files; 5 other files |
+| [CRASMB - Assembler Development - Data and Support Files.zip](../dev/assemblers/CRASMB%20-%20Assembler%20Development%20-%20Data%20and%20Support%20Files.zip) | Data and Support Files | XASMB   DOC | CSCADOC1.TXT, CSCADOC2.TXT | 2 text/source files |
+| [CRASMB8 - Assembler Development - Program and Support Utilities.zip](../dev/assemblers/CRASMB8%20-%20Assembler%20Development%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | CRASMB | IZ80.BIN, CRCON.TXT, CRDIR.TXT, CREXP.TXT, CRLIC.TXT, CRNEW.TXT | 2 programs; 31 text/source files; 9 binary files |
+| [CSCXASMB.zip](../dev/assemblers/CSCXASMB.zip) | Disk Image | — | CSCXASMB.DSK | 1 disk image; FLEX directory unavailable |
+| [MACPIC01 - Assembler Development.zip](../dev/assemblers/MACPIC01%20-%20Assembler%20Development.zip) | Disk Image | — | MACPIC01.dsk | 1 disk image; FLEX directory unavailable |
+| [RA68NO2 - Assembler Development - Documentation and Examples.zip](../dev/assemblers/RA68NO2%20-%20Assembler%20Development%20-%20Documentation%20and%20Examples.zip) | Documentation and Examples | RA6800ML | DRVR.TXT, MAIN.TXT, MATH.TXT, MNLKP.TXT, MNTAB.TXT, CHRTAB.TXT | 20 text/source files |
+| [RASMSRC - Assembler Development - Source Code and Build Files.zip](../dev/assemblers/RASMSRC%20-%20Assembler%20Development%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | RELASMB | AS.ASM, AS1.ASM, AS2.ASM, AS3.ASM, AS4.ASM, AS5.ASM | 20 assembly sources |
+| [RED6800 - Assembler Development - Source Code and Build Files.zip](../dev/assemblers/RED6800%20-%20Assembler%20Development%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | Disk number:    0 | RED.C, CLIB.C, ITOA.C, RED0.C, RED1.C, CTYPE.H | 10 C sources; 1 text/source file; 27 other files |
+| [RELASMB - Assembler Development - Program and Support Utilities.zip](../dev/assemblers/RELASMB%20-%20Assembler%20Development%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | RELASMB | LLOAD.CMD, LIB-GEN.CMD, RELASMB.CMD | 3 programs |
+| [Winrush asm05.zip](../dev/assemblers/Winrush%20asm05.zip) | Programs, Source, and Build Files | ASMV2_06, DOCV2_3 | PPRINT-B.SYS, ASM.ASM, INTRO.ASM, EDITOR.ASM, IOFLEX.ASM, SIMASM.ASM | 20 programs; 1 system file; 7 assembly sources; 7 text/source files; 3 binary files; 1 document; 7 other files |
+| [XASMDOC - Assembler Development - Documentation and Examples.zip](../dev/assemblers/XASMDOC%20-%20Assembler%20Development%20-%20Documentation%20and%20Examples.zip) | Documentation and Examples | XASMDOC | XASM.DOC, SORTSYMT.TXT, TESTSYMT.TXT, XASM.BAK, XASM.MEM, SORTSYMT.BAK | 1 program; 2 text/source files; 2 binary files; 1 document; 3 other files |
+| [XASMSRC - Assembler Development - Source Code and Build Files.zip](../dev/assemblers/XASMSRC%20-%20Assembler%20Development%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | XASMSRC | XASM.TXT, TYPES.TXT, BLDSYM.TXT, OUTLIN.TXT, PARSER.TXT, COMPARE.TXT | 13 text/source files |
+| [XASMTOOL - Assembler Development - Bootable FLEX System and Utilities.zip](../dev/assemblers/XASMTOOL%20-%20Assembler%20Development%20-%20Bootable%20FLEX%20System%20and%20Utilities.zip) | Bootable FLEX System and Utilities | XASMSYS | FLEX2.SYS, XASM.CMD, PRINT.SYS, SG8080.CMD, P.CMD, ASN.CMD | 12 programs; 3 system files; 1 text/source file |
+| [XASMWORK.zip](../dev/assemblers/XASMWORK.zip) | Disk Image | — | XASMWORK.DSK | 1 disk image; FLEX directory unavailable |
+
+## `dev/assemblers/mace`
+
+| Archive | Purpose | Disk label | Key files | Contents profile |
+| --- | --- | --- | --- | --- |
+| [MACE 6809 Assembler.zip](../dev/assemblers/mace/MACE%206809%20Assembler.zip) | Disk Image | — | MACE09.DSK | 1 disk image; FLEX directory unavailable |
+| [MACE Version 2.6 Documentation Disk.zip](../dev/assemblers/mace/MACE%20Version%202.6%20Documentation%20Disk.zip) | Program and Support Utilities | DOC26 | LABEL.TXT, DATECOPY.CMD, MACE-CMD.TXT, MACEINDX.TXT, MACEMANL.TXT, DIR.CMD | 10 programs; 4 text/source files |
+| [PL9 and MACE Development Disk.zip](../dev/assemblers/mace/PL9%20and%20MACE%20Development%20Disk.zip) | Bootable FLEX System and Utilities | PL9_MACE | Q.CMD, AR.CMD, C1.CMD, C2.CMD, C3.CMD, CB.CMD | 137 programs; 3 system files; 11 text/source files; 2 binary files; 19 other files |
+| [Windrush MACE Assembler.zip](../dev/assemblers/mace/Windrush%20MACE%20Assembler.zip) | Archived Files | — | DOC26.zip, D_BUG.zip, MACE09.zip, MACE_DOC.zip | 0 disk images; FLEX directory unavailable |
+| [XMACE Documentation.zip](../dev/assemblers/mace/XMACE%20Documentation.zip) | Program and Support Utilities | MACE_DOC | LABEL.TXT, DATECOPY.CMD, XMAC-CMD.TXT, XMACINDX.TXT, XMACMANL.TXT, DIR.CMD | 10 programs; 4 text/source files |
+| [XMACE Extended Assembler Sources.zip](../dev/assemblers/mace/XMACE%20Extended%20Assembler%20Sources.zip) | Programs, Source, and Build Files | XMACE256 | ASM.ASM, INTRO.ASM, EDITOR.ASM, IOFLEX.ASM, OPCODE.ASM, ASSEMBLE.ASM | 13 programs; 6 assembly sources; 1 text/source file; 1 other file |
+
+## `dev/basic`
+
+| Archive | Purpose | Disk label | Key files | Contents profile |
+| --- | --- | --- | --- | --- |
+| [BASIC_1 - BASIC Language - Source Code and Build Files.zip](../dev/basic/BASIC_1%20-%20BASIC%20Language%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | BASIC | NET.BAS, DIET.BAS, DOGS.BAS, GOLF.BAS, HATE.BAS, KING.BAS | 3 programs; 54 BASIC sources; 1 text/source file |
+| [BASIC_3 - BASIC Language - Source Code and Build Files.zip](../dev/basic/BASIC_3%20-%20BASIC%20Language%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | BASIC | DICE.BAS, STAT.BAS, CHIEF.BAS, COMBAT.BAS, BACKGAM.BAS, DEPCHARG.BAS | 3 programs; 8 BASIC sources |
+| [BASIC_8 - BASIC Language - Source Code and Build Files.zip](../dev/basic/BASIC_8%20-%20BASIC%20Language%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | BERNICE  MD | BUG.BAS, BIO3.BAS, GOLF.BAS, KING.BAS, POET.BAS, WARI.BAS | 3 programs; 52 BASIC sources |
+| [Extended 6809 BASIC (FLEX)(Technical Systems Consultants).zip](../dev/basic/Extended%206809%20BASIC%20%28FLEX%29%28Technical%20Systems%20Consultants%29.zip) | Archived Files | — | README.TXT, tsc_exended_basic.jpeg, tsc_exended_basic.png, tsc_extended_basic.DMK | 0 disk images; FLEX directory unavailable |
+| [FBASIC09 - BASIC Language - Program and Support Utilities.zip](../dev/basic/FBASIC09%20-%20BASIC%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | BASIC | BASIC.CMD, RENF.CMD | 2 programs |
+| [KBASIC_1 - BASIC Language - Source Code and Build Files.zip](../dev/basic/KBASIC_1%20-%20BASIC%20Language%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | LLOYD   IO | MAIN.BAS, PARM.BAS, FUNCB.BAS, FUNCR.BAS, FUNCS.BAS, FUNCW.BAS | 3 programs; 9 BASIC sources; 8 text/source files |
+| [KBASIC_2 - BASIC Language.zip](../dev/basic/KBASIC_2%20-%20BASIC%20Language.zip) | Disk Image | — | KBASIC_2.DSK | 1 disk image; FLEX directory unavailable |
+| [KBASIC_3 - BASIC Language - Source Code and Build Files.zip](../dev/basic/KBASIC_3%20-%20BASIC%20Language%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | K BASIC | MAIN.BAS, PARM.BAS, FUNCB.BAS, FUNCR.BAS, FUNCS.BAS, FUNCW.BAS | 3 programs; 8 BASIC sources; 8 text/source files |
+| [KBASIC_4 - BASIC Language.zip](../dev/basic/KBASIC_4%20-%20BASIC%20Language.zip) | Disk Image | — | KBASIC_4.DSK | 1 disk image; FLEX directory unavailable |
+| [RBASIC - BASIC Language - Source Code and Build Files.zip](../dev/basic/RBASIC%20-%20BASIC%20Language%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | Disk number:    0 | RBASIC.ASM, RBASIC.CMD, RBASIC.NEW, RBASIC.UPD, RBASICA.BAK, RBASICA.DOC | 2 programs; 1 system file; 3 assembly sources; 9 BASIC sources; 3 documents; 7 other files |
+| [RU8KBASIC - BASIC Language - Documentation and Examples.zip](../dev/basic/RU8KBASIC%20-%20BASIC%20Language%20-%20Documentation%20and%20Examples.zip) | Documentation and Examples | RU8KBASIC | BASIC8.TXT, MBEXEC.TXT, INTMATH.TXT, COMMANDS.TXT, MBEDITOR.TXT, MICROBAS.TXT | 1 program; 6 text/source files; 1 other file |
+| [SDBASIC - BASIC Language - Programs, Source, and Build Files.zip](../dev/basic/SDBASIC%20-%20BASIC%20Language%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | SDBASIC | IOPACK.ASM, PRIMES.ASM, RNDTST.ASM, ASM.BIN, ASM.CMD, COM.BIN | 11 programs; 3 assembly sources; 12 text/source files; 10 binary files; 4 other files |
+| [SDBASIC2 - BASIC Language - Programs, Source, and Build Files.zip](../dev/basic/SDBASIC2%20-%20BASIC%20Language%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | Disk number:    0 | IOPACK.ASM, PRIMES.ASM, RNDTST.ASM, ASM.BIN, ASM.CMD, COM.BIN | 11 programs; 3 assembly sources; 12 text/source files; 10 binary files; 3 other files |
+| [TBAS_1 - BASIC Language - Source Code and Build Files.zip](../dev/basic/TBAS_1%20-%20BASIC%20Language%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | TBASIC | PH.BAS, BMD.BAS, BUG.BAS, NET.BAS, POP.BAS, SAP.BAS | 3 programs; 133 BASIC sources; 2 text/source files; 1 other file |
+| [Tscbasic00 - BASIC Language - Program and Support Utilities.zip](../dev/basic/Tscbasic00%20-%20BASIC%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | TSCBASIC | BASIC.CMD, CONVERT.BAS, READ-ME.TXT, RENUMBER.CMD | 2 programs; 1 BASIC source; 1 text/source file |
+| [Tscxbasic00 - BASIC Language - Program and Support Utilities.zip](../dev/basic/Tscxbasic00%20-%20BASIC%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | XBASIC | XBASIC.CMD, RENUMBER.CMD | 2 programs |
+| [XBAS_638 - BASIC Language - Program and Support Utilities.zip](../dev/basic/XBAS_638%20-%20BASIC%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | XBASIC-S | BASIC.CMD, PRINT.SYS, DIR.CMD, COPY.CMD, EDIT.CMD, FIND.CMD | 8 programs; 2 system files |
+| [XBAS_REN - BASIC Language - Program and Support Utilities.zip](../dev/basic/XBAS_REN%20-%20BASIC%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | FLEX-9 | XBASIC.CMD, RENUMBER.CMD | 2 programs |
+| [XBASIC00 - BASIC Language.zip](../dev/basic/XBASIC00%20-%20BASIC%20Language.zip) | Disk Image | — | XBASIC00.dsk | 1 disk image; FLEX directory unavailable |
+| [XBASIC_1 - BASIC Language - Program and Support Utilities.zip](../dev/basic/XBASIC_1%20-%20BASIC%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | FRANK000 | XBASIC.CMD, BASIC.CMD, RENUMX.CMD, CONVERT.BAS, READ-ME.TXT, CAT.CMD | 5 programs; 1 BASIC source; 1 text/source file |
+| [XBASIC_2 - BASIC Language - Program and Support Utilities.zip](../dev/basic/XBASIC_2%20-%20BASIC%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | FRANK | XBASIC.CMD, BASIC.CMD, XPC.CMD, CATT.CMD, RENUMX.CMD, READ-ME.TXT | 7 programs; 1 text/source file |
+
+## `dev/basic/variants/root`
+
+| Archive | Purpose | Disk label | Key files | Contents profile |
+| --- | --- | --- | --- | --- |
+| [RBASIC - Files PITEST, RENUM, RPATCH.zip](../dev/basic/variants/root/RBASIC%20-%20Files%20PITEST%2C%20RENUM%2C%20RPATCH.zip) | Programs, Source, and Build Files | Disk number:    0 | RPC.ASM, RENUM.ASM, PITEST.BAS, RBASIC.ASM, RPATCH.ASM, SAVAGE.BAS | 4 programs; 1 system file; 4 assembly sources; 3 BASIC sources; 1 text/source file; 1 document |
+
+## `dev/compilers-misc`
+
+| Archive | Purpose | Disk label | Key files | Contents profile |
+| --- | --- | --- | --- | --- |
+| [C001 - Compiler Tools - Programs, Source, and Build Files.zip](../dev/compilers-misc/C001%20-%20Compiler%20Tools%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | JMC-C   HI | WC.C, CTYPE.H, HELLO.C, SIEVE.C, STDIO.H, SETJMP.H | 7 programs; 4 C sources; 6 other files |
+| [C002 - Compiler Tools - Programs, Source, and Build Files.zip](../dev/compilers-misc/C002%20-%20Compiler%20Tools%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | JMC-C    HI | WC.C, CTYPE.H, HELLO.C, SIEVE.C, STDIO.H, SETJMP.H | 7 programs; 4 C sources; 6 other files |
+| [C003 - Compiler Tools - Programs, Source, and Build Files.zip](../dev/compilers-misc/C003%20-%20Compiler%20Tools%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | JMC-C   HI | WC.C, CTYPE.H, HELLO.C, SIEVE.C, STDIO.H, SETJMP.H | 7 programs; 4 C sources; 6 other files |
+| [C004 - Compiler Tools.zip](../dev/compilers-misc/C004%20-%20Compiler%20Tools.zip) | Disk Image | — | C004.DSK | 1 disk image; FLEX directory unavailable |
+| [C007 - Compiler Tools - Source Code and Build Files.zip](../dev/compilers-misc/C007%20-%20Compiler%20Tools%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | JMC-C | WC.C, ACIA.C, CBUG.C, TERM.C, CTYPE.H, ERRNO.H | 7 programs; 8 C sources; 1 text/source file; 13 other files |
+| [C008 - Compiler Tools - Source Code and Build Files.zip](../dev/compilers-misc/C008%20-%20Compiler%20Tools%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | JMC-C | WC.C, ACIA.C, CBUG.C, TERM.C, CTYPE.H, ERRNO.H | 7 programs; 8 C sources; 1 text/source file; 13 other files |
+| [C009 - Compiler Tools.zip](../dev/compilers-misc/C009%20-%20Compiler%20Tools.zip) | Disk Image | — | C009.DSK | 1 disk image; FLEX directory unavailable |
+| [C010 - Compiler Tools - Source Code and Build Files.zip](../dev/compilers-misc/C010%20-%20Compiler%20Tools%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | JMC-C | WC.C, ACIA.C, CBUG.C, TERM.C, CTYPE.H, ERRNO.H | 7 programs; 8 C sources; 1 text/source file; 13 other files |
+| [C011 - Compiler Tools.zip](../dev/compilers-misc/C011%20-%20Compiler%20Tools.zip) | Disk Image | — | C011.DSK | 1 disk image; FLEX directory unavailable |
+| [C012 - Compiler Tools.zip](../dev/compilers-misc/C012%20-%20Compiler%20Tools.zip) | Disk Image | — | C012.DSK | 1 disk image; FLEX directory unavailable |
+| [C012_1 - Compiler Tools.zip](../dev/compilers-misc/C012_1%20-%20Compiler%20Tools.zip) | Disk Image | — | C012_1.DSK | 1 disk image; FLEX directory unavailable |
+| [C013 - Compiler Tools - Programs, Source, and Build Files.zip](../dev/compilers-misc/C013%20-%20Compiler%20Tools%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | INTROL | CP.C, SIEVE.C, STDIO.H, P1.CMD, P2.CMD, PP.CMD | 11 programs; 2 C sources; 2 text/source files; 3 binary files; 58 other files |
+| [C014 - Compiler Tools.zip](../dev/compilers-misc/C014%20-%20Compiler%20Tools.zip) | Disk Image | — | C014.DSK | 1 disk image; FLEX directory unavailable |
+| [C014_1 - Compiler Tools.zip](../dev/compilers-misc/C014_1%20-%20Compiler%20Tools.zip) | Disk Image | — | C014_1.DSK | 1 disk image; FLEX directory unavailable |
+| [C014_2 - Compiler Tools.zip](../dev/compilers-misc/C014_2%20-%20Compiler%20Tools.zip) | Disk Image | — | C014_2.DSK | 1 disk image; FLEX directory unavailable |
+| [C015 - Compiler Tools - Programs, Source, and Build Files.zip](../dev/compilers-misc/C015%20-%20Compiler%20Tools%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | INTROL | CASE.C, SIEVE.C, STDIO.H, C1.CMD, C2.CMD, C3.CMD | 8 programs; 2 C sources; 59 other files |
+| [C017 - Compiler Tools.zip](../dev/compilers-misc/C017%20-%20Compiler%20Tools.zip) | Disk Image | — | C017.DSK | 1 disk image; FLEX directory unavailable |
+| [C020 - Compiler Tools - Programs, Source, and Build Files.zip](../dev/compilers-misc/C020%20-%20Compiler%20Tools%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | INTROL | HEX.C, CASE.C, SIEVE.C, STDIO.H, SETJMP.H, C1.CMD | 10 programs; 3 C sources; 6 other files |
+| [C021 - Compiler Tools - Programs, Source, and Build Files.zip](../dev/compilers-misc/C021%20-%20Compiler%20Tools%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | CCOMPILE | HEX.C, CASE.C, SIEVE.C, STDIO.H, CMERGE.C, SETJMP.H | 11 programs; 4 C sources; 7 other files |
+| [C022 - Compiler Tools.zip](../dev/compilers-misc/C022%20-%20Compiler%20Tools.zip) | Disk Image | — | C022.DSK | 1 disk image; FLEX directory unavailable |
+| [C022_1 - Compiler Tools.zip](../dev/compilers-misc/C022_1%20-%20Compiler%20Tools.zip) | Disk Image | — | C022_1.DSK | 1 disk image; FLEX directory unavailable |
+| [C023 - Compiler Tools.zip](../dev/compilers-misc/C023%20-%20Compiler%20Tools.zip) | Disk Image | — | C023.DSK | 1 disk image; FLEX directory unavailable |
+| [CF83FORT - Compiler Tools.zip](../dev/compilers-misc/CF83FORT%20-%20Compiler%20Tools.zip) | Disk Image | — | CF83FORT.DSK | 1 disk image; FLEX directory unavailable |
+| [CFILES1 - Compiler Tools - Programs, Source, and Build Files.zip](../dev/compilers-misc/CFILES1%20-%20Compiler%20Tools%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | C-Flies | PAGE.C, VTTT.C, ASCII.H, BRAIN.C, DEFLECT.C, AREACODE.C | 5 programs; 7 C sources; 2 documents; 1 other file |
+| [CFILES2 - Compiler Tools - Source Code and Build Files.zip](../dev/compilers-misc/CFILES2%20-%20Compiler%20Tools%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | C-Files | WC.C, COUNT.C, DETAB.C, INITB.C, INITW.C, MODEM.H | 5 programs; 13 C sources; 5 other files |
+| [COMPILE - Compiler Tools - Program and Support Utilities.zip](../dev/compilers-misc/COMPILE%20-%20Compiler%20Tools%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | COMPILE | PROM.CMD, PROM.PLM, SPLM.LIB, PROM3.CMD, PROM3.PLM, SPLMREAD.LIB | 2 programs; 5 other files |
+| [CPROGS9 - Compiler Tools - Source Code and Build Files.zip](../dev/compilers-misc/CPROGS9%20-%20Compiler%20Tools%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | C-PROGMSFLX | CD.C, WC.C, VERB.C, INITB.C, INITW.C, MODEM.H | 18 C sources; 2 documents; 4 other files |
+| [CTOOLS - Compiler Tools - Source Code and Build Files.zip](../dev/compilers-misc/CTOOLS%20-%20Compiler%20Tools%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | CTOOLS  SRC | CT.H, PP.C, CBC.C, CMP.C, DIFF.C, GREP.C | 1 program; 13 C sources; 26 other files |
+| [F77 - Compiler Tools - Program and Support Utilities.zip](../dev/compilers-misc/F77%20-%20Compiler%20Tools%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | DISK | F77.CMD, F77.LIB, LLOAD.CMD, RUNLIB.F77, SVTEST.ASM, SVTEST.TXT | 3 programs; 1 assembly source; 1 text/source file; 4 other files |
+| [TSC_F77 - Compiler Tools - Program and Support Utilities.zip](../dev/compilers-misc/TSC_F77%20-%20Compiler%20Tools%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | TSC_F77 | F77.CMD, F77.LIB, LABEL.TXT, LLOAD.CMD, RUNLIB.F77, SVTEST.TXT | 4 programs; 2 text/source files; 5 other files |
+
+## `dev/csc`
+
+| Archive | Purpose | Disk label | Key files | Contents profile |
+| --- | --- | --- | --- | --- |
+| [CDOC - CSC Development - Documentation and Examples.zip](../dev/csc/CDOC%20-%20CSC%20Development%20-%20Documentation%20and%20Examples.zip) | Documentation and Examples | C-DOC | ROM.TXT, CBUG.TXT, REV2.TXT, ARERRS.TXT, DRIVES.TXT, LIBLOW.TXT | 9 text/source files; 6 other files |
+| [CREF - CSC Development - Program and Support Utilities.zip](../dev/csc/CREF%20-%20CSC%20Development%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | CREF | CREF.ASM, CREF.CMD, FLEX9.EQU, COPY.CMD | 2 programs; 1 assembly source; 1 other file |
+| [CSC - CSC Development - Documentation and Examples.zip](../dev/csc/CSC%20-%20CSC%20Development%20-%20Documentation%20and%20Examples.zip) | Documentation and Examples | CSC | CSCSZAP.TXT, CSCXREF.TXT, CSC680XS.TXT, CSCCHGE1.TXT, CSCCHGE2.TXT, CSCCHGE9.TXT | 14 text/source files |
+| [CSC_XASMB_TST2 - CSC Development - Programs, Source, and Build Files.zip](../dev/csc/CSC_XASMB_TST2%20-%20CSC%20Development%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | CSC-XASMSRC | PPRINT-B.SYS, SPRINT-A.SYS, CSC.C, CTYPE.H, STDIO.H, CSCASM.C | 37 programs; 3 system files; 24 C sources; 38 text/source files; 15 other files |
+| [CSCFL_S1 - CSC Development - Source Code and Build Files.zip](../dev/csc/CSCFL_S1%20-%20CSC%20Development%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | CSCFL_S1 | FULLCHNG.BAS, FULLCMPR.BAS, FULLGENT.BAS, FULLTERM.BAS, FULLVIDO.BAS, FULLEXAT.DAT | 1 program; 5 BASIC sources; 3 text/source files; 3 other files |
+| [CSCFL_S2 - CSC Development - Documentation and Examples.zip](../dev/csc/CSCFL_S2%20-%20CSC%20Development%20-%20Documentation%20and%20Examples.zip) | Documentation and Examples | CSCFL_S2 | RESEQ.TXT, DISKINFO.TXT, DISKSORT.TXT, FULLINFO.TXT, FULLPARV.TXT, RESQINFO.TXT | 1 program; 2 BASIC sources; 6 text/source files; 1 other file |
+| [CSCPRODS_4 - CSC Development - Programs, Source, and Build Files.zip](../dev/csc/CSCPRODS_4%20-%20CSC%20Development%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | CSCPRODS | MAILCHNG.BAS, MAILLOAD.BAS, MAILRCVR.BAS, SALECHNG.BAS, SALELOAD.BAS, SALERCVR.BAS | 13 programs; 7 BASIC sources; 55 text/source files; 2 binary files; 28 other files |
+
+## `dev/debuggers`
+
+| Archive | Purpose | Disk label | Key files | Contents profile |
+| --- | --- | --- | --- | --- |
+| [BUGS - Debugger Tools - Program and Support Utilities.zip](../dev/debuggers/BUGS%20-%20Debugger%20Tools%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | Disk number:    0 | EOF.TXT, BOOT.BIN, BOOT.TXT, GOTO.TXT, READ.TXT, SUBS.TXT | 2 programs; 34 text/source files; 10 binary files; 2 other files |
+| [D-BUG - Debugger Tools - Programs and Utility Collection.zip](../dev/debuggers/D-BUG%20-%20Debugger%20Tools%20-%20Programs%20and%20Utility%20Collection.zip) | Programs and Utility Collection | D-BUG | D-BUG.SYS, PPRINT-B.SYS, SPRINT-A.SYS, ED.CMD, DBUG.SER, FILL.CMD | 30 programs; 3 system files; 2 assembly sources; 3 text/source files; 3 other files |
+| [D_BUG - Debugger Tools - Data and Support Files.zip](../dev/debuggers/D_BUG%20-%20Debugger%20Tools%20-%20Data%20and%20Support%20Files.zip) | Data and Support Files | D_BUG | D-BUG.PRM, LABEL.TXT, DMACE101.BIN | 1 text/source file; 1 binary file; 1 other file |
+| [DBUGTD - Debugger Tools - Program and Support Utilities.zip](../dev/debuggers/DBUGTD%20-%20Debugger%20Tools%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | DEBUG | D-BUG.SYS, FILL.CMD, LOAD.CMD, MOVE.CMD, D-BUG.CMD, GETBUF.CMD | 7 programs; 1 system file |
+| [DEBUG_09 - Debugger Tools - Program and Support Utilities.zip](../dev/debuggers/DEBUG_09%20-%20Debugger%20Tools%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | WORK | RUN.CMD, DEBUG.CMD | 2 programs |
+| [KBUG - Debugger Tools - Programs, Source, and Build Files.zip](../dev/debuggers/KBUG%20-%20Debugger%20Tools%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | BLANK   S-D | GENL.SRC, KBUG.SRC, PJOUR.SRC, CONFIG.SRC, DNLOAD.SRC, DNSAVE.SRC | 6 programs; 11 text/source files; 9 binary files; 41 other files |
+| [SBUG - Debugger Tools - Documentation and Examples.zip](../dev/debuggers/SBUG%20-%20Debugger%20Tools%20-%20Documentation%20and%20Examples.zip) | Documentation and Examples | SBUGE_18 | RDR.TXT, BOT9.TXT, DISK.TXT, PMIK.TXT, BOOT9.TXT, CKBUG.TXT | 26 text/source files |
+
+## `dev/disassemblers`
+
+| Archive | Purpose | Disk label | Key files | Contents profile |
+| --- | --- | --- | --- | --- |
+| [SLEUTH - Disassembler Tools - Documentation and Examples.zip](../dev/disassemblers/SLEUTH%20-%20Disassembler%20Tools%20-%20Documentation%20and%20Examples.zip) | Documentation and Examples | CSSLEUTH | CSSDISAS.TXT, CSSDMPTB.TXT, CSSGETCD.TXT, CSSIAFCB.TXT, CSSINITZ.TXT, CSSMAPDK.TXT | 1 BASIC source; 11 text/source files; 1 other file |
+| [SLTHDIS.zip](../dev/disassemblers/SLTHDIS.zip) | Disk Image | — | SLTHDIS.DSK | 1 disk image; FLEX directory unavailable |
+| [SLTHSRC - Disassembler Tools - Source Code and Build Files.zip](../dev/disassemblers/SLTHSRC%20-%20Disassembler%20Tools%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | — | SLTHSRC.DSK | 1 disk image; FLEX directory unavailable |
+
+## `dev/dyna-c`
+
+| Archive | Purpose | Disk label | Key files | Contents profile |
+| --- | --- | --- | --- | --- |
+| [AB035 - Dyna-C Compiler - Program and Support Utilities.zip](../dev/dyna-c/AB035%20-%20Dyna-C%20Compiler%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | AB | DYNAC-1.BIN, DYNAC-2.BIN, DYNACT82.CMD, LIST.CMD, DELETE.CMD | 3 programs; 2 binary files |
+| [AB036 - Dyna-C Compiler - Program and Support Utilities.zip](../dev/dyna-c/AB036%20-%20Dyna-C%20Compiler%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | AB | DYNAC-1.BIN, DYNAC-2.BIN, DYNACT82.CMD, L.CAL, L.ORG, LIST.CMD | 3 programs; 2 binary files; 2 other files |
+| [AB037 - Dyna-C Compiler - Program and Support Utilities.zip](../dev/dyna-c/AB037%20-%20Dyna-C%20Compiler%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | AB | DYNAC-1.BIN, DYNAC-2.BIN, DYNACT82.CMD, LIST.CMD, DELETE.CMD | 3 programs; 2 binary files |
+| [DINC10S - Dyna-C Compiler - Source Code and Build Files.zip](../dev/dyna-c/DINC10S%20-%20Dyna-C%20Compiler%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | DYNA-C  FHL | C1.C, DEFS.C, CTYPE.H, DCEXT.C, EXTIO.C, STDIO.H | 1 program; 4 C sources; 14 other files |
+| [DYNA-C_DINC10S - Dyna-C Compiler - Source Code and Build Files.zip](../dev/dyna-c/DYNA-C_DINC10S%20-%20Dyna-C%20Compiler%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | DYNA-C  FHL | C1.C, DEFS.C, CTYPE.H, DCEXT.C, EXTIO.C, STDIO.H | 1 program; 4 C sources; 14 other files |
+| [DYNA_C - Dyna-C Compiler - Programs, Source, and Build Files.zip](../dev/dyna-c/DYNA_C%20-%20Dyna-C%20Compiler%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | DYNA_C | CTYPE.H, EXTIO.C, STDIO.H, PRIMES.C, DC.CMD, CHEAD.A | 1 program; 2 C sources; 4 other files |
+| [DYNA_C_SJT031 - Dyna-C Compiler - Programs, Source, and Build Files.zip](../dev/dyna-c/DYNA_C_SJT031%20-%20Dyna-C%20Compiler%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | DYNA_C | CTYPE.H, EXTIO.C, STDIO.H, PRIMES.C, DC.CMD, CHEAD.A | 1 program; 2 C sources; 1 text/source file; 4 other files |
+| [DYNAC - Dyna-C Compiler - Programs, Source, and Build Files.zip](../dev/dyna-c/DYNAC%20-%20Dyna-C%20Compiler%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | DYNA-C   MD | CTYPE.H, EXTIO.C, STDIO.H, PRIMES.C, DC.CMD, CHEAD.A | 1 program; 2 C sources; 1 text/source file; 4 other files |
+| [DYNC10 - Dyna-C Compiler - Source Code and Build Files.zip](../dev/dyna-c/DYNC10%20-%20Dyna-C%20Compiler%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | DYNA-C   MD | DYNAFORM.SYS, C1.C, DEFS.C, CTYPE.H, DCEXT.C, EXTIO.C | 1 program; 1 system file; 4 C sources; 14 other files |
+
+## `dev/dynasoft-pascal`
+
+| Archive | Purpose | Disk label | Key files | Contents profile |
+| --- | --- | --- | --- | --- |
+| [DY_PASC - Dynasoft Pascal - Program and Support Utilities.zip](../dev/dynasoft-pascal/DY_PASC%20-%20Dynasoft%20Pascal%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | PASCAL13 MD | PASCAL.CMD, PASCAL.SYS, PASCAL.TXT, INTERP.SYS, PRIMES.PCD, PRIMES.TXT | 3 programs; 2 system files; 4 text/source files; 1 other file |
+| [DYNASOFT - Dynasoft Pascal - Program and Support Utilities.zip](../dev/dynasoft-pascal/DYNASOFT%20-%20Dynasoft%20Pascal%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | DS_PASCA | PASCAL.CMD, PASCAL.SYS, PASCAL.TXT, INTERP.SYS, WORDS.PCD, WORDS.TXT | 4 programs; 2 system files; 6 text/source files; 2 other files |
+| [DYNASOFT_PASCAL - Dynasoft Pascal - Program and Support Utilities.zip](../dev/dynasoft-pascal/DYNASOFT_PASCAL%20-%20Dynasoft%20Pascal%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | DS_PASCA | PASCAL.CMD, PASCAL.SYS, PASCAL.TXT, INTERP.SYS, WORDS.PCD, WORDS.TXT | 4 programs; 2 system files; 6 text/source files; 2 other files |
+
+## `dev/emulators`
+
+| Archive | Purpose | Disk label | Key files | Contents profile |
+| --- | --- | --- | --- | --- |
+| [6809EMU - Emulator Tools - Program Disk.zip](../dev/emulators/6809EMU%20-%20Emulator%20Tools%20-%20Program%20Disk.zip) | Program Disk | RT68MX | E6809.CMD, E6809.TXT | 1 program; 1 text/source file |
+| [EM8080 - Emulator Tools - Program and Support Utilities.zip](../dev/emulators/EM8080%20-%20Emulator%20Tools%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | EM8080 | EM1.TXT, EM2.TXT, EM3.TXT, EM4.TXT, EM8080.BIN, EM8080.CMD | 2 programs; 5 text/source files; 1 binary file |
+| [JXP6809 - Emulator Tools - Program and Support Utilities.zip](../dev/emulators/JXP6809%20-%20Emulator%20Tools%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | JCP09 | JCP.CMD, JCP.TXT, JCP6.CMD, JCP7.CMD, JCP8.CMD, JCP9.CMD | 12 programs; 13 text/source files |
+| [RT68-MX_6809EMU - Emulator Tools - Program Disk.zip](../dev/emulators/RT68-MX_6809EMU%20-%20Emulator%20Tools%20-%20Program%20Disk.zip) | Program Disk | RT68MX | E6809.CMD, E6809.TXT | 1 program; 1 text/source file |
+| [RT68MX - Emulator Tools - Data and Support Files.zip](../dev/emulators/RT68MX%20-%20Emulator%20Tools%20-%20Data%20and%20Support%20Files.zip) | Data and Support Files | RT68MX | READ.ME, RT68MX.TXT | 1 text/source file; 1 other file |
+| [RT68MX1 - Emulator Tools - Documentation and Examples.zip](../dev/emulators/RT68MX1%20-%20Emulator%20Tools%20-%20Documentation%20and%20Examples.zip) | Documentation and Examples | RT68MX | BOOT.TXT, FDOS.TXT, E6809.TXT, SWTPIO.TXT | 4 text/source files |
+| [RT68MX2 - Emulator Tools - Data and Support Files.zip](../dev/emulators/RT68MX2%20-%20Emulator%20Tools%20-%20Data%20and%20Support%20Files.zip) | Data and Support Files | RT68MX | READ.BAK, READ.ME, MSBASIC.BIN | 1 binary file; 2 other files |
+| [SIM68 - Emulator Tools - Program and Support Utilities.zip](../dev/emulators/SIM68%20-%20Emulator%20Tools%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | Disk number:    0 | SIM68H30.CMD, SIM68H70.CMD, SIM68HB0.CMD | 3 programs |
+| [SIM68051 - Emulator Tools - Documentation and Examples.zip](../dev/emulators/SIM68051%20-%20Emulator%20Tools%20-%20Documentation%20and%20Examples.zip) | Documentation and Examples | HOGG    LAB | S05NEG.TXT, S055INCH.TXT, S05A9OVL.TXT, S05ADD01.TXT, S05ASL00.TXT, S05AUXIL.TXT | 1 program; 26 text/source files; 1 binary file; 10 other files |
+| [SIM68052 - Emulator Tools - Documentation and Examples.zip](../dev/emulators/SIM68052%20-%20Emulator%20Tools%20-%20Documentation%20and%20Examples.zip) | Documentation and Examples | HOGG    LAB | S05BTD.TXT, S05DIV.TXT, S05EQU.TXT, S05RAM.TXT, S05RITH.TXT, S05ASMBT.TXT | 1 program; 21 text/source files |
+| [Z80SIM_1 - Emulator Tools - Programs, Source, and Build Files.zip](../dev/emulators/Z80SIM_1%20-%20Emulator%20Tools%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | Z80SIM | BLOAD.ASM, SFORMAT.ASM, SIMTEST.ASM, INTERTST.ASM, BLOAD.CMD, BLOAD.TXT | 8 programs; 4 assembly sources; 14 text/source files; 4 binary files |
+
+## `dev/forth`
+
+| Archive | Purpose | Disk label | Key files | Contents profile |
+| --- | --- | --- | --- | --- |
+| [4THCA1 - FORTH Language.zip](../dev/forth/4THCA1%20-%20FORTH%20Language.zip) | Disk Image | — | 4THCA1.DSK | 1 disk image; FLEX directory unavailable |
+| [4THCA1_2 - FORTH Language - Program and Support Utilities.zip](../dev/forth/4THCA1_2%20-%20FORTH%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | FRANK1 | C.OVL, X.OVL, PR.OVL, RMS.CMD, X2X.OVL, PR2X.OVL | 10 programs; 2 binary files; 10 other files |
+| [C_4TH_1 - FORTH Language - Documentation and Examples.zip](../dev/forth/C_4TH_1%20-%20FORTH%20Language%20-%20Documentation%20and%20Examples.zip) | Documentation and Examples | F.T.HOGGG28 | XFORTH.TXT, CCFORTH.BIN, CCFORTH.TXT, SYLFORTH.TXT, UFORTH-1.TXT, UFORTH-2.TXT | 1 program; 20 text/source files; 1 binary file |
+| [C_4TH_2 - FORTH Language - Program and Support Utilities.zip](../dev/forth/C_4TH_2%20-%20FORTH%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | F.T.HOGGG28 | FORTH.TXT, XFORTH.TXT, CCFORTH.BIN, CCFORTH.TXT, SYLFORTH.TXT, UFORTH-1.BAK | 2 programs; 21 text/source files; 1 binary file; 5 other files |
+| [CC_FORTH - FORTH Language - Program and Support Utilities.zip](../dev/forth/CC_FORTH%20-%20FORTH%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | GIMIX   CHI | XFORTH.TXT, CCFORTH.BIN, CCFORTH.TXT, SYLFORTH.TXT, UFORTH-1.TXT, UFORTH-2.TXT | 3 programs; 22 text/source files; 1 binary file |
+| [EFORTH - FORTH Language - Program Disk.zip](../dev/forth/EFORTH%20-%20FORTH%20Language%20-%20Program%20Disk.zip) | Program Disk | EFORTH  FHL | EFORTH.CMD, EFORTH.COR | 1 program; 1 other file |
+| [FTHCMD1 - FORTH Language - Program Disk.zip](../dev/forth/FTHCMD1%20-%20FORTH%20Language%20-%20Program%20Disk.zip) | Program Disk | FTHCMD1 | FORTH.CMD, FORTH5.COR, XFORTH3.BIN, READ-ME.TXT | 1 program; 1 text/source file; 1 binary file; 1 other file |
+| [T4THCPY - FORTH Language - Bootable FLEX System and Utilities.zip](../dev/forth/T4THCPY%20-%20FORTH%20Language%20-%20Bootable%20FLEX%20System%20and%20Utilities.zip) | Bootable FLEX System and Utilities | TFORTH | FORTH.CMD, DEMO.TXT, FDOS.TXT, FLEX.SYS, LIFE.TXT, CAT.CMD | 6 programs; 2 system files; 3 text/source files |
+| [TFORTH01 - FORTH Language - Bootable FLEX System and Utilities.zip](../dev/forth/TFORTH01%20-%20FORTH%20Language%20-%20Bootable%20FLEX%20System%20and%20Utilities.zip) | Bootable FLEX System and Utilities | TFORTH01 | FORTH.CMD, DEMO.TXT, FDOS.TXT, FLEX.SYS, LIFE.TXT, CAT.CMD | 6 programs; 2 system files; 3 text/source files |
+| [X-forth.zip](../dev/forth/X-forth.zip) | Archived Files | — | X4TH_68.zip, XFTHTXT.zip, x4th09m.zip, x4th8_1.zip | 0 disk images; FLEX directory unavailable |
+| [X4TH09M - FORTH Language - Program and Support Utilities.zip](../dev/forth/X4TH09M%20-%20FORTH%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | X4TH09M | FORTH.CMD, XFORTH.CMD, XFORTH.COR, ACTV.FTH, CT82.FTH, ED64.FTH | 3 programs; 1 system file; 1 text/source file; 28 other files |
+| [X4TH8_1 - FORTH Language - Program and Support Utilities.zip](../dev/forth/X4TH8_1%20-%20FORTH%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | X4TH8_1 | XFORTH.CMD, XFORTH.COR, ACTV.FTH, CT82.FTH, ED64.FTH, DMATH.FTH | 2 programs; 1 system file; 1 text/source file; 7 other files |
+| [X4TH8COR - FORTH Language - Program and Support Utilities.zip](../dev/forth/X4TH8COR%20-%20FORTH%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | X4TH8COR | FORTH1.TXT, FORTH2.TXT, FORTH3.TXT, FORTH4.TXT, FORTH5.TXT, FORTH6.TXT | 2 programs; 17 text/source files; 1 other file |
+| [X4TH9_1 - FORTH Language - Program and Support Utilities.zip](../dev/forth/X4TH9_1%20-%20FORTH%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | X4TH9_1 | XFORTH.CMD, XFORTH.COR, ACTV.FTH, CT82.FTH, ED64.FTH, DMATH.FTH | 2 programs; 1 system file; 1 text/source file; 7 other files |
+| [X4TH9_2 - FORTH Language - Program Disk.zip](../dev/forth/X4TH9_2%20-%20FORTH%20Language%20-%20Program%20Disk.zip) | Program Disk | X4TH9_2 | MATH.FTH, FILER.FTH, TTYED.FTH, LOAD16.FTH, LOAD32.FTH, NUMOUT.FTH | 1 program; 19 other files |
+| [X4TH_09W - FORTH Language - Program and Support Utilities.zip](../dev/forth/X4TH_09W%20-%20FORTH%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | X4TH_09W | XFORTH.COR, ACTV.FTH, CATT.CMD, CT82.FTH, ED64.FTH, MATH.FTH | 7 programs; 1 system file; 2 BASIC sources; 2 text/source files; 33 other files |
+| [X4TH_68 - FORTH Language - Program Disk.zip](../dev/forth/X4TH_68%20-%20FORTH%20Language%20-%20Program%20Disk.zip) | Program Disk | XFORTH1 | XFORTH.CMD, XFORTH.COR | 1 program; 1 other file |
+
+## `dev/introl-c`
+
+| Archive | Purpose | Disk label | Key files | Contents profile |
+| --- | --- | --- | --- | --- |
+| [DISK17 - Introl-C Compiler - Source Code and Build Files.zip](../dev/introl-c/DISK17%20-%20Introl-C%20Compiler%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | Disk number:    0 | INTROL.H, NRO.C, NRO.H, NRO.MAC, CTYPE.H, ROFF4.C | 2 programs; 12 C sources; 5 text/source files; 1 document; 14 other files |
+| [IC1 - Introl-C Compiler - Program and Support Utilities.zip](../dev/introl-c/IC1%20-%20Introl-C%20Compiler%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | C-1 | C1.CMD, C2.CMD, ICC.CMD, COPY.CMD | 4 programs |
+| [IC2 - Introl-C Compiler - Program and Support Utilities.zip](../dev/introl-c/IC2%20-%20Introl-C%20Compiler%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | C-2 | C3.CMD, R09.CMD, ILINK.CMD, COPY.CMD | 4 programs |
+| [IC3 - Introl-C Compiler - Programs, Source, and Build Files.zip](../dev/introl-c/IC3%20-%20Introl-C%20Compiler%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | C-3 | HEX.C, CASE.C, SIEVE.C, STDIO.H, SETJMP.H, FLD.CMD | 6 programs; 3 C sources; 4 other files |
+| [ICC-V155 - Introl-C Compiler - Programs, Source, and Build Files.zip](../dev/introl-c/ICC-V155%20-%20Introl-C%20Compiler%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | BB | STDIO.H, SETJMP.H, C1.CMD, C2.CMD, C3.CMD, FLD.CMD | 10 programs; 3 text/source files; 2 binary files; 5 other files |
+| [ICCD_1 - Introl-C Compiler - Bootable FLEX System and Utilities.zip](../dev/introl-c/ICCD_1%20-%20Introl-C%20Compiler%20-%20Bootable%20FLEX%20System%20and%20Utilities.zip) | Bootable FLEX System and Utilities | FLEX2 | FLEX2.SYS, DTT.CMD, TTD.CMD, XMON.CMD, MATHC.BAS, SORTC.BAS | 7 programs; 2 system files; 12 BASIC sources; 1 other file |
+| [ICLIB1 - Introl-C Compiler - Program Disk.zip](../dev/introl-c/ICLIB1%20-%20Introl-C%20Compiler%20-%20Program%20Disk.zip) | Program Disk | C-LIB1 | ABS.CLB, MAX.CLB, MIN.CLB, ATOF.CLB, ATOI.CLB, ATOL.CLB | 1 program; 53 other files |
+| [ICLIB2 - Introl-C Compiler.zip](../dev/introl-c/ICLIB2%20-%20Introl-C%20Compiler.zip) | Disk Image | — | ICLIB2.DSK | 1 disk image; FLEX directory unavailable |
+| [Intro-C - Introl-C Compiler - Programs, Source, and Build Files.zip](../dev/introl-c/Intro-C%20-%20Introl-C%20Compiler%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | BB, C-3 | HEX.C, CASE.C, SIEVE.C, STDIO.H, SETJMP.H, C1.CMD | 14 programs; 3 C sources; 3 text/source files; 2 binary files; 5 other files |
+| [INTROL_C_DISK09 - Introl-C Compiler - Programs, Source, and Build Files.zip](../dev/introl-c/INTROL_C_DISK09%20-%20Introl-C%20Compiler%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | Disk number:    0 | HEX.C, CASE.C, SIEVE.C, STDIO.H, CMERGE.C, SETJMP.H | 17 programs; 4 C sources; 7 other files |
+| [INTROL_CSOURCE - Introl-C Compiler - Programs, Source, and Build Files.zip](../dev/introl-c/INTROL_CSOURCE%20-%20Introl-C%20Compiler%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | INTROLC | VU.C, RND.C, FILL.C, SSTV.C, TANK.C, COLOR.C | 30 programs; 27 C sources; 1 Pascal source; 12 text/source files; 1 binary file; 52 other files |
+| [INTROLC - Introl-C Compiler - Programs, Source, and Build Files.zip](../dev/introl-c/INTROLC%20-%20Introl-C%20Compiler%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | INTROLC | HEX.C, CASE.C, SIEVE.C, STDIO.H, SETJMP.H, C1.CMD | 10 programs; 3 C sources; 5 other files |
+| [INTROLC_ - Introl-C Compiler.zip](../dev/introl-c/INTROLC_%20-%20Introl-C%20Compiler.zip) | Disk Image | — | INTROLC_.DSK | 1 disk image; FLEX directory unavailable |
+| [INTROLS - Introl-C Compiler - Data and Support Files.zip](../dev/introl-c/INTROLS%20-%20Introl-C%20Compiler%20-%20Data%20and%20Support%20Files.zip) | Data and Support Files | INTROL-C | CP.BAK, CP.DIS, CPASM.BAK, CPASM.BIN, CPASM.TXT | 1 text/source file; 1 binary file; 3 other files |
+| [SJT037 - Introl-C Compiler - Source Code and Build Files.zip](../dev/introl-c/SJT037%20-%20Introl-C%20Compiler%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | NRO | INTROL.H, NRO.C, NRO.H, NRO.MAC, CTYPE.H, STDIO.H | 2 programs; 4 C sources; 4 text/source files; 12 other files |
+
+## `dev/jcp`
+
+| Archive | Purpose | Disk label | Key files | Contents profile |
+| --- | --- | --- | --- | --- |
+| [JCP09 - JCP Development - Program and Support Utilities.zip](../dev/jcp/JCP09%20-%20JCP%20Development%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | JCP19 | JCP.CMD, JCP.TXT, LIBJCP.CMD, LIBJCP.TXT | 2 programs; 2 text/source files |
+| [JCP644 - JCP Development - Program and Support Utilities.zip](../dev/jcp/JCP644%20-%20JCP%20Development%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | JCP | JCP.CMD, JCP.TXT, APAR.BAC, APAR.BAS, SGEN1.TXT, SGEN3.CMD | 4 programs; 1 BASIC source; 8 text/source files; 1 other file |
+| [JCP6800 - JCP Development - Program and Support Utilities.zip](../dev/jcp/JCP6800%20-%20JCP%20Development%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | JCP6800 | JCP.CMD, JCP.TXT, JCP4.CMD, JCP5.CMD, JCP6.CMD, SPOOL.TXT | 8 programs; 13 text/source files |
+| [JCP_09 - JCP Development - Program and Support Utilities.zip](../dev/jcp/JCP_09%20-%20JCP%20Development%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | JCP09.MD MD | JCP.CMD, JCP.TXT, JCP6.CMD, JCP7.CMD, JCP8.CMD, JCP9.CMD | 12 programs; 13 text/source files |
+| [JCP_LIB - JCP Development - Program and Support Utilities.zip](../dev/jcp/JCP_LIB%20-%20JCP%20Development%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | JCP_LIB | JCP.CMD, JCP.TXT, GENJCP.TXT, GENLIB.TXT, JCPEQU.TXT, LIBEQU.TXT | 3 programs; 8 text/source files |
+| [JCPFS - JCP Development - Program and Support Utilities.zip](../dev/jcp/JCPFS%20-%20JCP%20Development%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | JCP | JCP.CMD, JCP.TXT, GENJCP.TXT, GENLIB.TXT, JCPEQU.TXT, LIBEQU.TXT | 2 programs; 12 text/source files |
+| [JCPMSTR - JCP Development - Program and Support Utilities.zip](../dev/jcp/JCPMSTR%20-%20JCP%20Development%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | JCP | JCP.CMD, JCP.TXT, HELLO.TXT, GENJCP.TXT, GENLIB.TXT, JCPEQU.TXT | 2 programs; 13 text/source files; 2 other files |
+
+## `dev/linkers-loaders`
+
+| Archive | Purpose | Disk label | Key files | Contents profile |
+| --- | --- | --- | --- | --- |
+| [LINK68_1 - Linker and Loader Tools - Documentation and Examples.zip](../dev/linkers-loaders/LINK68_1%20-%20Linker%20and%20Loader%20Tools%20-%20Documentation%20and%20Examples.zip) | Documentation and Examples | LINK68_1 | DEMO.TXT, LINK68.TXT, DEMOEQU.TXT, STRINGS.TXT, DEMOJMPS.TXT, LINK68P1.TXT | 1 program; 8 text/source files; 3 other files |
+| [LINK68_2 - Linker and Loader Tools - Documentation and Examples.zip](../dev/linkers-loaders/LINK68_2%20-%20Linker%20and%20Loader%20Tools%20-%20Documentation%20and%20Examples.zip) | Documentation and Examples | LINK68_2 | DEMO.TXT, LINK68.TXT, DEMOEQU.TXT, STRINGS.TXT, DEMOJMPS.TXT, LINK68P1.TXT | 1 program; 8 text/source files; 3 other files |
+| [RA68_LK68 - Linker and Loader Tools - Program and Support Utilities.zip](../dev/linkers-loaders/RA68_LK68%20-%20Linker%20and%20Loader%20Tools%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | RA68_LK68 | DEMO.CMD, DEMO.LDL, DEMO.LDM, DEMO.TXT, DRVR.TXT, MAIN.TXT | 5 programs; 28 text/source files; 1 binary file; 4 other files |
+
+## `dev/lucidata-pascal`
+
+| Archive | Purpose | Disk label | Key files | Contents profile |
+| --- | --- | --- | --- | --- |
+| [lucidata pascal.zip](../dev/lucidata-pascal/lucidata%20pascal.zip) | Archived Files | — | LPASC00.zip, Lucidatapasc6800.zip, PASC-V22.zip, PASCAL9.zip | 0 disk images; FLEX directory unavailable |
+| [LUCIDATAPASC6800 - Lucidata Pascal - Program and Support Utilities.zip](../dev/lucidata-pascal/LUCIDATAPASC6800%20-%20Lucidata%20Pascal%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | P6800    MD | PASCAL3.CMD, PASCAL3N.BIN, PASCAL3N.OL1, PASCAL3N.OL2, PASCAL3P.BIN, PASCAL3P.OL1 | 3 programs; 1 system file; 8 text/source files; 2 binary files; 27 other files |
+| [LUCIPASC - Lucidata Pascal - Program and Support Utilities.zip](../dev/lucidata-pascal/LUCIPASC%20-%20Lucidata%20Pascal%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | P6800    MD | PASCAL3.CMD, PASCAL3N.BIN, PASCAL3N.OL1, PASCAL3N.OL2, PASCAL3P.BIN, PASCAL3P.OL1 | 3 programs; 1 system file; 8 text/source files; 2 binary files; 27 other files |
+
+## `dev/mark-williams-c`
+
+| Archive | Purpose | Disk label | Key files | Contents profile |
+| --- | --- | --- | --- | --- |
+| [MWC_CPY - Mark Williams C.zip](../dev/mark-williams-c/MWC_CPY%20-%20Mark%20Williams%20C.zip) | Disk Image | — | MWC_CPY.DSK | 1 disk image; FLEX directory unavailable |
+| [MWC_ORG - Mark Williams C.zip](../dev/mark-williams-c/MWC_ORG%20-%20Mark%20Williams%20C.zip) | Disk Image | — | MWC_ORG.DSK | 1 disk image; FLEX directory unavailable |
+
+## `dev/mccosh-c`
+
+| Archive | Purpose | Disk label | Key files | Contents profile |
+| --- | --- | --- | --- | --- |
+| [BB156 - McCosh C Compiler - Programs, Source, and Build Files.zip](../dev/mccosh-c/BB156%20-%20McCosh%20C%20Compiler%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | MCCOSH  C | MCCOSH.TXT, ASCII.H, CTYPE.H, STDIO.H, SETJMP.H, CC.CMD | 7 programs; 2 text/source files; 7 other files |
+| [mccosh_C (2).zip](../dev/mccosh-c/mccosh_C%20%282%29.zip) | Programs, Source, and Build Files | C-DOC, DOC, DOC_2, Disk number:    0, MANUAL, MASTER, MCCOSH, McCOSH | PPRINT-B.SYS, SPRINT-A.SYS, WC.C, ACIA.C, CBUG.C, TERM.C | 28 programs; 3 system files; 10 C sources; 31 text/source files; 24 other files |
+| [MCCOSH_C - McCosh C Compiler - Programs, Source, and Build Files.zip](../dev/mccosh-c/MCCOSH_C%20-%20McCosh%20C%20Compiler%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | DISK | WC.C, DREF.C, CTYPE.H, HELLO.C, STDIO.H, FLXFMS.C | 7 programs; 6 C sources; 6 other files |
+| [MCCOSH_C_BB156 - McCosh C Compiler - Programs, Source, and Build Files.zip](../dev/mccosh-c/MCCOSH_C_BB156%20-%20McCosh%20C%20Compiler%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | MCCOSH  C | MCCOSH.TXT, ASCII.H, CTYPE.H, STDIO.H, SETJMP.H, CC.CMD | 7 programs; 2 text/source files; 7 other files |
+
+## `dev/omega-soft-pascal`
+
+| Archive | Purpose | Disk label | Key files | Contents profile |
+| --- | --- | --- | --- | --- |
+| [omegasoft pascal.zip](../dev/omega-soft-pascal/omegasoft%20pascal.zip) | Program and Support Utilities | OMSPASCL | M.CA, M.PA, DB.CMD, LB.CMD, LC.CMD, LL.CMD | 13 programs; 69 text/source files; 1 binary file; 3 documents; 62 other files |
+| [OMSP-221 - OmegaSoft Pascal - Program and Support Utilities.zip](../dev/omega-soft-pascal/OMSP-221%20-%20OmegaSoft%20Pascal%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | BB | DB.CF, DB.CMD, LB.CMD, LC.CMD, LL.CMD, PC.CMD | 10 programs; 99 text/source files; 1 binary file; 13 other files |
+| [OMSPASCAL - OmegaSoft Pascal - Program and Support Utilities.zip](../dev/omega-soft-pascal/OMSPASCAL%20-%20OmegaSoft%20Pascal%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | BB | DB.CF, DB.CMD, LB.CMD, LC.CMD, LL.CMD, PC.CMD | 10 programs; 99 text/source files; 1 binary file; 13 other files |
+| [OMSPASCAL_V2.21.zip](../dev/omega-soft-pascal/OMSPASCAL_V2.21.zip) | Program and Support Utilities | BB | DB.CF, DB.CMD, LB.CMD, LC.CMD, LL.CMD, PC.CMD | 10 programs; 99 text/source files; 1 binary file; 13 other files |
+| [OMSPASCL - OmegaSoft Pascal - Program and Support Utilities.zip](../dev/omega-soft-pascal/OMSPASCL%20-%20OmegaSoft%20Pascal%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | OMSPASCL | M.CA, M.PA, DB.CMD, LB.CMD, LC.CMD, LL.CMD | 13 programs; 69 text/source files; 1 binary file; 3 documents; 62 other files |
+
+## `dev/pascal`
+
+| Archive | Purpose | Disk label | Key files | Contents profile |
+| --- | --- | --- | --- | --- |
+| [LPASC00 - Pascal Language - Program and Support Utilities.zip](../dev/pascal/LPASC00%20-%20Pascal%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | P6800V3  B | PASCAL3.BIN, P6800ERR.SYS, A3.OVL, C3.OVL, F3.OVL, M3.OVL | 2 programs; 1 system file; 4 text/source files; 1 binary file; 21 other files |
+| [PAS_REVU - Pascal Language - Documentation and Examples.zip](../dev/pascal/PAS_REVU%20-%20Pascal%20Language%20-%20Documentation%20and%20Examples.zip) | Documentation and Examples | F | PASCALS.TXT, LETTER.TXT, ROYAL1.TXT, MESSAGE.TXT, ROYXFOR.TXT, INV2.KY1 | 1 program; 6 text/source files; 1 binary file; 12 other files |
+| [PASC-V22 - Pascal Language - Program and Support Utilities.zip](../dev/pascal/PASC-V22%20-%20Pascal%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | P6800V2 | PASCAL.BIN, P6800ERR.SYS, C.OVL, X.OVL, PR.OVL, PR.TXT | 3 programs; 1 system file; 4 text/source files; 1 binary file; 21 other files |
+| [PASC6800 - Pascal Language - Program and Support Utilities.zip](../dev/pascal/PASC6800%20-%20Pascal%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | PASCAL | PASCAL.BIN, C.OVL, X.OVL, TITLE.TXT, EASTER.TXT, EIGHTQ.TXT | 3 programs; 14 text/source files; 3 binary files; 2 other files |
+| [PASC_3 - Pascal Language - Documentation and Examples.zip](../dev/pascal/PASC_3%20-%20Pascal%20Language%20-%20Documentation%20and%20Examples.zip) | Documentation and Examples | PASC_3 | LTAB.TXT, BEDIT.TXT, BACKUP.TXT, FLEXMOD.TXT, REPAIRN.TXT, FLEXTYPE.TXT | 1 program; 6 text/source files; 1 binary file |
+| [PASC_680 - Pascal Language - Program and Support Utilities.zip](../dev/pascal/PASC_680%20-%20Pascal%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | PASCAL2 | PASCAL.BIN, P6800ERR.SYS, C.OVL, X.OVL, PR.OVL, PR.TXT | 5 programs; 1 system file; 4 text/source files; 3 binary files; 21 other files |
+| [PASCAL - Pascal Language - Program and Support Utilities.zip](../dev/pascal/PASCAL%20-%20Pascal%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | TSC_PAS | PASCAL.CMD, NPASCAL.BIN, PRUN.CMD, XREF.TXT, SETOP.TXT, COSINE.TXT | 2 programs; 14 text/source files; 7 binary files |
+| [PASCAL15 - Pascal Language - Program and Support Utilities.zip](../dev/pascal/PASCAL15%20-%20Pascal%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | PASCAL15FHL | PASCAL.CMD, PASCAL15.SYS, INTERP15.SYS, MAKEP.TXT, RUN15.TXT, PRIMES.TXT | 2 programs; 2 system files; 4 text/source files |
+| [PASCAL2 - Pascal Language - Bootable FLEX System and Utilities.zip](../dev/pascal/PASCAL2%20-%20Pascal%20Language%20-%20Bootable%20FLEX%20System%20and%20Utilities.zip) | Bootable FLEX System and Utilities | PASCAL | PASCAL.BIN, FLEX2.SYS, P6800ERR.SYS, C.OVL, X.OVL, PR.OVL | 15 programs; 4 system files; 6 text/source files; 3 binary files; 4 other files |
+| [PASCAL9 - Pascal Language - Program Disk.zip](../dev/pascal/PASCAL9%20-%20Pascal%20Language%20-%20Program%20Disk.zip) | Program Disk | PASCAL9 | PASCALC.CMD, DIVIDE.LIB, EQTEST.LIB, FIOLIB.LIB, GTTEST.LIB, LTTEST.LIB | 1 program; 10 other files |
+| [PASCAL_1 - Pascal Language.zip](../dev/pascal/PASCAL_1%20-%20Pascal%20Language.zip) | Disk Image | — | PASCAL_1.DSK | 1 disk image; FLEX directory unavailable |
+| [PASCAL_2 - Pascal Language.zip](../dev/pascal/PASCAL_2%20-%20Pascal%20Language.zip) | Disk Image | — | PASCAL_2.DSK | 1 disk image; FLEX directory unavailable |
+| [PASCAL_BB134 - Pascal Language - Program and Support Utilities.zip](../dev/pascal/PASCAL_BB134%20-%20Pascal%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | TSC-PASC | PASCAL.CMD, NPASCAL.BIN, PRUN.CMD, NP6809.BIN, NPASS1.BIN, NPASS2.BIN | 2 programs; 2 text/source files; 7 binary files |
+| [PASWORD - Pascal Language - Program and Support Utilities.zip](../dev/pascal/PASWORD%20-%20Pascal%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | PASSWORD MD | INITS.CMD, INITS.TXT, PASSGEN.CMD, PASSGEN.TXT, CODEWORD.CMD, CODEWORD.TXT | 4 programs; 4 text/source files |
+| [PL4 - Pascal Language - Documentation and Examples.zip](../dev/pascal/PL4%20-%20Pascal%20Language%20-%20Documentation%20and%20Examples.zip) | Documentation and Examples | PORTLANDUTL | INDEX.DOC, DKNAME.TXT, FINDIT.TXT, FILESORT.TXT, LETTER.OUT, LETTER.STY | 4 text/source files; 1 document; 2 other files |
+| [PL942D2 - Pascal Language - Source Code and Build Files.zip](../dev/pascal/PL942D2%20-%20Pascal%20Language%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | PL942D2 | ASM.ASM, INTRO.ASM, ASSIGN.ASM, EDITOR.ASM, FPPACK.ASM, IOFLEX.ASM | 5 programs; 9 assembly sources; 1 BASIC source; 4 text/source files; 10 other files |
+| [PL94_2D - Pascal Language - Programs and Utility Collection.zip](../dev/pascal/PL94_2D%20-%20Pascal%20Language%20-%20Programs%20and%20Utility%20Collection.zip) | Programs and Utility Collection | PL94_2D | PPRINT-B.SYS, SPRINT-A.SYS, ED.CMD, PL9.CMD, PL9.ERR, PL9.SER | 24 programs; 2 system files; 2 text/source files; 21 other files |
+| [PL9_42 - Pascal Language - Program and Support Utilities.zip](../dev/pascal/PL9_42%20-%20Pascal%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | PL9_42 | PL9.CMD, PL9.ERR, SORT.LIB, BITIO.LIB, HEXIO.LIB, HARDIO.LIB | 4 programs; 1 text/source file; 19 other files |
+| [PL9_BB146 - Pascal Language - Program and Support Utilities.zip](../dev/pascal/PL9_BB146%20-%20Pascal%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | PL9-SYS | PL9.CMD, PL9.ERR, SORT.LIB, BITIO.LIB, HEXIO.LIB, HARDIO.LIB | 6 programs; 1 text/source file; 17 other files |
+| [PL9_LONG - Pascal Language - Program and Support Utilities.zip](../dev/pascal/PL9_LONG%20-%20Pascal%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | PL9_LONG | PL9L.CMD, PL9L.ERR, SORT.LIB, BITIO.LIB, HEXIO.LIB, LABEL.TXT | 13 programs; 2 text/source files; 16 other files |
+| [PL9_PROG - Pascal Language - Programs, Source, and Build Files.zip](../dev/pascal/PL9_PROG%20-%20Pascal%20Language%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | PL9_PROGS | SINE.ASM, PIXEL.ASM, RICOH.ASM, AM9511.ASM, COLOUR.ASM, RANDOM.ASM | 20 programs; 14 assembly sources; 12 text/source files; 6 binary files; 127 other files |
+| [PL9_REF - Pascal Language - Program and Support Utilities.zip](../dev/pascal/PL9_REF%20-%20Pascal%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | PL9_REF | LABEL.TXT, PL9-CMD.TXT, PROG-IDX.TXT, PROG-REF.TXT, DIR.CMD, COPY.CMD | 2 programs; 4 text/source files |
+| [PL9_SRC - Pascal Language - Source Code and Build Files.zip](../dev/pascal/PL9_SRC%20-%20Pascal%20Language%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | PL9_SRC | ASM.ASM, INTRO.ASM, ASSIGN.ASM, EDITOR.ASM, FPPACK.ASM, IOFLEX.ASM | 1 program; 9 assembly sources; 1 binary file; 2 other files |
+| [PL9_V42 - Pascal Language - Programs, Source, and Build Files.zip](../dev/pascal/PL9_V42%20-%20Pascal%20Language%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | PL9_V42 | ASM.ASM, INTRO.ASM, ASSIGN.ASM, EDITOR.ASM, FPPACK.ASM, IOFLEX.ASM | 14 programs; 9 assembly sources; 1 BASIC source; 4 text/source files; 5 other files |
+| [PL9_V42C - Pascal Language - Programs, Source, and Build Files.zip](../dev/pascal/PL9_V42C%20-%20Pascal%20Language%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | PL9_V42C | ASM.ASM, INTRO.ASM, ASSIGN.ASM, EDITOR.ASM, IOFLEX.ASM, COMPILE.ASM | 15 programs; 9 assembly sources; 1 text/source file; 7 other files |
+| [PL9_V42D - Pascal Language - Source Code and Build Files.zip](../dev/pascal/PL9_V42D%20-%20Pascal%20Language%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | PL9_V42D | ASM.ASM, INTRO.ASM, ASSIGN.ASM, EDITOR.ASM, FPPACK.ASM, IOFLEX.ASM | 1 program; 9 assembly sources; 1 BASIC source; 2 text/source files; 3 other files |
+| [PL9_V42G - Pascal Language - Source Code and Build Files.zip](../dev/pascal/PL9_V42G%20-%20Pascal%20Language%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | PL9_V42G | ASM.ASM, INTRO.ASM, ASSIGN.ASM, EDITOR.ASM, IOFLEX.ASM, COMPILE.ASM | 4 programs; 9 assembly sources; 1 BASIC source; 2 text/source files; 8 other files |
+| [PL9DEMOS - Pascal Language - Programs and Utility Collection.zip](../dev/pascal/PL9DEMOS%20-%20Pascal%20Language%20-%20Programs%20and%20Utility%20Collection.zip) | Programs and Utility Collection | PL9DEMOS | MOVE.CMD, MOVE.PL9, SORT.PL9, LABEL.TXT, LCASE.CMD, LCASE.PL9 | 20 programs; 1 assembly source; 2 text/source files; 40 other files |
+| [PL9DIST - Pascal Language - Program and Support Utilities.zip](../dev/pascal/PL9DIST%20-%20Pascal%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | PL9DIST | PL9.CMD, PL9.ERR, NOTE.TXT, SORT.LIB, BITIO.LIB, HEXIO.LIB | 2 programs; 1 text/source file; 20 other files |
+| [PL9TOOLS - Pascal Language - Programs, Source, and Build Files.zip](../dev/pascal/PL9TOOLS%20-%20Pascal%20Language%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | PL9TOOLS | PPRINT-B.SYS, SPRINT-A.SYS, TPH-300.ASM, T6850I30.ASM, T6850I96.ASM, T6850P30.ASM | 44 programs; 2 system files; 5 assembly sources; 1 text/source file; 13 binary files; 151 other files |
+| [PL9V4_2 - Pascal Language - Program and Support Utilities.zip](../dev/pascal/PL9V4_2%20-%20Pascal%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | PL9V4_2 | PL9L.CMD, PL9L.ERR, LABEL.TXT, PL9L_TD.CMD | 2 programs; 1 text/source file; 1 other file |
+| [WIndrush PL9.zip](../dev/pascal/WIndrush%20PL9.zip) | Program and Support Utilities | USERV4_2 | LABEL.TXT, UGINDEX.TXT, GUIDEPT1.TXT, GUIDEPT2.TXT, GUIDEPT3.TXT, GUIDEPT4.TXT | 2 programs; 7 text/source files |
+
+## `dev/pilot`
+
+| Archive | Purpose | Disk label | Key files | Contents profile |
+| --- | --- | --- | --- | --- |
+| [PILOT - PILOT Language.zip](../dev/pilot/PILOT%20-%20PILOT%20Language.zip) | Disk Image | — | PILOT.DSK | 1 disk image; FLEX directory unavailable |
+
+## `dev/small-c`
+
+| Archive | Purpose | Disk label | Key files | Contents profile |
+| --- | --- | --- | --- | --- |
+| [COMPILER - Small-C Compiler - Source Code and Build Files.zip](../dev/small-c/COMPILER%20-%20Small-C%20Compiler%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | SMALLC | SMALLC.BIN, SMALLC.C, SMALLC.CMD, WC.C, CCC.H, GRAB.C | 3 programs; 1 assembly source; 11 C sources; 3 text/source files; 3 binary files; 1 document; 8 other files |
+| [small c.zip](../dev/small-c/small%20c.zip) | Disk Image | — | 6800CSRC.zip, LIB51.dsk, LIB52.zip, LIB53.zip | 1 disk image; FLEX directory unavailable |
+| [SMALL_C_COMPILER - Small-C Compiler - Source Code and Build Files.zip](../dev/small-c/SMALL_C_COMPILER%20-%20Small-C%20Compiler%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | SMALLC | SMALLC.BIN, SMALLC.C, SMALLC.CMD, WC.C, CCC.H, GRAB.C | 3 programs; 1 assembly source; 11 C sources; 3 text/source files; 3 binary files; 1 document; 8 other files |
+| [SMALLC - Small-C Compiler - Bootable FLEX System and Utilities.zip](../dev/small-c/SMALLC%20-%20Small-C%20Compiler%20-%20Bootable%20FLEX%20System%20and%20Utilities.zip) | Bootable FLEX System and Utilities | SYSTEM | FLEX2.SYS, CC.CMD, ED.CMD, ED.TXT, ERA.CMD, SCC.CMD | 32 programs; 3 system files; 3 text/source files; 1 binary file; 8 other files |
+| [SMALLC09 - Small-C Compiler - Source Code and Build Files.zip](../dev/small-c/SMALLC09%20-%20Small-C%20Compiler%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | smallc09 | C0.C, C1.C, C2.C, C3.C, C4.C, C5.C | 5 programs; 9 assembly sources; 26 C sources; 1 binary file; 5 other files |
+| [SMALLC_2 - Small-C Compiler - Programs, Source, and Build Files.zip](../dev/small-c/SMALLC_2%20-%20Small-C%20Compiler%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | SMALL   C | SMALLC.CMD, IO9.C, RUN1.ASM, RUN9.ASM, RUN9.C, HELLO.C | 12 programs; 4 assembly sources; 4 C sources; 4 text/source files |
+
+## `dev/splm`
+
+| Archive | Purpose | Disk label | Key files | Contents profile |
+| --- | --- | --- | --- | --- |
+| [PLM68 - SPLM Language - Documentation and Examples.zip](../dev/splm/PLM68%20-%20SPLM%20Language%20-%20Documentation%20and%20Examples.zip) | Documentation and Examples | SPLMTEXT | LT.TXT, SR0.TXT, SR1.TXT, SR2.TXT, SR3.TXT, SR4.TXT | 1 program; 27 text/source files; 4 binary files |
+| [SPLM - SPLM Language - Bootable FLEX System and Utilities.zip](../dev/splm/SPLM%20-%20SPLM%20Language%20-%20Bootable%20FLEX%20System%20and%20Utilities.zip) | Bootable FLEX System and Utilities | SPLM | FLEX2.SYS, SPLM.CMD, SPLM.LIB, PRINT.SYS, XSPLM.CMD, FLX102.TXT | 16 programs; 3 system files; 2 text/source files; 3 other files |
+| [SPLM1 - SPLM Language - Bootable FLEX System and Utilities.zip](../dev/splm/SPLM1%20-%20SPLM%20Language%20-%20Bootable%20FLEX%20System%20and%20Utilities.zip) | Bootable FLEX System and Utilities | SPLM | FLEX2.SYS, SPLM.CMD, SPLM.LIB, PRINT.SYS, XSPLM.CMD, FLX102.TXT | 16 programs; 3 system files; 2 text/source files; 3 other files |
+| [SPLM2 - SPLM Language - Program and Support Utilities.zip](../dev/splm/SPLM2%20-%20SPLM%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | SPLM | SIZE.TXT, SPLM.CMD, SPLM.LIB, FLX102.TXT, SPLMREAD.LIB, SPLMWRIT.LIB | 2 programs; 2 text/source files; 3 other files |
+| [SPLMTEST - SPLM Language - Program Disk.zip](../dev/splm/SPLMTEST%20-%20SPLM%20Language%20-%20Program%20Disk.zip) | Program Disk | SPLMTEST | PLM68.CMD, CATALOG.BIN, CATALOG.TXT, MSBASIC.CTL, MSBASIC1.CTL, MSBASIC2.CTL | 1 program; 1 text/source file; 1 binary file; 5 other files |
+| [SPLMUSRA - SPLM Language - Program and Support Utilities.zip](../dev/splm/SPLMUSRA%20-%20SPLM%20Language%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | SPELLB   MD | CWD_.BIN, DICA.BIN, DICB.BIN, DICC.BIN, DICD.BIN, DICE.BIN | 12 programs; 2 BASIC sources; 11 text/source files; 43 binary files; 30 other files |
+
+## `dev/toolkits`
+
+| Archive | Purpose | Disk label | Key files | Contents profile |
+| --- | --- | --- | --- | --- |
+| [MSTOOLS - Programming Toolkit - Documentation and Examples.zip](../dev/toolkits/MSTOOLS%20-%20Programming%20Toolkit%20-%20Documentation%20and%20Examples.zip) | Documentation and Examples | SKDOS   SK* | STEVE1.TXT, STEVE2.TXT, STEVE3.TXT, STEVE4.TXT, STEVE5.TXT, STEVE6.TXT | 8 text/source files; 4 other files |
+| [TEXTOOLS.zip](../dev/toolkits/TEXTOOLS.zip) | Disk Image | — | TEXTOOLS.DSK | 1 disk image; FLEX directory unavailable |
+| [TOOLA1 - Programming Toolkit - Programs, Source, and Build Files.zip](../dev/toolkits/TOOLA1%20-%20Programming%20Toolkit%20-%20Programs%2C%20Source%2C%20and%20Build%20Files.zip) | Programs, Source, and Build Files | FLXSRC | ADC2.ASM, CALC.BAS, PIO5.ASM, PIO6.ASM, FIXES.ASM, PORTA.ASM | 47 programs; 40 assembly sources; 1 BASIC source; 2 text/source files; 7 binary files; 25 other files |
+| [TOOLK01 - Programming Toolkit - Program and Support Utilities.zip](../dev/toolkits/TOOLK01%20-%20Programming%20Toolkit%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | TOOLK01 | TOOLKIT1.MAN, BEDIT.BIN, BEDIT.CMD, BEDIT.MAN, BEDIT.TXT, BEDIT1.MAN | 3 programs; 1 BASIC source; 4 text/source files; 2 binary files; 8 other files |
+| [TOOLK_1 - Programming Toolkit - Documentation and Examples.zip](../dev/toolkits/TOOLK_1%20-%20Programming%20Toolkit%20-%20Documentation%20and%20Examples.zip) | Documentation and Examples | HOGG | BEDIT.MAN, BEDIT.TXT, OS9-P2.TXT, SEEMEM.TXT, SETMEM.TXT, DECOMPIL.TXT | 5 text/source files; 1 binary file; 1 other file |
+| [TOOLK_1C - Programming Toolkit - Program and Support Utilities.zip](../dev/toolkits/TOOLK_1C%20-%20Programming%20Toolkit%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | TOOLKIT1 MD | BEDIT.CMD, BEDIT.TXT, BASEREF.CMD, BASEREF.TXT, DCOMPILE.CMD, DCOMPILE.TXT | 3 programs; 3 text/source files |
+| [TOOLKIT - Programming Toolkit - Program and Support Utilities.zip](../dev/toolkits/TOOLKIT%20-%20Programming%20Toolkit%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | TOOLKITa MD | BEDIT.BIN, BEDIT.TXT, BASEREF.CMD, BASEREF.TXT, DECOMPIL.CMD, DECOMPIL.TXT | 2 programs; 3 text/source files; 1 binary file |
+| [TOOLKIT1 - Programming Toolkit - Program and Support Utilities.zip](../dev/toolkits/TOOLKIT1%20-%20Programming%20Toolkit%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | TOOLKITa | SMW.TXT, BEDIT.BIN, BEDIT.TXT, BASEREF.CMD, BASEREF.TXT, DECOMPIL.CMD | 2 programs; 4 text/source files; 1 binary file |
+| [TOOLKIT2 - Programming Toolkit - Program and Support Utilities.zip](../dev/toolkits/TOOLKIT2%20-%20Programming%20Toolkit%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | TOOLKIT2 | FDIR.CMD, FDIR.TXT, CRTSET.CMD, CRTSET.TXT, LNKMAT.CMD, LNKMAT.TXT | 7 programs; 8 text/source files; 1 binary file |
+| [TOOLKIT2_1982 - Programming Toolkit - Program and Support Utilities.zip](../dev/toolkits/TOOLKIT2_1982%20-%20Programming%20Toolkit%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | TOOLKIT2 | FDIR.CMD, FDIR.TXT, CRTSET.CMD, CRTSET.TXT, LNKMAT.CMD, LNKMAT.TXT | 7 programs; 8 text/source files; 1 binary file |
+| [TOOLKITA_1981 - Programming Toolkit - Program and Support Utilities.zip](../dev/toolkits/TOOLKITA_1981%20-%20Programming%20Toolkit%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | TOOLKITa | SMW.TXT, BEDIT.BIN, BEDIT.TXT, BASEREF.CMD, BASEREF.TXT, DECOMPIL.CMD | 2 programs; 4 text/source files; 1 binary file |
+| [TOOLS1B - Programming Toolkit - Documentation and Examples.zip](../dev/toolkits/TOOLS1B%20-%20Programming%20Toolkit%20-%20Documentation%20and%20Examples.zip) | Documentation and Examples | FLXSRC | INIT.TXT, LOAD.TXT, SCANP.TXT, SCANS.TXT, BACKUP.TXT, BROWSE.TXT | 1 program; 16 text/source files |
+| [TOOLS1C - Programming Toolkit - Program and Support Utilities.zip](../dev/toolkits/TOOLS1C%20-%20Programming%20Toolkit%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | FLXSRC | FDIR.CMD, FDIR.TXT, CRTSET.CMD, CRTSET.TXT, LNKMAT.CMD, LNKMAT.TXT | 8 programs; 9 text/source files; 1 binary file; 1 other file |
+| [TOOLS1D - Programming Toolkit - Programs and Utility Collection.zip](../dev/toolkits/TOOLS1D%20-%20Programming%20Toolkit%20-%20Programs%20and%20Utility%20Collection.zip) | Programs and Utility Collection | COPY | CHECK.CMD, CHECK.TXT, COPYR.CMD, HECHO.CMD, HECHO.TXT, QUICK.CMD | 35 programs; 20 text/source files |
+| [TOOLS1F - Programming Toolkit - Program and Support Utilities.zip](../dev/toolkits/TOOLS1F%20-%20Programming%20Toolkit%20-%20Program%20and%20Support%20Utilities.zip) | Program and Support Utilities | FLXSRC | D-BUG.SYS, FILL.CMD, LOAD.CMD, MOVE.CMD, D-BUG.CMD, D-BUG9.DAT | 8 programs; 1 system file; 1 other file |
+| [TOOLS1G - Programming Toolkit - Source Code and Build Files.zip](../dev/toolkits/TOOLS1G%20-%20Programming%20Toolkit%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | FLEXSC | SPEED.ASM, DATIME.ASM, CLKCONS.ASM, DRIVERS.ASM, PROTECT.ASM, CONSDRIV.ASM | 1 program; 14 assembly sources |
