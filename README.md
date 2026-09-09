@@ -12,20 +12,20 @@ See the [archive index](archive-index/README.md) for the purpose, disk label, ke
 | [manuals](manuals/) | Generic FLEX manuals and reference material | 25 |
 | [apps](apps/) | End-user applications grouped by product | 201 |
 | [games](games/) | Games grouped by title or type | 8 |
-| [dev](dev/) | Compilers, assemblers, debuggers, emulators, and development tools | 240 |
-| [utilities](utilities/) | System, disk, editor, diagnostic, and communications utilities | 102 |
+| [dev](dev/) | Compilers, assemblers, debuggers, emulators, and development tools | 247 |
+| [utilities](utilities/) | System, disk, editor, diagnostic, and communications utilities | 104 |
 | [newsletters](newsletters/) | FLEX newsletters and user-group publications | 11 |
 | [magazines](magazines/) | Magazine material grouped by publication | 2 |
-| [sourcecode](sourcecode/) | Source examples, demonstrations, and historical source collections | 112 |
+| [sourcecode](sourcecode/) | Source examples, demonstrations, and historical source collections | 114 |
 | [incoming](incoming/) | Drop location for newly added, not-yet-classified files | 0 |
-| [misc](misc/) | OS-9/UniFLEX material, unidentified disk sets, and uncategorized files | 362 |
+| [misc](misc/) | OS-9/UniFLEX material, unidentified disk sets, and uncategorized files | 368 |
 
 ## Organization notes
 
 - Related files are grouped into product-specific subfolders, such as [DynaCalc](apps/dynacalc/), [Introl-C](dev/introl-c/), and [TSC FLEX source](flex-09/sourcecode/).
 - The original bytes of every retained file are unchanged. Files were moved and renamed by reusing their existing Git blob hashes.
 - ZIP names use the format `OriginalCode - Product - Purpose.zip`; selected archive-series names also include key components when that makes their differences clearer.
-- The [archive index](archive-index/README.md) records all 1,191 ZIP files. Standard and raw-sector directory scans were used to identify archive contents. Unreadable archives remain explicitly identified rather than given speculative descriptions.
+- The [archive index](archive-index/README.md) records all 1,195 ZIP files. Standard and raw-sector directory scans were used to identify archive contents. Unreadable archives remain explicitly identified rather than given speculative descriptions.
 - MACE, XMACE, and the combined PL9/MACE development disk are grouped under [dev/assemblers/mace](dev/assemblers/mace/).
 - 59 redundant copies from 57 duplicate sets were removed. See the [duplicate-removal log](misc/duplicate-removal-log.md).
 - ZIP duplicates were identified by their unpacked entry names and contents, so archives that differed only in ZIP container metadata or filename capitalization were treated as duplicates.
@@ -51,7 +51,7 @@ Games grouped by title or type. Subfolders: [adventure](games/adventure/), [ches
 
 ### [dev](dev/)
 
-Compilers, assemblers, debuggers, emulators, and development tools. MACE material is grouped in [assemblers/mace](dev/assemblers/mace/). Subfolders: [assemblers](dev/assemblers/), [basic](dev/basic/), [compilers-misc](dev/compilers-misc/), [csc](dev/csc/), [debuggers](dev/debuggers/), [disassemblers](dev/disassemblers/), [dyna-c](dev/dyna-c/), [dynasoft-pascal](dev/dynasoft-pascal/), [emulators](dev/emulators/), [forth](dev/forth/), [introl-c](dev/introl-c/), [jcp](dev/jcp/), [linkers-loaders](dev/linkers-loaders/), [lucidata-pascal](dev/lucidata-pascal/), [mark-williams-c](dev/mark-williams-c/), [mccosh-c](dev/mccosh-c/), [omega-soft-pascal](dev/omega-soft-pascal/), [pascal](dev/pascal/), [pilot](dev/pilot/), [small-c](dev/small-c/), [splm](dev/splm/), [toolkits](dev/toolkits/), [tsc-pascal](dev/tsc-pascal/).
+Compilers, assemblers, debuggers, emulators, and development tools. MACE material is grouped in [assemblers/mace](dev/assemblers/mace/). Subfolders: [assemblers](dev/assemblers/), [basic](dev/basic/), [compilers-misc](dev/compilers-misc/), [csc](dev/csc/), [debuggers](dev/debuggers/), [disassemblers](dev/disassemblers/), [dyna-c](dev/dyna-c/), [dynasoft-pascal](dev/dynasoft-pascal/), [emulators](dev/emulators/), [forth](dev/forth/), [introl-c](dev/introl-c/), [jcp](dev/jcp/), [linkers-loaders](dev/linkers-loaders/), [lucidata-pascal](dev/lucidata-pascal/), [mark-williams-c](dev/mark-williams-c/), [mccosh-c](dev/mccosh-c/), [omega-soft-pascal](dev/omega-soft-pascal/), [pascal](dev/pascal/), [pilot](dev/pilot/), [small-c](dev/small-c/), [splm](dev/splm/), [toolkits](dev/toolkits/), [TSC COBOL](dev/tsc-cobol/), [TSC FORTRAN](dev/tsc-fortran/), [TSC Pascal](dev/tsc-pascal/).
 
 ### [utilities](utilities/)
 
@@ -75,4 +75,4 @@ Drop location for newly added, not-yet-classified files.
 
 ### [misc](misc/)
 
-OS-9/UniFLEX material, unidentified disk sets, and uncategorized files. Subfolders: [archive-series](misc/archive-series/), [notes](misc/notes/), [os-9](misc/os-9/), [uncategorized](misc/uncategorized/), [uniflex](misc/uniflex/), [work-disks](misc/work-disks/).
+OS-9/UniFLEX material, unidentified disk sets, and uncategorized files. UniFLEX kernel fragments are grouped in [uniflex/sourcecode](misc/uniflex/sourcecode/). Subfolders: [archive-series](misc/archive-series/), [notes](misc/notes/), [os-9](misc/os-9/), [uncategorized](misc/uncategorized/), [uniflex](misc/uniflex/), [work-disks](misc/work-disks/).

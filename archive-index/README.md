@@ -7,13 +7,13 @@ The code at the beginning of a filename is the original archive identifier retai
 | Category | Archives |
 | --- | ---: |
 | [Applications](apps.md) | 201 |
-| [Development tools](dev.md) | 230 |
+| [Development tools](dev.md) | 232 |
 | [FLEX operating system](flex-09.md) | 174 |
 | [Games](games.md) | 8 |
 | [Magazines](magazines.md) | 2 |
 | [Manuals](manuals.md) | 9 |
 | [Miscellaneous and archive series](misc.md) | 361 |
-| [Source code collections](sourcecode.md) | 110 |
+| [Source code collections](sourcecode.md) | 112 |
 | [Utilities](utilities.md) | 96 |
 
-**Total ZIP archives: 1,191.**
+**Total ZIP archives: 1,195.**
