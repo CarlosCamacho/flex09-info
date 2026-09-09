@@ -12,8 +12,8 @@ The code at the beginning of a filename is the original archive identifier retai
 | [Games](games.md) | 8 |
 | [Magazines](magazines.md) | 2 |
 | [Manuals](manuals.md) | 9 |
-| [Miscellaneous and archive series](misc.md) | 361 |
+| [Miscellaneous and archive series](misc.md) | 352 |
 | [Source code collections](sourcecode.md) | 112 |
 | [Utilities](utilities.md) | 96 |
 
-**Total ZIP archives: 1,195.**
+**Total ZIP archives: 1,186.**
