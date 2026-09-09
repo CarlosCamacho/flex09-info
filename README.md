@@ -12,7 +12,7 @@ See the [archive index](archive-index/README.md) for the purpose, disk label, ke
 | [manuals](manuals/) | Generic FLEX manuals and reference material | 25 |
 | [apps](apps/) | End-user applications grouped by product | 201 |
 | [games](games/) | Games grouped by title or type | 8 |
-| [dev](dev/) | Compilers, assemblers, debuggers, emulators, and development tools | 245 |
+| [dev](dev/) | Compilers, assemblers, debuggers, emulators, and development tools | 246 |
 | [utilities](utilities/) | System, disk, editor, diagnostic, and communications utilities | 102 |
 | [newsletters](newsletters/) | FLEX newsletters and user-group publications | 11 |
 | [magazines](magazines/) | Magazine material grouped by publication | 2 |
