@@ -169,16 +169,6 @@ The code at the beginning of each filename is the original archive identifier re
 | [DISK31_2 - MITS Listing and Cross-Reference Utilities.zip](../misc/archive-series/disk/DISK31_2%20-%20MITS%20Listing%20and%20Cross-Reference%20Utilities.zip) | MITS listing and cross-reference utilities | — | DISK31_2.DSK | 1 disk image; FLEX directory unavailable |
 | [DISK32 - FLEX Archive Disk - Source Code and Build Files - Includes ADD, CCZ80, COMPRESS.zip](../misc/archive-series/disk/DISK32%20-%20FLEX%20Archive%20Disk%20-%20Source%20Code%20and%20Build%20Files%20-%20Includes%20ADD%2C%20CCZ80%2C%20COMPRESS.zip) | Source Code and Build Files | BACKUP  SK* | C.H, SED.C, SED.H, CCZ80.C, SPELL.C, SPELL.H | 7 C sources; 7 text/source files; 3 documents; 13 other files |
 
-## `misc/archive-series/uf`
-
-| Archive | Purpose | Disk label | Key files | Contents profile |
-| --- | --- | --- | --- | --- |
-| [UF000001 - UF Archive Disk.zip](../misc/archive-series/uf/UF000001%20-%20UF%20Archive%20Disk.zip) | Disk Image | — | UF000001.DSK | 1 disk image; FLEX directory unavailable |
-| [UF000002 - UF Archive Disk.zip](../misc/archive-series/uf/UF000002%20-%20UF%20Archive%20Disk.zip) | Disk Image | — | UF000002.DSK | 1 disk image; FLEX directory unavailable |
-| [UF000003 - UF Archive Disk.zip](../misc/archive-series/uf/UF000003%20-%20UF%20Archive%20Disk.zip) | Disk Image | — | UF000003.DSK | 1 disk image; FLEX directory unavailable |
-| [UF000004 - UF Archive Disk.zip](../misc/archive-series/uf/UF000004%20-%20UF%20Archive%20Disk.zip) | Disk Image | — | UF000004.DSK | 1 disk image; FLEX directory unavailable |
-| [UF003_1 - UF Archive Disk.zip](../misc/archive-series/uf/UF003_1%20-%20UF%20Archive%20Disk.zip) | Disk Image | — | UF003_1.DSK | 1 disk image; FLEX directory unavailable |
-
 ## `misc/archive-series/volumes`
 
 | Archive | Purpose | Disk label | Key files | Contents profile |
@@ -373,15 +363,6 @@ The code at the beginning of each filename is the original archive identifier re
 | [XFTHTXT - XFORTH Source, Equates, and Test Files.zip](../misc/uncategorized/XFTHTXT%20-%20XFORTH%20Source%2C%20Equates%2C%20and%20Test%20Files.zip) | XFORTH source, equates, and test files | — | XFTHTXT.DSK | 1 disk image; FLEX directory unavailable |
 | [XREF_635 - FLEX Software Archive - Source Code and Build Files - Includes BACKWARD, COM-INP, DATEFUN.zip](../misc/uncategorized/XREF_635%20-%20FLEX%20Software%20Archive%20-%20Source%20Code%20and%20Build%20Files%20-%20Includes%20BACKWARD%2C%20COM-INP%2C%20DATEFUN.zip) | Source Code and Build Files | ESTHER | XREF.BAS, XREF2.BAS, COM-INP.BAS, DATEFUN.BAS, MESSAGA.BAS, MESSAGE.BAS | 1 system file; 10 BASIC sources; 4 text/source files; 5 other files |
 | [XTRTC.zip](../misc/uncategorized/XTRTC.zip) | Disk Image | — | XTRTC.DSK | 1 disk image; FLEX directory unavailable |
-
-## `misc/uniflex`
-
-| Archive | Purpose | Disk label | Key files | Contents profile |
-| --- | --- | --- | --- | --- |
-| [UNIFLEXBOOT.zip](../misc/uniflex/UNIFLEXBOOT.zip) | Disk Image | — | UNIFLEXBOOT.DSK | 1 disk image; FLEX directory unavailable |
-| [UNIFLEXFLOPPYBOOT.zip](../misc/uniflex/UNIFLEXFLOPPYBOOT.zip) | Disk Image | — | UNIFLEXFLOPPYBOOT.DSK | 1 disk image; FLEX directory unavailable |
-| [UOS_3S_BOOT - UniFLEX Software.zip](../misc/uniflex/UOS_3S_BOOT%20-%20UniFLEX%20Software.zip) | Disk Image | — | UOS_3S_BOOT.DSK | 1 disk image; FLEX directory unavailable |
-| [UOS_3S_BOOT_TEST - UniFLEX Software - Diagnostics and Test Disk.zip](../misc/uniflex/UOS_3S_BOOT_TEST%20-%20UniFLEX%20Software%20-%20Diagnostics%20and%20Test%20Disk.zip) | Diagnostics and Test Disk | — | UOS_3S_BOOT_TEST.DSK | 1 disk image; FLEX directory unavailable |
 
 ## `misc/work-disks`
 
