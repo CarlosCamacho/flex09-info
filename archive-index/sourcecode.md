@@ -8,6 +8,7 @@ The code at the beginning of each filename is the original archive identifier re
 
 | Archive | Purpose | Disk label | Key files | Contents profile |
 | --- | --- | --- | --- | --- |
+| [ANDERSON - Ron Anderson 6809 Assembly Chapter Examples and FLEX Utilities.zip](../sourcecode/examples/ANDERSON%20-%20Ron%20Anderson%206809%20Assembly%20Chapter%20Examples%20and%20FLEX%20Utilities.zip) | Ron Anderson 6809 assembly chapter examples and position-independent FLEX utilities | — | Anderson.DSK | 1 disk image; includes LOGO, MEMOVE, DUMP, terminal, printer, and math examples |
 | [Adv_src - Source Code Examples - Source Code and Build Files.zip](../sourcecode/examples/Adv_src%20-%20Source%20Code%20Examples%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | Adv_Src | TURN.C, VERB.C, ADVENT.C, ADVENT.H, ITVERB.C, ENGLISH.C | 7 C sources; 1 document; 1 other file |
 | [CMODEMOR - Source Code Examples - Source Code and Build Files.zip](../sourcecode/examples/CMODEMOR%20-%20Source%20Code%20Examples%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | — | CMODEMOR.DSK | 1 disk image; FLEX directory unavailable |
 | [DS68SRC - Source Code Examples - Source Code and Build Files.zip](../sourcecode/examples/DS68SRC%20-%20Source%20Code%20Examples%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | Disk number:    0 | FLEX.SYS, PIO8OS.BIN, NEWDISK8.CMD, PIO8INCH.BAK, PIO8INCH.BIN, PIO8INCH.TXT | 14 programs; 1 system file; 3 text/source files; 2 binary files; 1 other file |
@@ -24,6 +25,7 @@ The code at the beginning of each filename is the original archive identifier re
 | [SRCE_2 - Source Code Examples - Source Code and Build Files.zip](../sourcecode/examples/SRCE_2%20-%20Source%20Code%20Examples%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | SOURCE | BIOQ.TXT, PAGE4.TXT, COPYNEW.CMD, EDDIEXP.TXT, CAT.CMD, COPY.CMD | 3 programs; 3 text/source files |
 | [TEDSRC - Source Code Examples - Source Code and Build Files.zip](../sourcecode/examples/TEDSRC%20-%20Source%20Code%20Examples%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | Disk number:    0 | TED3_EQU.INC, TED3.BIN, TED3_ASC.TXT, TED3_NEW.BIN, TED3_NEW.TXT, TED3_PT1.BAK | 4 text/source files; 2 binary files; 3 other files |
 | [VEDSRC - Source Code Examples - Source Code and Build Files.zip](../sourcecode/examples/VEDSRC%20-%20Source%20Code%20Examples%20-%20Source%20Code%20and%20Build%20Files.zip) | Source Code and Build Files | VED | CLS.C, MEM.C, SCR.C, VED.C, VED.H, DISP.C | 2 programs; 11 C sources; 3 text/source files; 25 other files |
+| [VEDSRC - VED Screen Editor C Source Disk and User Guide.zip](../sourcecode/examples/VEDSRC%20-%20VED%20Screen%20Editor%20C%20Source%20Disk%20and%20User%20Guide.zip) | VED screen-oriented editor source for Aztec C65 with user documentation | VED | VEDSRC.DSK, VED.TXT | 1 disk image; 1 text user guide; disk image matches the existing VEDSRC source disk |
 
 ## `sourcecode/kn-collection`
 
