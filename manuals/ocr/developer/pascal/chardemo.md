@@ -1,0 +1,67 @@
+# CHARDEMO
+
+> Source: `dev/pascal/PASC6800 - Pascal Language - Program and Support Utilities.zip!PASC6800.DSK!CHARDEMO.TXT`  
+> Method: FLEX disk extraction
+
+The text below preserves the wording and formatter directives found in the historical source. OCR and media-decoding errors may remain.
+
+PROGRAM CHARS ;
+	(* PROGRAM TO DEMONSTRATE PROCESSING
+	OF SINGLE CHARACTERS BY MEANS
+	OF SUBRANGE AND CASE STATEMENTS.
+	SUBRANGE OF BYTE ALSO INCLUDED *)
+VAR
+	CH	: CHAR ;
+	BITE : INTEGER ;
+
+PROCEDURE MESSAGE ;
+BEGIN
+	WRITELN;
+	WRITELN("TYPE ANY CHARACTER - SPACE TO EXIT");
+END;
+
+BEGIN
+	
+	MESSAGE;
+
+	REPEAT
+	WRITE("TYPE A CHARACTER ");
+	READ(CH); WRITE(" : ");
+	IF CH IN [ "A".."Z" ] THEN
+	WRITELN(CH," IS A LETTER") ELSE
+	IF CH IN [ "0".."9" ] THEN
+	WRITELN(CH," IS A DIGIT ") ELSE
+	WRITELN(CH," IS A SPECIAL CHARACTER");
+	UNTIL CH = " " ;
+
+	MESSAGE;
+
+	REPEAT
+	WRITE("TYPE A CHARACTER ");
+	READ(CH); WRITE(" ");
+	IF CH IN [ "A".."E" ] THEN
+	CASE CH OF
+	"A" : WRITELN("ALPHA");
+	"B" : WRITELN("BRAVO");
+	"C" : WRITELN("CHARLIE");
+	"D" : WRITELN("DELTA");
+	"E" : WRITELN("ECHO")
+	END
+	ELSE WRITELN("ETCETERA");
+	UNTIL CH =" ";
+
+	WRITELN; WRITELN("ENTER 0 TO EXIT");
+	REPEAT
+	REPEAT
+		WRITE("ENTER AN INTEGER 0..255 ");
+		READ(BITE);
+	UNTIL (( BITE>=0 ) AND ( BITE < 256 ));
+	IF BITE <> 0 THEN
+	BEGIN
+		IF BITE IN [ 1.. 9] THEN WRITELN("A SINGLE DIGIT") ELSE
+		IF BITE IN [10..99] THEN WRITELN("TWO DIGITS")
+
+ELSE WRITELN("THREE DIGITS");
+	END;
+	UNTIL BITE = 0 ;
+END.

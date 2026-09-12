@@ -1,0 +1,97 @@
+# UCODE-1
+
+> Source: `dev/forth/CC_FORTH - FORTH Language - Program and Support Utilities.zip!CC_FORTH.DSK!UCODE-1.TXT`  
+> Method: FLEX disk extraction
+
+The text below preserves the wording and formatter directives found in the historical source. OCR and media-decoding errors may remain.
+
+* SYLCOD-1
+*
+
+ ORG CODBEG
+
+ORIG JMP CENT
+ JMP WENT
+
+LIT FDB *+2
+ LDD ,Y++
+LIT2 PSHU D
+ NEXT
+
+CLITER FDB *+2
+ LDB ,Y+
+ CLRA
+ BRA LIT2
+
+ FDB LASTNM
+LASTNM SET *
+ FCB $84
+ FCC '"LI'
+ FCB 'T+$80
+QLIT FDB *+2
+* PUSH ADDRESS AND COUNT TO STACK
+ PULS X
+ LDB ,X+
+ CLRA
+ PSHU D,X
+* ADVANCE RETURN ADDRESS TO NEXT INSTRUCTION
+ ABX
+ PSHS X
+ NEXT
+
+ HEADER 6,BRANC,H
+BRAN FDB *+2
+BRAN2 LDD ,Y
+ LEAY D,Y
+ NEXT
+
+ HEADER 7,0BRANC,H
+ZBRAN FDB *+2
+ LDD ,U++
+ BEQ BRAN2
+ZBRAN2 LEAY 2,Y
+ NEXT
+
+XLOOP FDB *+2
+ LDD #1
+XLOOP2 ADDD ,S
+ BVS XLOOP4
+ CMPD 2,S
+ BGE XLOOP4
+XLOOP3 STD ,S
+ LDD ,Y
+ LEAY D,Y
+ NEXT
+
+XPLOOP FDB *+2
+ LDD ,U++
+ BPL XLOOP2
+* LOOP INDEX IS NEGATIVE
+ ADDD ,S
+ BVS XLOOP4
+ CMPD 2,S
+ BGT XLOOP3
+XLOOP4 LEAS 4,S
+ LEAY 2,Y
+ NEXT
+ JMP [,X]
+
+XDO FDB *+2
+ PULU D,X
+ PSHS D,X
+ NEXT
+
+XCASE FDB *+2
+ PULU D
+ CMPD ,U
+ LBNE BRAN2
+ LEAU 2,U
+ BRA ZBRAN2
+
+XQCASE FDB *+2
+ LBSR XCMPAR
+ LBNE BRAN2
+ LEAU 4,U
+ LBRA ZBRAN2
+
+* END OF FILE

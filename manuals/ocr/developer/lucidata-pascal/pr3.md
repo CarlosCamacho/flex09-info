@@ -1,0 +1,29 @@
+# PR3
+
+> Source: `dev/lucidata-pascal/lucidata pascal.zip!LPASC00.zip!LPASC00.DSK!PR3.TXT`  
+> Method: FLEX disk extraction
+
+The text below preserves the wording and formatter directives found in the historical source. OCR and media-decoding errors may remain.
+
+NAM PR
+ TTL PR.OVL V 2.9
+*******
+* THIS OVERLAY IS ALREADY INSTALLED AS DEFAULT
+* IT IS LEFT AS AN EXAMPLE OF LINKING DEVICE DRIVERS
+*******
+*
+* PRINTER OVERLAY TO LINK PRINT.SYS
+* TO LDN #2.
+* RELEASED 31 JAN 80
+*
+PRINT EQU 2 ASSIGN LDN #2 TO PRINTER
+DEVTAB EQU $2000 DEVICE TABLE IS TRANSIENT
+DEVINT EQU $140 DEVICE INITIALISATION ADDRESS
+*
+ ORG DEVINT
+ FDB $CCC0 ADDRESS OF PRINT.SYS INITIALISATION
+*
+ ORG 2*PRINT+DEVTAB
+ FDB $CCE4 ADDRESS OF PRINT.SYS OUTPUT
+*
+ END

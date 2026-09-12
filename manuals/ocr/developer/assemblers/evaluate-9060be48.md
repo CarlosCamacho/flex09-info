@@ -1,0 +1,33 @@
+# EVALUATE
+
+> Source: `dev/assemblers/XASMSRC - Assembler Development - Source Code and Build Files.zip!XASMSRC.DSK!EVALUATE.TXT`  
+> Method: FLEX disk extraction
+
+The text below preserves the wording and formatter directives found in the historical source. OCR and media-decoding errors may remain.
+
+BEQ SKPMNE OVERFOWED-SKIP REST
+ CMPA #$20 AT END YET?
+ BEQ DOPRND YES-DO OPERAND
+ LDX PBPTR POINT TO LINE AGAIN
+ LDAA 0,X
+ JSR CIFEOL
+ INX
+ STX PBPTR UPDATE POINTER
+ BRA MLOOP DO TILL DONE
+*
+SKPMNE LDX PBPTR SKIP SPACES TO OPERAND
+ LDAA 0,X
+ JSR CIFEOLA MSKSAV GET HI MASK
+ LDAB ORVALU
+ CMPB #$06
+ BNE SETIRF
+ RORA
+ BCS SETDUN
+ RORA
+ BCS SETDUN
+SETIRF LDAA #$FF
+ STAA IREGF SET ERROR FLAG
+ BRA SEXIT
+SETDUN CLR IREGF CLR ERROR FLAG
+SEXIT LDAA ORVALU GET OR VALUE
+ RTS

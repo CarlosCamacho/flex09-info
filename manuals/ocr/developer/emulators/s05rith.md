@@ -1,0 +1,305 @@
+# S05RITH
+
+> Source: `dev/emulators/SIM68052 - Emulator Tools - Documentation and Examples.zip!SIM68052.DSK!S05RITH.TXT`  
+> Method: FLEX disk extraction
+
+The text below preserves the wording and formatter directives found in the historical source. OCR and media-decoding errors may remain.
+
+SUB01 LDXI ACC0
+
+SUBXP LDAI PREC
+ STAZ TEM1
+ CLC
+
+SUB1 LDA ,X
+ SBC PREC,X
+ STA ,X
+ INCX
+ DECZ TEM1
+ BNE SUB1
+ RTS
+
+STORE STXZ TEM2
+ LDXI ACC0
+
+MOVE LDAI PREC
+ STAZ TEM1
+
+MOVE1 STXZ TEM4
+ LDA ,X
+
+ LDXZ TEM2
+ STA ,X
+ INCX
+ STXZ TEM2
+
+ LDXZ TEM4
+ INCX
+ DECZ TEM1
+ BNE MOVE1
+ RTS
+
+CLR00 LDXI ACC0
+
+CLRXP LDAI PREC
+
+CLR1 CLR ,X
+ INCX
+ DECA
+ BNE CLR1
+ RTS
+
+BTD LDAI -1 save sign
+ BRCLR 7,ACC0+PREC-1,BTD1
+ BSR NEG00
+ CLRA
+BTD1 STAZ BCDSGN
+
+ LDXI ACC1 ACC1= 10
+ BSR CLRXP
+ LDAI 10
+ STAZ ACC1
+
+ CLRX loop counter
+
+*	MAIN	LOOP
+BTD2 STXZ TEM4
+ BSR DIV
+ LDXZ TEM4
+ LDAZ ACC2
+ STAZ DSPBUF,X
+ INCX
+ CPXI BCDPRC
+ BNE BTD2
+
+* END	MAIN LOOP
+
+ LDAI $A
+ BRSET 0,BCDSGN,BTD3
+ STAZ DSPBUF+BCDPRC-1
+
+BTD3 RTS
+
+MUL BSR MULINT setup SIGNS, & accumulators
+
+ LDAI 8*PREC
+ STAZ TEM2 loop count
+
+*	MAIN LOOP
+MUL1 BSR ASL00 shift product left
+
+ LDXI ACC2 shift multiplier left
+ BSR ASLXP
+
+ BCC MUL2 if carry set, product+multiplicand
+ BSR ADD01
+
+MUL2 DECZ TEM2 loop count
+ BNE MUL1
+*	END	MAIN LOOP
+ BRCLR 0,SIGNS,NEG00 fix sign
+ RTS
+
+ADD01 LDXI ACC0
+
+ADDXP LDAI PREC
+ STAZ TEM1
+ CLC
+
+ADD1 LDA ,X
+ ADC PREC,X
+ STA ,X
+ INCX
+ DECZ TEM1
+ BNE ADD1
+ RTS
+
+MULINT LDAI -1
+ STAZ SIGNS
+
+ BRCLR 7,ACC0+PREC-1,MULIN1
+ INCZ SIGNS
+ BSR NEG00
+
+MULIN1 BRCLR 7,ACC1+PREC-1,MULIN2
+ INCZ SIGNS
+ LDXI ACC1
+ BSR NEGXP
+
+MULIN2 LDXI PREC-1
+
+MULIN3 LDA ACC0,X
+ STA ACC2,X
+ CLR ACC0,X
+ DECX
+ BPL MULIN3
+ RTS
+
+NEG00 LDXI ACC0
+
+NEGXP LDAI PREC
+
+NEG1 NEG ,X
+ BNE COM2
+ INCX
+ DECA
+ BNE NEG1
+ RTS
+
+COMXP LDAI PREC
+COM1 COM ,X
+COM2 INCX
+ DECA
+ BNE COM1
+ RTS
+
+ASL00 LDXI ACC0
+
+ASLXP CLC
+
+ROLXP LDAI PREC
+
+ROL1 ROL ,X
+ INCX
+ DECA
+ BNE ROL1
+ RTS
+
+ROL00 LDXI ACC0
+ BRA ROLXP
+
+DIV BSR MULINT setup signs
+
+* insert test for overrange here	!!!
+
+* left justify divisor & setup loop count
+ CLRZ TEM3
+
+DIV1 INCZ TEM3
+
+* insert test for divisor= 0 here
+* ( loop count too large )
+
+ LDXI ACC1
+ BSR ASLXP
+
+ BRCLR 7,ACC1+PREC-1,DIV1
+
+ LDAZ TEM3 copy loop count
+ INCA
+ STAZ TEM2
+*	MAIN	LOOP
+DIV2 BSR CMP21
+ BHS DIV3 if remainder < divisor
+ CLC clear carry
+ BRA DIV4
+
+DIV3 BSR SUB21 remainder= remainder-divisor
+ SEC & set carry
+
+DIV4 BSR ROL00 rotate carry into quotient
+
+ DECZ TEM2 check loop count
+ BEQ DIV5
+
+ LDXI ACC2 shift remainder left
+ BSR ASLXP
+
+ BCS DIV3 if carry set, repeat from DIV3
+
+ BRA DIV2 repeat main loop
+*	END	MAIN	LOOP
+* loop to restore binary points
+DIV5 LDXI ACC2 right shift remainder
+ BSR LSRXP
+
+ BSR LSRXP right shift divisor
+
+ DECZ TEM3 loop count
+ BNE DIV5
+
+ BRCLR 0,SIGNS,NEG00 fix sign of quotient
+ RTS
+
+CMP21 LDXI ACC1
+
+CMPXP1 LDAI PREC
+
+CMPXA1 STAZ TEM1
+ CLC
+
+CMP1 LDA PREC,X
+ SBC ,X
+ INCX
+ DECZ TEM1
+ BNE CMP1
+ RTS
+
+SUB21 LDXI ACC1
+
+SUBXP1 LDAI PREC
+
+SUBXA1 STAZ TEM1
+ CLC
+
+SUBB1 LDA PREC,X
+ SBC ,X
+ STA PREC,X
+ INCX
+ DECZ TEM1
+ BNE SUBB1
+ RTS
+
+LSR00 LDXI ACC0
+
+LSRXP CLC
+
+RORXP LDAI PREC
+
+ROR1 DECX
+ ROR PREC,X
+ DECA
+ BNE ROR1
+ RTS
+
+ROUND LDXI ACC2 double the remainder
+ BSR ASLXP
+
+ BSR CMP21 compare (ACC2-ACC1)
+
+ BLO ROUND2
+
+ LDXI PREC check for equality
+ROUND1 LDAZ ACC1-1,X
+ SUBZ ACC2-1,X
+ BNE ROUND3
+ DECX
+ BNE ROUND1
+ BRCLR 7,ACC0+PREC-1,INC00 here if equal
+ROUND2 RTS
+ROUND3 BRCLR 7,ACC0+PREC-1,INC00
+
+DEC00 LDXI ACC0
+DECXP LDAI PREC
+ STAZ TEM1
+ SEC
+
+DECLOO LDA ,X
+ SBCI 0
+ STA ,X
+ INCX
+ DECZ TEM1
+ BNE DECLOO
+ RTS
+
+INC00 LDXI ACC0
+INCXP LDAI PREC
+ STAZ TEM1
+ SEC
+INCLOO LDA ,X
+ ADCI 0
+ STA ,X
+ INCX
+ DECZ TEM1
+ BNE INCLOO
+ RTS

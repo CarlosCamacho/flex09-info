@@ -1,0 +1,69 @@
+# GENJCP
+
+> Source: `dev/emulators/JXP6809 - Emulator Tools - Program and Support Utilities.zip!JXP6809.DSK!GENJCP.TXT`  
+> Method: FLEX disk extraction
+
+The text below preserves the wording and formatter directives found in the historical source. OCR and media-decoding errors may remain.
+
+EOFF
+ONERROR BREAK
+RENAME,JCPEQU.TXT,TMPEQU
+*
+*	CALL THE EDITOR
+*
+EDIT TMPEQU,JCPEQU
+*
+*	SEE WHAT NEEDS TO BE CHANGED
+*
+IFN %1=
+%9=%1
+%8=PART2
+%7=B0
+CALL CHANGE
+%8=PAGE
+CALL CHANGE
+ELSE
+IFN %2=
+%9=%2
+%8=PLIMIT
+%7=9
+CALL CHANGE
+ELSE
+IFN %3=
+%9=%3
+%8=PSIZE
+%7=20
+CALL CHANGE
+ELSE
+*
+*	LEAVE EDITOR
+*
+S
+*
+*	CHECK IF ASSEMBLY NECESSARY
+*
+IFSET GOTO ASMB
+EON
+*
+*	ASSEMBLY NOT NECESSARY
+*
+DELETE,JCPEQU.TXT
+:YY
+GOTO RENAME
+*
+*	ASSEMBLE PROGRAM
+*
+. ASMB
+ASMB,JCP,JCP1.CMD,+LS
+RENAME,JCPEQU.TXT,JCPEQU1
+. RENAME
+RENAME,TMPEQU.TXT,JCPEQU
+END
+*
+*
+. CHANGE
+SET
+T
+F/%8
+C/%7/%9/
+RETURN

@@ -1,0 +1,54 @@
+# EASTER
+
+> Source: `dev/pascal/PASC6800 - Pascal Language - Program and Support Utilities.zip!PASC6800.DSK!EASTER.TXT`  
+> Method: FLEX disk extraction
+
+The text below preserves the wording and formatter directives found in the historical source. OCR and media-decoding errors may remain.
+
+PROGRAM EASTER	;
+(* A PROGRAM TO CALCULATE THE DATE OF EASTER
+	IN EACH OF SEVERAL YEARS.
+	ADAPTED FROM A PROGRAM BY URS AMMAN
+	( SOFTWARE PRACTICE + EXPERIENCE, VOL 7, NO 3, P 419 )
+	USING THE ALGORITHM GIVEN BY DONALD KNUTH
+	IN " THE ART OF COMPUTER PROGRAMMING " VOL 1 *)
+CONST
+	LIM1 = 1978 ; LIM2 = 2000 ;
+VAR
+	YEAR : INTEGER ;
+FUNCTION MODFN (J,K:INTEGER):INTEGER;
+BEGIN
+	MODFN:=J-(J DIV K) * K ;
+END;
+PROCEDURE DATEOFEASTER ( Y : INTEGER );
+VAR
+	N,M,G,C,X,Z,D,E : INTEGER ;
+BEGIN
+	G:=MODFN(Y,19)+1;
+	C:=Y DIV 100 +1;
+	X:=3*C DIV 4-12;
+	Z:=(8*C+5) DIV 25 -5;
+	D:=5*Y DIV 4-X-10;
+	E:=(11*G+20+Z-X);
+	E:=MODFN(E,30);
+	IF E<0 THEN E:=E+30;
+	IF (E<25) AND (G>11) OR (E=24) THEN E:=E+1;
+	N:=44-E;
+	IF N<21 THEN N:=N+30;
+	N:=N+7-MODFN(D+N,7);
+	IF N>31 THEN
+	BEGIN
+		N:=N-31;
+		M:=4;
+	END
+	ELSE M:=3;
+	WRITE(N);
+	IF M=3 THEN WRITE(" MARCH")
+
+ELSE WRITE(" APRIL");
+	WRITELN(Y);
+END; (* OF DATE OF EASTER *)
+BEGIN
+	FOR YEAR:=LIM1 TO LIM2 DO
+	DATEOFEASTER(YEAR);
+END.
