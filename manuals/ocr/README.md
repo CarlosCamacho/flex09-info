@@ -55,6 +55,8 @@ OCR and searchable transcriptions from the FLEX manuals stored in this repositor
 
 - [Original screenshot reference pages](reference/)
 - [Complete FLEX manual transcriptions](reference-manuals/)
+- [Developer documentation and archived source notes](developer/)
+- [Color FLEX, O-FLEX, newsletters, and documentation volumes](additional-manuals/)
 
 ## Source handling
 
