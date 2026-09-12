@@ -16,3 +16,26 @@ extension of .TXT . The file's directory entry is changed to reflec
 the current date. UPDATE does not alter the contents of the fil
 itself.
 
+
+## 1979 FLEX User’s Manual version
+
+_Source: FLEX User’s Manual (Technical Systems Consultants), alternate scan._
+
+UPDATE
+
+The UPDATE utility enables the user to change the date in a file's
+directory entry to the "current date".
+
+DESCRIPTION
+The general synatax of the UPDATE command is:
+
+UPDATE, <filespec>
+Where <filespec> is the name of the file for which the date is to
+be changed. If the file extension is not specified, UPDATE
+defaults to an extension of .TXT . The file's directory entry is
+
+changed to reflect the current date. UPDATE does not alter the
+contents of the file itself.
+
+-U.1.1-
+

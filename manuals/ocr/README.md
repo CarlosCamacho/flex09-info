@@ -1,6 +1,6 @@
 # FLEX/09 Manual OCR
 
-The screenshots were transcribed in the manual page flow: ascending capture time. The supplied filenames display in descending order in many file browsers, so the sequence was reversed before grouping continuation pages.
+OCR and searchable transcriptions from the FLEX manuals stored in this repository. Each utility command has its own Markdown file.
 
 ## Command documents
 
@@ -28,16 +28,34 @@ The screenshots were transcribed in the manual page flow: ascending capture time
 - [VERIFY](commands/22-verify.md)
 - [YEAR](commands/23-year.md)
 - [ZAP](commands/24-zap.md)
+- [APPEND](commands/25-append.md)
+- [ASN](commands/26-asn.md)
+- [BUILD](commands/27-build.md)
+- [CMPBIN](commands/28-cmpbin.md)
+- [DATE](commands/29-date.md)
+- [DCOPY](commands/30-dcopy.md)
+- [EXEC](commands/31-exec.md)
+- [FREEMAP](commands/32-freemap.md)
+- [I](commands/33-i.md)
+- [JUMP](commands/34-jump.md)
+- [LINK](commands/35-link.md)
+- [LIST](commands/36-list.md)
+- [NAME](commands/37-name.md)
+- [N](commands/38-n.md)
+- [O](commands/39-o.md)
+- [P](commands/40-p.md)
+- [SAVE](commands/41-save.md)
+- [TTYSET](commands/42-ttyset.md)
+- [UNSNARL](commands/43-unsnarl.md)
+- [VERSION](commands/44-version.md)
+- [XOUT](commands/45-xout.md)
+- [Y](commands/46-y.md)
 
 ## Reference documents
 
-- [Disk Files and Their Names](reference/01-disk-files-and-names.md)
-- [General System Information](reference/02-general-system-information.md)
-- [System Error Numbers](reference/03-system-error-numbers.md)
-- [Booting the FLEX Disk Operating System](reference/04-booting-flex.md)
-- [System Memory Map](reference/05-system-memory-map.md)
-- [Operating System Input/Output Subroutines](reference/06-operating-system-io-subroutines.md)
+- [Original screenshot reference pages](reference/)
+- [Complete FLEX manual transcriptions](reference-manuals/)
 
-## OCR note
+## Source handling
 
-The EXTRACT screenshot begins with a continuation/example; no introductory EXTRACT page was present in the archive. The two FREE screenshots contain duplicate versions of the same command page and are retained together in `04-free.md`.
+Duplicate scans were consolidated. Existing command files were retained and extended when the complete 1979 User’s Manual supplied another version of the same command.
