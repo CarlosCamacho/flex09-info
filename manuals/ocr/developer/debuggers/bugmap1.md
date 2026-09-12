@@ -1,0 +1,47 @@
+# BUGMAP1
+
+> Source: `dev/debuggers/BUGS - Debugger Tools - Program and Support Utilities.zip!BUGS.DSK!BUGMAP1.TXT`  
+> Method: FLEX disk extraction
+
+The text below preserves the wording and formatter directives found in the historical source. OCR and media-decoding errors may remain.
+
+LDX PC1
+ STAA 0,X
+C2 JMP MONITOR
+PRINTS LDAB 0,X
+ LDAA 1,X
+ ADDA #7
+ ADCB #0
+ STAB TEMP
+ STAA TEMP+1
+ LDX #TEMP
+ JMP OUT4HS
+*
+DISSA JSR BAD2
+ CLR TFLAG
+ BRA DISS
+*
+TRACE LDX #SFE
+ STX SWI
+ JSR BAD2
+ JSR PCRLF
+ LDX SP
+ LDAB INXMSB
+ STAB 6,X
+ LDAA INXLINT A
+ JSR OUTEEE :CARR RET
+ LDAA #$A :AND A
+ JSR OUTEEE :LINE FEED
+ LDX #IRSAVE POINT TO SAVED ADDR
+ JSR OUT4HS PRINT ADDR
+ LDX IRSAVE RESTORE IR
+ RTS
+*
+* PRINT LITERALS
+*
+FROM FCB $D,$A
+ FCC /SEARCH FROM /
+ FCB 4
+ONEALL FCB $D,$A
+ FCC /ONE(1) OR ALL(HGIRIKTJK@J
+HIMVM[IJ0JJFJQ DJFKJ]1H~2Hm&r*`cOILNINOxHOHYHTHH

@@ -1,0 +1,77 @@
+# ORIGIN
+
+> Source: `dev/forth/X-forth.zip!x4th8cor.zip!x4th8cor.dsk!ORIGIN.TXT`  
+> Method: FLEX disk extraction
+
+The text below preserves the wording and formatter directives found in the historical source. OCR and media-decoding errors may remain.
+
+* ORIGIN CODE COMMON TO 6800 AND 6809
+* THE FOLLOW CODE IS COMMON TO BOTH CPU'S
+* 6800 ORG IS $100
+* 6809 ORG IS $0
+
+        ORG    CODBEG
+
+ORIG    BRA    START
+VN      FCB    10
+MSG1    FCC    'X-FORTH       VERSION 1.0'
+        FCB    4
+MSG2    FCC    'DISTRIBUTED BY FRANK HOGG '
+        FCC    'LABORATORY, INC.'
+        FCB    4
+MSG3    FCC    '(C) COPYRIGHT 1981 BY '
+        FCC    'CHARLES E. EAKER'
+        FCB    4
+
+START   INC    SWITCH
+        JSR    PCRLF
+        LDX    #MSG1
+        JSR    PSTRNG
+        LDX    #MSG2
+        JSR    PSTRNG
+        LDX    #MSG3
+        JSR    PSTRNG
+        JSR    PCRLF
+        DEC    SWITCH
+        LDA A  TTYWID
+        STA A  WIDSAV
+        JMP    CENT
+
+WIDSAV  FCB    0
+
+
+* SYSTEM PARAMETERS
+
+SYSVAR  FDB    TEMPS
+
+PRMORG  EQU    *
+CPUTYP  FDB    CPU       6800 OR 6809
+CFCOLD  FDB    ABORT     CFA OF FIRST COLD WORD
+CFWARM  FDB    QUIT      CFA OF FIRST WARM WORD
+PABORT  FDB    0         CFA OF OPTIONAL ERROR ROUTINE
+PPKEY   FDB    PKEY      GETCHAR ROUTINE, NO ECHO
+PPTERM  FDB    PQTERM    CHECK KEYPRESSED ROUTINE
+PINIT   FDB    PRINIT    PRINTER INIT ROUTINE
+POUT    FDB    POUTCH    PRINTER OUT ROUTINE
+TRMWID  FDB    79        TERMINAL WIDTH
+PTRWID  FDB    79        PRINTER WIDTH
+DIRSIZ  FDB    128       NUMBER OF DIR BYTES
+NUMBUF  FDB    2         NUMBER OF BUFFERS
+RETSIZ  FDB    64       RETURN STACK SIZE
+INSIZ   FDB    64       INPUT LINE SIZE
+EKOFLG  FDB    0         INPUT ECHO FLAG
+TRMEKO  FDB    0         OUTPUT ECHO FLAG
+CCFLAG  FDB    0         CONTROL CODE IN FLAG
+CCOUT   FDB    0         CONTROL CODE OUT FLAG
+CCEMIT  FDB    $7C
+BSCHAR  FDB    BL        BACKSPACE CHARATER
+BELCHR  FDB    7         BELL CHARACTER
+ACIA    FDB    FACIA
+XREG    FDB    0         X CONTENTS FOR JSR
+DREG    FDB    0         A&B CONTENTS FOR JSR
+CCREG   FDB    0
+ORGEND  EQU    *-2
+
+DFAULT  FCC    'FTH'
+
+* END OF FILE

@@ -1,0 +1,63 @@
+# EIGHTQ
+
+> Source: `dev/pascal/PASC6800 - Pascal Language - Program and Support Utilities.zip!PASC6800.DSK!EIGHTQ.TXT`  
+> Method: FLEX disk extraction
+
+The text below preserves the wording and formatter directives found in the historical source. OCR and media-decoding errors may remain.
+
+PROGRAM EIGHTQUEENS ;
+	(* A PROGRAM TO FIND ALL 92 SOLUTIONS TO THE EIGHT QUEENS PROBLEM
+
+ADAPTED FROM THE VERSIONS PUBLISHED IN
+
+1. ALGORITHMS + DATA STRUCTURES = PROGRAMS ( NIKLAUS WIRTH )
+	PUBLISHED BY PRENTICE HALL
+
+2. STRUCTURED PROGRAMMIING ( DAHL,DIJKSTRA,HOARE )
+	PUBLISHED BY ACADEMIC PRESS
+*)
+VAR
+	I,N	: INTEGER ;
+	COL	: ARRAY [ 1.. 8 ] OF BOOLEAN ;
+	DOWN	: ARRAY [ 2..16 ] OF BOOLEAN ;
+	UP	: ARRAY [-7..+7 ] OF BOOLEAN ;
+	X	: ARRAY [ 1.. 8 ] OF INTEGER ;
+	ANSWER: CHAR ;
+	PRINTING : BOOLEAN ;
+PROCEDURE REPORT ;
+	VAR
+	K : INTEGER ;
+	BEGIN
+	N:=N+1; WRITE(N:3,":":3);
+	FOR K:= 1 TO 8 DO WRITE(X[K]:5);
+	WRITELN;
+	END;
+PROCEDURE TRY ( I : INTEGER ) ;
+	VAR
+	J : INTEGER ;
+	BEGIN
+	FOR J:= 1 TO 8 DO
+	IF COL [	J] THEN
+	IF DOWN[I+J] THEN
+	IF UP	[I-J] THEN
+	BEGIN
+		X[I]:=J;
+		COL [	J]:=FALSE;
+		DOWN[I+J]:=FALSE;
+		UP	[I-J]:=FALSE;
+		IF I<8 THEN TRY(I+1) ELSE IF PRINTING THEN REPORT;
+		COL [	J]:=TRUE;
+		DOWN[I+J]:=TRUE;
+		UP	[I-J]:=TRUE;
+	END;
+	END (* TRY *) ;
+BEGIN
+	WRITE("SOLUTIONS TO BE PRINTED ? Y/N ");
+	READ(ANSWER); PRINTING:=ANSWER="Y"; WRITELN;
+	N:=0;
+	FOR I:= 1 TO	8 DO COL [I]:=TRUE;
+	FOR I:= 2 TO 16 DO DOWN[I]:=TRUE;
+	FOR I:=-7 TO	7 DO UP	[I]:=TRUE;
+	TRY(1);
+	WRITELN("SEARCH COMPLETED");	
+END.

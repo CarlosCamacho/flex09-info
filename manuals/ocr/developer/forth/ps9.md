@@ -1,0 +1,139 @@
+# PS9
+
+> Source: `dev/forth/CC_FORTH - FORTH Language - Program and Support Utilities.zip!CC_FORTH.DSK!PS9.TXT`  
+> Method: FLEX disk extraction
+
+The text below preserves the wording and formatter directives found in the historical source. OCR and media-decoding errors may remain.
+
+TTL	FLEX PUNCH & LOAD S9 RECORDS
+*
+PORTAD EQU	$E060	PORT ADDRESS OF RECEIVED DATA
+FLEXPT EQU	$E005	FLEX I/O PORT
+WARMS	EQU	$CD03
+GETHEX EQU	$CD42
+*
+******************************************************
+*
+* PUNCH ASCII DATA TO TAPE
+* STANDARD MOTOROLA S1 FORMAT, S9 SENT AT END OF FILE
+*
+******************************************************
+*
+	ORG	$C100
+*
+PUNCH	JSR	INITPT
+	LEAU	PEND,PCR	WORK STORAGE
+	JSR	GETHEX	START ADDRESS
+	BCS	OUT
+	STX	U
+	JSR	GETHEX	END ADDRESS
+	BCS	OUT
+	STX	2,U
+	LDD	2,U
+	ADDD	#1
+	SUBD	U
+	STD	4,U	SAVE TOTAL BYTE COUNT
+*
+PNCH12 LDX	0,U
+PUN11	LDD	4,U
+	CMPD	#16
+	BCS	PUN23
+PUN22	LDB	#16
+PUN23	STB	6,U
+	ADDB	#3	PLUS 2 BYTE ADDR, 1 BYTE CHECKSUM
+	STB	7,U
+*
+* PUNCH CR/LF, NULLS AND S1
+*
+	LDX	#MTAPE
+	JSR	PDATA
+	CLRB
+*
+* PUNCH FRAME COUNT
+*
+	LEAX	7,U
+	JSR	OUT2H
+*
+* PUNCH ADDRESS
+*
+	LEAX	0,U
+	JSR	OUT2H	PUNCH 2 HEX CHARACTERS
+	JSR	OUT2H
+*
+* PUNCH DATA
+*
+PUN32	LDX	0,U
+PUN32A JSR	OUT2H
+	DEC	6,U
+	BNE	PUN32A
+	STX	0,U
+	LDX	4,U
+	LEAX	-16,X
+	STX	4,U
+	COMB
+	PSHS	B
+	TFR	S,X
+	JSR	OUT2H	PUNCH CHECKSUM
+	PULS	B		RESTORE STACK POINTER
+	LDX	4,U
+	BEQ	S9DONE
+	BPL	PNCH12
+*
+S9DONE LEAX	ENDLIN,PCR
+	JSR	PDATA
+	LDA	#'S
+	JSR	OUTEEE
+	LDA	#'9
+	JSR	OUTEEE
+OUT	JMP	WARMS
+*
+MTAPE	FCC	$D,$A,0,0,0,0,'S1',4
+ENDLIN FCB	$D,$A,0,0,0,0,4
+*
+PDATA	LDA	,X+
+	CMPA	#4
+	BEQ	OUT1
+	JSR	OUTEEE
+	BRA	PDATA
+OUT1	RTS
+*
+OUT2H	LDA	,X
+	PSHS	A
+	ADDB	,S+
+	ANDA	#$F0
+	LSRA
+	LSRA
+	LSRA
+	LSRA
+	ADDA	#'0
+	CMPA	#'9
+	BLS	OUT2
+	ADDA	#7
+OUT2	JSR	OUTEEE
+	LDA	,X+
+	ANDA	#$F
+	ADDA	#'0
+	CMPA	#'9
+	BLS	OUTEEE
+	ADDA	#7
+*
+OUTEEE LDY	#PORTAD
+	PSHS	B
+OUTEE1 LDB	,Y
+	BITB	#2
+	BEQ	OUTEE1
+	STA	1,Y
+	STA	FLEXPT
+	PULS	B,PC
+*
+INITPT LDY	#PORTAD
+	LDD	#$0315
+	STA	Y
+INIT	INCA
+	BNE	INIT
+	STB	Y
+	RTS
+*
+PEND	EQU	*
+*
+	END	PUNCH

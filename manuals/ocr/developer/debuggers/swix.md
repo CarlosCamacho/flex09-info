@@ -1,0 +1,71 @@
+# SWIX
+
+> Source: `dev/debuggers/BUGS - Debugger Tools - Program and Support Utilities.zip!BUGS.DSK!SWIX.TXT`  
+> Method: FLEX disk extraction
+
+The text below preserves the wording and formatter directives found in the historical source. OCR and media-decoding errors may remain.
+
+10
+ FDB HCOPY
+TBLEND FCB 'Z
+ FDB PROM
+*
+HCOPY LDAA #$FF
+ STAA PFLAG
+ COM PRNTFLG
+ INS
+ INS
+ JMP GETCMD
+*
+MOVE JSR LIMITS
+ LDX #TOADD
+ JSR BAD1
+ LDX BEGA
+ DEX
+MOVE1 INX
+ LDAA 0,X
+ STX BEGA
+ LDX INXMSB
+ STAA 0,X
+ INX
+ STX INXMSB
+ LDX BEGA
+ CPX ENDA
+ BNE :SHOW END OF STRING
+RETN1 RTS
+*
+* GET A HEX BYTE
+*
+GETHEX BSR GETDIG GET A DIGIT
+ CMPA #$0F WAS IT HEX?
+ BGT RETN2 :JUMP IF NOT
+ ASLA MOVE
+ ASLA :CHAR
+ ASLA :4 BITS
+ ASLA :TO LEFT
+ TAB :AND SAVE IN B REG
+ BSR GETDIG GET ANOTHER
+ CMPA #$0F WAS IT HEX?
+ OADDR+$4
+PROM	EQU	$C000
+STKORG	EQU	RAM+$78
+*
+LOADADR EQU	$A100
+LOADCNT EQU	$0100
+*
+*
+	PAG
+*
+	ORG	$E000
+*
+	ORG	$E03F
+LDABRT	LDAA	#$3F
+	BSR	OUTCH
+	RTS
+*
+	ORG	$E047
+BADDR	BSR	BYTE
+	STAA	INXMSB
+	BSR	BYTE
+	STAA	INXLSB
+	LDX	INXMSB    ARE YOU SURE? STARTUPTXT!

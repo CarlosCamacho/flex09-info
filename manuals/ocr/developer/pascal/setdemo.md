@@ -1,0 +1,72 @@
+# SETDEMO
+
+> Source: `dev/pascal/PASC6800 - Pascal Language - Program and Support Utilities.zip!PASC6800.DSK!SETDEMO.TXT`  
+> Method: FLEX disk extraction
+
+The text below preserves the wording and formatter directives found in the historical source. OCR and media-decoding errors may remain.
+
+PROGRAM SETS ; (* PROGRAM TO DEMONSTRATE SET OPERATIIONS *)
+TYPE
+	PEOPLE = ( ANN,BILL,CHARLES,DAVID,EVE,FRED );
+	GROUP	= SET OF PEOPLE ;
+VAR
+	BLUEEYES,BROWNEYES,
+	MALE,FEMALE,BOYS,MEN,GIRL,LADY : GROUP ;
+
+PROCEDURE SHOW ( NAMETEXT : ALFA ; PERSONS : GROUP ) ;
+	VAR
+	NAME : PEOPLE ; DONE : BOOLEAN ;
+	BEGIN
+	WRITE(NAMETEXT," INCLUDES ");
+	NAME:=ANN;
+	DONE:=FALSE;
+	REPEAT
+		IF NAME IN PERSONS THEN
+		CASE NAME OF
+	ANN	: WRITE("ANN ");
+	BILL	: WRITE("BILL ");
+	CHARLES: WRITE("CHARLES ");
+	DAVID	: WRITE("DAVID ");
+	EVE	: WRITE("EVE ");
+	FRED	: WRITE("FRED	")
+		END;
+		IF NAME <> FRED THEN NAME:=SUCC(NAME)
+	ELSE DONE:=TRUE;
+	UNTIL DONE ;
+	WRITELN;
+	END;
+
+BEGIN
+
+	(* EXAMPLES OF SET CREATION/ASSIGNMENTS,
+	UNION AND DIFFERENCE *)
+
+	MALE	:= [ BILL,CHARLES,DAVID,FRED ] ;
+	FEMALE:= [ ANN,EVE ] ;
+	BOYS	:= [ BILL,CHARLES ] ;
+	MEN	:= MALE - BOYS ;
+	GIRL	:= [ ANN ] ;
+	LADY	:= [ EVE ] ;
+	BLUEEYES := [ ANN,CHARLES,FRED ] ;
+	BROWNEYES:= MALE + FEMALE - BLUEEYES ;
+	
+	WRITELN;
+
+	SHOW ( "MALE	",MALE	);
+	SHOW ( "FEMALE",FEMALE);
+	SHOW ( "BOYS	",BOYS	);
+	SHOW ( "MEN	",MEN	);
+	SHOW ( "GIRL	",GIRL	);
+	SHOW ( "LADY	",LADY	);
+
+	WRITELN;	(* SET INTERSECTION EXAMPLES *)
+
+	SHOW("M.BLUE", MALE * BLUEEYES);
+	SHOW("M.BROW", MALE * BROWNEYES);
+	SHOW("F.BLUE", FEMALE * BLUEEYES);
+	SHOW("F.BROW", FEMALE * BROWNEYES);
+
+	IF GIRL = FEMALE * BLUEEYES (* SET EQUALITY TEST *)
+
+THEN WRITE(" IT'S ANN");
+END.

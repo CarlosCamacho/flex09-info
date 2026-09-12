@@ -1,0 +1,48 @@
+# WORDCNT
+
+> Source: `dev/emulators/JXP6809 - Emulator Tools - Program and Support Utilities.zip!JXP6809.DSK!WORDCNT.TXT`  
+> Method: FLEX disk extraction
+
+The text below preserves the wording and formatter directives found in the historical source. OCR and media-decoding errors may remain.
+
+ONERROR BREAK
+*
+*	PROCESS THE TEXT FILE
+*	WITH THE WORD PROCESSOR
+*
+O,%1.TMP1,PR,%2
+
+*
+*	CALL THE TYPOS UTILITY
+*
+O,%1.TMP2,TYPOS,%1.TMP1.OUT
+DELETE,%1.TMP1.OUT
+:YY
+*
+*	CALL THE SORT UTILITY
+*
+CSORT,%1.TMP2.OUT,%1.TMP3,+(1)6-16,+(1)6-*,(1)3-5
+DELETE,%1.TMP2.OUT
+:YY
+*
+*	LOAD BASIC AND ENTER THE PROGRAM
+*
+BASIC
+50	OPEN "0.PRINT" AS 0:C1=0:ONERROR GOTO 500
+100 INPUT "ENTER FILESPEC",L1$:OPEN OLD L1$ AS 1
+200 INPUT #1,L1$:PRINT #0,TAB(C1*20);L1$;
+300 IF C1=3 THEN C1=0:PRINT #0:GOTO 200
+400 C1=C1+1:GOTO 200
+500 PRINT #0:END
+*
+*	RUN THE PROGRAM AND ENTER THE DATA
+*
+RUN
+%1.TMP3.TXT
+*
+*	RETURN TO FLEX AND END PROCEDURE
+*
+FLEX
+DELETE,%1.TMP3.TXT
+:YY
+END

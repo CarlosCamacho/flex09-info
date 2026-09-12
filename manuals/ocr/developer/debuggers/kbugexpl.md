@@ -1,0 +1,23 @@
+# KBUGEXPL
+
+> Source: `dev/debuggers/KBUG - Debugger Tools - Programs, Source, and Build Files.zip!KBUG.DSK!KBUGEXPL.TXT`  
+> Method: FLEX disk extraction
+
+The text below preserves the wording and formatter directives found in the historical source. OCR and media-decoding errors may remain.
+
+Y GET NEXT CHAR
+ AND.B #$BF,D0 CLR 7TH BIT
+ OR.B #$80,D0 SET 8TH BIT
+ RTS
+
+*ROUTINE TO INPUT & ECHO
+
+GETKEY BSR CINPUT
+ BRA OUTT
+
+GETCNE BSR CINPUT GET CAPS NO ECHO
+MAKCAP CMP.B #$61,D0 LOWER CASE
+ BCS.S GTCAPX
+ CMP.B #$7B,D0
+ BCC.S GTCAPX
+ AND.B #$5F,AugSepOctNovDecBadDRIVE NOT READYTHE FILE OR DISK IS WRITE PROTECTEDDISK FILE WRITE ERRORSECTOR NOT FOUNDCRC READ ERRORSYNTAX ERRORFILE NOT FOUNDRECORD NUMBER MA:TCH ERROR - FILE DAMAGEDILLEGAL LINK TO DIRECTORY SECTOR

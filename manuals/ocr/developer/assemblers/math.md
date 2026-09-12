@@ -1,0 +1,108 @@
+# MATH
+
+> Source: `dev/assemblers/RA68NO2 - Assembler Development - Documentation and Examples.zip!RA68NO2.DSK!MATH.TXT`  
+> Method: FLEX disk extraction
+
+The text below preserves the wording and formatter directives found in the historical source. OCR and media-decoding errors may remain.
+
+TTL MATH
+ PAG
+*
+* THIS IS THE MATH PACKAGE
+*
+MPY16 PSHB
+ PSHA
+ LDAA 1,X
+ PSHA
+ LDAA 0,X
+ PSHA
+ LDAA #16
+ PSHA
+ TSX
+ LDAA 3,X
+MPY163 ASLB
+ ROLA
+ ASL 2,X
+ ROL 1,X
+ BCC MPY167
+ ADDB 4,X
+ ADCA 3,X
+MPY167 DEC 0,X
+ BNE MPY163
+ INS
+ INS
+ INS
+ INS
+ INS
+ RTS
+*
+DIV16 PSHB
+ PSHA
+ LDAA 0,X
+ LDAB 1,X
+ PSHB
+ PSHA
+ DES
+ TSX
+ LDAA #1
+ TST 1,X
+ BMI DIV153
+DIV151 INCA
+ ASL 2,X
+ ROL 1,X
+ BMI DIV153
+ CMPA #17
+ BNE DIV151
+DIV153 STAA 0,X
+ LDAA 3,X
+ LDAB 4,X
+ CLR 3,X
+ CLR 4,X
+DIV163 SUBB 2,X
+ SBCA 1,X
+ BCC DIV165
+ ADDB 2,X
+ ADCA 1,X
+ CLC
+ BRA DIV167
+DIV165 SEC
+DIV167 ROL 4,X
+ ROL 3,X
+ LSR 1,X
+ ROR 2,X
+ DEC 0,X
+ BNE DIV163
+ STAA 0,X
+ STAB 1,X
+ LDX 0,X
+ INS
+ INS
+ INS
+ PULA
+ PULB
+ RTS
+*
+ADD16 PSHA
+ PSHB
+ LDAA 1,X
+ LDAB 0,X
+ ADDA 3,X
+ ADCB 2,X
+ STAA 1,X
+ STAB 0,X
+ PULB
+ PULA
+ RTS
+*
+SUB16 PSHA
+ PSHB
+ LDAA 1,X
+ LDAB 0,X
+ SUBA 3,X
+ SBCB 2,X
+ STAA 1,X
+ STAB 0,X
+ PULB
+ PULA
+ RTS
+*
