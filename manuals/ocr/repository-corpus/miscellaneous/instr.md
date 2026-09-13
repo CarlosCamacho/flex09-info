@@ -1,0 +1,25 @@
+# INSTR
+
+> Source: `misc/uncategorized/SUBRTNS - Program and Support Utilities.zip!SUBRTNS.DSK!INSTR.TXT`  
+> Method: FLEX disk extraction
+
+OCR and media-decoding errors may remain.
+
+*SUBR TO INPUT A STRING FROM SCREEN
+*WILL RETURN ON FIRST NON ASCII CHR
+
+INSTR	BSR	BYPASS	SKIP CONTROL CHRS
+INSTR1 CMPA	#$20
+	BLO	IN1X	NOT ASCII
+	STA	0,X+
+	JSR	INPUT
+	BRA	INSTR1
+
+*SUBR TO BYPASS SPECIAL CNTL SIGS
+
+BYPASS JSR	INPUT
+	CMPA	#$0D
+	BEQ	IN1X
+	CMPA	#$20
+	BLO	BYPASS
+	RTS

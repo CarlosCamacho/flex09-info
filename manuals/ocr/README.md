@@ -57,6 +57,7 @@ OCR and searchable transcriptions from the FLEX manuals stored in this repositor
 - [Complete FLEX manual transcriptions](reference-manuals/)
 - [Developer documentation and archived source notes](developer/)
 - [Color FLEX, O-FLEX, newsletters, and documentation volumes](additional-manuals/)
+- [Repository-wide FLEX/09 documentation corpus](repository-corpus/)
 
 ## Source handling
 

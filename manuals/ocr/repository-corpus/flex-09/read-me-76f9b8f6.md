@@ -1,0 +1,20 @@
+# READ-ME
+
+> Source: `flex-09/distributions/GIMIX_FL - FLEX Operating System - Program and Support Utilities.zip!GIMIX_FL.DSK!READ-ME.TXT`  
+> Method: FLEX disk extraction
+
+OCR and media-decoding errors may remain.
+
+BILL.
+ HERE IS A COMMENTED SOURCE FOR GIMIX FLEX. I WILL SHARE IT WITH YOU.
+ I HOPE IT IS OF SOME USE TO YOU.
+
+ TO ASSEMBLE THESE SOURCE FILES TO GIMIX FLEX:-
+
+ APPEND,FLEXGMX1,FLEXGMX2,FLEXGMX3,FLEX4G
+
+ THEN:-
+ ASMB,FLEX4G,FLEX4G.SYS +W
+
+
+ REGARDS, DENNIS

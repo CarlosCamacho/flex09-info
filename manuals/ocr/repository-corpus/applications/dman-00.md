@@ -1,0 +1,267 @@
+# DMAN-00
+
+> Source: `apps/dataman/DMMAN - DataMan Database - Documentation and Examples.zip!DMMAN.DSK!DMAN-00.TXT`  
+> Method: FLEX disk extraction
+
+OCR and media-decoding errors may remain.
+
+.NR X 0
+.NF
+.LM 5
+.DB
+0.0.0
+.DB
+INDEX FOR DATAMAN MANUAL
+.FI
+.LM 30
+.SP3
+.NF
+1.0.0	Software Warranty and Regestration
+.lm42
+1.1.0	Registration
+.sp
+.lm30
+2.0.0	Hardware & Software Requirements for DATAMAN
+.lm42
+2.1.0	Hardware Requirements
+2.2.0	Software Requirements
+.sp
+.lm30
+3.0.0	Introduction of Database Management
+.sp
+4.0.0	Overview of the DATAMAN Programs
+.lm42
+4.1.0	DATAMAN Menu (DATAMAN)
+4.2.0	Database Create (BSDMAN)
+4.3.0	File Maintenance (ETDMAN)
+4.4.0	Verify Database (VERYDMAN)
+4.5.0	Data Dump (DPDMAN)
+4.6.0	TSC Sort Editor (ETDMAN)
+4.7.0	Select/Delete Program (SRFDMAN)
+4.8.0	Lookup Program (FINDMAN)
+4.9.0	Restore Select Flag Program (RESTDMAN)
+4.10.0	Remove Deleted Records (PACKDMAN)
+4.11.0	Merge Dissimular Databases (MRGDMAN)
+4.12.0	Report Editor (RPEDMAN)
+4.13.0	Report Writer (RPWDMAN)
+4.14.0	Label Printer (LABDMAN)
+4.15.0	Statistical Package 1 (STATDMAN)
+4.16.0	Text Processor Data Translator (PRDMAN)
+4.17.0	Database Directory (DRDMAN)
+4.18.0	Other Information
+.sp
+.lm30
+5.0.0	Installation of DATAMAN
+.lm42
+5.1.0	Creating the 'SYSTEM.GEN' File
+5.2.0	Compiling the DATAMAN Program Modules
+.sp
+.LM30
+6.0.0	The Theory of Database Management
+.lm42
+6.1.0	Building a Sample Database
+6.2.0	Database Fields
+6.3.0	Database Files
+.sp
+.lm30
+7.0.0	The DATAMAN Sample Run
+.sp
+8.0.0	'DATAMAN' MENU
+.LM42
+8.1.0	PROGRAM OPPERATION
+8.2.0	PROGRAM CODE
+8.3.0	VARIABLES USED
+.LM30
+.sp
+9.0.0	'BSDMAN' Create Database
+.LM42
+9.1.0	PROGRAM OPPERATION
+.LM 54
+9.1.1	DATABASE FIELDS
+9.1.2	DATA FIELD TYPES
+9.1.3	EXSISTING DATABASE MODEL
+9.1.4	BUILD PROGRAM MENU
+9.1.5	FIELD EDITOR
+9.1.6	DATE/TIME INPUT
+9.1.7	DATA ENTRY
+.LM42
+9.2.0	PROGRAM CODE
+9.3.0	VARIABLES USED
+.LM30
+.sp
+10.0.0	'ETDMAN' Editor
+.LM42
+10.1.0	PROGRAM CODE
+.LM 54
+10.1.1	WORK FILES
+10.1.2	LABLE/CONTENT EDIT
+10.1.3	APPEND RECORDS
+10.1.4	DATE/TIME INPUT
+.LM42
+10.2.0	PROGRAM CODE
+.LM54
+10.2.1	PROGRAM CHANGES
+.LM42
+10.3.0	VARIABLES USED
+.LM30
+.sp
+11.0.0	'DPDMAN' Dump
+.LM42
+11.1.0	PROGRAM OPPERATION
+11.2.0	PROGRAM CODE
+11.3.0	VARIABLES USED
+.LM30
+.sp
+12.0.0	'STDMAN' Sort Editor
+.LM42
+12.1.0	PROGRAM OPPERATION
+12.2.0	PROGRAM CODE
+12.3.0	VARIABLES USED
+.LM30
+.SP
+13.0.0	'MRGDMAN' Merge Unlike Databases
+.LM42
+13.1.0	PROGRAM OPPERATION
+.LM54
+13.1.1	FIELD DATA AND 'KEYS'
+13.1.2	THE 'NEW' DATABASE
+.LM42
+13.2.0	PROGRAM CODE
+13.3.0	VARIABLES USED
+.sp
+.LM30
+14.0.0	'RPEDMAN' Report Editor
+.LM42
+14.1.0	PROGRAM OPPERATION
+14.2.0	PROGRAM CODE
+.LM54
+14.2.1	THE '.FOR' FILE
+.LM42
+14.3.0	VARIABLES USED
+.LM30
+.sp
+15.0.0	'RPWDMAN' Report Writer
+.LM42
+15.1.0	PROGRAM OPPERATION
+15.2.0	PROGRAM CODE
+.LM54
+15.2.1	EXPANDED PRINT
+.LM42
+15.3.0	VARIABLES USED
+.LM30
+.sp
+16.0.0	'SRFDMAN' Select/Delete
+.LM42
+16.1.0	PROGRAM OPPERATION
+.LM54
+16.1.1	MAIN LOGIC SECTION
+16.1.2	COMMON PROBLEMS
+.LM42
+16.2.0	PROGRAM CODE
+.LM54
+16.2.1	PROGRAM CHANGES
+.LM42
+16.3.0	VARIABLES USED
+.LM30
+.sp
+17.0.0	'RESTDMAN' Restore Record Flag
+.LM42
+17.1.0	PROGRAM OPPERATION
+17.2.0	PROGRAM CODE
+17.3.0	VARIABLES USED
+.sp
+.LM30
+18.0.0	'PACKDMAN' Repack Database
+.LM42
+18.1.0	PROGRAM OPPERATION
+.LM54
+18.1.1	BLOWN AWAY RECORDS
+18.1.2	MERGE INTO 'LIKE' DATABASE
+18.1.3	'NEW' DATABASE
+.LM42
+18.2.0	PROGRAM CODE
+18.3.0	VARIABLES USED
+.LM30
+.sp
+19.0.0	'PRDMAN' 'PR' File Editor
+.LM42
+19.1.0	PROGRAM OPPERATION
+19.2.0	PROGRAM CODE
+19.3.0	VARIABLES USED
+.LM30
+.sp
+20.0.0	'LABDMAN' Lable Printer
+.LM42
+20.1.0	PROGRAM OPPERATION
+20.2.0	PROGRAM CODE
+.LM 54
+20.2.1	CHANGING DRIVERS
+20.2.2	PRINTING LABLES
+.LM42
+20.3.0	VARIABLES USED
+.LM30
+.sp
+21.0.0	'DRDMAN' Disk Directory
+.LM42
+21.1.0	PROGRAM OPPERATION
+21.2.0	PROGRAM CODE
+21.3.0	VARIABLES USED
+.LM30
+.sp
+22.0.0	'FINDDMAN' Search
+.LM42
+22.1.0	PROGRAM OPPERATION
+22.2.0	PROGRAM CODE
+22.3.0	VARIABLES USED
+.LM30
+.sp
+23.0.0	'STATDMAN' Statistics 1
+.LM42
+23.1.0	PROGRAM OPPERATION
+23.2.0	PROGRAM CODE
+23.3.0	VARIABLES USED
+.LM30
+.sp
+24.0.0	'VERYDMAN' Verify Database
+.LM42
+24.1.0	PROGRAM OPPERATION
+24.2.0	PROGRAM CODE
+24.3.0	VARIABLES USED
+.LM30
+.sp
+25.0.0	Customizing DATAMAN
+.LM42
+25.1.0	DATAMAN Files
+.lm 54
+25.1.1	The '.SPC' File
+25.1.2	The '.DAT' File
+25.1.3	The '1.SORT.SRT' File
+25.1.4	The 'TEMP.SCR' File
+25.1.5	The '.FOR' File
+25.1.6	The '.OUT' File
+.lm 42
+25.2.0	'SYSTEM.GEN' Environmental File
+.lm 54
+25.2.1	System Terminal Codes
+25.2.2	System Printer Codes
+25.2.3	Disk Drive Numbers
+25.2.4	Spare Data Codes
+.LM42
+25.3.0	'SUBSDMAN' PROGRAM
+.SP
+.LM30
+26.0.0	'SYSTEM.GEN' GENERATION PROGRAMS
+.LM42
+26.1.0	'SYS-AUTO' PROGRAM
+26.2.0	'SYS01-01' PROGRAM
+26.3.0	OTHER CREATION METHODS
+.LM30
+.SP
+27.0.0	'SUBSDMAN' DATAMAN SHELL
+.LM42
+27.1.0	PROGRAM CODE
+27.2.0	OTHER INFORMATION
+27.3.0	VARIABLES USED
+.LM30
+.SP
+28.0.0	VARIABLE CROSS REFERENCE

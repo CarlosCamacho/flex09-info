@@ -1,0 +1,35 @@
+# MON HELP
+
+> Source: `sourcecode/library-disks/LIB32 - FLEX Source Library - Source Code and Build Files - Includes FCLOCK, HEXDEC, MAPUP.zip!LIB32.DSK!MON_HELP.TXT`  
+> Method: FLEX disk extraction
+
+OCR and media-decoding errors may remain.
+
+~[E
+**** MONITOR COMMANDS ****
+
+ CTRL A = ALTER "A" ACCUMULATOR
+ CTRL B = ALTER "B" ACCUMULATOR
+ CTRL C = ALTER CONDITION CODE REGISTER
+ CTRL D = ALTER DIRECT PAGE REGISTER
+ CTRL P = ALTER PROGRAM COUNTER
+ CTRL U = ALTER USER STACK POINTER
+ CTRL X = ALTER "X" INDEX REGISTER
+ CTRL Y = ALTER "Y" INDEX REGISTER
+
+ Bxxxx	= SET BREAKPOINT AT $xxxx
+ C = CHANGE POSITION as prompted
+ E = EXAMINE MEMORY as prompted
+ G = GO from B.PT, SWI or PROG.CNTR
+ I = INFILL MEMORY as prompted
+ L = LOAD FROM TAPE
+ Mxxxx = SEE MEMORY @$xxxx & CHANGE ?
+ O = OLD BOOT for S/D system.
+ P = PUNCH TAPE as prompted
+ Q = QUICKSTART (BOOT MINI DISK) D/D
+ R = DISPLAY REGISTER CONTENTS
+ S = DISPLAY STACK
+ T = TEST MEMORY as prompted
+ U = UP Whilst in MEM. ie step backwards.
+ V = VERIFY FLAG ON/OFF
+ X = REMOVE ALL BREAKPOINTS.

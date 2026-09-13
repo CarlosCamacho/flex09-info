@@ -1,0 +1,42 @@
+# ERROR
+
+> Source: `misc/uncategorized/S09-010 - PL9 Development.zip!S09-010.DSK!ERROR.TXT`  
+> Method: FLEX disk extraction
+
+OCR and media-decoding errors may remain.
+
+100 IF ERROR <>30 THEN ON ERROR GOTO
+
+110 PRINT "FEL INSLAGET"
+
+120 RESUME
+
+
+(SLUT P] PROGR.)
+
+
+	
+
+6010 ON ERROR GOTO 11000
+	
+
+-
+
+
+-
+
+6900 IF ERROR <> 24 THEN ON ERROR GOTO
+
+6910 ? "NR";A;"FINNS EJ"
+
+6920 RESUME 6010
+
+
+-
+
+
+-
+		11000 REM OM EN BOKSTAV SKRIVS I NUMERISK VARIABEL
+		11010 IF ERR <>30 THEN ON ERROR GOTO
+		11020 PRINT CHR$(7):PRINT "FEL INSLAGET"
+		11030 RESUME
