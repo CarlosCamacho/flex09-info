@@ -34,16 +34,7 @@ programs abort gracefully when detecting errors, not dramatically.
 A careful programmer, using the information in this manual, should be
 able to make the fullest use of his floppy disk system.
 
-
-
-
-                                 -1-
-FLEX Advanced Programmer's Guide
-
 ## PDF page 2
-
-FLEX Advanced Programmer's Guide
-
 
                               DISCLAIMER
 
@@ -62,16 +53,7 @@ It is not possible to patch FLEX. Technical Systems Consultants cannot
 be responsible for any destructive side-effects which may result from
 attempts to patch FLEX.
 
-
-
-
-                                   -2-
-                                       FLEX Advanced Programmer's Guide
-
 ## PDF page 3
-
-                                       FLEX Advanced Programmer's Guide
-
 
                       THE DISK OPERATING SYSTEM
 
@@ -127,16 +109,7 @@ $CC04 - TTYSET Width Count
      zero, there is no limit to the number output. This count may be
      set by the user using TTYSET. Default = 0.
 
-
-
-
-                                 -3-
-FLEX Advanced Programmer's Guide
-
 ## PDF page 4
-
-FLEX Advanced Programmer's Guide
-
 
 $CC05 - TTYSET Null Count
      This byte informs DOS of the number of null or pad characters to be
@@ -189,16 +162,7 @@ $CC0E-$CC10 - System Date Registers
      day, then the year. The year byte contains only the tens and ones
      digits.
 
-
-
-
-                                   -4-
-                                       FLEX Advanced Programmer's Guide
-
 ## PDF page 5
-
-                                       FLEX Advanced Programmer's Guide
-
 
 $CC11 - Last Terminator
      This location contains the most recent non-alphanumeric character
@@ -252,16 +216,7 @@ $CC1D - Transfer Flag
      found during the loading process. This location is also used as
      scratch by some system routines.
 
-
-
-
-                                 -5-
-FLEX Advanced Programmer's Guide
-
 ## PDF page 6
-
-FLEX Advanced Programmer's Guide
-
 
 $CC1E-$CC1F - Transfer Address
      If the Transfer Flag was set non-zero by a load from the disk (see
@@ -313,16 +268,7 @@ $CC29 - Current Output Column
 
 $CC2A - System Scratch
 
-
-
-
-                                   -6-
-                                       FLEX Advanced Programmer's Guide
-
 ## PDF page 7
-
-                                       FLEX Advanced Programmer's Guide
-
 
 $CC2B-$CC2C - Memory End
      These two bytes contain the end of user memory. This location is
@@ -359,16 +305,7 @@ $CCE4-$CCF7 - Printer Output
 
 $CCF8-$CCFF - System Scratch
 
-
-
-
-                                 -7-
-FLEX Advanced Programmer's Guide
-
 ## PDF page 8
-
-FLEX Advanced Programmer's Guide
-
 
                     USER-CALLABLE SYSTEM ROUTINES
 
@@ -416,16 +353,7 @@ $CD06 (RENTER) DOS Main Loop Re-entry Point
     use it.    For an example of use, see "Printer Driver" section for
     details.
 
-
-
-
-                                   -8-
-                                        FLEX Advanced Programmer's Guide
-
 ## PDF page 9
-
-                                        FLEX Advanced Programmer's Guide
-
 
 $CD09 (INCH) Input Character
 $CD0C (INCH2) Input Character
@@ -478,16 +406,7 @@ $CD15 (GETCHR) Get Character
     file. If zero, a character is retreived via the INCH routine. The
     X and B registers are preserved.
 
-
-
-
-                                  -9-
-FLEX Advanced Programmer's Guide
-
 ## PDF page 10
-
-FLEX Advanced Programmer's Guide
-
 
 $CD18 (PUTCHR) Put Character
 
@@ -537,16 +456,7 @@ $CD1E (PSTRNG) Print String
     conventions when printing the string. A carriage return and line
     feed are output before the string. The B register is preserved.
 
-
-
-
-                                   -10-
-                                          FLEX Advanced Programmer's Guide
-
 ## PDF page 11
-
-                                          FLEX Advanced Programmer's Guide
-
 
 $CD21 (CLASS) Classify Character
 
@@ -601,16 +511,7 @@ $CD27 (NXTCH) Get Next Buffer Character
     character is alphanumeric, and the B-register and X- register are
     preserved.
 
-
-
-
-                                   -11-
-FLEX Advanced Programmer's Guide
-
 ## PDF page 12
-
-FLEX Advanced Programmer's Guide
-
 
 $CD2A (RSTRIO) Restore I/O Vectors
 
@@ -667,15 +568,7 @@ $CD30 (LOAD) File Loader
     Address locations contain the last transfer address encountered.
     The disk file is closed on exit. If a disk error is encountered,
 
-
-
-                                   -12-
-                                        FLEX Advanced Programmer's Guide
-
 ## PDF page 13
-
-                                        FLEX Advanced Programmer's Guide
-
 
     an error message is issued and control is returned to   DOS   at   the
     Warmstart Entry Point.
@@ -732,15 +625,7 @@ $CD3C (OUTHEX) Output Hexadecimal Number
     byte. The byte to which the X-register points is printed as 2
     hexadecimal digits. The B and X registers are preserved.
 
-
-
-                                 -13-
-FLEX Advanced Programmer's Guide
-
 ## PDF page 14
-
-FLEX Advanced Programmer's Guide
-
 
 $CD3F (RPTERR) Report Error
 
@@ -794,16 +679,7 @@ $CD45 (OUTADR) Output Hexaecimal Address
     significant byte of a 2 byte hex value. The bytes to which the X
     register points are printed as 4 hexadecimal digits.
 
-
-
-
-                                   -14-
-                                          FLEX Advanced Programmer's Guide
-
 ## PDF page 15
-
-                                          FLEX Advanced Programmer's Guide
-
 
 $CD48 (INDEC) Input Decimal Number
 
@@ -850,16 +726,7 @@ $CD4E (STAT) Check Terminal Input Status
     been hit, the Z condition code will be set (an equal condition).
     No registers, other than the CC-register, are altered.
 
-
-
-
-                                 -15-
-FLEX Advanced Programmer's Guide
-
 ## PDF page 16
-
-FLEX Advanced Programmer's Guide
-
 
                         USER-WRITTEN COMMANDS
 
@@ -905,16 +772,7 @@ However, in this case, the commands on the disk will never be executed
 while the User Command Table is known to DOS. The User Command Table
 may be deactivated by clearing the User Command Table Address locations.
 
-
-
-
-                                   -16-
-                                        FLEX Advanced Programmer's Guide
-
 ## PDF page 17
-
-                                        FLEX Advanced Programmer's Guide
-
 
                         DISK-RESIDENT COMMANDS
 
@@ -940,16 +798,7 @@ into the System FCB area. Once loaded, the command itself may use the
 System FCB area for scratch or as an FCB for its own disk I/O. See the
 example in the FMS section.
 
-
-
-
-                                 -17-
-FLEX Advanced Programmer's Guide
-
 ## PDF page 18
-
-FLEX Advanced Programmer's Guide
-
 
                      GENERAL COMMENTS ABOUT COMMANDS
 
@@ -977,16 +826,7 @@ appropriate error message. Similarly, if the command should detect an
 error on its own, it should issue a message and return to DOS through
 the Warmstart Entry Point.
 
-
-
-
-                                   -18-
-                                        FLEX Advanced Programmer's Guide
-
 ## PDF page 19
-
-                                        FLEX Advanced Programmer's Guide
-
 
                     EXAMPLES OF USING DOS ROUTINES
 
@@ -1019,26 +859,7 @@ functions provided by DOS.
 The above simple examples are to show the basic mechanism for calling
 and using DOS I/O routines.
 
-
-
-
-                                 -19-
-FLEX Advanced Programmer's Guide
-
-## PDF page 20
-
-FLEX Advanced Programmer's Guide
-
-
-
-
-                                   -20-
-                                        FLEX Advanced Programmer's Guide
-
 ## PDF page 21
-
-                                        FLEX Advanced Programmer's Guide
-
 
                       THE FILE MANAGEMENT SYSTEM
 
@@ -1085,16 +906,7 @@ whose sectors seem to be spattered all over the disk. The only result
 of fragmentation is the slowing down of file read times, because of the
 increased number of head seeks necessary while reading the file.
 
-
-
-
-                                 -21-
-FLEX Advanced Programmer's Guide
-
 ## PDF page 22
-
-FLEX Advanced Programmer's Guide
-
 
                         THE FILE CONTROL BLOCK (FCB)
 
@@ -1149,16 +961,7 @@ Byte 3   Drive Number
     This is the hardware drive number whose diskette contains the file
     being referenced. It should be binary 0 to 3.
 
-
-
-
-                                   -22-
-                                           FLEX Advanced Programmer's Guide
-
 ## PDF page 23
-
-                                           FLEX Advanced Programmer's Guide
-
 
 The next 24 bytes (4-27) comprise the "Directory Information" portion of
 the FCB. This is the exact same information which is contained in the
@@ -1213,16 +1016,7 @@ Bytes 21-22   File Size
     This is    a   16-bit   number indicating the number of sectors in the
     file.
 
-
-
-
-                                    -23-
-FLEX Advanced Programmer's Guide
-
 ## PDF page 24
-
-FLEX Advanced Programmer's Guide
-
 
 Byte 23   File Sector Map Indicator
 
@@ -1279,15 +1073,7 @@ Byte 35   Random Index
     Byte From Sector function is issued to FMS.    The specified data
     byte will be returned in the A-register. A value less than 4 will
 
-
-
-                                   -24-
-                                           FLEX Advanced Programmer's Guide
-
 ## PDF page 25
-
-                                           FLEX Advanced Programmer's Guide
-
 
     access one of the linkage bytes in the sector.     User data starts at
     an index value of 4.
@@ -1342,16 +1128,7 @@ Bytes 64-319   Sector Buffer
     written. The first four bytes of the sector are used by the
     system. The remaining 252 are used for data storage.
 
-
-
-
-                                   -25-
-FLEX Advanced Programmer's Guide
-
 ## PDF page 26
-
-FLEX Advanced Programmer's Guide
-
 
                    FILE MANAGEMENT SYSTEM - Entry Points
 
@@ -1398,16 +1175,7 @@ $D406 - FMS Call
     details. The B,X,Y and U registers are always preserved with a
     call to FMS.
 
-
-
-
-                                   -26-
-                                          FLEX Advanced Programmer's Guide
-
 ## PDF page 27
-
-                                          FLEX Advanced Programmer's Guide
-
 
                            GLOBAL VARIABLES
 
@@ -1440,16 +1208,7 @@ $D435   Verify Flag
     zero value indicates that no error checking on writes is to be
     performed. The default value is "non-zero".
 
-
-
-
-                                   -27-
-FLEX Advanced Programmer's Guide
-
 ## PDF page 28
-
-FLEX Advanced Programmer's Guide
-
 
                           FMS FUNCTION CODES
 
@@ -1498,16 +1257,7 @@ Function 0 - Read/Write Next Byte/Character
          BNE   ERROR   Check for errors
          The character in A has been written
 
-
-
-
-                                   -28-
-                                       FLEX Advanced Programmer's Guide
-
 ## PDF page 29
-
-                                       FLEX Advanced Programmer's Guide
-
 
 Function 1 - Open for Read
 
@@ -1564,15 +1314,7 @@ Function 2 - Open for Write
          File is now open for text write.
          For binary write, follow example in Read open.
 
-
-
-                                -29-
-FLEX Advanced Programmer's Guide
-
 ## PDF page 30
-
-FLEX Advanced Programmer's Guide
-
 
 Function 3 - Open for Update
 
@@ -1626,16 +1368,7 @@ Function 5 - Rewind File
          BNE   ERROR   Check for errors
          File is now rewound & ready for read
 
-
-
-
-                                   -30-
-                                        FLEX Advanced Programmer's Guide
-
 ## PDF page 31
-
-                                        FLEX Advanced Programmer's Guide
-
 
 Function 6 - Open Directory
 
@@ -1686,16 +1419,7 @@ Function 7 - Get Information Record
           BNE   LOOP    Repeat til finished
           The 3rd entry is now in the FCB
 
-
-
-
-                                 -31-
-FLEX Advanced Programmer's Guide
-
 ## PDF page 32
-
-FLEX Advanced Programmer's Guide
-
 
 Function 8 - Put Information Record
 
@@ -1752,15 +1476,7 @@ Function 10 ($0A hex) - Write Single Sector
     description of the Verify Flag), and will check the sector after
     writing it if directed to do so by the Verify Flag.
 
-
-
-                                   -32-
-                                        FLEX Advanced Programmer's Guide
-
 ## PDF page 33
-
-                                        FLEX Advanced Programmer's Guide
-
 
 Function 11 ($0B hex) - Reserved for future system use
 
@@ -1806,16 +1522,7 @@ Function 13 ($0D hex) - Rename File
 
 Function 14 ($0E hex) - Reserved for future system use.
 
-
-
-
-                                 -33-
-FLEX Advanced Programmer's Guide
-
 ## PDF page 34
-
-FLEX Advanced Programmer's Guide
-
 
 Function 15 ($0F hex) - Next Sequential Sector
 
@@ -1871,16 +1578,7 @@ Function 17 ($11 hex) - Get Random Byte From Sector
          BNE   ERROR   Check for errors
          Character is now in acc. A
 
-
-
-
-                                   -34-
-                                          FLEX Advanced Programmer's Guide
-
 ## PDF page 35
-
-                                          FLEX Advanced Programmer's Guide
-
 
 Function 18 ($12 hex) - Put Random Byte in Sector
 
@@ -1930,16 +1628,7 @@ Function 20 ($14 hex) - Find Next Drive
     number is left unchanged, the carry bit is set on return and error
     #16 (Drives Not Ready) is set.
 
-
-
-
-                                 -35-
-FLEX Advanced Programmer's Guide
-
 ## PDF page 36
-
-FLEX Advanced Programmer's Guide
-
 
 Function 21 ($15 hex) - Position to Record N
 
@@ -1981,16 +1670,7 @@ Function 22 ($16 hex) - Backup One Record
     file must be open for read or update before this function may be
     used. See 'Random Files' section for more details.
 
-
-
-
-                                   -36-
-                                        FLEX Advanced Programmer's Guide
-
 ## PDF page 37
-
-                                        FLEX Advanced Programmer's Guide
-
 
                              RANDOM FILES
 
@@ -2030,16 +1710,7 @@ random, otherwise it is sequential only. It should be noted that random
 files can be Copied from one disk to another without losing its random
 properties, but it can not be appended to another file.
 
-
-
-
-                                 -37-
-FLEX Advanced Programmer's Guide
-
 ## PDF page 38
-
-FLEX Advanced Programmer's Guide
-
 
                           FLEX ERROR NUMBERS
 
@@ -2090,16 +1761,7 @@ FLEX Advanced Programmer's Guide
      This error may also result from illegal track and sector addresses
      being put in the FCB.
 
-
-
-
-                                   -38-
-                                        FLEX Advanced Programmer's Guide
-
 ## PDF page 39
-
-                                        FLEX Advanced Programmer's Guide
-
 
 10 - DISK FILE WRITE ERROR
      A checksum error was detected by the hardware in attempting to
@@ -2156,15 +1818,7 @@ FLEX Advanced Programmer's Guide
      and/or underscores. Similarly with file extensions.     File names
      are limited to 8 characters, extensions to 3.
 
-
-
-                                 -39-
-FLEX Advanced Programmer's Guide
-
 ## PDF page 40
-
-FLEX Advanced Programmer's Guide
-
 
 22 - SYSTEM FILE CLOSE ERROR
      Reserved for future system use.
@@ -2195,16 +1849,7 @@ FLEX Advanced Programmer's Guide
      computer for a particular function or trying to use the printer
      spooler without the hardware timer board installed.
 
-
-
-
-                                   -40-
-                                        FLEX Advanced Programmer's Guide
-
 ## PDF page 41
-
-                                        FLEX Advanced Programmer's Guide
-
 
                              DISK DRIVERS
 
@@ -2257,16 +1902,7 @@ $DE09 - Restore
      A Restore Operation (also known as a Seek to Track   00)   is   to   be
      performed on the drive whose number is in the FCB.
 
-
-
-
-                                 -41-
-FLEX Advanced Programmer's Guide
-
 ## PDF page 42
-
-FLEX Advanced Programmer's Guide
-
 
 $DE0C - Drive Select
      Entry - (X) = FCB Address
@@ -2292,16 +1928,7 @@ $DE12 - Quick Check Drive Ready
      and this routine can simply be a jump to the Check Drive Ready
      routine.
 
-
-
-
-                                   -42-
-                                        FLEX Advanced Programmer's Guide
-
 ## PDF page 43
-
-                                        FLEX Advanced Programmer's Guide
-
 
                        Diskette Initialization
 
@@ -2347,16 +1974,7 @@ long processing times is called "missing revolutions", and results in
 very slow running time for programs. The FLEX format reduces the number
 of missed revolutions, thus speeding up programs.
 
-
-
-
-                                 -43-
-FLEX Advanced Programmer's Guide
-
 ## PDF page 44
-
-FLEX Advanced Programmer's Guide
-
 
                   DESCRIPTION OF A DIRECTORY SECTOR
 
@@ -2395,16 +2013,7 @@ user should never manually change the linkage bytes of a sector. These
 bytes are automatically managed by FMS. In fact, the user need not be
 concerned at all with sector linkage information.
 
-
-
-
-                                   -44-
-                                        FLEX Advanced Programmer's Guide
-
 ## PDF page 45
-
-                                        FLEX Advanced Programmer's Guide
-
 
                      DESCRIPTION OF A BINARY FILE
 
@@ -2442,16 +2051,7 @@ from a user program, the calling program must process the record
 indicator bytes and load addresses itself; FLEX does not supply or
 process this information for the user.
 
-
-
-
-                                 -45-
-FLEX Advanced Programmer's Guide
-
 ## PDF page 46
-
-FLEX Advanced Programmer's Guide
-
 
 DESCRIPTION OF A TEXT FILE
 
@@ -2491,16 +2091,7 @@ $09 (ASCII HT or HORIZONTAL TAB)
      operations. If open for Binary, the compression flag and count get
      passed exactly as they appear in the file.)
 
-
-
-
-                                   -46-
-                                         FLEX Advanced Programmer's Guide
-
 ## PDF page 47
-
-                                         FLEX Advanced Programmer's Guide
-
 
                          WRITING UTILITY COMMANDS
 
@@ -2557,15 +2148,7 @@ If the file spec was correct, and the carry was clear after the return
 from GETFIL, we want to set a default file name extension of TXT.   The
 DOS subroutine named SETEXT will do exactly that. First it is necessary
 
-
-
-                                  -47-
-FLEX Advanced Programmer's Guide
-
 ## PDF page 48
-
-FLEX Advanced Programmer's Guide
-
 
 to put the code for TXT in the A accumulator (the code is 1).  X needs
 to be pointing to the FCB which it still is. The '1' is also put in the
@@ -2613,16 +2196,7 @@ methods of dealing with various types of errors were also presented.
 Studying this example until it is thoroughly understood will make
 writing your own disk commands and disk oriented programs an easy task.
 
-
-
-
-                                   -48-
-                                             FLEX Advanced Programmer's Guide
-
 ## PDF page 49
-
-                                             FLEX Advanced Programmer's Guide
-
 
                       *
                       * SIMPLE TEXT FILE LIST UTILITY
@@ -2676,16 +2250,7 @@ C126 20   EF                   BRA    LIST4      REPEAT
 C128 BD   CD18        LIST5    JSR    PUTCHR     OUTPUT THE CHARACTER
 C12B 20   EA                   BRA    LIST4      REPEAT SEQUENCE
 
-
-
-
-                                      -49-
-FLEX Advanced Programmer's Guide
-
 ## PDF page 50
-
-FLEX Advanced Programmer's Guide
-
 
 C12D A6   01       LIST6   LDA     1,X      GET ERROR STATUS
 C12F 81   08               CMPA    #8       IS IT EOF ERROR?
@@ -2702,16 +2267,7 @@ C145 7E   CD03             JMP     WARMS    RETURN TO FLEX
 
                            END     LIST
 
-
-
-
-                                   -50-
-                                        FLEX Advanced Programmer's Guide
-
 ## PDF page 51
-
-                                        FLEX Advanced Programmer's Guide
-
 
                          THE DOS LINK UTILITY
 
@@ -2739,26 +2295,7 @@ remember that unless the DOS is loaded during the boot process, there
 will not be any disk drivers or File Management System resident in
 memory.
 
-
-
-
-                                 -51-
-FLEX Advanced Programmer's Guide
-
-## PDF page 52
-
-FLEX Advanced Programmer's Guide
-
-
-
-
-                                   -52-
-                                         FLEX Advanced Programmer's Guide
-
 ## PDF page 53
-
-                                         FLEX Advanced Programmer's Guide
-
 
                              PRINTER ROUTINES
 
@@ -2804,16 +2341,7 @@ command is used to activate the spooler which in turn prints the files
 (if any) in the print queue. Exact details of the spooling operation
 are not available at this time.
 
-
-
-
-                                  -53-
-FLEX Advanced Programmer's Guide
-
 ## PDF page 54
-
-FLEX Advanced Programmer's Guide
-
 
                       *
                       * "P" UTILITY COMMAND
@@ -2864,18 +2392,7 @@ C118 B1   CC02                 CMPA   EOL      IS IT EOL CHARACTER?
 C11B 27   42                   BEQ    P8
 C11D 7F   CC09                 CLR    PAUSE    DISABLE THE PAUSE FEATURE
 
-                               - continued -
-
-
-
-
-                                      -54-
-                                          FLEX Advanced Programmer's Guide
-
 ## PDF page 55
-
-                                          FLEX Advanced Programmer's Guide
-
 
 C120 B6   CCE4              LDA    POUT       GET 1ST BYTE OF SPACE
 C123 81   39                CMPA   #$39       IS IT RTS?
@@ -2926,26 +2443,7 @@ C84C 53 59 53               FCC    'SYS'
 
                             END    P
 
-
-
-
-                                   -55-
-FLEX Advanced Programmer's Guide
-
-## PDF page 56
-
-FLEX Advanced Programmer's Guide
-
-
-
-
-                                   -56-
-                                        FLEX Advanced Programmer's Guide
-
 ## PDF page 57
-
-                                        FLEX Advanced Programmer's Guide
-
 
                           INTERRUPTS IN FLEX
 
@@ -2988,13 +2486,3 @@ C980 - CBFF     System Files Area
 CC00 - D3FF     DOS
 D400 - DDFF     FMS
 DE00 - DFFF     Disk Drivers
-
-
-
-
-                                 -57-
-
-
-## PDF page 58
-
-

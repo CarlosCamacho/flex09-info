@@ -4,24 +4,9 @@ _Searchable transcription extracted from the repository PDF. Form-feed boundarie
 
 ## PDF page 1
 
-6809 FLEX™ Adaptation Guide
-
-
-
-
  Technical Systems Consultants, Inc.
-            6809 FLEX™ Adaptation Guide
-
-## PDF page 2
-
-            6809 FLEX™ Adaptation Guide
 
 ## PDF page 3
-
-            6809 FLEX™ Adaptation Guide
-
-
-
 
                                              Copyright © 1980 by
                                        Technical Systems Consultants, Inc.
@@ -84,11 +69,6 @@ diskette envelope has been opened, no returns will be accepted!
 
 
 
-                                 iii
-                             TABLE of CONTENTS
-
-## PDF page 6
-
                              TABLE of CONTENTS
 
 ## PDF page 7
@@ -148,7 +128,6 @@ Section                                                               Page
 
 
 
-                                  vii
                     TABLE of CONTENTS (Continued)
 
 ## PDF page 8
@@ -199,16 +178,7 @@ Appendix G - Sample Adaptation for SWTPc MF-68    . . . . . . . . .    75
                4) FLEX Loader Program                                  87
                5) NEWDISK Program                                      90
 
-
-
-
-                                  viii
-                                                6809 FLEX Adaptation Guide
-
 ## PDF page 9
-
-                                                6809 FLEX Adaptation Guide
-
 
 1.0 INTRODUCTION
 
@@ -263,16 +233,7 @@ hardware and software or firmware requirements. Specifically they are:
           several routines, an editor/assembler package will make the
           adaptation much easier.
 
-
-
-
-                            Page 1    Section 1
-6809 FLEX Adaptation Guide
-
 ## PDF page 10
-
-6809 FLEX Adaptation Guide
-
 
 1.4 How to use the Adaptation Guide
 
@@ -295,16 +256,7 @@ keep all routines simple at first.       Once things are running in the
 simplest, lowest level form, it will be much easier, using the now
 available FLEX facilities, to improve the routines and add new devices.
 
-
-
-
-                             Page 2   Section 1
-                                              6809 FLEX Adaptation Guide
-
 ## PDF page 11
-
-                                              6809 FLEX Adaptation Guide
-
 
 2.0   The FLEX DISK OPERATING SYSTEM
 
@@ -350,16 +302,7 @@ a character, etc. In general, FLEX is a very powerful tool which saves
 application programs (and programmers) from doing a lot of housekeeping
 chores.
 
-
-
-
-                             Page 3 - Section 2
-6809 FLEX Adaptation Guide
-
 ## PDF page 12
-
-6809 FLEX Adaptation Guide
-
 
 2.2 A Brief Overview of FLEX Adaptation
 
@@ -415,14 +358,7 @@ FLEX system is basically complete and may be easily booted up at will.
 communicates directly with the disk hardware.   That is the "NEWDISK"
 routine which initializes a blank disk to the format required by FLEX.
 
-
-                             Page 4 - Section 2
-                                               6809 FLEX Adaptation Guide
-
 ## PDF page 13
-
-                                               6809 FLEX Adaptation Guide
-
 
 When the NEWDISK routine is functional, the user has a complete, fully
 interfaced version of FLEX!       At this point the user may go back and
@@ -461,16 +397,7 @@ etc. Sectors 1 and 2 on track 0 are reserved for a bootstrap loader.
 Further details about disk formats for double-sided and double-density
 disks may be found in Appendix B.
 
-
-
-
-                          Page 5 - Section 2
-6809 FLEX Adaptation Guide
-
 ## PDF page 14
-
-6809 FLEX Adaptation Guide
-
 
 3.0   The CONSOLE I/O DRIVER PACKAGE
 
@@ -527,14 +454,7 @@ Driver package. It should look something like this:
 
  The 'XXXXX's represent the address of the particular routine listed.
 
-
-                             Page 6 - Section 3
-                                               6809 FLEX Adaptation Guide
-
 ## PDF page 15
-
-                                               6809 FLEX Adaptation Guide
-
 
 The individual routines associated with actual console I/O are described
 here. Those associated with the timer and interrupts are deferred to a
@@ -591,14 +511,7 @@ some unused address space such that when FLEX tries to store values into
 those points, nothing will happen. An example of these routines may be
 found in Appendix G.
 
-
-                          Page 7 - Section 3
-6809 FLEX Adaptation Guide
-
 ## PDF page 16
-
-6809 FLEX Adaptation Guide
-
 
 3.2 Implementing the Console I/O Driver Routines
 
@@ -620,16 +533,7 @@ applicable ROM routine into the vector table.
 Once the routines have been entered, test them fully to ensure that they
 are functioning properly.
 
-
-
-
-                         Page 8 - Section 3
-                                                 6809 FLEX Adaptation Guide
-
 ## PDF page 17
-
-                                                 6809 FLEX Adaptation Guide
-
 
 4.0   The DISK DRIVER PACKAGE
 
@@ -686,14 +590,7 @@ status returned by a Western Digital 1771 or 1791 floppy disk controller
 chip. Those statuses are briefly described here. An error is indicated
 by a "1" in the indicated bit position.
 
-
-                            Page 9 - Section 4
-6809 FLEX Adaptation Guide
-
 ## PDF page 18
-
-6809 FLEX Adaptation Guide
-
 
           BIT      READ            WRITE             OTHER
            7       not ready       not ready         not ready
@@ -750,14 +647,7 @@ VERIFY    The sector just written to the disk is to be verified to
                   (A) May be destroyed
                   (B) = Error condition
 
-
-                          Page 10 - Section 4
-                                                6809 FLEX Adaptation Guide
-
 ## PDF page 19
-
-                                                6809 FLEX Adaptation Guide
-
 
                    (Z) = 1 if no error
                        = 0 if an error
@@ -810,16 +700,7 @@ CHKRDY      Check for a drive ready condition. The drive number is found
                     (C) = 0 if drive ready
                         = 1 if not ready
 
-
-
-
-                          Page 11 - Section 4
-6809 FLEX Adaptation Guide
-
 ## PDF page 20
-
-6809 FLEX Adaptation Guide
-
 
 QUICK     This routine performs a "quick" drive ready check.        Its
           function is exactly like the CHKRDY routine above except that
@@ -876,14 +757,7 @@ of the SEEK routine are compatible with the READ and WRITE routines.
 For example, it may be desirable for the SEEK routine to preserve the X
 register so that READ and WRITE can assume the memory address for the
 
-
-                          Page 12 - Section 4
-                                                6809 FLEX Adaptation Guide
-
 ## PDF page 21
-
-                                                6809 FLEX Adaptation Guide
-
 
 sector remains intact across a seek call.
 
@@ -938,16 +812,7 @@ such a case, SEEK would have to know what the highest track number
 should be and if a supplied track number is greater, an error should be
 returned. This error would be a record not found type error.
 
-
-
-
-                          Page 13 - Section 4
-6809 FLEX Adaptation Guide
-
 ## PDF page 22
-
-6809 FLEX Adaptation Guide
-
 
 The RESTORE routine is the only one which must perform a drive select
 before carrying out its function (except of course for DRIVE whose
@@ -997,16 +862,7 @@ Programmer's Guide or see Section 12.
 These same overflow techniques can also be applied to the Console I/O
 Driver Package if necessary.
 
-
-
-
-                             Page 14 - Section 4
-                                               6809 FLEX Adaptation Guide
-
 ## PDF page 23
-
-                                               6809 FLEX Adaptation Guide
-
 
 5.0   TESTING THE DISK DRIVER ROUTINES
 
@@ -1053,16 +909,7 @@ if the cutout is left exposed. Be sure the disk you are using is
 write-protected.   The disk is now ready for use in the ensuing test
 procedure.
 
-
-
-
-                            Page 15 - Section 5
-6809 FLEX Adaptation Guide
-
 ## PDF page 24
-
-6809 FLEX Adaptation Guide
-
 
 5.2 Tests Without Using a Supplied Disk
 
@@ -1119,14 +966,7 @@ RESTORE   The Restore routine is a relatively easy routine to test.   It
           push the head assembly away from track zero (toward the hub)
           with your fingers. The head itself is delicate, so be sure
 
-
-                          Page 16 - Section 5
-                                               6809 FLEX Adaptation Guide
-
 ## PDF page 25
-
-                                               6809 FLEX Adaptation Guide
-
 
           you are pushing on some solid part of the head assembly (not
           the head itself) and do not force it if it resists. Once the
@@ -1180,16 +1020,7 @@ For the first time, you will be using a FLEX Disk. As stated earlier,
 be certain it is write-protected and that you only use one of the two
 supplied disks if possible.
 
-
-
-
-                         Page 17 - Section 5
-6809 FLEX Adaptation Guide
-
 ## PDF page 26
-
-6809 FLEX Adaptation Guide
-
 
 If desired, the READ routine can be tested by writing a short routine to
 select the drive and then call the READ routine with the desired entry
@@ -1245,15 +1076,7 @@ value in the 'B' accumulator (the error condition) on return. In either
 case, TEST will immediately start all over again with the function
 prompt.
 
-
-
-                          Page 18 - Section 5
-                                                6809 FLEX Adaptation Guide
-
 ## PDF page 27
-
-                                                6809 FLEX Adaptation Guide
-
 
 With a FLEX Disk inserted, begin by reading sector #01 on track #00.
 This is where a bootstrap loader program will reside in the final
@@ -1309,15 +1132,7 @@ bytes found at $1000 and setup whatever data he would like written to
 the disk sector. Another method of setting up this data buffer is by
 doing a READ command in TEST. The data read from the specified disk
 
-
-
-                          Page 19 - Section 5
-6809 FLEX Adaptation Guide
-
 ## PDF page 28
-
-6809 FLEX Adaptation Guide
-
 
 sector is placed into memory at $1000. Thus, after a read operation,
 the data is all setup for writing back to the disk. In order that you
@@ -1372,16 +1187,7 @@ the first two link bytes). It will not hurt for you to change any of
 the zero bytes in a free sector and they may be left non-zero after
 testing.
 
-
-
-
-                          Page 20 - Section 5
-                                                6809 FLEX Adaptation Guide
-
 ## PDF page 29
-
-                                                6809 FLEX Adaptation Guide
-
 
 Now you are ready to attempt writing to a supplied FLEX disk.    Remove
 the write-protection from the disk (cover the cutout on an 8 inch disk;
@@ -1411,16 +1217,7 @@ to be sure they can be read and simply discards them if so. If your
 READ and VERIFY routines are similar, this is more justification to
 assume the VERIFY routine is good.
 
-
-
-
-                          Page 21 - Section 5
-6809 FLEX Adaptation Guide
-
 ## PDF page 30
-
-6809 FLEX Adaptation Guide
-
 
 6.0   BRINGUP UP THE INITIAL VERSION OF FLEX
 
@@ -1474,16 +1271,7 @@ plus-sign prompt. If FLEX does not come up for you, you either did not
 actually get a complete load of FLEX or there still may be errors in
 your drivers. In either case, you would have to go back and try again.
 
-
-
-
-                         Page 22 - Section 6
-                                                 6809 FLEX Adaptation Guide
-
 ## PDF page 31
-
-                                                 6809 FLEX Adaptation Guide
-
 
 6.2 Testing FLEX with Read-Only Commands
 
@@ -1540,14 +1328,7 @@ close it. If everything works, you should see FLEX's prompt ('+++')
 after a second or two. Do a CAT command on the disk to see if the file
 'JUNK.TXT' was placed in the directory. Now view the contents of that
 
-
-                           Page 23 - Section 6
-6809 FLEX Adaptation Guide
-
 ## PDF page 32
-
-6809 FLEX Adaptation Guide
-
 
 file by executing a list command like this:
 
@@ -1569,15 +1350,7 @@ this version of FLEX in the remainder of the adaptation process.     The
 utilities included with FLEX include a disk editor and assembler. These
 will save you much time if you have been assembling code by hand.
 
-
-
-
-                          Page 24 - Section 6
-                                                6809 FLEX Adaptation Guide
-
 ## PDF page 33
-
-                                                6809 FLEX Adaptation Guide
 
 7.0 PREPARING A BOOTABLE VERSION OF FLEX
 
@@ -1630,16 +1403,7 @@ If all goes well, you should now have a file called 'FLEX.SYS' on the
 disk. It is a complete version of FLEX which you will be able to boot
 up after completing the next section.
 
-
-
-
-                          Page 25 - Section 7
-6809 FLEX Adaptation Guide
-
 ## PDF page 34
-
-6809 FLEX Adaptation Guide
-
 
 8.0   BOOTSTRAP LOADING OF FLEX
 
@@ -1692,16 +1456,7 @@ On a FLEX disk, this defined boot program sector is sector #1 on track
 has also been reserved. Since the dumb bootstrap program is so short it
 is now feasible to place it in ROM.
 
-
-
-
-                          Page 26 - Section 8
-                                                6809 FLEX Adaptation Guide
-
 ## PDF page 35
-
-                                                6809 FLEX Adaptation Guide
-
 
 Before going any further. let's review some nomenclature.    Throughout
 the manual when "booting FLEX", "booting up", or simply "booting" is
@@ -1754,16 +1509,7 @@ actually reading the correct data in from the disk. In any event the
 data you read will not yet be a valid FLEX loader program and you will
 therefore not want to attempt to execute it.
 
-
-
-
-                            Page 27 - Section 8
-6809 FLEX Adaptation Guide
-
 ## PDF page 36
-
-6809 FLEX Adaptation Guide
-
 
 When you are convinced that the ROM boot is functioning properly, save
 the code on tape or on disk using the SAVE command. It should not be
@@ -1816,16 +1562,7 @@ command is quite simply:
 
           +++PUTLDR
 
-
-
-
-                          Page 28 - Section 8
-                                                6809 FLEX Adaptation Guide
-
 ## PDF page 37
-
-                                                6809 FLEX Adaptation Guide
-
 
 It assumes that there is a 256 byte (or less) loader program resident in
 memory at $C100. PUTLDR simply writes this data out to sector #1 of
@@ -1870,16 +1607,7 @@ up being very large, you may decide it is just as easy to put the entire
 FLEX loader in ROM and execute it directly without having to load it
 from disk with a ROM boot.
 
-
-
-
-                          Page 29 - Section 8
-6809 FLEX Adaptation Guide
-
 ## PDF page 38
-
-6809 FLEX Adaptation Guide
-
 
 9.0   THE NEWDISK ROUTINE
 
@@ -1936,13 +1664,7 @@ Now let's discuss each step in more detail.
           discussed previously, all the sectors are linked together by
           addresses stored in the first two bytes of the data field of
 
-
-                            Page 30 - Section 9
-                                                6809 FLEX Adaptation Guide
-
 ## PDF page 39
-
-                                                6809 FLEX Adaptation Guide
 
           each sector.    The first byte is the track on which the next
           sector in the chain is found, and the second byte is the
@@ -1999,15 +1721,7 @@ Now let's discuss each step in more detail.
           to zeroes.    The 252 data bytes in all directory sectors must
           also be zeroes. The single sector read and write routines
 
-
-
-                          Page 31 - Section 9
-6809 FLEX Adaptation Guide
-
 ## PDF page 40
-
-6809 FLEX Adaptation Guide
-
 
           from FLEX can be used for these purposes.
 
@@ -2056,16 +1770,7 @@ Now let's discuss each step in more detail.
           also loaded.    Of course, if your FLEX loader is larger than
           256 bytes, you would have to save two sectors on the disk.
 
-
-
-
-                          Page 32 - Section 9
-                                                6809 FLEX Adaptation Guide
-
 ## PDF page 41
-
-                                                6809 FLEX Adaptation Guide
-
 
 9.2 A Western Digital NEWDISK Example
 
@@ -2116,16 +1821,7 @@ section 9.1. It can probably be used as is in any NEWDISK the user may
 write.   The only changes will probably be the locations from where the
 values written into the SIR are picked up.
 
-
-
-
-                          Page 33 - Section 9
-6809 FLEX Adaptation Guide
-
 ## PDF page 42
-
-6809 FLEX Adaptation Guide
-
 
 9.4 Sector Interleaving
 
@@ -2168,16 +1864,7 @@ for reading text files. As an example, the following are interleaving
 schemes used by Technical Systems Consultants        for   single-sided,
 single-density 8 and 5 1/4 inch disks.
 
-
-
-
-                          Page 34 - Section 9
-                                                6809 FLEX Adaptation Guide
-
 ## PDF page 43
-
-                                                6809 FLEX Adaptation Guide
-
 
           Eight inch disk                         Five inch disk
           physical   logical                      physial   logical
@@ -2201,16 +1888,7 @@ single-density 8 and 5 1/4 inch disks.
 The user may want      to experiment     with   different     interleaving
 configurations to determine the best setup for his needs.
 
-
-
-
-                          Page 35 - Section 9
-6809 FLEX Adaptation Guide
-
 ## PDF page 44
-
-6809 FLEX Adaptation Guide
-
 
 10.0   PRINTER SPOOLING and INTERRUPT HANDLING
 
@@ -2258,16 +1936,7 @@ actual interrupt vectors for the CPU, but generally the system's monitor
 ROM has defined locations in lower RAM where the interrupt handling
 routine vectors can be stored.
 
-
-
-
-                          Page 36 - Section 10
-                                              6809 FLEX Adaptation Guide
-
 ## PDF page 45
-
-                                              6809 FLEX Adaptation Guide
-
 
 10.3 Additional Console I/O Drivers for Printer Spooling
 
@@ -2321,16 +1990,7 @@ IHNDLR    Address at $D3E7
           have to determine which device had caused the interrupt and
           handle it accordingly.
 
-
-
-
-                          Page 37 - Section 10
-6809 FLEX Adaptation Guide
-
 ## PDF page 46
-
-6809 FLEX Adaptation Guide
-
 
 10.4 Disk Driver Changes for Printer Spooling
 
@@ -2371,16 +2031,7 @@ likely candidates for this test:
 See the sample set of drivers in         Appendix   G   for examples of the
 implementation of this task switching.
 
-
-
-
-                          Page 38 - Section 10
-                                                6809 FLEX Adaptation Guide
-
 ## PDF page 47
-
-                                                6809 FLEX Adaptation Guide
-
 
 11.0   ADVANCED DISK ADAPTATIONS
 
@@ -2426,16 +2077,7 @@ single-density, single-sided minifloppy disks with 10 sectors per track.
 The actual side select mechanism for your controller may also be
 entirely different than the example shows.
 
-
-
-
-                          Page 39 - Section 11
-6809 FLEX Adaptation Guide
-
 ## PDF page 48
-
-6809 FLEX Adaptation Guide
-
 
 11.2 Double-Density Disks
 
@@ -2492,14 +2134,7 @@ these routines might look something like this:
                    COM    B,X       SWITCH TO OPPOSITE DENSITY
                    PULS   B         RESTORE ERROR CONDITION
 
-
-                             Page 40 - Section 11
-                                                6809 FLEX Adaptation Guide
-
 ## PDF page 49
-
-                                                6809 FLEX Adaptation Guide
-
 
           READ8   BITB   #$FC      SHOW ANY ERRORS IN CC
                   RTS
@@ -2549,16 +2184,7 @@ one side are 15 for single-density and 26 for double-density. These are
 the standard values used by Technical Systems Consultants for eight inch
 disks.
 
-
-
-
-                            Page 41 - Section 11
-6809 FLEX Adaptation Guide
-
 ## PDF page 50
-
-6809 FLEX Adaptation Guide
-
 
 11.3 Other Disk Configurations
 
@@ -2615,14 +2241,7 @@ drivers. A system with mixed drive types must either have a different
 NEWDISK command for each, or a single NEWDISK that is intelligent enough
 to determine the drive type and format the disk accordingly.
 
-
-                           Page 42 - Section 11
-                                              6809 FLEX Adaptation Guide
-
 ## PDF page 51
-
-                                              6809 FLEX Adaptation Guide
-
 
 12.0   ADDITIONAL CUSTOMIZATION
 
@@ -2679,14 +2298,7 @@ place a return instruction (RTS) at $CA02. As an example, if we wished
 to disable the date prompt we might place the following code at the end
 of the Console I/O Driver package:
 
-
-                          Page 43 - Section 12
-6809 FLEX Adaptation Guide
-
 ## PDF page 52
-
-6809 FLEX Adaptation Guide
-
 
                    ORG    $CA02     CALL IS AT $CA02
                    RTS              IMMEDIATELY RETURN
@@ -2736,16 +2348,7 @@ just as described for the overlay in section 12.1. It is NOT possible
 to place this overlay code into memory before loading FLEX as in that
 case the printer spooler code would overlay this code.
 
-
-
-
-                            Page 44 - Section 12
-                                              6809 FLEX Adaptation Guide
-
 ## PDF page 53
-
-                                              6809 FLEX Adaptation Guide
-
 
 12.4 Mapping Filenames to Upper Case
 
@@ -2766,16 +2369,7 @@ by merely changing the value stored in MAPUP at $CC49 to $FF.       This
 change can be done at bootup.time by overlaying MAPUP in the same manner
 described in section 12.1.
 
-
-
-
-                          Page 45 - Section 12
-6809 FLEX Adaptation Guide
-
 ## PDF page 54
-
-6809 FLEX Adaptation Guide
-
 
 13.0   MISCELLANEOUS SUGGESTIONS
 
@@ -2822,16 +2416,7 @@ occasionally includes a free FLEX utility listing. The newsletter costs
 $4.00 ($8.00 outside U.S. and Canada) for four issues. This is the best
 way to keep informed of what's happening in the world of FLEX.
 
-
-
-
-                           Page 46 - Section 13
-                                              6809 FLEX Adaptation Guide
-
 ## PDF page 55
-
-                                              6809 FLEX Adaptation Guide
-
 
 13.4 Single Drive Copy Program
 
@@ -2859,16 +2444,7 @@ configuration. If you would like to share the work you have done in
 adapting FLEX to your hardware, let us know... there is probably someone
 else with similar hardware who could benefit from your efforts.
 
-
-
-
-                          Page 47 - Section 13
-6809 FLEX Adaptation Guide
-
 ## PDF page 56
-
-6809 FLEX Adaptation Guide
-
 
                                  APPENDIX A
                             6809 FLEX Memory Map
@@ -2924,15 +2500,7 @@ else with similar hardware who could benefit from your efforts.
            I
  E000   -------
 
-
-
-                            Page 48 - Appendix A
-                                                6809 FLEX Adaptation Guide
-
 ## PDF page 57
-
-                                                6809 FLEX Adaptation Guide
-
 
                                 APPENDIX B
                                Disk Formats
@@ -2985,16 +2553,7 @@ refer to Single and Double Density respectively.
 5 1/4" SS,SD        40              10     10          10      10
 5 1/4" DS,SD     35 or 40           10     20          10      20
 
-
-
-
-                            Page 49 - Appendix B
-6809 FLEX Adaptation Guide
-
 ## PDF page 58
-
-6809 FLEX Adaptation Guide
-
 
 NOTES:
 
@@ -3008,12 +2567,11 @@ NOTES:
 
 
 
-                           Page 50 - Appendix B
-SECTOR READ/WRITE TEST                           6809 FLEX Adaptation Guide
+SECTOR READ/WRITE TEST
 
 ## PDF page 59
 
-SECTOR READ/WRITE TEST                           6809 FLEX Adaptation Guide
+SECTOR READ/WRITE TEST
 
 
                                APPENDIX C
@@ -3070,12 +2628,11 @@ SECTOR READ/WRITE TEST                           6809 FLEX Adaptation Guide
 
 
 
-                             Page 51 - Appendix C
-6809 FLEX Adaptation Guide                           SECTOR READ/WRITE TEST
+                           SECTOR READ/WRITE TEST
 
 ## PDF page 60
 
-6809 FLEX Adaptation Guide                           SECTOR READ/WRITE TEST
+                           SECTOR READ/WRITE TEST
 
 
                     * GET COMMAND
@@ -3133,12 +2690,11 @@ SECTOR READ/WRITE TEST                           6809 FLEX Adaptation Guide
 
 
 
-                             Page 52 - Appendix C
-SECTOR READ/WRITE TEST                           6809 FLEX Adaptation Guide
+SECTOR READ/WRITE TEST
 
 ## PDF page 61
 
-SECTOR READ/WRITE TEST                           6809 FLEX Adaptation Guide
+SECTOR READ/WRITE TEST
 
 
                     * CARRIAGE RETURN LINE FEED ROUTINE
@@ -3197,12 +2753,11 @@ SECTOR READ/WRITE TEST                           6809 FLEX Adaptation Guide
 01B6 4A                      DECA               DONE WITH DUMP
 
 
-                             Page 53 - Appendix C
-6809 FLEX Adaptation Guide                          SECTOR READ/WRITE TEST
+                          SECTOR READ/WRITE TEST
 
 ## PDF page 62
 
-6809 FLEX Adaptation Guide                          SECTOR READ/WRITE TEST
+                          SECTOR READ/WRITE TEST
 
 
 01B7 26   EE                 BNE    DUMP1      LOOP IF NOT
@@ -3256,12 +2811,11 @@ SECTOR READ/WRITE TEST                           6809 FLEX Adaptation Guide
 
 
 
-                            Page 54 - Appendix C
-QLOAD UTILITY                                      6809 FLEX Adaptation Guide
+QLOAD UTILITY
 
 ## PDF page 63
 
-QLOAD UTILITY                                      6809 FLEX Adaptation Guide
+QLOAD UTILITY
 
 
                                   APPENDIX D
@@ -3320,12 +2874,11 @@ C126 BD   2F          LOAD1   BSR    GETCH      GET A CHARACTER
 C128 81   02                  CMPA   #$02       DATA RECORD HEADER?
 
 
-                              Page 55 - Appendix D
-6809 FLEX Adaptation Guide                                    QLOAD UTILITY
+                                    QLOAD UTILITY
 
 ## PDF page 64
 
-6809 FLEX Adaptation Guide                                    QLOAD UTILITY
+                                    QLOAD UTILITY
 
 
 C12A 27   0A                 BEQ    LOAD2      SKIP IF SO
@@ -3373,12 +2926,11 @@ C170 6E   9F D3F3   GO       JMPI   [MONITR]    JUMP TO MONITOR
 
 
 
-                            Page 56 - Appendix D
-SKELETAL FLEX LOADER                             6809 FLEX Adaptation Guide
+SKELETAL FLEX LOADER
 
 ## PDF page 65
 
-SKELETAL FLEX LOADER                             6809 FLEX Adaptation Guide
+SKELETAL FLEX LOADER
 
 
                                 APPENDIX E
@@ -3437,12 +2989,11 @@ C12B B7   C109              STA    TADR+1
 
 
 
-                            Page 57 - Appendix E
-6809   FLEX Adaptation Guide                           SKELETAL FLEX LOADER
+                           SKELETAL FLEX LOADER
 
 ## PDF page 66
 
-6809   FLEX Adaptation Guide                           SKELETAL FLEX LOADER
+                           SKELETAL FLEX LOADER
 
 
 C12E 20    EA                BRA    LOAD1      CONTINUE LOAD
@@ -3500,12 +3051,11 @@ C16F 39                      RTS               THIS CODE DISABLES READ!
 
 
 
-                             Page 58 - Appendix E
-SKELETAL NEWDISK ROUTINE                       6809 FLEX Adaptation Guide
+SKELETAL NEWDISK ROUTINE
 
 ## PDF page 67
 
-SKELETAL NEWDISK ROUTINE                       6809 FLEX Adaptation Guide
+SKELETAL NEWDISK ROUTINE
 
 
                                 APPENDIX F
@@ -3564,12 +3114,11 @@ SKELETAL NEWDISK ROUTINE                       6809 FLEX Adaptation Guide
                     **************************************************
 
 
-                           Page 59 - Appendix F
-6809 FLEX Adaptation Guide                          SKELETAL NEWDISK ROUTINE
+                          SKELETAL NEWDISK ROUTINE
 
 ## PDF page 68
 
-6809 FLEX Adaptation Guide                          SKELETAL NEWDISK ROUTINE
+                          SKELETAL NEWDISK ROUTINE
 
 
                     * WORK SPACE WHERE ONE TRACK OF DATA IS SETUP
@@ -3628,12 +3177,11 @@ SKELETAL NEWDISK ROUTINE                       6809 FLEX Adaptation Guide
 
 
 
-                             Page 60 - Appendix F
-SKELETAL NEWDISK ROUTINE                        6809 FLEX Adaptation Guide
+SKELETAL NEWDISK ROUTINE
 
 ## PDF page 69
 
-SKELETAL NEWDISK ROUTINE                        6809 FLEX Adaptation Guide
+SKELETAL NEWDISK ROUTINE
 
 
 0027               DNSITY   RMB    1
@@ -3651,12 +3199,11 @@ SKELETAL NEWDISK ROUTINE                        6809 FLEX Adaptation Guide
 
 
 
-                            Page 61 - Appendix F
-6809 FLEX Adaptation Guide                         SKELETAL NEWDISK ROUTINE
+                         SKELETAL NEWDISK ROUTINE
 
 ## PDF page 70
 
-6809 FLEX Adaptation Guide                         SKELETAL NEWDISK ROUTINE
+                         SKELETAL NEWDISK ROUTINE
 
 
 0100                         ORG    $0100
@@ -3715,12 +3262,11 @@ SKELETAL NEWDISK ROUTINE                        6809 FLEX Adaptation Guide
 015F 97   32               STA    MAX
 
 
-                            Page 62 - Appendix F
-SKELETAL NEWDISK ROUTINE                       6809 FLEX Adaptation Guide
+SKELETAL NEWDISK ROUTINE
 
 ## PDF page 71
 
-SKELETAL NEWDISK ROUTINE                       6809 FLEX Adaptation Guide
+SKELETAL NEWDISK ROUTINE
 
 
 0161 0F   26       FORM25  CLR    DENSE     INITIALIZE SINGLE DENSITY
@@ -3761,12 +3307,11 @@ SKELETAL NEWDISK ROUTINE                       6809 FLEX Adaptation Guide
 
 
 
-                            Page 63 - Appendix F
-6809 FLEX Adaptation Guide                         SKELETAL NEWDISK ROUTINE
+                         SKELETAL NEWDISK ROUTINE
 
 ## PDF page 72
 
-6809 FLEX Adaptation Guide                         SKELETAL NEWDISK ROUTINE
+                         SKELETAL NEWDISK ROUTINE
 
 **************************************************************
 *
@@ -3825,12 +3370,11 @@ SKELETAL NEWDISK ROUTINE                       6809 FLEX Adaptation Guide
 
 
 
-                            Page 64 - Appendix F
-SKELETAL NEWDISK ROUTINE                       6809 FLEX Adaptation Guide
+SKELETAL NEWDISK ROUTINE
 
 ## PDF page 73
 
-SKELETAL NEWDISK ROUTINE                       6809 FLEX Adaptation Guide
+SKELETAL NEWDISK ROUTINE
 
 
 01EE 96   20       FORM7   LDA    TRACK      CHECK VALUE
@@ -3889,12 +3433,11 @@ SKELETAL NEWDISK ROUTINE                       6809 FLEX Adaptation Guide
 0248 96   20              LDA     TRACK      GET TRACK NO.
 
 
-                           Page 65 - Appendix F
-6809 FLEX   Adaptation Guide                        SKELETAL NEWDISK ROUTINE
+                        SKELETAL NEWDISK ROUTINE
 
 ## PDF page 74
 
-6809 FLEX   Adaptation Guide                        SKELETAL NEWDISK ROUTINE
+                        SKELETAL NEWDISK ROUTINE
 
 
 024A A7   80                 STA    0,X+
@@ -3953,12 +3496,11 @@ SKELETAL NEWDISK ROUTINE                       6809 FLEX Adaptation Guide
 02B4 39             DOSECA   RTS
 
 
-                             Page 66 - Appendix F
-SKELETAL NEWDISK ROUTINE                       6809 FLEX Adaptation Guide
+SKELETAL NEWDISK ROUTINE
 
 ## PDF page 75
 
-SKELETAL NEWDISK ROUTINE                       6809 FLEX Adaptation Guide
+SKELETAL NEWDISK ROUTINE
 
 
 **************************************************************
@@ -4017,12 +3559,11 @@ SKELETAL NEWDISK ROUTINE                       6809 FLEX Adaptation Guide
 02F2 20   EE              BRA     SETUP2     REPEAT
 
 
-                           Page 67 - Appendix F
-6809 FLEX Adaptation Guide                         SKELETAL NEWDISK ROUTINE
+                         SKELETAL NEWDISK ROUTINE
 
 ## PDF page 76
 
-6809 FLEX Adaptation Guide                         SKELETAL NEWDISK ROUTINE
+                         SKELETAL NEWDISK ROUTINE
 
 
 
@@ -4081,12 +3622,11 @@ SKELETAL NEWDISK ROUTINE                       6809 FLEX Adaptation Guide
 0348 D0   22              SUBB     BADCNT
 
 
-                            Page 68 - Appendix F
-SKELETAL NEWDISK ROUTINE                        6809 FLEX Adaptation Guide
+SKELETAL NEWDISK ROUTINE
 
 ## PDF page 77
 
-SKELETAL NEWDISK ROUTINE                        6809 FLEX Adaptation Guide
+SKELETAL NEWDISK ROUTINE
 
 
 034A 27   02                BEQ    REMS35     UNDERFLOW?
@@ -4145,12 +3685,11 @@ SKELETAL NEWDISK ROUTINE                        6809 FLEX Adaptation Guide
 03B0 80   DA                BSR    READSS     READ IN SIR SECTOR
 
 
-                            Page 69 - Appendix F
-6809 FLEX Adaptation Guide                         SKELETAL NEWDISK ROUTINE
+                         SKELETAL NEWDISK ROUTINE
 
 ## PDF page 78
 
-6809 FLEX Adaptation Guide                         SKELETAL NEWDISK ROUTINE
+                         SKELETAL NEWDISK ROUTINE
 
 
 03B2 26   48              BNE      DOTRK4    ERROR?
@@ -4204,12 +3743,11 @@ SKELETAL NEWDISK ROUTINE                        6809 FLEX Adaptation Guide
 
 
 
-                            Page 70 - Appendix F
-SKELETAL NEWDISK ROUTINE                        6809 FLEX Adaptation Guide
+SKELETAL NEWDISK ROUTINE
 
 ## PDF page 79
 
-SKELETAL NEWDISK ROUTINE                        6809 FLEX Adaptation Guide
+SKELETAL NEWDISK ROUTINE
 
 
                    * SAVE BOOT ON TRACK 0 SECTOR 1
@@ -4244,12 +3782,11 @@ SKELETAL NEWDISK ROUTINE                        6809 FLEX Adaptation Guide
 
 
 
-                            Page 71 - Appendix F
-6809 FLEX Adaptation Guide                         SKELETAL NEWDISK ROUTINE
+                         SKELETAL NEWDISK ROUTINE
 
 ## PDF page 80
 
-6809 FLEX Adaptation Guide                         SKELETAL NEWDISK ROUTINE
+                         SKELETAL NEWDISK ROUTINE
 
 
                    **************************************************
@@ -4306,12 +3843,11 @@ SKELETAL NEWDISK ROUTINE                        6809 FLEX Adaptation Guide
 
 
 
-                            Page 72 - Appendix F
-SKELETAL NEWDISK ROUTINE                         6809 FLEX Adaptation Guide
+SKELETAL NEWDISK ROUTINE
 
 ## PDF page 81
 
-SKELETAL NEWDISK ROUTINE                         6809 FLEX Adaptation Guide
+SKELETAL NEWDISK ROUTINE
 
 
 ***************************************************************
@@ -4355,12 +3891,11 @@ SKELETAL NEWDISK ROUTINE                         6809 FLEX Adaptation Guide
 
 
 
-                             Page 73 - Appendix F
-6809 FLEX Adaptation Guide                           SKELETAL NEWDISK ROUTINE
+                           SKELETAL NEWDISK ROUTINE
 
 ## PDF page 82
 
-6809 FLEX Adaptation Guide                           SKELETAL NEWDISK ROUTINE
+                           SKELETAL NEWDISK ROUTINE
 
 
 **********************************************************
@@ -4408,12 +3943,11 @@ C109 7E   C109        BOOT1   JMP    BOOT1      ROUTINE GOES HERE
 
 
 
-                              Page 74 - Appendix F
-SAMPLE ADAPTATION                               6809 FLEX Adaptation Guide
+SAMPLE ADAPTATION
 
 ## PDF page 83
 
-SAMPLE ADAPTATION                               6809 FLEX Adaptation Guide
+SAMPLE ADAPTATION
 
 
                                APPENDIX G
@@ -4471,12 +4005,11 @@ SWTPc MP-T timer board installed in I/O slot #4 (PIA at $E012).
 
 
 
-                            Page 75 - Appendix G
-6809 FLEX Adaptation Guide                             SAMPLE ADAPTATION
+                             SAMPLE ADAPTATION
 
 ## PDF page 84
 
-6809 FLEX Adaptation Guide                             SAMPLE ADAPTATION
+                             SAMPLE ADAPTATION
 
 
 2) The Disk Driver Package
@@ -4531,12 +4064,11 @@ operation aborted.
 
 
 
-                           Page 76 - Appendix   G
-SAMPLE ADAPTATION                            6809 FLEX Adaptation Guide
+SAMPLE ADAPTATION
 
 ## PDF page 85
 
-SAMPLE ADAPTATION                            6809 FLEX Adaptation Guide
+SAMPLE ADAPTATION
 
 
 5) A NEWDISK Program
@@ -4561,12 +4093,11 @@ skeletal NEWDISK listed in Appendix F.
 
 
 
-                         Page 77 - Appendix G
-6809 FLEX Adaptation Guide                       Sample Console I/O Drivers
+                       Sample Console I/O Drivers
 
 ## PDF page 86
 
-6809 FLEX Adaptation Guide                       Sample Console I/O Drivers
+                       Sample Console I/O Drivers
 
 
                      * CONSOLE I/O DRIVER PACKAGE
@@ -4625,12 +4156,11 @@ D37A 39                      RTS
 
 
 
-                             Page 78 - Appendix G
-Sample Console I/O Drivers                      6809 FLEX Adaptation Guide
+Sample Console I/O Drivers
 
 ## PDF page 87
 
-Sample Console I/O Drivers                      6809 FLEX Adaptation Guide
+Sample Console I/O Drivers
 
 
                    * TERMINAL INPUT CHAR. ROUTINE - NO ECHO
@@ -4689,12 +4219,11 @@ D3BB 20   02                 BRA    TOFF2
 D3BD 86   8F       TOFF      LDA    #$8F      TURN OFF TIMER
 
 
-                            Page 79 - Appendix G
-6809 FLEX Adaptation Guide                     Sample Console I/O Drivers
+                     Sample Console I/O Drivers
 
 ## PDF page 88
 
-6809 FLEX Adaptation Guide                     Sample Console I/O Drivers
+                     Sample Console I/O Drivers
 
 
 D3BF B7   E012     TOFF2     STA   TMPIA
@@ -4714,12 +4243,11 @@ D3C6 7E   C700               JMP   CHPR      SWITCH PROCESSES
 
 
 
-                           Page 80 - Appendix G
-Sample Disk Drivers                             6809 FLEX Adaptation Guide
+Sample Disk Drivers
 
 ## PDF page 89
 
-Sample Disk Drivers                             6809 FLEX Adaptation Guide
+Sample Disk Drivers
 
 
                    * DRIVER ROUTINES FOR SWTPC MF-68
@@ -4778,12 +4306,11 @@ DE1B 7E   DE71     DSEEK JMP      SEEK
                    ***********************************************
 
 
-                            Page 81 - Appendix G
-6809 FLEX Adaptation Guide                             Sample Disk Drivers
+                             Sample Disk Drivers
 
 ## PDF page 90
 
-6809 FLEX Adaptation Guide                             Sample Disk Drivers
+                             Sample Disk Drivers
 
 
                    * GLOBAL VARIABLE STORAGE
@@ -4842,12 +4369,11 @@ DE64 27   03                 BEQ    WAIT1     SKIP IF NOT
 
 
 
-                            Page 82 - Appendix G
-Sample Disk Drivers                             6809 FLEX Adaptation Guide
+Sample Disk Drivers
 
 ## PDF page 91
 
-Sample Disk Drivers                             6809 FLEX Adaptation Guide
+Sample Disk Drivers
 
 
 DE66 113F                   SWI3               SWITCH TASKS IF SO
@@ -4906,12 +4432,11 @@ DEC0 39                     RTS               RETURN
                    * VERIFY
 
 
-                            Page 83 - Appendix G
-6809 FLEX Adaptation Guide                              Sample Disk Drivers
+                              Sample Disk Drivers
 
 ## PDF page 92
 
-6809 FLEX Adaptation Guide                              Sample Disk Drivers
+                              Sample Disk Drivers
 
 
                    *
@@ -4968,12 +4493,11 @@ DF0E 20   0B                 BRA    OK
 
 
 
-                            Page 84 - Appendix G
-Sample Disk Drivers                               6809 FLEX Adaptation Guide
+Sample Disk Drivers
 
 ## PDF page 93
 
-Sample Disk Drivers                               6809 FLEX Adaptation Guide
+Sample Disk Drivers
 
 
                     * CHKRDY
@@ -5010,12 +4534,11 @@ DF2D   39            DEL       RTS
 
 
 
-                              Page 85 - Appendix G
-6809 FLEX Adaptation Guide                                 Sample ROM Boot
+                                 Sample ROM Boot
 
 ## PDF page 94
 
-6809 FLEX Adaptation Guide                                 Sample ROM Boot
+                                 Sample ROM Boot
 
 
                    * ROM BOOT FOR SWTPC 6809 MF-68
@@ -5069,12 +4592,11 @@ DF2D   39            DEL       RTS
 
 
 
-                            Page 86 - Appendix G
-Sample FLEX Loader                                6809 FLEX Adaptation Guide
+Sample FLEX Loader
 
 ## PDF page 95
 
-Sample FLEX Loader                                6809 FLEX Adaptation Guide
+Sample FLEX Loader
 
 
                      * LOADER - FLEX LOADER ROUTINE
@@ -5133,12 +4655,11 @@ C135 8D   1A                  BSR    GETCH
 C137 B7   C10B                STA    LADR+1
 
 
-                              Page 87 - Appendix G
-6809 FLEX Adaptation Guide                                Sample FLEX Loader
+                                Sample FLEX Loader
 
 ## PDF page 96
 
-6809 FLEX Adaptation Guide                                Sample FLEX Loader
+                                Sample FLEX Loader
 
 
 C13A 8D   15                 BSR      GETCH     GET BYTE COUNT
@@ -5197,12 +4718,11 @@ C169 6E   9F C108   GO       JMP      [TADR]    JUMP TO TRANSFER ADDRESS
                     * READ ONE     SECTOR
 
 
-                             Page 88 - Appendix G
-Sample FLEX Loader                                6809 FLEX Adaptation Guide
+Sample FLEX Loader
 
 ## PDF page 97
 
-Sample FLEX Loader                                6809 FLEX Adaptation Guide
+Sample FLEX Loader
 
 
 
@@ -5258,12 +4778,11 @@ C1BA 39              DEL       RTS
 
 
 
-                             Page 89 - Appendix G
-6809 FLEX Adaptation Guide                                Sample NEWDISK
+                                Sample NEWDISK
 
 ## PDF page 98
 
-6809 FLEX Adaptation Guide                                Sample NEWDISK
+                                Sample NEWDISK
 
 
                    * NEWDISK
@@ -5322,12 +4841,11 @@ C1BA 39              DEL       RTS
                            etc.
 
 
-                          Page 90 - Appendix G
-Sample NEWDISK                              6809 FLEX Adaptation Guide
+Sample NEWDISK
 
 ## PDF page 99
 
-Sample NEWDISK                              6809 FLEX Adaptation Guide
+Sample NEWDISK
 
 
 
@@ -5368,12 +4886,11 @@ Sample NEWDISK                              6809 FLEX Adaptation Guide
 
 
 
-                        Page 91 - Appendix G
-6809 FLEX Adaptation Guide                                  Sample NEWDISK
+                                  Sample NEWDISK
 
 ## PDF page 100
 
-6809 FLEX Adaptation Guide                                  Sample NEWDISK
+                                  Sample NEWDISK
 
 
                     **************************************************
@@ -5420,12 +4937,11 @@ Sample NEWDISK                              6809 FLEX Adaptation Guide
 
 
 
-                             Page 92 - Appendix G
-Sample NEWDISK                                  6809 FLEX Adaptation Guide
+Sample NEWDISK
 
 ## PDF page 101
 
-Sample NEWDISK                                  6809 FLEX Adaptation Guide
+Sample NEWDISK
 
 
 ***************************************************************
@@ -5484,12 +5000,11 @@ Sample NEWDISK                                  6809 FLEX Adaptation Guide
 
 
 
-                            Page 93 - Appendix G
-6809 FLEX Adaptation Guide                         Sample NEWDISK
+                         Sample NEWDISK
 
 ## PDF page 102
 
-6809 FLEX Adaptation Guide                         Sample NEWDISK
+                         Sample NEWDISK
 
 
 
@@ -5500,12 +5015,11 @@ Sample NEWDISK                                  6809 FLEX Adaptation Guide
 
 
 
-                            Page 94 - Appendix G
-Sample NEWDISK                                  6809 FLEX Adaptation Guide
+Sample NEWDISK
 
 ## PDF page 103
 
-Sample NEWDISK                                  6809 FLEX Adaptation Guide
+Sample NEWDISK
 
 
 **********************************************************
@@ -5564,12 +5078,11 @@ C124 8D   2B                BSR    GETCH      GET TRANSFER ADDRESS
 
 
 
-                            Page 95 - Appendix G
-6809 FLEX    Adaptation Guide                                 Sample NEWDISK
+                                 Sample NEWDISK
 
 ## PDF page 104
 
-6809 FLEX    Adaptation Guide                                 Sample NEWDISK
+                                 Sample NEWDISK
 
 
 C126 B7     C108              STA    TADR
@@ -5628,12 +5141,11 @@ C169 6E     9F C108   GO      JMP    [TADR]     JUMP TO TRANSFER ADDRESS
               001C    RDMSK   EQU    $1C        READ ERROR MASK
 
 
-                              Page 96 - Appendix G
-Sample NEWDISK                                  6809 FLEX Adaptation Guide
+Sample NEWDISK
 
 ## PDF page 105
 
-Sample NEWDISK                                  6809 FLEX Adaptation Guide
+Sample NEWDISK
 
 
             008C   RDCMND   EQU    $8C        READ COMMAND
@@ -5688,17 +5200,3 @@ C1B7 BD   C1BA      DEL14   JSR    DEL
 C1BA 39             DEL     RTS
 
                             END    NEWDISK
-
-
-
-
-                            Page 97 - Appendix G
-
-
-## PDF page 106
-
-
-
-## PDF page 107
-
-

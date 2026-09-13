@@ -4,7 +4,6 @@ _OCR from the 72-page alternate scan. Command descriptions are stored separately
 
 ## PDF page 1
 
-
 COPYRIGHT © 1979 by
 Technical Systems Consultants, Inc.
 111 Providence Road
@@ -43,8 +42,6 @@ FLEX 9.0 for full size and mini floppy disks. The user should keep this
 manual close at hand while becoming familiar with the system. It is
 organized to make it convenient as a quick reference guide, as well as a
 thorough reference manual.
-
--jii-
 
 ## PDF page 5
 
@@ -193,8 +190,6 @@ eo ee
 
 ## PDF page 7
 
-FLEX. USER'S MANUAL
-
 I. INTRODUCTION
 
 The FLEX™ Operating System is a very versatile and flexible operating
@@ -234,9 +229,7 @@ interaction with the disk.
 * FLEX is a registered trademark of Technical Systems
 Consultants, Inc.
 
-
 ## PDF page 8
-
 
 I]. SYSTEM REQUIREMENTS
 
@@ -278,9 +271,7 @@ signs (+++), and will always be present when the system jis ready to
 accept an operator command. The '+++' should become a familiar sight
 and signifies that FLEX is ready to work for you!
 
-
 ## PDF page 9
-
 
 IV. DISK FILES AND THEIR NAMES-
 
@@ -340,9 +331,7 @@ Note that the extension is always separated from the name by a period
 
 the following characters as a new field in the name specification.
 
-
 ## PDF page 10
-
 
 A file name can be further refined. The name and extension uniquely
 define a file on a particular drive, but the same name may exist on
@@ -386,9 +375,7 @@ other values wil] usually default to predetermined values. Studying the
 above examples will clarify the notation used. The same notation will
 occur regularly throughout the manual.
 
-
 ## PDF page 11
-
 
 VY. ENTERING COMMANDS
 
@@ -434,9 +421,7 @@ prompt, to show the action of the delete character, the prompt will be
 the computer. The delete character is initially a 'control X' but may
 also be redefined using TTYSET.
 
-
 ## PDF page 12
-
 
 As mentioned earlier, the first name on a command line is always
 interpreted as a command. Following the command is an optional list of
@@ -491,9 +476,7 @@ FLEX would go to drive 0 for the command LIST and to drive 1 for the
 file TEXTFILE. The actual assignment of drives is performed by the ASN
 utility. See its description for details.
 
-
 ## PDF page 13
-
 
 VI. COMMAND DESCRIPTIONS
 
@@ -533,7 +516,6 @@ as S~BUG. The syntax for this command is simply MON followed by the
 
 NOTE: to re-enter FLEX after using the MON command, you should enter the
 program at location CD03 hex.
-
 
 ## PDF page 15
 
@@ -583,7 +565,6 @@ output will resume. If the "RETURN' is typed, control will return to
 FLEX and the command will be terminated. All other characters are
 
 ignored while output is stopped.
-
 
 ## PDF page 65
 
@@ -641,9 +622,7 @@ the system will hang up attempting to read until a disk is inserted and
 the door closed. Alternatively, you could reset the machine and begin
 execution at the warm start location $CDO03.
 
-
 ## PDF page 66
-
 
 VI. SYSTEM ERROR NUMBERS
 
@@ -717,7 +696,6 @@ consult the 'Advanced Programmer's Guide'.
 
 ## PDF page 67
 
-
 VII. SYSTEM MEMORY MAP
 
 The following is a brief list of the RAM space required by the FLEX
@@ -739,9 +717,7 @@ CD03 FLEX warm start entry address
 For a more detailed memory map, consult the 'Advanced Programmer's
 Guide'.
 
-
 ## PDF page 68
-
 
 VIII. FLEX OPERATING SYSTEM INPUT/OUTPUT SUBROUTINES
 
@@ -799,9 +775,7 @@ The accumulator and register status after using PSTRNG are as follows:
 
 ACC. A Changed during the operation
 
-
 ## PDF page 69
-
 
 ACC. B_  Unchanged
 
@@ -824,7 +798,6 @@ in FLEX which allows breaking of the output. This routine returns an
 EQual. condition if no character was hit and a Not-Equal condition if a
 character was hit. No registers, except for the condition codes, may be
 altered.
-
 
 ## PDF page 71
 
@@ -955,4 +928,3 @@ Description page: X.1
 
 Y,<command string>
 Description page: Y.2
-

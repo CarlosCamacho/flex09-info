@@ -173,8 +173,3 @@ offset(hex)       size(hex)        contents
 
         Copyright © 1998-2001 Ian P. Blythe on behalf of the FLEX User Group
 Mailto: f_u_g@ipblythe.com (remove underlines from e-mail address - Say NO to UCE)
-
-
-## PDF page 4
-
-
