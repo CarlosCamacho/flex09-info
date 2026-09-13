@@ -58,7 +58,7 @@ If you decide to 'SORT' the actual sorting process will begin.
 When sorting has begun, the TSC 'SORT/MERGE' header will appear on the system printer beneath the DATAMAN headers.
 The TSC 'SORT' messages will tell you how many records are being sorted.
 Any time error messages occure under the TSC header, they are TSC 'SORT/MERGE' error messages.
-These error messages can be found in	the TSC 'SORT/MERGE' manual.
+These error messages can be found in	the TSC 'SORT/MERGE' manual.
 If you have defined the 'SORTED' database to replace the origional database, a message will appear asking if you want to
 delete an 'exsisting' file.
 Answere 'Y' to this prompt.

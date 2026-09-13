@@ -1,0 +1,19 @@
+# FIG-COPY
+
+> Source: `manuals/misc/MANUAL - FLEX Software Archive - Manual and Documentation Archive - Includes SINST0, SINST1, SINST2.zip!MANUAL.DSK!FIG-COPY.TXT`  
+> Method: FLEX disk extraction
+
+OCR and media-decoding errors may remain.
+
+COPY 0.REVU1A.TXT 1
+COPY 0.REVU2A.TXT 1
+COPY 0.REVU3A.TXT 1
+COPY 0.FIG1A.TXT 1
+COPY 0.FIG2A.TXT 1
+COPY 0.FIG3A.TXT 1
+COPY 0.FIG4A.TXT 1
+COPY 0.FIG5A.TXT 1
+COPY 0.FIG6A.TXT 1
+COPY 0.FIG7A.TXT 1
+COPY 0.FIG8A.TXT 1
+COPY 0.FIG9A.TXT 1
