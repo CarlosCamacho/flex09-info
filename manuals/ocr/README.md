@@ -1,8 +1,22 @@
-# FLEX/09 Manual OCR
+# FLEX/09 OCR Documentation Library
 
-OCR and searchable transcriptions from the FLEX manuals stored in this repository. Each utility command has its own Markdown file.
+Searchable Markdown transcriptions of FLEX/09 manuals, command references, program documentation, developer guides, source notes, newsletters, and material recovered from FLEX disk images and archives.
 
-## Command documents
+## User documentation
+
+### FLEX manuals and general reference
+
+- [FLEX User's Manual](reference-manuals/flex-users-manual-general-pages.md)
+- [FLEX User Group FAQ](reference-manuals/flex-user-group-faq.md)
+- [Complete manual transcription index](reference-manuals/)
+- [Original command-page image references](reference/)
+
+### FLEX commands
+
+Each standard FLEX command has a separate Markdown document. The numbering preserves the descending order of the original image files while presenting the commands in manual order.
+
+<details>
+<summary>Show all 46 command documents</summary>
 
 - [NEWDISK](commands/01-newdisk.md)
 - [PUTBOOT](commands/02-putboot.md)
@@ -51,14 +65,74 @@ OCR and searchable transcriptions from the FLEX manuals stored in this repositor
 - [XOUT](commands/45-xout.md)
 - [Y](commands/46-y.md)
 
-## Reference documents
+</details>
 
-- [Original screenshot reference pages](reference/)
-- [Complete FLEX manual transcriptions](reference-manuals/)
-- [Developer documentation and archived source notes](developer/)
-- [Color FLEX, O-FLEX, newsletters, and documentation volumes](additional-manuals/)
-- [Repository-wide FLEX/09 documentation corpus](repository-corpus/)
+### Programs and applications
 
-## Source handling
+- [Application documentation](repository-corpus/applications/) for editors, communications, databases, business software, and other FLEX programs
+- [Game documentation](repository-corpus/games/)
+- [Additional program and archive notes](repository-corpus/miscellaneous/)
 
-Duplicate scans were consolidated. Existing command files were retained and extended when the complete 1979 User’s Manual supplied another version of the same command.
+### Utilities
+
+- [Utility documentation](repository-corpus/utilities/) for disk, file, terminal, printing, backup, conversion, and system tools
+- [FLEX distributions and system-disk documentation](repository-corpus/flex-09/)
+
+### FLEX variants and supplemental manuals
+
+- [Color FLEX manuals](additional-manuals/color-flex/)
+- [O-FLEX manual](additional-manuals/o-flex/)
+- [Supplemental manual sections and recovered documentation](additional-manuals/misc/)
+- [Complete supplemental collection index](additional-manuals/)
+
+### Newsletters and historical information
+
+- [Newsletters](repository-corpus/newsletters/)
+- [Repository-wide documentation index](repository-corpus/)
+
+## Developer documentation
+
+### APIs, operating-system interfaces, and internals
+
+- [FLEX Advanced Programmer's Guide](reference-manuals/flex-advanced-programmers-guide.md)
+- [FLEX Programmer's Manual](reference-manuals/flex-programmers-manual.md)
+- [6809 FLEX Adaptation Guide](reference-manuals/6809-flex-adaptation-guide.md)
+- [FLEX system and distribution notes](repository-corpus/flex-09/)
+
+These references cover system calls, File Control Blocks, disk and directory structures, drivers, memory conventions, console and printer interfaces, and adapting FLEX to hardware.
+
+### Assemblers, linkers, and loaders
+
+- [Assemblers](developer/assemblers/)
+- [Linkers and loaders](developer/linkers-loaders/)
+
+### Compilers and programming languages
+
+- [BASIC](developer/basic/)
+- [C compilers](developer/dyna-c/), [Introl-C](developer/introl-c/), [McCosh C](developer/mccosh-c/), and [Small-C](developer/small-c/)
+- [Pascal](developer/pascal/), [Dynasoft Pascal](developer/dynasoft-pascal/), [Lucidata Pascal](developer/lucidata-pascal/), and [TSC Pascal](developer/tsc-pascal/)
+- [FORTH](developer/forth/)
+- [SPL/M](developer/splm/)
+- [Miscellaneous compiler documentation](developer/compilers-misc/)
+
+### Debuggers, disassemblers, and development tools
+
+- [Debuggers](developer/debuggers/)
+- [Disassemblers](developer/disassemblers/)
+- [Developer toolkits](developer/toolkits/)
+- [Emulators](developer/emulators/)
+
+### Source code documentation and implementation notes
+
+- [Source-associated guides](repository-corpus/source-guides/) recovered from source archives and FLEX disks
+- [CSC development material](developer/csc/)
+- [JCP development material](developer/jcp/)
+- [Complete developer-document index](developer/)
+
+## Collection notes
+
+- Every document is stored as Markdown for browsing and full-text search.
+- Scan-only PDFs were OCRed; text PDFs and text files were extracted directly.
+- Documentation inside ZIP archives and FLEX disk images was recovered when possible.
+- Duplicate and near-duplicate documents were consolidated where confidence was high.
+- Source paths and extraction methods are recorded in the detailed collection indexes.
