@@ -1,0 +1,52 @@
+# READ-ME
+
+> Source: `misc/uncategorized/S09-010 - PL9 Development.zip!S09-010.DSK!READ-ME.TXT`  
+> Method: FLEX disk extraction
+
+OCR and media-decoding errors may remain.
+
+TO MODIFY FSORT (81-12-12)
+--------------------------
+
+LINE 108	= *
+	109	<---> MOVED TO LINE UP AND BIG LETTERS + MOVED ---> 4
+	110	SAME (EXEPT NOT MOVED ---> 4)
+	111	'PAGE' --->	3 STEPS
+	112	$0C = 27,05
+	131 - 137	BIG LETTERS
+	599	06 = 010
+	652 = *
+	663	/ ---> -	(SEPARATING DATES)
+
+
+TO MODIFIE:
+-----------
+
+	1. EDIT FILESORT.TXT
+	2. ASMB FILESORT.TXT FILESORT.CMD
+	3. RUN
+
+
+FUNKTION:
+---------
+
+COMANDO: P FILESORT (P FOR PRINT ABILITY)
+		C 1 (READ DISK IN DRIVE #1)
+		"READY?"	ANSWER "Y" AND CHANCE DISK - REPEAT
+		"S" FOR "SORT"
+		"P FE TXT"	PRINT OUT ALL FILES WITH EXT "TXT"
+		"P FE BAS"
+- " -
+"BAS"
+		"P FE CMD"
+- " -
+"CMD"
+
+		EXIT: "E" AND ANSWER "Y" FORMATES PRINTER PAPER
+
+
+		013/172033	STIG BOBERG LINK\PING
+
+
+		FORMFEED STILL MAKES TROUBLE - GIVES HEADLINE AND PAGE # IN THE
+		MIDDLE OF PAGE.
