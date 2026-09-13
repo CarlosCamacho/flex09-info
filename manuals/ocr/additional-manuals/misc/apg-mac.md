@@ -5,38 +5,90 @@
 
 OCR and media-decoding errors may remain.
 
-+ 4
-STA   35,X    Put it in random index
-LDA   \#17     Setup function code
-STA   0,X     Store in FCB
-JSR   FMS     Call FMS
-BNE   ERROR   Check for errors
-Character is now in acc. A
-.sx
-Function 18 ($12 hex) - Put Random Byte in Sector
-.bx
-The file  Work Buffer
-.bx
-These bytes are used internally by FMS as temporary storage
-for a file name.  These locations are not for use by a user
-program.
-.sx
-Bytes 47-49  Current Directory Address
-.bx
-If the FCB is being used to process directory information wmstart Entry Point.
-.pg
-.ce
-EXAMPLES OF USING DOS ROUTINES
-.pp
-.pp
-1. Setting up a file spec in the FCB
-can be done in the following manner.
-This example assumes the Line Buffer Pointer
-is pointing to the first character of a file specification,
-and the at hand while learning
-the system.
-It is organized to make it convenient as a quick reference
-guide as well as a thorough reference manual.
-The manual is not written for the novice programmer
-and assumes the user to have a thorough understanding
-of aED    COPY COMPLETE TO DRIVE #NO SUCH FILE  FILE EXISTS    DELETE ORIGINAL?     ARE YOU SURE? STARTUPTXTA
+.nr b 6
+.ln 72
+.lt 72
+.dm hd header
+:st
+:sp 3
+.if %-1 .if e .tl "FLEX Advanced Programmer's Guide"""
+.if %-1 .if o .tl """FLEX Advanced Programmer's Guide"
+:sp 2
+.au 1
+.nr x 0
+.nr w 0-#b
+.if #v .fz
+.ns
+..
+.dm fo footer
+.nr v 0
+.if #x .xf
+.ch fo -#b
+:pg
+..
+.dm bo bottom
+.tl ''-%-''
+..
+.dm fn begin footnote
+.da ft
+.ev 1
+.if !#+x-1 .fs
+..
+.dm ef end f
+.br
+.ev 0
+.di
+.nr w -#v
+.ch fo #w
+.if #n-#p-#w .ch fo #n+1
+..
+.dm fs
+--------------------
+.br
+..
+.dm fz
+.fn
+.nf
+.fy
+.fi
+.ef
+..
+.dm fx
+.di fy
+..
+.dm xf
+.ev 1
+.nf
+.nc
+.ft
+.rm ft
+.cp
+.di
+.ev 0
+..
+.dm pp
+.sp 1
+.nl 3
+..
+.dm bx
+.fi
+.sp 1
+.in 5
+..
+.dm sx
+.sp 1
+.fi
+.in 0
+..
+.at 0 hd
+.at -#b fo
+.at -3 bo
+.ch fo 70
+.at -#b fx
+.ch fo -#b
+.ev 1
+.au 1
+.ln 60
+.ju
+.ev 0
+.br

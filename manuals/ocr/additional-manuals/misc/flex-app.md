@@ -5,35 +5,98 @@
 
 OCR and media-decoding errors may remain.
 
-ts DOS as to the number of blank lines to be
-     output  after each page.  (A page is a set of lines equal in number
-     to the Depth Count).  If this byte is  zero,  no  Eject  lines  are
-     output.  Default = 0.
+Copyright (C) 1979 by
+                  TECHNICAL SYSTEMS CONSULTANTS, INC.
+                             P. O. Box 2574
+                     West Lafayette, Indiana 47906
 
-$CC09 - TTYSET Pause Control
-    tain
-transfer addresses), the last
-one encountered by the load process is the one that is used, the
-others are ignored.
-.pp
-When reading or writing a binary file through the File Management
-System from a user program, the calling program must process tpen.
-.sx
-Function 3 - Open for Update
-.bx
-This function opens the file for both read and write.
-The file must not be open and must exist on the specified drive.
-If the drive spec is $FF, all drives will be searched.
-Once the file has been opened for upBNE instruction.
-.sx
-Byte 2  Activity Status
-.bx
-This byte is set by FMS to a "1" if the file is open for read,
-or "2" if the file is open for writing.
-This byte is checked by several FMS function processors to
-determine if the requested operation is lSMB
-section of the FLEX User's Guide describes the way to assign a
-transfer address to a program being assembled.
-.pp
-Disk commands, when loaded into memory, may reside anywhere in the
-User RAM Area; the address is determined at assembly time by using ED    COPY COMPLETE TO DRIVE #NO SUCH FILE  FILE EXISTS    DELETE ORIGINAL?     ARE YOU SURE? STARTUPTXTA
+                          All Rights Reserved
+
+
+                            COPYRIGHT NOTICE
+
+The FLEX~ Operating System and all of its associated  documentation  are
+provided  for  personal  use and enjoyment by the purchaser.  The entire
+program and all documentation, including this manual are copyrighted  by
+Technical  Systems  Consultants,  Inc., and reproduction by any means is
+strictly prohibited.  Use  of  the  FLEX  Operating  System  and/or  its
+documentation,  or  any  part thereof, for any purpose other than single
+end use is strictly prohibited.
+
+
+FLEX~ is a trademark of Technical Systems Consultants, Inc.
+
+
+                                  -ii-
+
+
+                                CONTENTS
+
+
+   I. Introduction                                        1
+
+  II. Disk Operating System                               3
+        DOS Memory Map                                    3
+        User Callable Routines                            8
+        User Written Commands                            16
+        Disk Resident Commands                           17
+        Comments About Commands                          18
+        Examples of DOS Calls                            19
+
+ III. File Management System                             21
+        File Control Blocks                              22
+        FMS Entry Points                                 26
+        FMS Global Variables                             27
+        FMS Function Codes                               28
+        Random Files                                     37
+        Error Numbers                                    38
+
+  IV. Disk Drivers                                       41
+
+   V. Disk Structures                                    43
+        Diskette Initialization                          43
+        Directory Sectors                                44
+        Data Sectors                                     44
+        Binary Files                                     45
+        Text Files                                       46
+
+  VI. Writing Utility Commands                           47
+        Example Program                                  49
+
+ VII. The DOS LINK Utility                               51
+
+VIII. Printer Routines                                   53
+        The P Utility                                    54
+
+  IX. General Information                                57
+        Interrupts in FLEX                               57
+        System Memory Map                                57
+
+
+                                 -iii-
+
+
+                                  -iv-
+
+
+                                Preface
+
+
+The purpose of the  Advanced  Programmer's  Manual  is  to  provide  the
+assembler  language  programmer  with  the  information required to make
+effective use of the available  system  routines  and  functions.   This
+manual  applies to the 6809 version of FLEX.  The programmer should keep
+this manual close at hand while learning the system.  It is organized to
+make  it  convenient  as  a  quick reference guide as well as a thorough
+reference manual.  The manual is not written for the  novice  programmer
+and  assumes  the  user  to  have  a thorough understanding of assembler
+language programming techniques.
+
+
+                                  -v-
+
+
+                                  -vi-
+
+
+                                 -vii-

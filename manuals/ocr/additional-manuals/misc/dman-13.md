@@ -122,7 +122,7 @@ The actual guts of the program are in lines 1615 to 1840.
 Lines 1615 to 1640 reads and checks the 'RECORD CODE' of the 'PRIMARY' database.
 Line 1650 is used to skip the reading of a new 'SECONDARY' database record if the 'RESET' is 'N' and a 'NEW' record
 has just been written.
-Lines 1655 to 1675 load	and check the 'SECONDARY' database.
+Lines 1655 to 1675 load	and check the 'SECONDARY' database.
 You will note that lines 1680 to 1700 do the actual 'KEY' checking.
 'TYPE' 2 and 3 data are compared by their 'numerical' values while
 'TYPE' 1 data is compared as 'STRING' data.

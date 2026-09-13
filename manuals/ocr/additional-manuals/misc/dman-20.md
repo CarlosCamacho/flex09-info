@@ -141,7 +141,7 @@ If you do, try adding the following line of code.
 .sp2
 .lm45
 .nf
-1878	IF U(X\%)=0 THEN R$(Y\%,U(X\%))="	"
+1878	IF U(X\%)=0 THEN R$(Y\%,U(X\%))="	"
 .LM55
 .FI
 .SP2
