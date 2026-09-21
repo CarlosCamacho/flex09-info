@@ -1,0 +1,3950 @@
+              *
+              * PROGRAM PR.CMD DISSASSEMBLED BY DA68
+              *
+              * using control table file PR.ctl
+              *
+
+
+                         ORG      $0200
+
+              *
+              * SUBROUTINE: L0200     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+0200  20 0A   L0200      BRA      L020C             
+
+0202  04                 *** *        
+0203  16                 TAB                        
+0204  CB 12              ADD B    #$12              
+0206  16                 TAB                        
+0207  CB 0C              ADD B    #$0C              
+0209  16                 TAB                        
+020A  CA F7              ORA B    #$F7              
+020C  10      L020C      SBA                        
+020D  CE 01FF            LDX      #L01FF            
+0210  4F                 CLR A                      
+0211  1F                 *** *        
+0212  8B 8D              ADD A    #$8D              
+0214  3B                 RTI                        
+
+0215  97 92              STA A    L0092             
+0217  97 91              STA A    L0091             
+0219  4A                 DEC A                      
+021A  97 93              STA A    L0093             
+021C  FC                 *** *        
+021D  CC                 *** *        
+021E  0E                 CLI                        
+021F  97 3C              STA A    L003C             
+0221  D7 33              STA B    L0033             
+0223  B6 CC10            LDA A    LCC10             
+0226  97 48              STA A    L0048             
+0228  8E 15B9            LDS      #L15B9            
+022B  17                 TBA                        
+022C  12                 *** *        
+022D  8B 17              ADD A    #$17              
+022F  12                 *** *        
+0230  42                 *** *        
+0231  0C                 CLC                        
+0232  5A                 DEC B                      
+0233  17                 TBA                        
+0234  0F                 SEI                        
+0235  72                 *** *        
+0236  24 0D              BCC      L0245             
+0238  96 65              LDA A    L0065             
+023A  97 92              STA A    L0092             
+023C  17                 TBA                        
+023D  0F                 SEI                        
+023E  69 24              ROL      $24,X             
+0240  04                 *** *        
+0241  96 65              LDA A    L0065             
+0243  97 93              STA A    L0093             
+0245  17      L0245      TBA                        
+0246  12                 *** *        
+0247  67 4F              ASR      $4F,X             
+0249  8E 004F            LDS      #L004F            
+024C  8D 06              BSR      L0254             
+024E  20 16              BRA      L0266             
+
+0250  4F                 CLR A                      
+0251  8E 0030            LDS      #L0030            
+0254  A7 80   L0254      STA A    $FFFFFF80,X             
+0256  8C 0090            CPX      #L0090            
+0259  26 F9              BNE      L0254             
+025B  8E 009B            LDS      #L009B            
+025E  A7 80   L025E      STA A    $FFFFFF80,X             
+0260  8C 00D7            CPX      #L00D7            
+0263  26 F9              BNE      L025E             
+0265  39                 RTS                        
+
+0266  8E 0110 L0266      LDS      #L0110            
+0269  9F 75              STS      L0075             
+026B  4F                 CLR A                      
+026C  A7 80   L026C      STA A    $FFFFFF80,X             
+026E  8C 0125            CPX      #L0125            
+0271  26 F9              BNE      L026C             
+0273  CC                 *** *        
+0274  01                 NOP                        
+0275  01                 NOP                        
+0276  DD                 *** *        
+0277  D3                 *** *        
+0278  97 BC              STA A    L00BC             
+027A  97 F9              STA A    L00F9             
+027C  DD                 *** *        
+027D  C5 97              BIT B    #$97              
+027F  3D                 *** *        
+0280  97 32              STA A    L0032             
+0282  97 78              STA A    L0078             
+0284  97 69              STA A    L0069             
+0286  86 41              LDA A    #$41              
+0288  97 C3              STA A    L00C3             
+028A  97 C4              STA A    L00C4             
+028C  97 3B              STA A    L003B             
+028E  97 9C              STA A    L009C             
+0290  97 D5              STA A    L00D5             
+0292  97 D6              STA A    L00D6             
+0294  4C                 INC A                      
+0295  97 3F              STA A    L003F             
+0297  8E 1D47            LDS      #L1D47            
+029A  9F A9              STS      L00A9             
+029C  9F A3              STS      L00A3             
+029E  86 FF              LDA A    #$FF              
+02A0  A7 80   L02A0      STA A    $FFFFFF80,X             
+02A2  8C 2FFD            CPX      #L2FFD            
+02A5  26 F9              BNE      L02A0             
+02A7  9F A1              STS      L00A1             
+02A9  6F 84              CLR      $FFFFFF84,X             
+02AB  6F 01              CLR      $01,X             
+02AD  6F 1F              CLR      $1F,X             
+02AF  86 0D              LDA A    #$0D              
+02B1  B7 187B            STA A    L187B             
+02B4  86 A0              LDA A    #$A0              
+02B6  97 BE              STA A    L00BE             
+02B8  8E 1849            LDS      #L1849            
+02BB  86 FF              LDA A    #$FF              
+02BD  A7 80   L02BD      STA A    $FFFFFF80,X             
+02BF  8C 1879            CPX      #L1879            
+02C2  26 F9              BNE      L02BD             
+02C4  8E 1655            LDS      #L1655            
+02C7  9F D7              STS      L00D7             
+02C9  9F D9              STS      L00D9             
+02CB  17                 TBA                        
+02CC  03                 *** *        
+02CD  C3                 *** *        
+02CE  9E DB              LDS      L00DB             
+02D0  9F DD              STS      L00DD             
+02D2  8E 16F0            LDS      #L16F0            
+02D5  9F E1              STS      L00E1             
+02D7  8E 1C45            LDS      #L1C45            
+02DA  9F F7              STS      L00F7             
+02DC  8E 164A            LDS      #L164A            
+02DF  10                 SBA                        
+02E0  8E 19C9            LDS      #L19C9            
+02E3  86 3E              LDA A    #$3E              
+02E5  97 4C              STA A    L004C             
+02E7  C6 0B              LDA B    #$0B              
+02E9  A6 80   L02E9      LDA A    $FFFFFF80,X             
+02EB  A7 A0              STA A    $FFFFFFA0,X             
+02ED  5A                 DEC B                      
+02EE  26 F9              BNE      L02E9             
+02F0  8E 19C5            LDS      #L19C5            
+02F3  B6 CC0C            LDA A    LCC0C             
+02F6  A7 03              STA A    $03,X             
+02F8  86 01              LDA A    #$01              
+02FA  A7 84              STA A    $FFFFFF84,X             
+02FC  BD D406            JSR      LD406             
+02FF  27 5D              BEQ      L035E             
+0301  A6 01              LDA A    $01,X             
+0303  81 04              CMP A    #$04              
+0305  10                 SBA                        
+0306  26 12              BNE      L031A             
+0308  5F                 CLR B                      
+0309  B6 CC11            LDA A    LCC11             
+030C  81 0D              CMP A    #$0D              
+030E  27 18              BEQ      L0328             
+0310  B1 CC02            CMP A    LCC02             
+0313  27 13              BEQ      L0328             
+0315  0F                 SEI                        
+0316  5F                 CLR B                      
+0317  8E 19C5            LDS      #L19C5            
+031A  BD CD2D L031A      JSR      LCD2D             
+031D  24 2C              BCC      L034B             
+031F  B6 CC11            LDA A    LCC11             
+0322  81 2A              CMP A    #$2A              
+0324  27 15              BEQ      L033B             
+0326  20 07              BRA      L032F             
+
+0328  0D      L0328      SEC                        
+0329  8B 27              ADD A    #$27              
+032B  03                 *** *        
+032C  16                 TAB                        
+032D  06                 TAP                        
+032E  1B                 ABA                        
+032F  8E 1601 L032F      LDS      #L1601            
+0332  17                 TBA                        
+0333  11                 CBA                        
+0334  84 BD              AND A    #$BD              
+0336  D4 03              AND B    L0003             
+0338  16                 TAB                        
+0339  FE CE8E            LDX      LCE8E             
+033C  16                 TAB                        
+033D  20 17              BRA      L0356             
+
+033F  11                 CBA                        
+0340  78 1711            ASL      L1711             
+0343  8B BD              ADD A    #$BD              
+0345  CD                 *** *        
+0346  27 24              BEQ      L036C             
+0348  E6 20              LDA B    $20,X             
+034A  BE 0C8B            LDS      L0C8B             
+034D  8E 19C5            LDS      #L19C5            
+0350  86 01              LDA A    #$01              
+0352  BD CD33            JSR      LCD33             
+0355  0F                 SEI                        
+0356  34      L0356      DES                        
+0357  86 01              LDA A    #$01              
+0359  A7 84              STA A    $FFFFFF84,X             
+035B  17                 TBA                        
+035C  11                 CBA                        
+035D  FC                 *** *        
+035E  96 69   L035E      LDA A    L0069             
+0360  91 92              CMP A    L0092             
+0362  24 06              BCC      L036A             
+0364  C6 0F              LDA B    #$0F              
+0366  D7 6E              STA B    L006E             
+0368  20 08              BRA      L0372             
+
+036A  91 93   L036A      CMP A    L0093             
+036C  10      L036C      SBA                        
+036D  22 FE   L036D      BHI      L036D             
+036F  99 0F              ADC A    L000F             
+0371  6E 96              JMP      $FFFFFF96,X             
+
+0373  C7                 *** *        
+0374  81 03              CMP A    #$03              
+0376  26 06              BNE      L037E             
+0378  96 C9              LDA A    L00C9             
+037A  0F      L037A      SEI                        
+037B  C7                 *** *        
+037C  20 35              BRA      L03B3             
+
+037E  17      L037E      TBA                        
+037F  03                 *** *        
+0380  41                 *** *        
+0381  D6 5F              LDA B    L005F             
+0383  10                 SBA                        
+0384  26 05              BNE      L038B             
+0386  B4 D6C5            AND A    LD6C5             
+0389  27 28              BEQ      L03B3             
+038B  D6 C7   L038B      LDA B    L00C7             
+038D  C1 01              CMP B    #$01              
+038F  22 18              BHI      L03A9             
+0391  27 10              BEQ      L03A3             
+0393  81 2E              CMP A    #$2E              
+0395  27 08              BEQ      L039F             
+0397  81 21              CMP A    #$21              
+0399  27 04              BEQ      L039F             
+039B  81 3F              CMP A    #$3F              
+039D  26 14              BNE      L03B3             
+039F  0C      L039F      CLC                        
+03A0  C7                 *** *        
+03A1  20 10              BRA      L03B3             
+
+03A3  81 20   L03A3      CMP A    #$20              
+03A5  27 F8              BEQ      L039F             
+03A7  20 D1              BRA      L037A             
+
+03A9  81 20   L03A9      CMP A    #$20              
+03AB  27 CD              BEQ      L037A             
+03AD  97 C9              STA A    L00C9             
+03AF  86 20              LDA A    #$20              
+03B1  20 EC              BRA      L039F             
+
+03B3  8E 16F0 L03B3      LDS      #L16F0            
+03B6  9F EB              STS      L00EB             
+03B8  9F DF              STS      L00DF             
+03BA  9E D7              LDS      L00D7             
+03BC  81 0D              CMP A    #$0D              
+03BE  26 13              BNE      L03D3             
+03C0  D6 C5              LDA B    L00C5             
+03C2  26 05              BNE      L03C9             
+03C4  9F A5   L03C4      STS      L00A5             
+03C6  16                 TAB                        
+03C7  01                 NOP                        
+03C8  5C                 INC B                      
+03C9  86 20   L03C9      LDA A    #$20              
+03CB  A7 80   L03CB      STA A    $FFFFFF80,X             
+03CD  9C DB              CPX      L00DB             
+03CF  26 FA              BNE      L03CB             
+03D1  20 1D              BRA      L03F0             
+
+03D3  17      L03D3      TBA                        
+03D4  02                 *** *        
+03D5  0B      L03D5      SEV                        
+03D6  A7 80              STA A    $FFFFFF80,X             
+03D8  0C                 CLC                        
+03D9  32                 PUL A                      
+03DA  9C DB              CPX      L00DB             
+03DC  26 04              BNE      L03E2             
+03DE  D6 C5              LDA B    L00C5             
+03E0  26 0E              BNE      L03F0             
+03E2  8C 16F0 L03E2      CPX      #L16F0            
+03E5  26 04              BNE      L03EB             
+03E7  86 0D              LDA A    #$0D              
+03E9  20 D9              BRA      L03C4             
+
+03EB  9F D7   L03EB      STS      L00D7             
+03ED  16                 TAB                        
+03EE  FF 6ED6            STX      L6ED6             
+03F1  C7                 *** *        
+03F2  C1 03              CMP B    #$03              
+03F4  26 04              BNE      L03FA             
+03F6  96 C9              LDA A    L00C9             
+03F8  20 0B              BRA      L0405             
+
+03FA  81 20   L03FA      CMP A    #$20              
+03FC  27 52              BEQ      L0450             
+03FE  17                 TBA                        
+03FF  02                 *** *        
+0400  C1 81              CMP B    #$81              
+0402  20 27              BRA      L042B             
+
+0404  4B                 *** *        
+0405  34      L0405      DES                        
+0406  02                 *** *        
+0407  86 20              LDA A    #$20              
+0409  9E DB              LDS      L00DB             
+040B  30      L040B      TSX                        
+040C  1F                 *** *        
+040D  8C 1654            CPX      #L1654            
+0410  27 1C              BEQ      L042E             
+0412  A1 84              CMP A    $FFFFFF84,X             
+0414  26 F5              BNE      L040B             
+0416  30      L0416      TSX                        
+0417  01                 NOP                        
+0418  9C DB              CPX      L00DB             
+041A  27 12              BEQ      L042E             
+041C  A6 84              LDA A    $FFFFFF84,X             
+041E  9F E9              STS      L00E9             
+0420  9E EB              LDS      L00EB             
+0422  A7 80              STA A    $FFFFFF80,X             
+0424  9F EB              STS      L00EB             
+0426  9E E9              LDS      L00E9             
+0428  86 20              LDA A    #$20              
+042A  A7 84              STA A    $FFFFFF84,X             
+042C  20 E8              BRA      L0416             
+
+042E  35      L042E      TXS                        
+042F  02                 *** *        
+0430  0F                 SEI                        
+0431  77 8E01            ASR      L8E01             
+0434  24 9F              BCC      L03D5             
+0436  75                 *** *        
+0437  9E EB              LDS      L00EB             
+0439  17      L0439      TBA                        
+043A  01                 NOP                        
+043B  A5 A7              BIT A    $FFFFFFA7,X             
+043D  80 9F              SUB A    #$9F              
+043F  DF 81              STX      L0081             
+0441  20 27              BRA      L046A             
+
+0443  0C                 CLC                        
+0444  8C 171D            CPX      #L171D            
+0447  27 07              BEQ      L0450             
+0449  17                 TBA                        
+044A  02                 *** *        
+044B  76 9EDF            ROR      L9EDF             
+044E  20 E9              BRA      L0439             
+
+0450  5F      L0450      CLR B                      
+0451  8E 1655            LDS      #L1655            
+0454  9F E5              STS      L00E5             
+0456  A6 84   L0456      LDA A    $FFFFFF84,X             
+0458  81 20              CMP A    #$20              
+045A  26 0A              BNE      L0466             
+045C  5C                 INC B                      
+045D  30                 TSX                        
+045E  01                 NOP                        
+045F  9C DB              CPX      L00DB             
+0461  26 F3              BNE      L0456             
+0463  16      L0463      TAB                        
+0464  00                 *** *        
+0465  BF 9FE7            STS      L9FE7             
+0468  17                 TBA                        
+0469  01                 NOP                        
+046A  96 8E   L046A      LDA A    L008E             
+046C  16                 TAB                        
+046D  55                 *** *        
+046E  86 20              LDA A    #$20              
+0470  A1 80   L0470      CMP A    $FFFFFF80,X             
+0472  27 06              BEQ      L047A             
+0474  9C DB              CPX      L00DB             
+0476  26 F8              BNE      L0470             
+0478  20 0C              BRA      L0486             
+
+047A  9C DB   L047A      CPX      L00DB             
+047C  26 04              BNE      L0482             
+047E  0C                 CLC                        
+047F  B3                 *** *        
+0480  20 04              BRA      L0486             
+
+0482  A1 80   L0482      CMP A    $FFFFFF80,X             
+0484  27 F4              BEQ      L047A             
+0486  D6 D1   L0486      LDA B    L00D1             
+0488  10                 SBA                        
+0489  26 01              BNE      L048C             
+048B  D1 D6              CMP B    L00D6             
+048D  D3                 *** *        
+048E  27 D3              BEQ      L0463             
+0490  D6 CD              LDA B    L00CD             
+0492  10                 SBA                        
+0493  26 01              BNE      L0496             
+0495  5C                 INC B                      
+0496  D6 CB   L0496      LDA B    L00CB             
+0498  10                 SBA                        
+0499  26 01              BNE      L049C             
+049B  60 D6              NEG      $FFFFFFD6,X             
+049D  B3                 *** *        
+049E  26 C3              BNE      L0463             
+04A0  D6 60              LDA B    L0060             
+04A2  26 BF              BNE      L0463             
+04A4  D6 62              LDA B    L0062             
+04A6  27 3B              BEQ      L04E3             
+04A8  8E 1655 L04A8      LDS      #L1655            
+04AB  9F E9              STS      L00E9             
+04AD  9E DB   L04AD      LDS      L00DB             
+04AF  A6 82              LDA A    $FFFFFF82,X             
+04B1  81 20              CMP A    #$20              
+04B3  26 AE              BNE      L0463             
+04B5  9E E9              LDS      L00E9             
+04B7  A6 84   L04B7      LDA A    $FFFFFF84,X             
+04B9  81 20              CMP A    #$20              
+04BB  27 08              BEQ      L04C5             
+04BD  30                 TSX                        
+04BE  01                 NOP                        
+04BF  9C DB              CPX      L00DB             
+04C1  27 E5              BEQ      L04A8             
+04C3  20 F2              BRA      L04B7             
+
+04C5  C6 01   L04C5      LDA B    #$01              
+04C7  17                 TBA                        
+04C8  01                 NOP                        
+04C9  5A                 DEC B                      
+04CA  D6 CB              LDA B    L00CB             
+04CC  27 01              BEQ      L04CF             
+04CE  39                 RTS                        
+
+04CF  9E E9   L04CF      LDS      L00E9             
+04D1  A6 84   L04D1      LDA A    $FFFFFF84,X             
+04D3  81 20              CMP A    #$20              
+04D5  26 08              BNE      L04DF             
+04D7  30                 TSX                        
+04D8  01                 NOP                        
+04D9  9C DB              CPX      L00DB             
+04DB  27 CB              BEQ      L04A8             
+04DD  20 F2              BRA      L04D1             
+
+04DF  9F E9   L04DF      STS      L00E9             
+04E1  20 CA              BRA      L04AD             
+
+04E3  9E DB   L04E3      LDS      L00DB             
+04E5  86 20              LDA A    #$20              
+04E7  A1 82   L04E7      CMP A    $FFFFFF82,X             
+04E9  27 FC              BEQ      L04E7             
+04EB  9F E9              STS      L00E9             
+04ED  9E DB   L04ED      LDS      L00DB             
+04EF  A6 82              LDA A    $FFFFFF82,X             
+04F1  81 20              CMP A    #$20              
+04F3  26 30              BNE      L0525             
+04F5  9E E9              LDS      L00E9             
+04F7  A6 84   L04F7      LDA A    $FFFFFF84,X             
+04F9  81 20              CMP A    #$20              
+04FB  27 09              BEQ      L0506             
+04FD  30                 TSX                        
+04FE  1F                 *** *        
+04FF  8C 1654            CPX      #L1654            
+0502  27 DF              BEQ      L04E3             
+0504  20 F1              BRA      L04F7             
+
+0506  C6 01   L0506      LDA B    #$01              
+0508  17                 TBA                        
+0509  01                 NOP                        
+050A  19                 DAA                        
+050B  D6 CB              LDA B    L00CB             
+050D  27 01              BEQ      L0510             
+050F  39                 RTS                        
+
+0510  9E E9   L0510      LDS      L00E9             
+0512  A6 84   L0512      LDA A    $FFFFFF84,X             
+0514  81 20              CMP A    #$20              
+0516  26 09              BNE      L0521             
+0518  30                 TSX                        
+0519  1F                 *** *        
+051A  8C 1654            CPX      #L1654            
+051D  27 C4              BEQ      L04E3             
+051F  20 F1              BRA      L0512             
+
+0521  9F E9   L0521      STS      L00E9             
+0523  20 C8              BRA      L04ED             
+
+0525  0F      L0525      SEI                        
+0526  B3                 *** *        
+0527  D6 3E              LDA B    L003E             
+0529  96 86              LDA A    L0086             
+052B  27 01              BEQ      L052E             
+052D  5F                 CLR B                      
+052E  0D      L052E      SEC                        
+052F  70 2602            NEG      L2602             
+0532  DB 38              ADD B    L0038             
+0534  0F                 SEI                        
+0535  70 DB71            NEG      LDB71             
+0538  2B 0F              BMI      L0549             
+053A  27 0D              BEQ      L0549             
+053C  34                 DES                        
+053D  04                 *** *        
+053E  86 20              LDA A    #$20              
+0540  17                 TBA                        
+0541  0F                 SEI                        
+0542  96 6A              LDA A    L006A             
+0544  E4 26              AND B    $26,X             
+0546  F7 3261            STA B    L3261             
+0549  D6 C5   L0549      LDA B    L00C5             
+054B  27 11              BEQ      L055E             
+054D  86 20              LDA A    #$20              
+054F  9E DB              LDS      L00DB             
+0551  8C 1655 L0551      CPX      #L1655            
+0554  27 18              BEQ      L056E             
+0556  A1 82              CMP A    $FFFFFF82,X             
+0558  27 F7              BEQ      L0551             
+055A  30                 TSX                        
+055B  01                 NOP                        
+055C  9F A5              STS      L00A5             
+055E  8E 1655 L055E      LDS      #L1655            
+0561  9C A5              CPX      L00A5             
+0563  27 09              BEQ      L056E             
+0565  A6 80              LDA A    $FFFFFF80,X             
+0567  17                 TBA                        
+0568  0F                 SEI                        
+0569  6F 9C              CLR      $FFFFFF9C,X             
+056B  A5 26              BIT A    $26,X             
+056D  F7 5FD7            STA B    L5FD7             
+0570  83                 *** *        
+0571  D7 64              STA B    L0064             
+0573  D7 C7              STA B    L00C7             
+0575  D7 68              STA B    L0068             
+0577  D7 71              STA B    L0071             
+0579  03                 *** *        
+057A  62                 *** *        
+057B  8E 1655            LDS      #L1655            
+057E  9F D7              STS      L00D7             
+0580  8E 0110            LDS      #L0110            
+0583  9F 75              STS      L0075             
+0585  17                 TBA                        
+0586  0E                 CLI                        
+0587  BB 8E16            ADD A    L8E16             
+058A  F0 9CDF            SUB B    L9CDF             
+058D  27 14              BEQ      L05A3             
+058F  A6 80              LDA A    $FFFFFF80,X             
+0591  9F E9              STS      L00E9             
+0593  9E D7              LDS      L00D7             
+0595  A7 80              STA A    $FFFFFF80,X             
+0597  9C DB              CPX      L00DB             
+0599  27 08              BEQ      L05A3             
+059B  9F D7              STS      L00D7             
+059D  9E E9              LDS      L00E9             
+059F  0C                 CLC                        
+05A0  32                 PUL A                      
+05A1  20 E8              BRA      L058B             
+
+05A3  8E 16F0 L05A3      LDS      #L16F0            
+05A6  9F DF   L05A6      STS      L00DF             
+05A8  17                 TBA                        
+05A9  03                 *** *        
+05AA  03                 *** *        
+05AB  96 CF              LDA A    L00CF             
+05AD  27 0C              BEQ      L05BB             
+05AF  4A      L05AF      DEC A                      
+05B0  27 09              BEQ      L05BB             
+05B2  34                 DES                        
+05B3  02                 *** *        
+05B4  17                 TBA                        
+05B5  02                 *** *        
+05B6  F7 3502            STA B    L3502             
+05B9  20 F4              BRA      L05AF             
+
+05BB  96 60   L05BB      LDA A    L0060             
+05BD  26 32              BNE      L05F1             
+05BF  9E D7              LDS      L00D7             
+05C1  30                 TSX                        
+05C2  1E                 *** *        
+05C3  8C 1655            CPX      #L1655            
+05C6  25 16              BCS      L05DE             
+05C8  EC                 *** *        
+05C9  84 C1              AND A    #$C1              
+05CB  20 26              BRA      L05F3             
+
+05CD  10                 SBA                        
+05CE  81 2E              CMP A    #$2E              
+05D0  27 08              BEQ      L05DA             
+05D2  81 3F              CMP A    #$3F              
+05D4  27 04              BEQ      L05DA             
+05D6  81 21              CMP A    #$21              
+05D8  26 04              BNE      L05DE             
+05DA  86 02   L05DA      LDA A    #$02              
+05DC  97 C7              STA A    L00C7             
+05DE  16      L05DE      TAB                        
+05DF  FD                 *** *        
+05E0  7D 0D4E            TST      L0D4E             
+05E3  27 0C              BEQ      L05F1             
+05E5  34                 DES                        
+05E6  02                 *** *        
+05E7  17                 TBA                        
+05E8  0B                 SEV                        
+05E9  88 35              EOR A    #$35              
+05EB  02                 *** *        
+05EC  5D                 TST B                      
+05ED  27 02              BEQ      L05F1             
+05EF  8A 80              ORA A    #$80              
+05F1  39      L05F1      RTS                        
+
+05F2  8D 5C              BSR      L0650             
+05F4  8E 1654 L05F4      LDS      #L1654            
+05F7  8D 2B              BSR      L0624             
+05F9  16                 TAB                        
+05FA  FF 298D            STX      L298D             
+05FD  52                 *** *        
+05FE  57                 ASR B                      
+05FF  20 F3              BRA      L05F4             
+
+0601  9E E7   L0601      LDS      L00E7             
+0603  9C E5              CPX      L00E5             
+0605  27 1C              BEQ      L0623             
+0607  9C DB              CPX      L00DB             
+0609  27 0C              BEQ      L0617             
+060B  A6 80              LDA A    $FFFFFF80,X             
+060D  9F E7              STS      L00E7             
+060F  9E E5              LDS      L00E5             
+0611  A7 80              STA A    $FFFFFF80,X             
+0613  9F E5              STS      L00E5             
+0615  20 EA              BRA      L0601             
+
+0617  9E E5   L0617      LDS      L00E5             
+0619  86 20              LDA A    #$20              
+061B  9C DB   L061B      CPX      L00DB             
+061D  27 04              BEQ      L0623             
+061F  A7 80              STA A    $FFFFFF80,X             
+0621  20 F8              BRA      L061B             
+
+0623  39      L0623      RTS                        
+
+              *
+              * SUBROUTINE: L0624     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+0624  5D      L0624      TST B                      
+0625  27 28              BEQ      L064F             
+0627  9F E9              STS      L00E9             
+0629  9E DB              LDS      L00DB             
+062B  9F E5              STS      L00E5             
+062D  3A                 *** *        
+062E  9F E7              STS      L00E7             
+0630  9E E5   L0630      LDS      L00E5             
+0632  9C E9              CPX      L00E9             
+0634  27 10              BEQ      L0646             
+0636  A6 84              LDA A    $FFFFFF84,X             
+0638  30                 TSX                        
+0639  1F                 *** *        
+063A  9F E5              STS      L00E5             
+063C  9E E7              LDS      L00E7             
+063E  A7 84              STA A    $FFFFFF84,X             
+0640  30                 TSX                        
+0641  1F                 *** *        
+0642  9F E7              STS      L00E7             
+0644  20 EA              BRA      L0630             
+
+0646  86 20   L0646      LDA A    #$20              
+0648  30      L0648      TSX                        
+0649  01                 NOP                        
+064A  A7 84              STA A    $FFFFFF84,X             
+064C  5A                 DEC B                      
+064D  26 F9              BNE      L0648             
+064F  39      L064F      RTS                        
+
+              *
+              * SUBROUTINE: L0650     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+0650  5F      L0650      CLR B                      
+0651  86 20              LDA A    #$20              
+0653  9E DB              LDS      L00DB             
+0655  A1 82   L0655      CMP A    $FFFFFF82,X             
+0657  26 03              BNE      L065C             
+0659  5C                 INC B                      
+065A  20 F9              BRA      L0655             
+
+065C  39      L065C      RTS                        
+
+065D  8D F1              BSR      L0650             
+065F  96 83              LDA A    L0083             
+0661  27 16              BEQ      L0679             
+0663  96 C3              LDA A    L00C3             
+0665  34                 DES                        
+0666  04                 *** *        
+0667  A0 E0              SUB A    $FFFFFFE0,X             
+0669  48                 ASL A                      
+066A  91 C3              CMP A    L00C3             
+066C  22 11              BHI      L067F             
+066E  1F                 *** *        
+066F  89 96              ADC A    #$96              
+0671  C3                 *** *        
+0672  34                 DES                        
+0673  04                 *** *        
+0674  A0 E0              SUB A    $FFFFFFE0,X             
+0676  1F                 *** *        
+0677  89 57              ADC A    #$57              
+0679  57      L0679      ASR B                      
+067A  8E 1654            LDS      #L1654            
+067D  8D A5              BSR      L0624             
+067F  0A      L067F      CLV                        
+0680  D1 26              CMP B    L0026             
+0682  0B                 SEV                        
+0683  4F                 CLR A                      
+0684  97 D1              STA A    L00D1             
+0686  96 63              LDA A    L0063             
+0688  97 C5              STA A    L00C5             
+068A  9E DB              LDS      L00DB             
+068C  9F A5              STS      L00A5             
+068E  16                 TAB                        
+068F  FE 948E            LDX      L948E             
+0692  16                 TAB                        
+0693  55                 *** *        
+0694  9F DB              STS      L00DB             
+0696  96 3B              LDA A    L003B             
+0698  90 C3              SUB A    L00C3             
+069A  4C                 INC A                      
+069B  97 32              STA A    L0032             
+069D  4F                 CLR A                      
+069E  D6 C3              LDA B    L00C3             
+06A0  D3                 *** *        
+06A1  DB DD              ADD B    L00DD             
+06A3  DB 39              ADD B    L0039             
+06A5  0F      L06A5      SEI                        
+06A6  7D 3262            TST      L3262             
+06A9  35                 TXS                        
+06AA  02                 *** *        
+06AB  97 D1              STA A    L00D1             
+06AD  8E 0055            LDS      #L0055            
+06B0  35      L06B0      TXS                        
+06B1  02                 *** *        
+06B2  A7 80              STA A    $FFFFFF80,X             
+06B4  8C 0062            CPX      #L0062            
+06B7  26 F7              BNE      L06B0             
+06B9  0A                 CLV                        
+06BA  80 96              SUB A    #$96              
+06BC  61                 *** *        
+06BD  27 0B              BEQ      L06CA             
+06BF  39      L06BF      RTS                        
+
+06C0  0F                 SEI                        
+06C1  BC 967D            CPX      L967D             
+06C4  26 DF              BNE      L06A5             
+06C6  0D                 SEC                        
+06C7  61                 *** *        
+06C8  26 F5              BNE      L06BF             
+06CA  96 57   L06CA      LDA A    L0057             
+06CC  10                 SBA                        
+06CD  26 0A              BNE      L06D9             
+06CF  7F 965A            CLR      L965A             
+06D2  27 0E              BEQ      L06E2             
+06D4  9E E3   L06D4      LDS      L00E3             
+06D6  A6 84              LDA A    $FFFFFF84,X             
+06D8  81 0D              CMP A    #$0D              
+06DA  27 02              BEQ      L06DE             
+06DC  30                 TSX                        
+06DD  01                 NOP                        
+06DE  9F E3   L06DE      STS      L00E3             
+06E0  20 23              BRA      L0705             
+
+06E2  96 9B   L06E2      LDA A    L009B             
+06E4  26 EE              BNE      L06D4             
+06E6  96 84              LDA A    L0084             
+06E8  9A 5E              ORA A    L005E             
+06EA  26 06              BNE      L06F2             
+06EC  96 77              LDA A    L0077             
+06EE  10                 SBA                        
+06EF  26 04              BNE      L06F5             
+06F1  2D 96              BLT      L0689             
+06F3  88 26              EOR A    #$26              
+06F5  0C      L06F5      CLC                        
+06F6  96 5B              LDA A    L005B             
+06F8  27 08              BEQ      L0702             
+06FA  17                 TBA                        
+06FB  07                 TPA                        
+06FC  AD 26              JSR      $26,X             
+06FE  06                 TAP                        
+06FF  16                 TAB                        
+0700  08                 INX                        
+0701  30                 TSX                        
+0702  17      L0702      TBA                        
+0703  0D                 SEC                        
+0704  F6 811A            LDA B    L811A             
+0707  26 05              BNE      L070E             
+0709  97 5F              STA A    L005F             
+070B  16                 TAB                        
+070C  02                 *** *        
+070D  2D 81              BLT      L0690             
+070F  0D                 SEC                        
+0710  26 29              BNE      L073B             
+0712  0F                 SEI                        
+0713  6B                 *** *        
+0714  D6 5E              LDA B    L005E             
+0716  26 33              BNE      L074B             
+0718  D6 9B              LDA B    L009B             
+071A  26 07              BNE      L0723             
+071C  D6 BC              LDA B    L00BC             
+071E  27 03              BEQ      L0723             
+0720  17                 TBA                        
+0721  01                 NOP                        
+0722  F4 97BC            AND B    L97BC             
+0725  0F                 SEI                        
+0726  9B 0F              ADD A    L000F             
+0728  4E                 *** *        
+0729  D6 84              LDA B    L0084             
+072B  DA D1              ORA B    L00D1             
+072D  26 08              BNE      L0737             
+072F  D6 C5              LDA B    L00C5             
+0731  27 04              BEQ      L0737             
+0733  86 20              LDA A    #$20              
+0735  20 19              BRA      L0750             
+
+0737  86 0D   L0737      LDA A    #$0D              
+0739  20 15              BRA      L0750             
+
+073B  D6 84   L073B      LDA B    L0084             
+073D  DA 81              ORA B    L0081             
+073F  26 0A              BNE      L074B             
+0741  D6 6A              LDA B    L006A             
+0743  27 0E              BEQ      L0753             
+0745  81 20              CMP A    #$20              
+0747  26 02              BNE      L074B             
+0749  8A 80              ORA A    #$80              
+074B  5F      L074B      CLR B                      
+074C  D7 BC              STA B    L00BC             
+074E  D7 6A              STA B    L006A             
+0750  0F      L0750      SEI                        
+0751  B4 3981            AND A    L3981             
+0754  1F                 *** *        
+0755  10                 SBA                        
+0756  23 FF              BLS      L0757             
+0758  69 D6              ROL      $FFFFFFD6,X             
+075A  BC 271A            CPX      L271A             
+075D  81 2E              CMP A    #$2E              
+075F  27 06              BEQ      L0767             
+0761  81 3A              CMP A    #$3A              
+0763  26 05              BNE      L076A             
+0765  97 64              STA A    L0064             
+0767  16      L0767      TAB                        
+0768  00                 *** *        
+0769  A2 81              SBC A    $FFFFFF81,X             
+076B  20 26              BRA      L0793             
+
+076D  09                 DEX                        
+076E  97 6B              STA A    L006B             
+0770  17                 TBA                        
+0771  01                 NOP                        
+0772  A4 86              AND A    $FFFFFF86,X             
+0774  A0 20              SUB A    $20,X             
+0776  D4 D6              AND B    L00D6             
+0778  6B                 *** *        
+0779  27 06              BEQ      L0781             
+077B  81 20              CMP A    #$20              
+077D  27 F4              BEQ      L0773             
+077F  0F                 SEI                        
+0780  6B                 *** *        
+0781  D6 5A   L0781      LDA B    L005A             
+0783  DA 82              ORA B    L0082             
+0785  DA 85              ORA B    L0085             
+0787  DA 9B              ORA B    L009B             
+0789  26 1C              BNE      L07A7             
+078B  91 BD              CMP A    L00BD             
+078D  26 18              BNE      L07A7             
+078F  9E 75              LDS      L0075             
+0791  D6 32              LDA B    L0032             
+0793  6D 84   L0793      TST      $FFFFFF84,X             
+0795  27 B4              BEQ      L074B             
+0797  E1 84              CMP B    $FFFFFF84,X             
+0799  25 04              BCS      L079F             
+079B  30                 TSX                        
+079C  01                 NOP                        
+079D  20 F4              BRA      L0793             
+
+079F  9F 75   L079F      STS      L0075             
+07A1  96 BE              LDA A    L00BE             
+07A3  97 77              STA A    L0077             
+07A5  20 A4   L07A5      BRA      L074B             
+
+07A7  D6 82   L07A7      LDA B    L0082             
+07A9  26 1F              BNE      L07CA             
+07AB  81 23              CMP A    #$23              
+07AD  27 04              BEQ      L07B3             
+07AF  81 25              CMP A    #$25              
+07B1  26 17              BNE      L07CA             
+07B3  D6 5E   L07B3      LDA B    L005E             
+07B5  34                 DES                        
+07B6  04                 *** *        
+07B7  97 5E              STA A    L005E             
+07B9  97 74              STA A    L0074             
+07BB  17                 TBA                        
+07BC  09                 DEX                        
+07BD  7D 170A            TST      L170A             
+07C0  52                 *** *        
+07C1  35                 TXS                        
+07C2  04                 *** *        
+07C3  D7 5E              STA B    L005E             
+07C5  24 DE              BCC      L07A5             
+07C7  16                 TAB                        
+07C8  FE F881            LDX      LF881             
+07CB  5C                 INC B                      
+07CC  26 05              BNE      L07D3             
+07CE  97 6A              STA A    L006A             
+07D0  16                 TAB                        
+07D1  FE ED81            LDX      LED81             
+07D4  40                 NEG A                      
+07D5  27 1C              BEQ      L07F3             
+07D7  81 5E              CMP A    #$5E              
+07D9  27 21              BEQ      L07FC             
+07DB  D6 B4              LDA B    L00B4             
+07DD  DA B5              ORA B    L00B5             
+07DF  DA 5A              ORA B    L005A             
+07E1  26 C2              BNE      L07A5             
+07E3  81 41              CMP A    #$41              
+07E5  25 BE              BCS      L07A5             
+07E7  81 5A              CMP A    #$5A              
+07E9  22 BA              BHI      L07A5             
+07EB  D6 6C              LDA B    L006C             
+07ED  27 B6              BEQ      L07A5             
+07EF  8B 20              ADD A    #$20              
+07F1  20 B2   L07F1      BRA      L07A5             
+
+07F3  D6 6C   L07F3      LDA B    L006C             
+07F5  27 FA              BEQ      L07F1             
+07F7  97 B4              STA A    L00B4             
+07F9  16      L07F9      TAB                        
+07FA  FE C4D6            LDX      LC4D6             
+07FD  6C 27              INC      $27,X             
+07FF  F1 D6B5            CMP B    LD6B5             
+0802  27 04              BEQ      L0808             
+0804  0F                 SEI                        
+0805  B5 20F1            BIT A    L20F1             
+0808  97 B5   L0808      STA A    L00B5             
+080A  20 ED              BRA      L07F9             
+
+080C  0F                 SEI                        
+080D  BC 8E18            CPX      L8E18             
+0810  7B                 *** *        
+0811  0C      L0811      CLC                        
+0812  5E                 *** *        
+0813  9F EF              STS      L00EF             
+0815  0C                 CLC                        
+0816  82 17              SBC A    #$17              
+0818  FE A89E            LDX      LA89E             
+081B  EF 0F              STX      $0F,X             
+081D  5E                 *** *        
+081E  0F                 SEI                        
+081F  82 A7              SBC A    #$A7              
+0821  80 81              SUB A    #$81              
+0823  0D                 SEC                        
+0824  26 EB              BNE      L0811             
+0826  0F                 SEI                        
+0827  BC 8E18            CPX      L8E18             
+082A  7B                 *** *        
+082B  EC      L082B      *** *        
+082C  81 9F              CMP A    #$9F              
+082E  E3                 *** *        
+082F  81 5F              CMP A    #$5F              
+0831  23 03              BLS      L0836             
+0833  83                 *** *        
+0834  20 20              BRA      L0856             
+
+0836  8E 0955 L0836      LDS      #L0955            
+0839  10      L0839      SBA                        
+083A  A3                 *** *        
+083B  84 26              AND A    #$26              
+083D  07                 TPA                        
+083E  97 5A              STA A    L005A             
+0840  AD 98              JSR      $FFFFFF98,X             
+0842  02                 *** *        
+0843  20 2A              BRA      L086F             
+
+0845  30                 TSX                        
+0846  04                 *** *        
+0847  8C 0A51            CPX      #L0A51            
+084A  26 ED              BNE      L0839             
+084C  34                 DES                        
+084D  02                 *** *        
+084E  96 80              LDA A    L0080             
+0850  81 07              CMP A    #$07              
+0852  35                 TXS                        
+0853  02                 *** *        
+0854  24 10              BCC      L0866             
+0856  8E 1C45 L0856      LDS      #L1C45            
+0859  9C F7   L0859      CPX      L00F7             
+085B  27 12              BEQ      L086F             
+085D  10                 SBA                        
+085E  A3                 *** *        
+085F  84 27              AND A    #$27              
+0861  23 30              BLS      L0893             
+0863  04                 *** *        
+0864  20 F3              BRA      L0859             
+
+0866  8E 15E8 L0866      LDS      #L15E8            
+0869  17                 TBA                        
+086A  0C                 CLC                        
+086B  4D                 TST A                      
+086C  16                 TAB                        
+086D  F9 9A96            ADC B    L9A96             
+0870  7F 2709            CLR      L2709             
+0873  4F                 CLR A                      
+0874  97 BC              STA A    L00BC             
+0876  97 5A              STA A    L005A             
+0878  97 7F              STA A    L007F             
+087A  20 AF              BRA      L082B             
+
+087C  0F                 SEI                        
+087D  64 0F              LSR      $0F,X             
+087F  5A                 DEC B                      
+0880  0C                 CLC                        
+0881  BC 16FE            CPX      L16FE             
+0884  3D                 *** *        
+0885  9F AD              STS      L00AD             
+0887  8E 0061            LDS      #L0061            
+088A  A6 84   L088A      LDA A    $FFFFFF84,X             
+088C  34                 DES                        
+088D  02                 *** *        
+088E  6F 84              CLR      $FFFFFF84,X             
+0890  30                 TSX                        
+0891  1F                 *** *        
+0892  8C 0054            CPX      #L0054            
+0895  26 F3              BNE      L088A             
+0897  96 D1              LDA A    L00D1             
+0899  34                 DES                        
+089A  02                 *** *        
+089B  0F                 SEI                        
+089C  D1 0C              CMP B    L000C             
+089E  80 9E              SUB A    #$9E              
+08A0  AD 86              JSR      $FFFFFF86,X             
+08A2  0F                 SEI                        
+08A3  97 5B              STA A    L005B             
+08A5  97 BC              STA A    L00BC             
+08A7  AE 02              LDS      $02,X             
+08A9  9F 5C              STS      L005C             
+08AB  16                 TAB                        
+08AC  FA B034            ORA B    LB034             
+08AF  10                 SBA                        
+08B0  8D 02              BSR      L08B4             
+08B2  35                 TXS                        
+08B3  90 96              SUB A    L0096             
+08B5  86 27              LDA A    #$27              
+08B7  10                 SBA                        
+08B8  8E 15B2            LDS      #L15B2            
+08BB  A6 84   L08BB      LDA A    $FFFFFF84,X             
+08BD  81 04              CMP A    #$04              
+08BF  27 4B              BEQ      L090C             
+08C1  17                 TBA                        
+08C2  0C                 CLC                        
+08C3  15                 *** *        
+08C4  30                 TSX                        
+08C5  01                 NOP                        
+08C6  20 F3              BRA      L08BB             
+
+08C8  96 6E              LDA A    L006E             
+08CA  26 03              BNE      L08CF             
+08CC  BD CD24            JSR      LCD24             
+08CF  0C      L08CF      CLC                        
+08D0  3D                 *** *        
+08D1  96 3D   L08D1      LDA A    L003D             
+08D3  8E 1849            LDS      #L1849            
+08D6  A1 84   L08D6      CMP A    $FFFFFF84,X             
+08D8  27 21              BEQ      L08FB             
+08DA  30                 TSX                        
+08DB  03                 *** *        
+08DC  8C 1879            CPX      #L1879            
+08DF  26 F5              BNE      L08D6             
+08E1  91 3F              CMP A    L003F             
+08E3  23 27              BLS      L090C             
+08E5  96 53              LDA A    L0053             
+08E7  27 06              BEQ      L08EF             
+08E9  0F                 SEI                        
+08EA  53                 COM B                      
+08EB  97 69              STA A    L0069             
+08ED  20 02              BRA      L08F1             
+
+08EF  0C      L08EF      CLC                        
+08F0  69 86              ROL      $FFFFFF86,X             
+08F2  01                 NOP                        
+08F3  97 3D              STA A    L003D             
+08F5  96 B2              LDA A    L00B2             
+08F7  26 13              BNE      L090C             
+08F9  20 D6              BRA      L08D1             
+
+08FB  0C      L08FB      CLC                        
+08FC  61                 *** *        
+08FD  96 BC              LDA A    L00BC             
+08FF  34                 DES                        
+0900  02                 *** *        
+0901  EC                 *** *        
+0902  01                 NOP                        
+0903  17                 TBA                        
+0904  FF 300A            STX      L300A             
+0907  61                 *** *        
+0908  35                 TXS                        
+0909  02                 *** *        
+090A  97 BC              STA A    L00BC             
+090C  39      L090C      RTS                        
+
+090D  86 01              LDA A    #$01              
+090F  91 3D              CMP A    L003D             
+0911  26 04              BNE      L0917             
+0913  91 32              CMP A    L0032             
+0915  27 BA              BEQ      L08D1             
+              *
+              * SUBROUTINE: L0917     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+0917  96 64   L0917      LDA A    L0064             
+0919  26 1D              BNE      L0938             
+091B  86 20              LDA A    #$20              
+091D  9E D7              LDS      L00D7             
+091F  8C 1655            CPX      #L1655            
+0922  27 14              BEQ      L0938             
+0924  9F A5              STS      L00A5             
+0926  9C DB   L0926      CPX      L00DB             
+0928  27 04              BEQ      L092E             
+092A  A7 80              STA A    $FFFFFF80,X             
+092C  20 F8              BRA      L0926             
+
+092E  8E 1655 L092E      LDS      #L1655            
+0931  97 60              STA A    L0060             
+0933  17                 TBA                        
+0934  FB 1A0F            ADD B    L1A0F             
+0937  60 0F              NEG      $0F,X             
+0939  64 39              LSR      $39,X             
+093B  8D DA              BSR      L0917             
+093D  8E 19C5            LDS      #L19C5            
+0940  86 04              LDA A    #$04              
+0942  A7 84              STA A    $FFFFFF84,X             
+0944  17                 TBA                        
+0945  0C                 CLC                        
+0946  13                 *** *        
+0947  16                 TAB                        
+0948  F9 BF0C            ADC B    LBF0C             
+094B  B2 1701            SBC A    L1701             
+094E  38                 *** *        
+094F  BD D403            JSR      LD403             
+0952  16                 TAB                        
+0953  F8 B453            EOR B    LB453             
+0956  50                 NEG B                      
+0957  0A                 CLV                        
+0958  57                 ASR B                      
+0959  50                 NEG B                      
+095A  47                 ASR A                      
+095B  0A                 CLV                        
+095C  7B                 *** *        
+095D  4D                 TST A                      
+095E  53                 COM B                      
+095F  0A                 CLV                        
+0960  9F 53              STS      L0053             
+0962  53                 COM B                      
+0963  0A                 CLV                        
+0964  AD 4E              JSR      $4E,X             
+0966  4A                 DEC A                      
+0967  0A                 CLV                        
+0968  B0 4A55            SUB A    L4A55             
+096B  0A                 CLV                        
+096C  B3                 *** *        
+096D  44                 LSR A                      
+096E  48                 ASL A                      
+096F  0B                 SEV                        
+0970  FB 4457            ADD B    L4457             
+0973  0C                 CLC                        
+0974  05                 *** *        
+0975  44                 LSR A                      
+0976  42                 *** *        
+0977  0C                 CLC                        
+0978  0E                 CLI                        
+0979  43                 COM A                      
+097A  45                 *** *        
+097B  0C                 CLC                        
+097C  1A                 *** *        
+097D  42                 *** *        
+097E  52                 *** *        
+097F  09                 DEX                        
+0980  0D                 SEC                        
+0981  2A 20              BPL      L09A3             
+0983  0A                 CLV                        
+0984  7A 4649            DEC      L4649             
+0987  0C                 CLC                        
+0988  AB 4E              ADD A    $4E,X             
+098A  46                 ROR A                      
+098B  0C                 CLC                        
+098C  A5 53              BIT A    $53,X             
+098E  49                 ROL A                      
+098F  0C                 CLC                        
+0990  4F                 CLR A                      
+0991  50                 NEG B                      
+0992  49                 ROL A                      
+0993  0C                 CLC                        
+0994  6B                 *** *        
+0995  50                 NEG B                      
+0996  4E                 *** *        
+0997  0B                 SEV                        
+0998  EE 4C              LDX      $4C,X             
+099A  4D                 TST A                      
+099B  0A                 CLV                        
+099C  DB 49              ADD B    L0049             
+099E  4E                 *** *        
+099F  0A                 CLV                        
+09A0  EB 4C              ADD B    $4C,X             
+09A2  4E                 *** *        
+09A3  0B      L09A3      SEV                        
+09A4  01                 NOP                        
+09A5  4E                 *** *        
+09A6  53                 COM B                      
+09A7  0B                 SEV                        
+09A8  31                 INS                        
+09A9  52                 *** *        
+09AA  53                 COM B                      
+09AB  0B                 SEV                        
+09AC  34                 DES                        
+09AD  50                 NEG B                      
+09AE  4C                 INC A                      
+09AF  0C                 CLC                        
+09B0  3A                 *** *        
+09B1  43                 COM A                      
+09B2  50                 NEG B                      
+09B3  0C                 CLC                        
+09B4  63 4E              COM      $4E,X             
+09B6  43                 COM A                      
+09B7  0C                 CLC                        
+09B8  68 4E              ASL      $4E,X             
+09BA  4C                 INC A                      
+09BB  0C                 CLC                        
+09BC  D6 53              LDA B    L0053             
+09BE  56                 ROR B                      
+09BF  0D                 SEC                        
+09C0  1E                 *** *        
+09C1  4F                 CLR A                      
+09C2  53                 COM B                      
+09C3  0D                 SEC                        
+09C4  39                 RTS                        
+
+09C5  41                 *** *        
+09C6  54                 LSR B                      
+09C7  0D                 SEC                        
+09C8  41                 *** *        
+09C9  44                 LSR A                      
+09CA  4D                 TST A                      
+09CB  0D                 SEC                        
+09CC  8C 414D            CPX      #L414D            
+09CF  0D                 SEC                        
+09D0  C9 52              ADC B    #$52              
+09D2  4D                 TST A                      
+09D3  0D                 SEC                        
+09D4  D2 44              SBC B    L0044             
+09D6  49                 ROL A                      
+09D7  0E                 CLI                        
+09D8  07                 TPA                        
+09D9  44                 LSR A                      
+09DA  41                 *** *        
+09DB  0E                 CLI                        
+09DC  20 53              BRA      L0A31             
+
+09DE  54                 LSR B                      
+09DF  0C                 CLC                        
+09E0  BC 544C            CPX      L544C             
+09E3  0F                 SEI                        
+09E4  77 4C54            ASR      L4C54             
+09E7  0F                 SEI                        
+09E8  6A 43              DEC      $43,X             
+09EA  48                 ASL A                      
+09EB  10                 SBA                        
+09EC  B8 4946            EOR A    L4946             
+09EF  10                 SBA                        
+09F0  4F                 CLR A                      
+09F1  4E                 *** *        
+09F2  52                 *** *        
+09F3  11                 CBA                        
+09F4  07                 TPA                        
+09F5  41                 *** *        
+09F6  52                 *** *        
+09F7  11                 CBA                        
+09F8  24 53              BCC      L0A4D             
+09FA  52                 *** *        
+09FB  11                 CBA                        
+09FC  27 43              BEQ      L0A41             
+09FE  52                 *** *        
+09FF  11                 CBA                        
+0A00  2C 41              BGE      L0A43             
+0A02  55                 *** *        
+0A03  11                 CBA                        
+0A04  30                 TSX                        
+0A05  54                 LSR B                      
+0A06  43                 COM A                      
+0A07  0B                 SEV                        
+0A08  37                 PSH B                      
+0A09  54                 LSR B                      
+0A0A  46                 ROR A                      
+0A0B  0B                 SEV                        
+0A0C  42                 *** *        
+0A0D  54                 LSR B                      
+0A0E  41                 *** *        
+0A0F  0B                 SEV                        
+0A10  4E                 *** *        
+0A11  45                 *** *        
+0A12  58                 ASL B                      
+0A13  09                 DEX                        
+0A14  3B                 RTI                        
+
+0A15  54                 LSR B                      
+0A16  4D                 TST A                      
+0A17  0B                 SEV                        
+0A18  67 47              ASR      $47,X             
+0A1A  49                 ROL A                      
+0A1B  0B                 SEV                        
+0A1C  79 4556            ROL      L4556             
+0A1F  0B                 SEV                        
+0A20  87                 *** *        
+0A21  52                 *** *        
+0A22  50                 NEG B                      
+0A23  0C                 CLC                        
+0A24  B1 5053            CMP A    L5053             
+0A27  0A                 CLV                        
+0A28  52                 *** *        
+0A29  55                 *** *        
+0A2A  4C                 INC A                      
+0A2B  13                 *** *        
+0A2C  69 52              ROL      $52,X             
+0A2E  49                 ROL A                      
+0A2F  13                 *** *        
+0A30  6E 49              JMP      $49,X             
+
+0A32  43                 COM A                      
+0A33  13                 *** *        
+0A34  89 4E              ADC A    #$4E              
+0A36  49                 ROL A                      
+0A37  13                 *** *        
+0A38  95 4E              BIT A    L004E             
+0A3A  42                 *** *        
+0A3B  13                 *** *        
+0A3C  BA 4346            ORA A    L4346             
+0A3F  13                 *** *        
+0A40  E2 4F              SBC B    $4F,X             
+0A42  46                 ROR A                      
+0A43  13      L0A43      *** *        
+0A44  F3                 *** *        
+0A45  20 20              BRA      L0A67             
+
+0A47  0A                 CLV                        
+0A48  7A 2020            DEC      L2020             
+0A4B  0A                 CLV                        
+0A4C  7A 2020            DEC      L2020             
+0A4F  0A                 CLV                        
+0A50  7A 000F            DEC      L000F             
+0A53  C5 0C              BIT B    #$0C              
+0A55  81 39              CMP A    #$39              
+0A57  17                 TBA                        
+0A58  FE BD96            LDX      LBD96             
+0A5B  68 26              ASL      $26,X             
+0A5D  1C                 *** *        
+0A5E  17                 TBA                        
+0A5F  07                 TPA                        
+0A60  47                 ASR A                      
+0A61  96 65              LDA A    L0065             
+0A63  26 02              BNE      L0A67             
+0A65  0C                 CLC                        
+0A66  65                 *** *        
+0A67  17      L0A67      TBA                        
+0A68  02                 *** *        
+0A69  7A 9165            DEC      L9165             
+0A6C  25 02              BCS      L0A70             
+0A6E  96 65              LDA A    L0065             
+0A70  34      L0A70      DES                        
+0A71  02                 *** *        
+0A72  17                 TBA                        
+0A73  FE 3935            LDX      L3935             
+0A76  02                 *** *        
+0A77  4A                 DEC A                      
+0A78  26 F6              BNE      L0A70             
+0A7A  39                 RTS                        
+
+0A7B  17                 TBA                        
+0A7C  07                 TPA                        
+0A7D  2A 24              BPL      L0AA3             
+0A7F  07                 TPA                        
+0A80  96 69              LDA A    L0069             
+0A82  17                 TBA                        
+0A83  07                 TPA                        
+0A84  10                 SBA                        
+0A85  20 0B              BRA      L0A92             
+
+0A87  96 68              LDA A    L0068             
+0A89  26 13              BNE      L0A9E             
+0A8B  96 53              LDA A    L0053             
+0A8D  26 03              BNE      L0A92             
+0A8F  96 69              LDA A    L0069             
+0A91  4C                 INC A                      
+0A92  97 53   L0A92      STA A    L0053             
+0A94  17                 TBA                        
+0A95  FE 8017            LDX      L8017             
+0A98  FE 1496            LDX      L1496             
+0A9B  53                 COM B                      
+0A9C  26 F9              BNE      L0A97             
+0A9E  39      L0A9E      RTS                        
+
+0A9F  17                 TBA                        
+0AA0  07                 TPA                        
+0AA1  06                 TAP                        
+0AA2  24 04              BCC      L0AA8             
+0AA4  96 65              LDA A    L0065             
+0AA6  20 02              BRA      L0AAA             
+
+0AA8  86 02   L0AA8      LDA A    #$02              
+0AAA  97 CF   L0AAA      STA A    L00CF             
+0AAC  39                 RTS                        
+
+0AAD  0F                 SEI                        
+0AAE  CF                 *** *        
+0AAF  39                 RTS                        
+
+0AB0  0F                 SEI                        
+0AB1  D3                 *** *        
+0AB2  39                 RTS                        
+
+0AB3  97 D3              STA A    L00D3             
+0AB5  17                 TBA                        
+0AB6  06                 TAP                        
+0AB7  AB 17              ADD A    $17,X             
+0AB9  06                 TAP                        
+0ABA  B7 C102            STA A    LC102             
+0ABD  26 09              BNE      L0AC8             
+0ABF  81 4E              CMP A    #$4E              
+0AC1  26 06              BNE      L0AC9             
+0AC3  4F      L0AC3      CLR A                      
+0AC4  97 CB              STA A    L00CB             
+0AC6  97 CD              STA A    L00CD             
+0AC8  39      L0AC8      RTS                        
+
+0AC9  81 52   L0AC9      CMP A    #$52              
+0ACB  26 05              BNE      L0AD2             
+0ACD  0F                 SEI                        
+0ACE  CB 97              ADD B    #$97              
+0AD0  CD                 *** *        
+0AD1  39                 RTS                        
+
+0AD2  81 43   L0AD2      CMP A    #$43              
+0AD4  26 ED              BNE      L0AC3             
+0AD6  0F                 SEI                        
+0AD7  CD                 *** *        
+0AD8  97 CB              STA A    L00CB             
+0ADA  39                 RTS                        
+
+0ADB  17                 TBA                        
+0ADC  06                 TAP                        
+0ADD  CA 24              ORA B    #$24              
+0ADF  0A                 CLV                        
+0AE0  96 3E              LDA A    L003E             
+0AE2  17                 TBA                        
+0AE3  06                 TAP                        
+0AE4  B0 2A01            SUB A    L2A01             
+0AE7  4F                 CLR A                      
+0AE8  97 3E              STA A    L003E             
+0AEA  39                 RTS                        
+
+0AEB  17                 TBA                        
+0AEC  FE 2917            LDX      L2917             
+0AEF  06                 TAP                        
+0AF0  B7 24F7            STA A    L24F7             
+0AF3  96 38              LDA A    L0038             
+0AF5  17                 TBA                        
+0AF6  06                 TAP                        
+0AF7  9D                 *** *        
+0AF8  2A 01              BPL      L0AFB             
+0AFA  4F                 CLR A                      
+0AFB  90 38   L0AFB      SUB A    L0038             
+0AFD  97 B0              STA A    L00B0             
+0AFF  20 14              BRA      L0B15             
+
+0B01  17                 TBA                        
+0B02  06                 TAP                        
+0B03  A4 24              AND A    $24,X             
+0B05  18                 *** *        
+0B06  96 3B              LDA A    L003B             
+0B08  17                 TBA                        
+0B09  06                 TAP                        
+0B0A  8A 81              ORA A    #$81              
+0B0C  0E                 CLI                        
+0B0D  22 02              BHI      L0B11             
+0B0F  86 0F              LDA A    #$0F              
+0B11  90 3B   L0B11      SUB A    L003B             
+0B13  97 B1              STA A    L00B1             
+0B15  9E D7   L0B15      LDS      L00D7             
+0B17  8C 1655            CPX      #L1655            
+0B1A  10                 SBA                        
+0B1B  27 09              BEQ      L0B26             
+0B1D  25 39              BCS      L0B58             
+0B1F  D6 32              LDA B    L0032             
+0B21  9E 75              LDS      L0075             
+0B23  E1 84              CMP B    $FFFFFF84,X             
+0B25  24 05              BCC      L0B2C             
+0B27  96 BE              LDA A    L00BE             
+0B29  16                 TAB                        
+0B2A  FC                 *** *        
+0B2B  0F                 SEI                        
+0B2C  0F      L0B2C      SEI                        
+0B2D  77 16FB            ASR      L16FB             
+0B30  91 97              CMP A    L0097             
+0B32  68 39              ASL      $39,X             
+0B34  0F                 SEI                        
+0B35  68 39              ASL      $39,X             
+0B37  17                 TBA                        
+0B38  06                 TAP                        
+0B39  29 81              BVS      L0ABC             
+0B3B  0D                 SEC                        
+0B3C  26 01              BNE      L0B3F             
+0B3E  4F                 CLR A                      
+0B3F  97 BD   L0B3F      STA A    L00BD             
+0B41  39                 RTS                        
+
+0B42  17                 TBA                        
+0B43  06                 TAP                        
+0B44  1E                 *** *        
+0B45  81 0D              CMP A    #$0D              
+0B47  26 02              BNE      L0B4B             
+0B49  86 A0              LDA A    #$A0              
+0B4B  97 BE   L0B4B      STA A    L00BE             
+0B4D  39                 RTS                        
+
+0B4E  8E 0110            LDS      #L0110            
+0B51  34      L0B51      DES                        
+0B52  10                 SBA                        
+0B53  17                 TBA                        
+0B54  06                 TAP                        
+0B55  52                 *** *        
+0B56  24 0C              BCC      L0B64             
+0B58  35      L0B58      TXS                        
+0B59  10                 SBA                        
+0B5A  96 65              LDA A    L0065             
+0B5C  A7 80              STA A    $FFFFFF80,X             
+0B5E  8C 0124            CPX      #L0124            
+0B61  26 EE              BNE      L0B51             
+0B63  39                 RTS                        
+
+0B64  6F F1   L0B64      CLR      $FFFFFFF1,X             
+0B66  39                 RTS                        
+
+              *
+              * SUBROUTINE: L0B67     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+0B67  17      L0B67      TBA                        
+0B68  05                 *** *        
+0B69  F9 A680            ADC B    LA680             
+0B6C  81 0D              CMP A    #$0D              
+0B6E  26 FA              BNE      L0B6A             
+0B70  86 04              LDA A    #$04              
+0B72  A7 1F              STA A    $1F,X             
+0B74  9E E3              LDS      L00E3             
+0B76  16                 TAB                        
+0B77  09                 DEX                        
+0B78  40                 NEG A                      
+0B79  8D EC              BSR      L0B67             
+0B7B  8E 15D1            LDS      #L15D1            
+0B7E  17                 TBA                        
+0B7F  09                 DEX                        
+0B80  3A                 *** *        
+0B81  17                 TBA                        
+0B82  08                 INX                        
+0B83  EF 97              STX      $FFFFFF97,X             
+0B85  9B 39              ADD A    L0039             
+0B87  17                 TBA                        
+0B88  06                 TAP                        
+0B89  1E                 *** *        
+0B8A  24 08              BCC      L0B94             
+0B8C  96 65              LDA A    L0065             
+0B8E  27 05              BEQ      L0B95             
+0B90  86 01              LDA A    #$01              
+0B92  20 01              BRA      L0B95             
+
+0B94  4F      L0B94      CLR A                      
+0B95  91 73   L0B95      CMP A    L0073             
+0B97  26 01              BNE      L0B9A             
+0B99  39                 RTS                        
+
+0B9A  97 73   L0B9A      STA A    L0073             
+0B9C  96 32              LDA A    L0032             
+0B9E  D6 78              LDA B    L0078             
+0BA0  D7 32              STA B    L0032             
+0BA2  97 78              STA A    L0078             
+0BA4  96 38              LDA A    L0038             
+0BA6  D6 79              LDA B    L0079             
+0BA8  97 79              STA A    L0079             
+0BAA  D7 38              STA B    L0038             
+0BAC  96 3B              LDA A    L003B             
+0BAE  D6 9C              LDA B    L009C             
+0BB0  97 9C              STA A    L009C             
+0BB2  D7 3B              STA B    L003B             
+0BB4  8E 00BF            LDS      #L00BF            
+0BB7  EC      L0BB7      *** *        
+0BB8  84 A7              AND A    #$A7              
+0BBA  01                 NOP                        
+0BBB  E7 81              STA B    $FFFFFF81,X             
+0BBD  8C 00D7            CPX      #L00D7            
+0BC0  26 F5              BNE      L0BB7             
+0BC2  A6 84   L0BC2      LDA A    $FFFFFF84,X             
+0BC4  E6 02              LDA B    $02,X             
+0BC6  A7 02              STA A    $02,X             
+0BC8  E7 84              STA B    $FFFFFF84,X             
+0BCA  A6 01              LDA A    $01,X             
+0BCC  E6 03              LDA B    $03,X             
+0BCE  A7 03              STA A    $03,X             
+0BD0  E7 01              STA B    $01,X             
+0BD2  30                 TSX                        
+0BD3  04                 *** *        
+0BD4  8C 00E3            CPX      #L00E3            
+0BD7  26 E9              BNE      L0BC2             
+0BD9  8E 1655            LDS      #L1655            
+0BDC  A6 84   L0BDC      LDA A    $FFFFFF84,X             
+0BDE  E6 89              LDA B    $FFFFFF89,X             
+0BE0  00                 *** *        
+0BE1  C8 A7              EOR B    #$A7              
+0BE3  89 00              ADC A    #$00              
+0BE5  C8 E7              EOR B    #$E7              
+0BE7  80 8C              SUB A    #$8C              
+0BE9  17                 TBA                        
+0BEA  1D                 *** *        
+0BEB  26 EF              BNE      L0BDC             
+0BED  39                 RTS                        
+
+0BEE  17                 TBA                        
+0BEF  05                 *** *        
+0BF0  B7 2407            STA A    L2407             
+0BF3  96 69              LDA A    L0069             
+0BF5  17                 TBA                        
+0BF6  05                 *** *        
+0BF7  9D                 *** *        
+0BF8  97 69              STA A    L0069             
+0BFA  39                 RTS                        
+
+0BFB  17                 TBA                        
+0BFC  FD                 *** *        
+0BFD  1D                 *** *        
+0BFE  86 12              LDA A    #$12              
+0C00  0C                 CLC                        
+0C01  3D                 *** *        
+0C02  16      L0C02      TAB                        
+0C03  08                 INX                        
+0C04  D4 17              AND B    L0017             
+0C06  FD                 *** *        
+0C07  13                 *** *        
+0C08  86 0E              LDA A    #$0E              
+0C0A  97 83              STA A    L0083             
+0C0C  20 F4              BRA      L0C02             
+
+0C0E  17                 TBA                        
+0C0F  FD                 *** *        
+0C10  0A                 CLV                        
+0C11  86 0E              LDA A    #$0E              
+0C13  97 83              STA A    L0083             
+0C15  17                 TBA                        
+0C16  08                 INX                        
+0C17  C1 20              CMP B    #$20              
+0C19  E4 17              AND B    $17,X             
+0C1B  FC                 *** *        
+0C1C  FA 1705            ORA B    L1705             
+0C1F  88 24              EOR A    #$24              
+0C21  0B                 SEV                        
+0C22  96 D1              LDA A    L00D1             
+0C24  17                 TBA                        
+0C25  05                 *** *        
+0C26  6E 97              JMP      $FFFFFF97,X             
+
+0C28  D1 27              CMP B    L0027             
+0C2A  23 20              BLS      L0C4C             
+0C2C  04                 *** *        
+0C2D  86 01              LDA A    #$01              
+0C2F  97 D1              STA A    L00D1             
+0C31  96 C5              LDA A    L00C5             
+0C33  97 63              STA A    L0063             
+0C35  86 FF              LDA A    #$FF              
+0C37  97 C5              STA A    L00C5             
+0C39  39                 RTS                        
+
+0C3A  17                 TBA                        
+0C3B  05                 *** *        
+0C3C  6B                 *** *        
+0C3D  25 04              BCS      L0C43             
+0C3F  86 42              LDA A    #$42              
+0C41  20 09              BRA      L0C4C             
+
+0C43  96 3F   L0C43      LDA A    L003F             
+0C45  17                 TBA                        
+0C46  05                 *** *        
+0C47  4D                 TST A                      
+0C48  4D                 TST A                      
+0C49  26 01              BNE      L0C4C             
+0C4B  4C                 INC A                      
+0C4C  97 3F   L0C4C      STA A    L003F             
+0C4E  39      L0C4E      RTS                        
+
+0C4F  17                 TBA                        
+0C50  FC                 *** *        
+0C51  C5 17              BIT B    #$17              
+0C53  05                 *** *        
+0C54  53                 COM B                      
+0C55  24 F7              BCC      L0C4E             
+0C57  96 71              LDA A    L0071             
+0C59  17                 TBA                        
+0C5A  05                 *** *        
+0C5B  39                 RTS                        
+
+0C5C  90 71              SUB A    L0071             
+0C5E  97 AF              STA A    L00AF             
+0C60  16                 TAB                        
+0C61  FE B286            LDX      LB286             
+0C64  0F                 SEI                        
+0C65  97 6C              STA A    L006C             
+0C67  39                 RTS                        
+
+0C68  0F                 SEI                        
+0C69  6C 39              INC      $39,X             
+0C6B  17                 TBA                        
+0C6C  FC                 *** *        
+0C6D  A9 17              ADC A    $17,X             
+0C6F  04                 *** *        
+0C70  F2 D638            SBC B    LD638             
+0C73  27 2F              BEQ      L0CA4             
+0C75  D7 5E              STA B    L005E             
+0C77  5F                 CLR B                      
+0C78  34      L0C78      DES                        
+0C79  04                 *** *        
+0C7A  17                 TBA                        
+0C7B  FA 4535            ORA B    L4535             
+0C7E  04                 *** *        
+0C7F  81 0D              CMP A    #$0D              
+0C81  27 0E              BEQ      L0C91             
+0C83  34                 DES                        
+0C84  04                 *** *        
+0C85  17                 TBA                        
+0C86  08                 INX                        
+0C87  51                 *** *        
+0C88  35                 TXS                        
+0C89  04                 *** *        
+0C8A  5C                 INC B                      
+0C8B  D1 38   L0C8B      CMP B    L0038             
+0C8D  24 10              BCC      L0C9F             
+0C8F  20 E7              BRA      L0C78             
+
+0C91  86 20   L0C91      LDA A    #$20              
+0C93  34                 DES                        
+0C94  04                 *** *        
+0C95  17                 TBA                        
+0C96  08      L0C96      INX                        
+0C97  41                 *** *        
+0C98  35                 TXS                        
+0C99  04                 *** *        
+0C9A  5C                 INC B                      
+0C9B  D1 38              CMP B    L0038             
+0C9D  25 F2              BCS      L0C91             
+0C9F  5C      L0C9F      INC B                      
+0CA0  D7 70              STA B    L0070             
+0CA2  0F                 SEI                        
+0CA3  5E                 *** *        
+0CA4  39      L0CA4      RTS                        
+
+0CA5  17                 TBA                        
+0CA6  FC                 *** *        
+0CA7  6F 0F              CLR      $0F,X             
+0CA9  C5 39              BIT B    #$39              
+0CAB  17                 TBA                        
+0CAC  FC                 *** *        
+0CAD  69 0C              ROL      $0C,X             
+0CAF  C5 39              BIT B    #$39              
+0CB1  17                 TBA                        
+0CB2  FC                 *** *        
+0CB3  63 0C              COM      $0C,X             
+0CB5  B2 17FD            SBC A    L17FD             
+0CB8  C2 16              SBC B    #$16              
+0CBA  08                 INX                        
+0CBB  C3                 *** *        
+0CBC  17                 TBA                        
+0CBD  FC                 *** *        
+0CBE  58                 ASL B                      
+0CBF  96 69              LDA A    L0069             
+0CC1  91 92              CMP A    L0092             
+0CC3  25 10              BCS      L0CD5             
+0CC5  8E 15C7            LDS      #L15C7            
+0CC8  17                 TBA                        
+0CC9  07                 TPA                        
+0CCA  EE 17              LDX      $17,X             
+0CCC  08                 INX                        
+0CCD  01                 NOP                        
+0CCE  81 53              CMP A    #$53              
+0CD0  26 03              BNE      L0CD5             
+0CD2  16                 TAB                        
+0CD3  FC                 *** *        
+0CD4  75                 *** *        
+0CD5  39      L0CD5      RTS                        
+
+0CD6  17                 TBA                        
+0CD7  04                 *** *        
+0CD8  CF                 *** *        
+0CD9  25 02              BCS      L0CDD             
+0CDB  0C                 CLC                        
+0CDC  65                 *** *        
+0CDD  8D 05   L0CDD      BSR      L0CE4             
+0CDF  91 65              CMP A    L0065             
+0CE1  25 4C              BCS      L0D2F             
+0CE3  39                 RTS                        
+
+              *
+              * SUBROUTINE: L0CE4     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+0CE4  86 FF   L0CE4      LDA A    #$FF              
+0CE6  97 72              STA A    L0072             
+0CE8  8E 1849            LDS      #L1849            
+0CEB  D6 3D   L0CEB      LDA B    L003D             
+0CED  E1 84              CMP B    $FFFFFF84,X             
+0CEF  24 12              BCC      L0D03             
+0CF1  A6 84              LDA A    $FFFFFF84,X             
+0CF3  81 FF              CMP A    #$FF              
+0CF5  27 13              BEQ      L0D0A             
+0CF7  34                 DES                        
+0CF8  04                 *** *        
+0CF9  A0 E0              SUB A    $FFFFFFE0,X             
+0CFB  91 72              CMP A    L0072             
+0CFD  24 04              BCC      L0D03             
+0CFF  97 72              STA A    L0072             
+0D01  9F 7A              STS      L007A             
+0D03  30      L0D03      TSX                        
+0D04  03                 *** *        
+0D05  8C 1879            CPX      #L1879            
+0D08  26 E1              BNE      L0CEB             
+0D0A  D6 72   L0D0A      LDA B    L0072             
+0D0C  C1 FF              CMP B    #$FF              
+0D0E  26 07              BNE      L0D17             
+0D10  96 3F              LDA A    L003F             
+0D12  90 3D              SUB A    L003D             
+0D14  4C                 INC A                      
+0D15  5F                 CLR B                      
+0D16  39                 RTS                        
+
+0D17  E6 84   L0D17      LDA B    $FFFFFF84,X             
+0D19  96 72              LDA A    L0072             
+0D1B  9E 7A              LDS      L007A             
+0D1D  39                 RTS                        
+
+0D1E  0F                 SEI                        
+0D1F  7C 1704            INC      L1704             
+0D22  85 25              BIT A    #$25              
+0D24  02                 *** *        
+0D25  0C                 CLC                        
+0D26  65                 *** *        
+0D27  8D BB              BSR      L0CE4             
+0D29  91 65              CMP A    L0065             
+0D2B  25 07              BCS      L0D34             
+0D2D  96 65              LDA A    L0065             
+0D2F  0F      L0D2F      SEI                        
+0D30  68 16              ASL      $16,X             
+0D32  FD                 *** *        
+0D33  3C                 *** *        
+0D34  96 65   L0D34      LDA A    L0065             
+0D36  97 7C              STA A    L007C             
+0D38  39      L0D38      RTS                        
+
+0D39  96 7C              LDA A    L007C             
+0D3B  27 FB              BEQ      L0D38             
+0D3D  0F                 SEI                        
+0D3E  7C 20EE            INC      L20EE             
+0D41  17                 TBA                        
+0D42  04                 *** *        
+0D43  64 24              LSR      $24,X             
+0D45  28 17              BVC      L0D5E             
+0D47  03                 *** *        
+0D48  64 17              LSR      $17,X             
+0D4A  01                 NOP                        
+0D4B  F1 963F            CMP B    L963F             
+0D4E  4C      L0D4E      INC A                      
+0D4F  17      L0D4F      TBA                        
+0D50  04                 *** *        
+0D51  43                 COM A                      
+0D52  4D                 TST A                      
+0D53  26 01              BNE      L0D56             
+0D55  4C                 INC A                      
+0D56  8E 1849 L0D56      LDS      #L1849            
+0D59  A1 84   L0D59      CMP A    $FFFFFF84,X             
+0D5B  27 12              BEQ      L0D6F             
+0D5D  8D 27              BSR      L0D86             
+0D5F  26 F8              BNE      L0D59             
+0D61  8E 1849            LDS      #L1849            
+0D64  C6 FF              LDA B    #$FF              
+0D66  E1 84   L0D66      CMP B    $FFFFFF84,X             
+0D68  27 14              BEQ      L0D7E             
+0D6A  8D 1A              BSR      L0D86             
+0D6C  26 F8              BNE      L0D66             
+0D6E  39      L0D6E      RTS                        
+
+0D6F  D6 9D   L0D6F      LDA B    L009D             
+0D71  26 04              BNE      L0D77             
+0D73  5A                 DEC B                      
+0D74  E7 84              STA B    $FFFFFF84,X             
+0D76  39                 RTS                        
+
+0D77  96 9E   L0D77      LDA A    L009E             
+0D79  E7 01              STA B    $01,X             
+0D7B  A7 02              STA A    $02,X             
+0D7D  39                 RTS                        
+
+0D7E  D6 9D   L0D7E      LDA B    L009D             
+0D80  27 EC              BEQ      L0D6E             
+0D82  A7 84              STA A    $FFFFFF84,X             
+0D84  20 F1              BRA      L0D77             
+
+              *
+              * SUBROUTINE: L0D86     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+0D86  30      L0D86      TSX                        
+0D87  03                 *** *        
+0D88  8C 1879            CPX      #L1879            
+0D8B  39                 RTS                        
+
+0D8C  96 5B              LDA A    L005B             
+0D8E  26 38              BNE      L0DC8             
+0D90  17                 TBA                        
+0D91  00                 *** *        
+0D92  97 27              STA A    L0027             
+0D94  33                 PUL B                      
+0D95  0C                 CLC                        
+0D96  84 0F              AND A    #$0F              
+0D98  5A                 DEC B                      
+0D99  17      L0D99      TBA                        
+0D9A  F9 2481            ADC B    L2481             
+0D9D  2E 26              BGT      L0DC5             
+0D9F  10                 SBA                        
+0DA0  17                 TBA                        
+0DA1  F9 1D81            ADC B    L1D81             
+0DA4  2E 27              BGT      L0DCD             
+0DA6  15                 *** *        
+0DA7  34                 DES                        
+0DA8  02                 *** *        
+0DA9  86 2E              LDA A    #$2E              
+0DAB  17                 TBA                        
+0DAC  00                 *** *        
+0DAD  C8 35              EOR B    #$35              
+0DAF  02                 *** *        
+0DB0  17                 TBA                        
+0DB1  00                 *** *        
+0DB2  C3                 *** *        
+0DB3  81 0D              CMP A    #$0D              
+0DB5  27 E2              BEQ      L0D99             
+0DB7  17                 TBA                        
+0DB8  F9 0620            ADC B    L0620             
+0DBB  F4 1700            AND B    L1700             
+0DBE  FF 17F8            STX      L17F8             
+0DC1  FE 810D            LDX      L810D             
+0DC4  26 F9              BNE      L0DBF             
+0DC6  0F                 SEI                        
+0DC7  84 39              AND A    #$39              
+0DC9  96 5B              LDA A    L005B             
+0DCB  26 FB              BNE      L0DC8             
+0DCD  17      L0DCD      TBA                        
+0DCE  00                 *** *        
+0DCF  80 20              SUB A    #$20              
+0DD1  C1 17              CMP B    #$17              
+0DD3  01                 NOP                        
+0DD4  68 17              ASL      $17,X             
+0DD6  01                 NOP                        
+0DD7  1C                 *** *        
+0DD8  27 01              BEQ      L0DDB             
+0DDA  39                 RTS                        
+
+              *
+              * SUBROUTINE: L0DDB     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+0DDB  9F 9F   L0DDB      STS      L009F             
+0DDD  AE 02              LDS      $02,X             
+0DDF  17                 TBA                        
+0DE0  01                 NOP                        
+0DE1  38                 *** *        
+0DE2  24 10              BCC      L0DF4             
+0DE4  9E 9F              LDS      L009F             
+0DE6  EC                 *** *        
+0DE7  02                 *** *        
+0DE8  ED                 *** *        
+0DE9  9F 00              STS      L0000             
+0DEB  A1 9E              CMP A    $FFFFFF9E,X             
+0DED  A9 9F              ADC A    $FFFFFF9F,X             
+0DEF  A1 9E              CMP A    $FFFFFF9E,X             
+0DF1  9F 20              STS      L0020             
+0DF3  06                 TAP                        
+0DF4  9E 9F   L0DF4      LDS      L009F             
+0DF6  EC                 *** *        
+0DF7  02                 *** *        
+0DF8  DD                 *** *        
+0DF9  A3                 *** *        
+0DFA  E6 04   L0DFA      LDA B    $04,X             
+0DFC  E7 80              STA B    $FFFFFF80,X             
+0DFE  9C F7              CPX      L00F7             
+0E00  26 F8              BNE      L0DFA             
+0E02  30                 TSX                        
+0E03  1C                 *** *        
+0E04  9F F7              STS      L00F7             
+0E06  39                 RTS                        
+
+0E07  96 86              LDA A    L0086             
+0E09  27 0A              BEQ      L0E15             
+0E0B  0C      L0E0B      CLC                        
+0E0C  87                 *** *        
+0E0D  16                 TAB                        
+0E0E  00                 *** *        
+0E0F  AE 0F              LDS      $0F,X             
+0E11  86 0F              LDA A    #$0F              
+0E13  87                 *** *        
+0E14  39                 RTS                        
+
+0E15  0C      L0E15      CLC                        
+0E16  87                 *** *        
+0E17  8D 11              BSR      L0E2A             
+0E19  27 F5   L0E19      BEQ      L0E10             
+0E1B  0C                 CLC                        
+0E1C  86 0F              LDA A    #$0F              
+0E1E  45                 *** *        
+0E1F  39                 RTS                        
+
+0E20  96 86              LDA A    L0086             
+0E22  26 E7              BNE      L0E0B             
+0E24  0C                 CLC                        
+0E25  87                 *** *        
+0E26  8D 28              BSR      L0E50             
+0E28  20 EF              BRA      L0E19             
+
+              *
+              * SUBROUTINE: L0E2A     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+0E2A  17      L0E2A      TBA                        
+0E2B  01                 NOP                        
+0E2C  10                 SBA                        
+0E2D  96 9D              LDA A    L009D             
+0E2F  26 01              BNE      L0E32             
+0E31  39                 RTS                        
+
+0E32  17      L0E32      TBA                        
+0E33  00                 *** *        
+0E34  BF 2604            STS      L2604             
+0E37  8D A2              BSR      L0DDB             
+0E39  20 F7              BRA      L0E32             
+
+0E3B  DC                 *** *        
+0E3C  9D                 *** *        
+0E3D  8C 1D45            CPX      #L1D45            
+0E40  27 65              BEQ      L0EA7             
+0E42  ED                 *** *        
+0E43  84 DC              AND A    #$DC              
+0E45  A3                 *** *        
+0E46  ED                 *** *        
+0E47  02                 *** *        
+0E48  30                 TSX                        
+0E49  04                 *** *        
+0E4A  9F F7              STS      L00F7             
+0E4C  9E A3              LDS      L00A3             
+0E4E  20 1A              BRA      L0E6A             
+
+              *
+              * SUBROUTINE: L0E50     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+0E50  17      L0E50      TBA                        
+0E51  00                 *** *        
+0E52  EA 96              ORA B    $FFFFFF96,X             
+0E54  9D                 *** *        
+0E55  26 01              BNE      L0E58             
+0E57  39                 RTS                        
+
+0E58  17      L0E58      TBA                        
+0E59  00                 *** *        
+0E5A  99 26              ADC A    L0026             
+0E5C  DE AE              LDX      L00AE             
+0E5E  02                 *** *        
+0E5F  17                 TBA                        
+0E60  00                 *** *        
+0E61  B8 2406            EOR A    L2406             
+0E64  DC                 *** *        
+0E65  A3                 *** *        
+0E66  ED                 *** *        
+0E67  84 9E              AND A    #$9E              
+0E69  A3                 *** *        
+              *
+              * SUBROUTINE: L0E6A     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+0E6A  0D      L0E6A      SEC                        
+0E6B  87                 *** *        
+0E6C  27 05              BEQ      L0E73             
+0E6E  0F                 SEI                        
+0E6F  87                 *** *        
+0E70  9F AB              STS      L00AB             
+0E72  39                 RTS                        
+
+0E73  9F A9   L0E73      STS      L00A9             
+0E75  39                 RTS                        
+
+0E76  9F AD              STS      L00AD             
+0E78  0D                 SEC                        
+0E79  87                 *** *        
+0E7A  27 04              BEQ      L0E80             
+0E7C  9E AB              LDS      L00AB             
+0E7E  20 02              BRA      L0E82             
+
+0E80  9E A9   L0E80      LDS      L00A9             
+0E82  6D 84   L0E82      TST      $FFFFFF84,X             
+0E84  27 17              BEQ      L0E9D             
+0E86  81 1F              CMP A    #$1F              
+0E88  22 0A              BHI      L0E94             
+0E8A  81 0D              CMP A    #$0D              
+0E8C  26 0A              BNE      L0E98             
+0E8E  0D                 SEC                        
+0E8F  87                 *** *        
+0E90  27 02              BEQ      L0E94             
+0E92  0C                 CLC                        
+0E93  45                 *** *        
+0E94  A7 84   L0E94      STA A    $FFFFFF84,X             
+0E96  30                 TSX                        
+0E97  01                 NOP                        
+0E98  8D D0   L0E98      BSR      L0E6A             
+0E9A  9E AD              LDS      L00AD             
+0E9C  39                 RTS                        
+
+0E9D  30      L0E9D      TSX                        
+0E9E  01                 NOP                        
+0E9F  9C A1              CPX      L00A1             
+0EA1  27 04              BEQ      L0EA7             
+0EA3  AE 84              LDS      $FFFFFF84,X             
+0EA5  20 DB              BRA      L0E82             
+
+0EA7  16      L0EA7      TAB                        
+0EA8  F9 BC9E            ADC B    LBC9E             
+0EAB  5C                 INC B                      
+0EAC  A6 80   L0EAC      LDA A    $FFFFFF80,X             
+0EAE  9F 5C              STS      L005C             
+0EB0  4D                 TST A                      
+0EB1  26 06              BNE      L0EB9             
+0EB3  AE 84              LDS      $FFFFFF84,X             
+0EB5  26 F5              BNE      L0EAC             
+0EB7  20 04              BRA      L0EBD             
+
+0EB9  81 FF   L0EB9      CMP A    #$FF              
+0EBB  27 EF              BEQ      L0EAC             
+0EBD  39      L0EBD      RTS                        
+
+0EBE  0D                 SEC                        
+0EBF  87                 *** *        
+0EC0  27 09              BEQ      L0ECB             
+0EC2  4F                 CLR A                      
+0EC3  97 86              STA A    L0086             
+0EC5  97 87              STA A    L0087             
+0EC7  9E AB              LDS      L00AB             
+0EC9  20 02              BRA      L0ECD             
+
+0ECB  9E A9   L0ECB      LDS      L00A9             
+0ECD  6D 84   L0ECD      TST      $FFFFFF84,X             
+0ECF  27 11              BEQ      L0EE2             
+0ED1  6D 01              TST      $01,X             
+0ED3  27 13              BEQ      L0EE8             
+0ED5  6D 02              TST      $02,X             
+0ED7  27 15              BEQ      L0EEE             
+0ED9  6F 80              CLR      $FFFFFF80,X             
+0EDB  6F 80              CLR      $FFFFFF80,X             
+0EDD  6F 80              CLR      $FFFFFF80,X             
+0EDF  9F A3              STS      L00A3             
+0EE1  39                 RTS                        
+
+0EE2  AE 01   L0EE2      LDS      $01,X             
+0EE4  26 E7              BNE      L0ECD             
+0EE6  20 BF              BRA      L0EA7             
+
+0EE8  86 FF   L0EE8      LDA A    #$FF              
+0EEA  A7 80              STA A    $FFFFFF80,X             
+0EEC  20 F4              BRA      L0EE2             
+
+0EEE  86 FF   L0EEE      LDA A    #$FF              
+0EF0  A7 80              STA A    $FFFFFF80,X             
+0EF2  20 F4              BRA      L0EE8             
+
+0EF4  96 9D              LDA A    L009D             
+0EF6  27 12              BEQ      L0F0A             
+0EF8  D6 9E              LDA B    L009E             
+0EFA  8E 1C45            LDS      #L1C45            
+0EFD  9C F7   L0EFD      CPX      L00F7             
+0EFF  27 09              BEQ      L0F0A             
+0F01  10                 SBA                        
+0F02  A3                 *** *        
+0F03  84 27              AND A    #$27              
+0F05  06      L0F05      TAP                        
+0F06  30                 TSX                        
+0F07  04                 *** *        
+0F08  20 F3              BRA      L0EFD             
+
+0F0A  9E F7   L0F0A      LDS      L00F7             
+0F0C  39                 RTS                        
+
+              *
+              * SUBROUTINE: L0F0D     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+0F0D  A6 80   L0F0D      LDA A    $FFFFFF80,X             
+0F0F  26 FC              BNE      L0F0D             
+0F11  9F A9              STS      L00A9             
+0F13  AE 84              LDS      $FFFFFF84,X             
+0F15  26 F6              BNE      L0F0D             
+0F17  9E A9              LDS      L00A9             
+0F19  39                 RTS                        
+
+0F1A  8D F1              BSR      L0F0D             
+0F1C  30                 TSX                        
+0F1D  02                 *** *        
+0F1E  9C A3              CPX      L00A3             
+0F20  27 05              BEQ      L0F27             
+0F22  9E A9              LDS      L00A9             
+0F24  1A                 *** *        
+0F25  01                 NOP                        
+0F26  39                 RTS                        
+
+0F27  86 FF   L0F27      LDA A    #$FF              
+0F29  A7 82              STA A    $FFFFFF82,X             
+0F2B  A7 82              STA A    $FFFFFF82,X             
+0F2D  A7 82              STA A    $FFFFFF82,X             
+0F2F  1C                 *** *        
+0F30  FE 3996            LDX      L3996             
+0F33  80 27              SUB A    #$27              
+0F35  04                 *** *        
+0F36  0F                 SEI                        
+0F37  5B                 *** *        
+0F38  0C                 CLC                        
+0F39  7D 16F9            TST      L16F9             
+0F3C  32                 PUL A                      
+0F3D  17                 TBA                        
+0F3E  02                 *** *        
+0F3F  23 17              BLS      L0F58             
+0F41  02                 *** *        
+0F42  2F C1              BLE      L0F05             
+0F44  02                 *** *        
+0F45  26 1F              BNE      L0F66             
+0F47  34                 DES                        
+0F48  02                 *** *        
+0F49  30                 TSX                        
+0F4A  01                 NOP                        
+0F4B  A6 84              LDA A    $FFFFFF84,X             
+0F4D  17                 TBA                        
+0F4E  02                 *** *        
+0F4F  22 C1              BHI      L0F12             
+0F51  02                 *** *        
+0F52  35                 TXS                        
+0F53  04                 *** *        
+0F54  26 10              BNE      L0F66             
+0F56  30                 TSX                        
+0F57  01                 NOP                        
+0F58  9F E3   L0F58      STS      L00E3             
+0F5A  C1 5F              CMP B    #$5F              
+0F5C  23 03              BLS      L0F61             
+0F5E  83                 *** *        
+0F5F  20 20              BRA      L0F81             
+
+0F61  D7 9D   L0F61      STA B    L009D             
+0F63  97 9E              STA A    L009E             
+0F65  39                 RTS                        
+
+0F66  4F      L0F66      CLR A                      
+0F67  5F                 CLR B                      
+0F68  20 F7              BRA      L0F61             
+
+0F6A  17                 TBA                        
+0F6B  02                 *** *        
+0F6C  3B                 RTI                        
+
+0F6D  24 07              BCC      L0F76             
+0F6F  96 D5              LDA A    L00D5             
+0F71  17                 TBA                        
+0F72  02                 *** *        
+0F73  21                 *** *        
+0F74  97 D5              STA A    L00D5             
+0F76  39      L0F76      RTS                        
+
+0F77  0F                 SEI                        
+0F78  B6 1701            LDA A    L1701             
+0F7B  E7 81              STA B    $FFFFFF81,X             
+0F7D  0D                 SEC                        
+0F7E  27 F6              BEQ      L0F76             
+0F80  8E 192F            LDS      #L192F            
+0F83  0C                 CLC                        
+0F84  5E                 *** *        
+0F85  9F BA   L0F85      STS      L00BA             
+0F87  17                 TBA                        
+0F88  F7 389E            STA B    L389E             
+0F8B  BA A780            ORA A    LA780             
+0F8E  81 0D              CMP A    #$0D              
+0F90  26 F3              BNE      L0F85             
+0F92  0F                 SEI                        
+0F93  5E                 *** *        
+0F94  8E 187B            LDS      #L187B            
+0F97  A6 89   L0F97      LDA A    $FFFFFF89,X             
+0F99  00                 *** *        
+0F9A  B4 A780            AND A    LA780             
+0F9D  81 0D              CMP A    #$0D              
+0F9F  26 F6              BNE      L0F97             
+0FA1  8E 187B            LDS      #L187B            
+0FA4  A6 80              LDA A    $FFFFFF80,X             
+0FA6  97 B7              STA A    L00B7             
+0FA8  9F E3              STS      L00E3             
+0FAA  8E 192F            LDS      #L192F            
+0FAD  9F BA              STS      L00BA             
+0FAF  86 20              LDA A    #$20              
+0FB1  A7 80   L0FB1      STA A    $FFFFFF80,X             
+0FB3  8C 19C5            CPX      #L19C5            
+0FB6  26 F9              BNE      L0FB1             
+0FB8  8D 63              BSR      L101D             
+0FBA  D7 B8              STA B    L00B8             
+0FBC  8D 74              BSR      L1032             
+0FBE  8D 5D              BSR      L101D             
+0FC0  96 D5              LDA A    L00D5             
+0FC2  34                 DES                        
+0FC3  04                 *** *        
+0FC4  A0 E0              SUB A    $FFFFFFE0,X             
+0FC6  44                 LSR A                      
+0FC7  97 B9              STA A    L00B9             
+0FC9  C6 20              LDA B    #$20              
+0FCB  91 B8              CMP A    L00B8             
+0FCD  23 0D              BLS      L0FDC             
+0FCF  90 B8              SUB A    L00B8             
+0FD1  9E BA              LDS      L00BA             
+0FD3  E7 80              STA B    $FFFFFF80,X             
+0FD5  0C                 CLC                        
+0FD6  B6 4A26            LDA A    L4A26             
+0FD9  F9 9FBA            ADC B    L9FBA             
+0FDC  8D 54   L0FDC      BSR      L1032             
+0FDE  8D 3D              BSR      L101D             
+0FE0  96 D5              LDA A    L00D5             
+0FE2  90 B6              SUB A    L00B6             
+0FE4  34                 DES                        
+0FE5  04                 *** *        
+0FE6  A0 E0              SUB A    $FFFFFFE0,X             
+0FE8  23 0B              BLS      L0FF5             
+0FEA  C6 20              LDA B    #$20              
+0FEC  9E BA              LDS      L00BA             
+0FEE  E7 80   L0FEE      STA B    $FFFFFF80,X             
+0FF0  4A                 DEC A                      
+0FF1  26 FB              BNE      L0FEE             
+0FF3  9F BA              STS      L00BA             
+0FF5  8D 3B   L0FF5      BSR      L1032             
+0FF7  96 D5              LDA A    L00D5             
+0FF9  97 B6              STA A    L00B6             
+0FFB  27 1C              BEQ      L1019             
+0FFD  D6 3E              LDA B    L003E             
+0FFF  27 0C              BEQ      L100D             
+1001  86 20   L1001      LDA A    #$20              
+1003  34                 DES                        
+1004  04                 *** *        
+1005  17                 TBA                        
+1006  04                 *** *        
+1007  D1 35              CMP B    L0035             
+1009  04                 *** *        
+100A  5A                 DEC B                      
+100B  26 F4              BNE      L1001             
+100D  8E 192F L100D      LDS      #L192F            
+1010  A6 80              LDA A    $FFFFFF80,X             
+1012  17                 TBA                        
+1013  04                 *** *        
+1014  C4 0A              AND B    #$0A              
+1016  B6 26F7            LDA A    L26F7             
+1019  17      L1019      TBA                        
+101A  F8 9239            EOR B    L9239             
+              *
+              * SUBROUTINE: L101D     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+101D  5F      L101D      CLR B                      
+101E  9E E3              LDS      L00E3             
+1020  A6 80   L1020      LDA A    $FFFFFF80,X             
+1022  91 B7              CMP A    L00B7             
+1024  27 07              BEQ      L102D             
+1026  81 0D              CMP A    #$0D              
+1028  27 03              BEQ      L102D             
+102A  5C                 INC B                      
+102B  20 F3              BRA      L1020             
+
+102D  30      L102D      TSX                        
+102E  1F                 *** *        
+102F  9F E5              STS      L00E5             
+1031  39                 RTS                        
+
+              *
+              * SUBROUTINE: L1032     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+1032  9E E3   L1032      LDS      L00E3             
+1034  10                 SBA                        
+1035  9E BA              LDS      L00BA             
+1037  9C E5              CPX      L00E5             
+1039  27 08              BEQ      L1043             
+103B  A6 80              LDA A    $FFFFFF80,X             
+103D  A7 A0              STA A    $FFFFFFA0,X             
+103F  0C                 CLC                        
+1040  B6 20F4            LDA A    L20F4             
+1043  10      L1043      SBA                        
+1044  9F BA              STS      L00BA             
+1046  20 02              BRA      L104A             
+
+              *
+              * SUBROUTINE: L1048     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+1048  9E E3   L1048      LDS      L00E3             
+104A  30      L104A      TSX                        
+104B  01                 NOP                        
+104C  9F E3              STS      L00E3             
+104E  39                 RTS                        
+
+104F  0F                 SEI                        
+1050  7E 1701            JMP      L1701             
+
+1053  0F                 SEI                        
+1054  81 21              CMP A    #$21              
+1056  26 06              BNE      L105E             
+1058  03                 *** *        
+1059  7E 8DEC            JMP      L8DEC             
+
+105C  20 F3              BRA      L1051             
+
+105E  81 5F   L105E      CMP A    #$5F              
+1060  23 02              BLS      L1064             
+1062  80 20              SUB A    #$20              
+1064  81 4F   L1064      CMP A    #$4F              
+1066  26 07              BNE      L106F             
+1068  96 69              LDA A    L0069             
+106A  46                 ROR A                      
+106B  24 27              BCC      L1094             
+106D  20 09              BRA      L1078             
+
+106F  81 45   L106F      CMP A    #$45              
+1071  26 26              BNE      L1099             
+1073  96 69              LDA A    L0069             
+1075  46                 ROR A                      
+1076  25 1C              BCS      L1094             
+1078  96 7E   L1078      LDA A    L007E             
+107A  26 30              BNE      L10AC             
+107C  8D CA              BSR      L1048             
+107E  17                 TBA                        
+107F  00                 *** *        
+1080  E2 0F              SBC B    $0F,X             
+1082  64 81              LSR      $FFFFFF81,X             
+1084  2E 27              BGT      L10AD             
+1086  06                 TAP                        
+1087  81 3A              CMP A    #$3A              
+1089  26 0D              BNE      L1098             
+108B  97 64              STA A    L0064             
+108D  30                 TSX                        
+108E  01                 NOP                        
+108F  9F E3              STS      L00E3             
+1091  0C                 CLC                        
+1092  7F 3996            CLR      L3996             
+1095  7E 26E4            JMP      L26E4             
+
+1098  39      L1098      RTS                        
+
+1099  17      L1099      TBA                        
+109A  01                 NOP                        
+109B  0C                 CLC                        
+109C  24 0E              BCC      L10AC             
+109E  9E E3              LDS      L00E3             
+10A0  30                 TSX                        
+10A1  1E                 *** *        
+10A2  9F E3              STS      L00E3             
+10A4  96 65              LDA A    L0065             
+10A6  2B EC              BMI      L1094             
+10A8  27 EA              BEQ      L1094             
+10AA  20 CC              BRA      L1078             
+
+10AC  39      L10AC      RTS                        
+
+              *
+              * SUBROUTINE: L10AD     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+10AD  96 65   L10AD      LDA A    L0065             
+10AF  2A 06              BPL      L10B7             
+10B1  97 67              STA A    L0067             
+10B3  97 66              STA A    L0066             
+10B5  00                 *** *        
+10B6  65                 *** *        
+10B7  39      L10B7      RTS                        
+
+10B8  17                 TBA                        
+10B9  00                 *** *        
+10BA  ED                 *** *        
+10BB  24 19              BCC      L10D6             
+10BD  8D EE              BSR      L10AD             
+10BF  96 3F              LDA A    L003F             
+10C1  4C                 INC A                      
+10C2  17                 TBA                        
+10C3  00                 *** *        
+10C4  D0 8E              SUB B    L008E             
+10C6  18                 *** *        
+10C7  49                 ROL A                      
+10C8  4D                 TST A                      
+10C9  26 01              BNE      L10CC             
+10CB  4C                 INC A                      
+10CC  A1 84   L10CC      CMP A    $FFFFFF84,X             
+10CE  27 1F              BEQ      L10EF             
+10D0  17                 TBA                        
+10D1  FC                 *** *        
+10D2  B3                 *** *        
+10D3  26 F7              BNE      L10CC             
+10D5  39      L10D5      RTS                        
+
+10D6  17      L10D6      TBA                        
+10D7  FE 6496            LDX      L6496             
+10DA  9D                 *** *        
+10DB  27 F8              BEQ      L10D5             
+10DD  D6 9E              LDA B    L009E             
+10DF  8E 1849            LDS      #L1849            
+10E2  10      L10E2      SBA                        
+10E3  A3                 *** *        
+10E4  01                 NOP                        
+10E5  27 08              BEQ      L10EF             
+10E7  30                 TSX                        
+10E8  03                 *** *        
+10E9  8C 1879            CPX      #L1879            
+10EC  26 F4              BNE      L10E2             
+10EE  39                 RTS                        
+
+10EF  9F ED   L10EF      STS      L00ED             
+10F1  17                 TBA                        
+10F2  00                 *** *        
+10F3  B4 24DF            AND A    L24DF             
+10F6  8D B5              BSR      L10AD             
+10F8  96 3F              LDA A    L003F             
+10FA  4C                 INC A                      
+10FB  17                 TBA                        
+10FC  00                 *** *        
+10FD  97 4D              STA A    L004D             
+10FF  26 01              BNE      L1102             
+1101  4C                 INC A                      
+1102  9E ED   L1102      LDS      L00ED             
+1104  A7 84              STA A    $FFFFFF84,X             
+1106  39                 RTS                        
+
+1107  8D 5A              BSR      L1163             
+1109  8D 67              BSR      L1172             
+110B  C1 02              CMP B    #$02              
+110D  26 14              BNE      L1123             
+110F  34                 DES                        
+1110  02                 *** *        
+1111  17                 TBA                        
+1112  FF 3417            STX      L3417             
+1115  00                 *** *        
+1116  91 35              CMP A    L0035             
+1118  02                 *** *        
+1119  24 08              BCC      L1123             
+111B  8D 28              BSR      L1145             
+111D  A6 84              LDA A    $FFFFFF84,X             
+111F  8D 74              BSR      L1195             
+1121  A7 84              STA A    $FFFFFF84,X             
+1123  39      L1123      RTS                        
+
+1124  0F                 SEI                        
+1125  C1 39              CMP B    #$39              
+1127  86 80              LDA A    #$80              
+1129  97 C1   L1129      STA A    L00C1             
+112B  39                 RTS                        
+
+112C  86 0F              LDA A    #$0F              
+112E  20 F9              BRA      L1129             
+
+1130  8D 76              BSR      L11A8             
+1132  24 06              BCC      L113A             
+1134  96 BF              LDA A    L00BF             
+1136  8D 5D              BSR      L1195             
+1138  97 BF              STA A    L00BF             
+113A  39      L113A      RTS                        
+
+              *
+              * SUBROUTINE: L113B     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+113B  5F      L113B      CLR B                      
+113C  D7 65              STA B    L0065             
+113E  D7 54              STA B    L0054             
+1140  D7 4F              STA B    L004F             
+1142  D7 52              STA B    L0052             
+1144  39                 RTS                        
+
+              *
+              * SUBROUTINE: L1145     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+1145  8E 0030 L1145      LDS      #L0030            
+1148  80 41              SUB A    #$41              
+114A  30                 TSX                        
+114B  86 9F              LDA A    #$9F              
+114D  55                 *** *        
+114E  39                 RTS                        
+
+114F  9E 55              LDS      L0055             
+1151  9C 58              CPX      L0058             
+1153  27 09              BEQ      L115E             
+1155  A6 80              LDA A    $FFFFFF80,X             
+1157  84 7F              AND A    #$7F              
+1159  9F 55              STS      L0055             
+115B  16                 TAB                        
+115C  F5 A70F            BIT B    LA70F             
+115F  57                 ASR B                      
+1160  16                 TAB                        
+1161  F5 5F9E            BIT B    L5F9E             
+1164  E3                 *** *        
+1165  A6 84   L1165      LDA A    $FFFFFF84,X             
+1167  81 20              CMP A    #$20              
+1169  26 04              BNE      L116F             
+116B  30                 TSX                        
+116C  01                 NOP                        
+116D  20 F6              BRA      L1165             
+
+116F  9F E3   L116F      STS      L00E3             
+1171  39                 RTS                        
+
+              *
+              * SUBROUTINE: L1172     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+1172  5F      L1172      CLR B                      
+1173  4D                 TST A                      
+1174  2B 1E              BMI      L1194             
+1176  81 5F              CMP A    #$5F              
+1178  23 06              BLS      L1180             
+117A  81 7F              CMP A    #$7F              
+117C  22 16              BHI      L1194             
+117E  80 20              SUB A    #$20              
+1180  81 30   L1180      CMP A    #$30              
+1182  25 10              BCS      L1194             
+1184  81 39              CMP A    #$39              
+1186  22 02              BHI      L118A             
+1188  5C                 INC B                      
+1189  39                 RTS                        
+
+118A  81 41   L118A      CMP A    #$41              
+118C  25 06              BCS      L1194             
+118E  81 5A              CMP A    #$5A              
+1190  22 02              BHI      L1194             
+1192  C6 02              LDA B    #$02              
+1194  39      L1194      RTS                        
+
+              *
+              * SUBROUTINE: L1195     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+1195  D6 65   L1195      LDA B    L0065             
+1197  0D                 SEC                        
+1198  67 27              ASR      $27,X             
+119A  0A                 CLV                        
+119B  0D                 SEC                        
+119C  66 27              ROR      $27,X             
+119E  01                 NOP                        
+119F  50                 NEG B                      
+11A0  34                 DES                        
+11A1  04                 *** *        
+11A2  AB E0              ADD A    $FFFFFFE0,X             
+11A4  39                 RTS                        
+
+11A5  1F                 *** *        
+11A6  98 39              EOR A    L0039             
+              *
+              * SUBROUTINE: L11A8     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+11A8  4F      L11A8      CLR A                      
+11A9  97 67              STA A    L0067             
+11AB  97 66              STA A    L0066             
+11AD  8D 8C              BSR      L113B             
+11AF  5C                 INC B                      
+11B0  D7 5E              STA B    L005E             
+11B2  8D AF              BSR      L1163             
+11B4  81 2B              CMP A    #$2B              
+11B6  27 06              BEQ      L11BE             
+11B8  81 2D              CMP A    #$2D              
+11BA  26 0C              BNE      L11C8             
+11BC  97 66              STA A    L0066             
+11BE  30      L11BE      TSX                        
+11BF  01                 NOP                        
+11C0  9F E3              STS      L00E3             
+11C2  8D 21              BSR      L11E5             
+11C4  24 0F              BCC      L11D5             
+11C6  20 08              BRA      L11D0             
+
+11C8  30      L11C8      TSX                        
+11C9  01                 NOP                        
+11CA  9F E3              STS      L00E3             
+11CC  8D 2F              BSR      L11FD             
+11CE  24 05              BCC      L11D5             
+11D0  8D 0E   L11D0      BSR      L11E0             
+11D2  1A                 *** *        
+11D3  01                 NOP                        
+11D4  39                 RTS                        
+
+11D5  8D 09   L11D5      BSR      L11E0             
+11D7  9E E3              LDS      L00E3             
+11D9  30                 TSX                        
+11DA  1F                 *** *        
+11DB  9F E3              STS      L00E3             
+11DD  1C                 *** *        
+11DE  FE 390F            LDX      L390F             
+11E1  57                 ASR B                      
+11E2  0F                 SEI                        
+11E3  5E                 *** *        
+11E4  39                 RTS                        
+
+              *
+              * SUBROUTINE: L11E5     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+11E5  97 67   L11E5      STA A    L0067             
+11E7  17                 TBA                        
+11E8  FF 515C            STX      L515C             
+11EB  D7 5E              STA B    L005E             
+11ED  0F      L11ED      SEI                        
+11EE  54                 LSR B                      
+11EF  0C                 CLC                        
+11F0  6A 17              DEC      $17,X             
+11F2  F4 CE0D            AND B    LCE0D             
+11F5  74 2705            LSR      L2705             
+11F8  0F                 SEI                        
+11F9  74 1600            LSR      L1600             
+11FC  A1 17              CMP A    $17,X             
+11FE  FF 72C1            STX      L72C1             
+1201  01                 NOP                        
+1202  25 05              BCS      L1209             
+1204  27 4E              BEQ      L1254             
+1206  16                 TAB                        
+1207  00                 *** *        
+1208  84 0D              AND A    #$0D              
+120A  65                 *** *        
+120B  27 06              BEQ      L1213             
+120D  34                 DES                        
+120E  02                 *** *        
+120F  96 65              LDA A    L0065             
+1211  20 54              BRA      L1267             
+
+1213  0F      L1213      SEI                        
+1214  65                 *** *        
+1215  81 23              CMP A    #$23              
+1217  27 18              BEQ      L1231             
+1219  81 2B              CMP A    #$2B              
+121B  26 04              BNE      L1221             
+121D  97 50              STA A    L0050             
+121F  20 CC              BRA      L11ED             
+
+1221  81 2D   L1221      CMP A    #$2D              
+1223  26 04              BNE      L1229             
+1225  97 51              STA A    L0051             
+1227  20 C4              BRA      L11ED             
+
+1229  81 25   L1229      CMP A    #$25              
+122B  26 68              BNE      L1295             
+122D  96 69              LDA A    L0069             
+122F  20 36              BRA      L1267             
+
+1231  0C      L1231      CLC                        
+1232  6A 17              DEC      $17,X             
+1234  F4 8C17            AND B    L8C17             
+1237  FF 39C1            STX      L39C1             
+123A  02                 *** *        
+123B  26 0F              BNE      L124C             
+123D  17                 TBA                        
+123E  FF 05A6            STX      L05A6             
+1241  84 0D              AND A    #$0D              
+1243  54                 LSR B                      
+1244  27 21              BEQ      L1267             
+1246  9B BF              ADD A    L00BF             
+1248  A7 84              STA A    $FFFFFF84,X             
+124A  20 1B              BRA      L1267             
+
+124C  81 2B   L124C      CMP A    #$2B              
+124E  26 45              BNE      L1295             
+1250  97 54              STA A    L0054             
+1252  20 DD              BRA      L1231             
+
+1254  80 30   L1254      SUB A    #$30              
+1256  34                 DES                        
+1257  02                 *** *        
+1258  D6 65              LDA B    L0065             
+125A  58                 ASL B                      
+125B  58                 ASL B                      
+125C  DB 65              ADD B    L0065             
+125E  58                 ASL B                      
+125F  EB E0              ADD B    $FFFFFFE0,X             
+1261  D7 65              STA B    L0065             
+1263  0C                 CLC                        
+1264  4F                 CLR A                      
+1265  20 86              BRA      L11ED             
+
+1267  D6 51   L1267      LDA B    L0051             
+1269  27 0A              BEQ      L1275             
+126B  1F                 *** *        
+126C  89 96              ADC A    #$96              
+126E  52                 *** *        
+126F  34                 DES                        
+1270  04                 *** *        
+1271  A0 E0              SUB A    $FFFFFFE0,X             
+1273  20 06              BRA      L127B             
+
+1275  D6 50   L1275      LDA B    L0050             
+1277  27 02              BEQ      L127B             
+1279  9B 52              ADD A    L0052             
+127B  97 52   L127B      STA A    L0052             
+127D  0F                 SEI                        
+127E  50                 NEG B                      
+127F  0F                 SEI                        
+1280  51                 *** *        
+1281  0C                 CLC                        
+1282  4F                 CLR A                      
+1283  0D                 SEC                        
+1284  65                 *** *        
+1285  10                 SBA                        
+1286  27 FF              BEQ      L1287             
+1288  64 35              LSR      $35,X             
+128A  02                 *** *        
+128B  20 86              BRA      L1213             
+
+128D  0D                 SEC                        
+128E  65                 *** *        
+128F  27 04              BEQ      L1295             
+1291  34                 DES                        
+1292  02                 *** *        
+1293  20 D2              BRA      L1267             
+
+1295  0F      L1295      SEI                        
+1296  74 0D4F            LSR      L0D4F             
+1299  26 03              BNE      L129E             
+129B  1C                 *** *        
+129C  FE 3997            LDX      L3997             
+129F  57                 ASR B                      
+12A0  8E 0125            LDS      #L0125            
+12A3  96 52              LDA A    L0052             
+12A5  97 65              STA A    L0065             
+12A7  27 04              BEQ      L12AD             
+12A9  D6 C1              LDA B    L00C1             
+12AB  26 3C              BNE      L12E9             
+12AD  5F      L12AD      CLR B                      
+12AE  D7 58              STA B    L0058             
+12B0  81 64   L12B0      CMP A    #$64              
+12B2  25 05              BCS      L12B9             
+12B4  80 64              SUB A    #$64              
+12B6  5C                 INC B                      
+12B7  20 F7              BRA      L12B0             
+
+12B9  5D      L12B9      TST B                      
+12BA  27 07              BEQ      L12C3             
+12BC  CB 30              ADD B    #$30              
+12BE  E7 80              STA B    $FFFFFF80,X             
+12C0  D7 58              STA B    L0058             
+12C2  5F                 CLR B                      
+12C3  81 0A   L12C3      CMP A    #$0A              
+12C5  25 05              BCS      L12CC             
+12C7  80 0A              SUB A    #$0A              
+12C9  5C                 INC B                      
+12CA  20 F7              BRA      L12C3             
+
+12CC  0D      L12CC      SEC                        
+12CD  58                 ASL B                      
+12CE  26 03              BNE      L12D3             
+12D0  5D                 TST B                      
+12D1  27 04              BEQ      L12D7             
+12D3  CB 30   L12D3      ADD B    #$30              
+12D5  E7 80              STA B    $FFFFFF80,X             
+12D7  8B 30   L12D7      ADD A    #$30              
+12D9  A7 80              STA A    $FFFFFF80,X             
+12DB  96 57              LDA A    L0057             
+12DD  A7 80              STA A    $FFFFFF80,X             
+12DF  9F 58              STS      L0058             
+12E1  8E 0125            LDS      #L0125            
+12E4  9F 55              STS      L0055             
+12E6  1A                 *** *        
+12E7  01                 NOP                        
+12E8  39                 RTS                        
+
+12E9  C6 43   L12E9      LDA B    #$43              
+12EB  81 64   L12EB      CMP A    #$64              
+12ED  25 06              BCS      L12F5             
+12EF  80 64              SUB A    #$64              
+12F1  E7 80              STA B    $FFFFFF80,X             
+12F3  20 F6              BRA      L12EB             
+
+12F5  81 5A   L12F5      CMP A    #$5A              
+12F7  25 08              BCS      L1301             
+12F9  80 5A              SUB A    #$5A              
+12FB  E7 01              STA B    $01,X             
+12FD  C6 58              LDA B    #$58              
+12FF  E7 81              STA B    $FFFFFF81,X             
+1301  81 32   L1301      CMP A    #$32              
+1303  25 06              BCS      L130B             
+1305  80 32              SUB A    #$32              
+1307  C6 4C              LDA B    #$4C              
+1309  E7 80              STA B    $FFFFFF80,X             
+130B  81 28   L130B      CMP A    #$28              
+130D  25 0A              BCS      L1319             
+130F  80 28              SUB A    #$28              
+1311  C6 4C              LDA B    #$4C              
+1313  E7 01              STA B    $01,X             
+1315  C6 58              LDA B    #$58              
+1317  E7 81              STA B    $FFFFFF81,X             
+1319  C6 58   L1319      LDA B    #$58              
+131B  81 0A              CMP A    #$0A              
+131D  25 06              BCS      L1325             
+131F  80 0A              SUB A    #$0A              
+1321  E7 80              STA B    $FFFFFF80,X             
+1323  20 F4              BRA      L1319             
+
+1325  81 09   L1325      CMP A    #$09              
+1327  25 08              BCS      L1331             
+1329  80 09              SUB A    #$09              
+132B  E7 01              STA B    $01,X             
+132D  C6 49              LDA B    #$49              
+132F  E7 81              STA B    $FFFFFF81,X             
+1331  81 05   L1331      CMP A    #$05              
+1333  25 06              BCS      L133B             
+1335  C6 56              LDA B    #$56              
+1337  E7 80              STA B    $FFFFFF80,X             
+1339  80 05              SUB A    #$05              
+133B  81 04   L133B      CMP A    #$04              
+133D  25 0A              BCS      L1349             
+133F  80 04              SUB A    #$04              
+1341  C6 56              LDA B    #$56              
+1343  E7 01              STA B    $01,X             
+1345  C6 49              LDA B    #$49              
+1347  E7 81              STA B    $FFFFFF81,X             
+1349  C6 49   L1349      LDA B    #$49              
+134B  4D                 TST A                      
+134C  27 05              BEQ      L1353             
+134E  E7 80              STA B    $FFFFFF80,X             
+1350  4A                 DEC A                      
+1351  20 F6              BRA      L1349             
+
+1353  9F 58   L1353      STS      L0058             
+1355  96 C1              LDA A    L00C1             
+1357  2A 0D              BPL      L1366             
+1359  8E 0125            LDS      #L0125            
+135C  A6 84   L135C      LDA A    $FFFFFF84,X             
+135E  8B 20              ADD A    #$20              
+1360  A7 80              STA A    $FFFFFF80,X             
+1362  9C 58              CPX      L0058             
+1364  26 F6              BNE      L135C             
+1366  16      L1366      TAB                        
+1367  FF 7286            STX      L7286             
+136A  01      L136A      NOP                        
+136B  97 4E              STA A    L004E             
+136D  39                 RTS                        
+
+136E  96 4D              LDA A    L004D             
+1370  27 16              BEQ      L1388             
+1372  0F                 SEI                        
+1373  89 0F              ADC A    #$0F              
+1375  36                 PSH A                      
+1376  97 88              STA A    L0088             
+1378  17                 TBA                        
+1379  FD                 *** *        
+137A  E8 17              EOR B    $17,X             
+137C  FD                 *** *        
+137D  F4 C102            AND B    LC102             
+1380  26 06              BNE      L1388             
+1382  81 53              CMP A    #$53              
+1384  26 02              BNE      L1388             
+1386  97 89              STA A    L0089             
+1388  39      L1388      RTS                        
+
+1389  17                 TBA                        
+138A  FD                 *** *        
+138B  D7 81              STA B    L0081             
+138D  0D                 SEC                        
+138E  26 02              BNE      L1392             
+1390  86 3E              LDA A    #$3E              
+1392  97 4C   L1392      STA A    L004C             
+1394  39                 RTS                        
+
+1395  96 4D              LDA A    L004D             
+1397  27 20              BEQ      L13B9             
+1399  17                 TBA                        
+139A  FE 0C96            LDX      L0C96             
+139D  65                 *** *        
+139E  26 01              BNE      L13A1             
+13A0  4C                 INC A                      
+13A1  97 8A   L13A1      STA A    L008A             
+13A3  96 4B              LDA A    L004B             
+13A5  26 12              BNE      L13B9             
+13A7  4C                 INC A                      
+13A8  97 88              STA A    L0088             
+13AA  17      L13AA      TBA                        
+13AB  01                 NOP                        
+13AC  4E                 *** *        
+13AD  96 34              LDA A    L0034             
+13AF  26 08              BNE      L13B9             
+13B1  96 4A              LDA A    L004A             
+13B3  27 F5              BEQ      L13AA             
+13B5  0A                 CLV                        
+13B6  8A 26              ORA A    #$26              
+13B8  EA 39              ORA B    $39,X             
+13BA  96 4D              LDA A    L004D             
+13BC  27 23              BEQ      L13E1             
+13BE  17                 TBA                        
+13BF  FD                 *** *        
+13C0  E7 96              STA B    $FFFFFF96,X             
+13C2  65                 *** *        
+13C3  26 01              BNE      L13C6             
+13C5  4C                 INC A                      
+13C6  97 8A   L13C6      STA A    L008A             
+13C8  0D                 SEC                        
+13C9  4B                 *** *        
+13CA  26 0F              BNE      L13DB             
+13CC  86 01   L13CC      LDA A    #$01              
+13CE  97 88              STA A    L0088             
+13D0  17                 TBA                        
+13D1  01                 NOP                        
+13D2  28 96              BVC      L136A             
+13D4  34                 DES                        
+13D5  26 0A              BNE      L13E1             
+13D7  96 4B              LDA A    L004B             
+13D9  27 F1              BEQ      L13CC             
+13DB  0F      L13DB      SEI                        
+13DC  4B                 *** *        
+13DD  0A                 CLV                        
+13DE  8A 26              ORA A    #$26              
+13E0  EB 39              ADD B    $39,X             
+13E2  96 4D              LDA A    L004D             
+13E4  27 0C              BEQ      L13F2             
+13E6  8E 1B05            LDS      #L1B05            
+13E9  86 04              LDA A    #$04              
+13EB  A7 84              STA A    $FFFFFF84,X             
+13ED  17                 TBA                        
+13EE  01                 NOP                        
+13EF  6A 0F              DEC      $0F,X             
+13F1  4D                 TST A                      
+13F2  39      L13F2      RTS                        
+
+13F3  96 4D              LDA A    L004D             
+13F5  26 4B              BNE      L1442             
+13F7  BE CC14            LDS      LCC14             
+13FA  9F 8E              STS      L008E             
+13FC  17                 TBA                        
+13FD  FD                 *** *        
+13FE  64 81              LSR      $FFFFFF81,X             
+1400  0D                 SEC                        
+1401  27 05              BEQ      L1408             
+1403  BF CC14            STS      LCC14             
+1406  20 0E              BRA      L1416             
+
+1408  8E 1639 L1408      LDS      #L1639            
+140B  17                 TBA                        
+140C  00                 *** *        
+140D  AB 8D              ADD A    $FFFFFF8D,X             
+140F  63 8E              COM      $FFFFFF8E,X             
+1411  17                 TBA                        
+1412  E5 BF              BIT B    $FFFFFFBF,X             
+1414  CC                 *** *        
+1415  14      L1415      *** *        
+1416  8E 1B05 L1416      LDS      #L1B05            
+1419  B6 CC11            LDA A    LCC11             
+141C  34                 DES                        
+141D  02                 *** *        
+141E  BD CD2D            JSR      LCD2D             
+1421  35                 TXS                        
+1422  02                 *** *        
+1423  10                 SBA                        
+1424  25 EF              BCS      L1415             
+1426  08                 INX                        
+1427  B7 CC11            STA A    LCC11             
+142A  9E 8E              LDS      L008E             
+142C  BF CC14            STS      LCC14             
+142F  8E 1B05            LDS      #L1B05            
+1432  86 01              LDA A    #$01              
+1434  BD CD33            JSR      LCD33             
+1437  86 01              LDA A    #$01              
+1439  A7 84              STA A    $FFFFFF84,X             
+143B  17                 TBA                        
+143C  01                 NOP                        
+143D  1C                 *** *        
+143E  86 01              LDA A    #$01              
+1440  97 4D              STA A    L004D             
+1442  39      L1442      RTS                        
+
+1443  96 B1              LDA A    L00B1             
+1445  9B 3B              ADD A    L003B             
+1447  97 3B              STA A    L003B             
+1449  96 B0              LDA A    L00B0             
+144B  9B 38              ADD A    L0038             
+144D  97 38              STA A    L0038             
+144F  96 AF              LDA A    L00AF             
+1451  9B 71              ADD A    L0071             
+1453  97 71              STA A    L0071             
+1455  4F                 CLR A                      
+1456  97 B1              STA A    L00B1             
+1458  97 B0              STA A    L00B0             
+145A  97 AF              STA A    L00AF             
+145C  96 3B              LDA A    L003B             
+145E  90 38              SUB A    L0038             
+1460  90 71              SUB A    L0071             
+1462  81 0E              CMP A    #$0E              
+1464  22 02              BHI      L1468             
+1466  86 0F              LDA A    #$0F              
+1468  81 96   L1468      CMP A    #$96              
+146A  23 02              BLS      L146E             
+146C  86 96              LDA A    #$96              
+146E  97 C3   L146E      STA A    L00C3             
+1470  16                 TAB                        
+1471  F2 1E8E            SBC B    L1E8E             
+1474  17                 TBA                        
+1475  E5 5F              BIT B    $5F,X             
+1477  34      L1477      DES                        
+1478  04                 *** *        
+1479  8D 54              BSR      L14CF             
+147B  35                 TXS                        
+147C  04                 *** *        
+147D  B1 CC01            CMP A    LCC01             
+1480  27 26              BEQ      L14A8             
+1482  81 0D              CMP A    #$0D              
+1484  27 0E              BEQ      L1494             
+1486  B1 CC00            CMP A    LCC00             
+1489  27 13              BEQ      L149E             
+148B  81 1F              CMP A    #$1F              
+148D  23 E8              BLS      L1477             
+148F  5C                 INC B                      
+1490  A7 80              STA A    $FFFFFF80,X             
+1492  20 E3              BRA      L1477             
+
+1494  A7 84   L1494      STA A    $FFFFFF84,X             
+1496  8E 17E5 L1496      LDS      #L17E5            
+1499  9F E3              STS      L00E3             
+149B  D7 36              STA B    L0036             
+149D  39                 RTS                        
+
+149E  8C 17E5 L149E      CPX      #L17E5            
+14A1  27 05              BEQ      L14A8             
+14A3  30                 TSX                        
+14A4  1F                 *** *        
+14A5  5A                 DEC B                      
+14A6  20 CF              BRA      L1477             
+
+14A8  8E 15D1 L14A8      LDS      #L15D1            
+14AB  8D 0C              BSR      L14B9             
+14AD  20 C4              BRA      L1473             
+
+              *
+              * SUBROUTINE: L14AF     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+14AF  7C CC22 L14AF      INC      LCC22             
+14B2  BD CD24            JSR      LCD24             
+14B5  7F CC22            CLR      LCC22             
+14B8  39                 RTS                        
+
+              *
+              * SUBROUTINE: L14B9     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+14B9  8D F4   L14B9      BSR      L14AF             
+14BB  7C CC22 L14BB      INC      LCC22             
+14BE  A6 84              LDA A    $FFFFFF84,X             
+14C0  81 04              CMP A    #$04              
+14C2  27 07              BEQ      L14CB             
+14C4  17                 TBA                        
+14C5  ED                 *** *        
+14C6  3C                 *** *        
+14C7  30                 TSX                        
+14C8  01                 NOP                        
+14C9  20 F0              BRA      L14BB             
+
+14CB  7F CC22 L14CB      CLR      LCC22             
+14CE  39                 RTS                        
+
+              *
+              * SUBROUTINE: L14CF     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+14CF  7C CC22 L14CF      INC      LCC22             
+14D2  17                 TBA                        
+14D3  ED                 *** *        
+14D4  31                 INS                        
+14D5  7F CC22            CLR      LCC22             
+14D8  39                 RTS                        
+
+14D9  D6 86              LDA B    L0086             
+14DB  27 05              BEQ      L14E2             
+14DD  0C                 CLC                        
+14DE  87                 *** *        
+14DF  16                 TAB                        
+14E0  F9 94D6            ADC B    L94D6             
+14E3  6E 27              JMP      $27,X             
+
+14E5  01                 NOP                        
+14E6  39                 RTS                        
+
+14E7  4D                 TST A                      
+14E8  2A 0C              BPL      L14F6             
+14EA  81 A0              CMP A    #$A0              
+14EC  27 08              BEQ      L14F6             
+14EE  8D 06              BSR      L14F6             
+14F0  86 08              LDA A    #$08              
+14F2  8D 02              BSR      L14F6             
+14F4  86 5F              LDA A    #$5F              
+              *
+              * SUBROUTINE: L14F6     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+14F6  84 7F   L14F6      AND A    #$7F              
+14F8  16                 TAB                        
+14F9  ED                 *** *        
+14FA  08                 INX                        
+14FB  34                 DES                        
+14FC  14                 *** *        
+14FD  0D                 SEC                        
+14FE  88 26              EOR A    #$26              
+1500  09                 DEX                        
+1501  8E 19C5            LDS      #L19C5            
+1504  9F 8C              STS      L008C             
+1506  8D 47              BSR      L154F             
+1508  35      L1508      TXS                        
+1509  94 8E              AND A    L008E             
+150B  1B                 ABA                        
+150C  05                 *** *        
+150D  9F 8C              STS      L008C             
+150F  96 4B              LDA A    L004B             
+1511  27 05              BEQ      L1518             
+1513  0F                 SEI                        
+1514  88 4F              EOR A    #$4F              
+1516  35                 TXS                        
+1517  94 8D              AND A    L008D             
+1519  35                 TXS                        
+151A  26 0C              BNE      L1528             
+151C  91 4C              CMP A    L004C             
+151E  26 21              BNE      L1541             
+1520  0D                 SEC                        
+1521  4A                 DEC A                      
+1522  27 09              BEQ      L152D             
+1524  86 01              LDA A    #$01              
+1526  97 4B              STA A    L004B             
+1528  4F      L1528      CLR A                      
+1529  97 88              STA A    L0088             
+152B  20 DB              BRA      L1508             
+
+152D  86 01   L152D      LDA A    #$01              
+152F  97 4A              STA A    L004A             
+1531  96 89              LDA A    L0089             
+1533  27 06              BEQ      L153B             
+1535  97 BC              STA A    L00BC             
+1537  0F                 SEI                        
+1538  89 20              ADC A    #$20              
+153A  D8 86              EOR B    L0086             
+153C  0D                 SEC                        
+153D  0F                 SEI                        
+153E  88 20              EOR A    #$20              
+1540  0C                 CLC                        
+1541  D6 4A   L1541      LDA B    L004A             
+1543  27 06              BEQ      L154B             
+1545  81 0D              CMP A    #$0D              
+1547  27 CF              BEQ      L1518             
+1549  0F                 SEI                        
+154A  4A                 DEC A                      
+154B  0C      L154B      CLC                        
+154C  36                 PSH A                      
+154D  35                 TXS                        
+154E  94 9E              AND A    L009E             
+1550  8C 8D07            CPX      #L8D07            
+1553  27 04              BEQ      L1559             
+1555  C6 01              LDA B    #$01              
+1557  D7 34              STA B    L0034             
+1559  39      L1559      RTS                        
+
+              *
+              * SUBROUTINE: L155A     
+              *
+              *   ENTRY:  
+              *
+              *   EXIT:   
+              *
+155A  BD D406 L155A      JSR      LD406             
+155D  27 FA              BEQ      L1559             
+155F  A6 01              LDA A    $01,X             
+1561  81 08              CMP A    #$08              
+1563  26 03              BNE      L1568             
+1565  86 1A              LDA A    #$1A              
+1567  39                 RTS                        
+
+1568  A6 01   L1568      LDA A    $01,X             
+156A  81 04              CMP A    #$04              
+156C  26 08              BNE      L1576             
+156E  8E 1613            LDS      #L1613            
+1571  17                 TBA                        
+1572  FF 4520            STX      L4520             
+1575  03                 *** *        
+1576  BD CD3F L1576      JSR      LCD3F             
+1579  BD D403            JSR      LD403             
+157C  16                 TAB                        
+157D  EC                 *** *        
+157E  8A 8E              ORA A    #$8E              
+1580  19                 DAA                        
+1581  C5 86              BIT B    #$86              
+1583  05                 *** *        
+1584  A7 84              STA A    $FFFFFF84,X             
+1586  8D D2              BSR      L155A             
+1588  39                 RTS                        
+
+1589  44                 LSR A                      
+158A  41                 *** *        
+158B  54                 LSR B                      
+158C  45                 *** *        
+158D  20 28              BRA      L15B7             
+
+158F  4D                 TST A                      
+1590  4D                 TST A                      
+1591  3A                 *** *        
+1592  44                 LSR A                      
+1593  44                 LSR A                      
+1594  3A                 *** *        
+1595  59                 ROL B                      
+1596  59                 ROL B                      
+1597  29 3F              BVS      L15D8             
+1599  20 04              BRA      L159F             
+
+159B  54                 LSR B                      
+159C  59                 ROL B                      
+159D  50                 NEG B                      
+159E  45                 *** *        
+159F  20 50   L159F      BRA      L15F1             
+
+15A1  20 46              BRA      L15E9             
+
+15A3  4F                 CLR A                      
+15A4  52                 *** *        
+15A5  20 50              BRA      L15F7             
+
+15A7  52                 *** *        
+15A8  49                 ROL A                      
+15A9  4E                 *** *        
+15AA  54                 LSR B                      
+15AB  45                 *** *        
+15AC  52                 *** *        
+15AD  2E 2E              BGT      L15DD             
+15AF  2E 20              BGT      L15D1             
+15B1  04                 *** *        
+15B2  0D      L15B2      SEC                        
+15B3  0A                 CLV                        
+15B4  00                 *** *        
+15B5  00                 *** *        
+15B6  00                 *** *        
+15B7  00      L15B7      *** *        
+15B8  04                 *** *        
+15B9  50      L15B9      NEG B                      
+15BA  41                 *** *        
+15BB  47                 ASR A                      
+15BC  45                 *** *        
+15BD  20 4C              BRA      L160B             
+
+15BF  49                 ROL A                      
+15C0  4D                 TST A                      
+15C1  49                 ROL A                      
+15C2  54                 LSR B                      
+15C3  53                 COM B                      
+15C4  3F                 SWI                        
+15C5  20 04              BRA      L15CB             
+
+15C7  07      L15C7      TPA                        
+15C8  53                 COM B                      
+15C9  54                 LSR B                      
+15CA  4F                 CLR A                      
+15CB  50      L15CB      NEG B                      
+15CC  2E 2E              BGT      L15FC             
+15CE  2E 07              BGT      L15D7             
+15D0  04                 *** *        
+15D1  3F      L15D1      SWI                        
+15D2  20 07              BRA      L15DB             
+
+15D4  04                 *** *        
+15D5  4C                 INC A                      
+15D6  49                 ROL A                      
+15D7  4E      L15D7      *** *        
+15D8  45      L15D8      *** *        
+15D9  53                 COM B                      
+15DA  20 50              BRA      L162C             
+
+15DC  45                 *** *        
+15DD  52      L15DD      *** *        
+15DE  20 53              BRA      L1633             
+
+15E0  43                 COM A                      
+15E1  52                 *** *        
+15E2  45                 *** *        
+15E3  45                 *** *        
+15E4  4E                 *** *        
+15E5  3F                 SWI                        
+15E6  20 04              BRA      L15EC             
+
+15E8  2A 2A   L15E8      BPL      L1614             
+15EA  2A 2A              BPL      L1616             
+15EC  20 4D   L15EC      BRA      L163B             
+
+15EE  41                 *** *        
+15EF  43                 COM A                      
+15F0  52                 *** *        
+15F1  4F      L15F1      CLR A                      
+15F2  20 4F              BRA      L1643             
+
+15F4  56                 ROR B                      
+15F5  45                 *** *        
+15F6  52                 *** *        
+15F7  46      L15F7      ROR A                      
+15F8  4C                 INC A                      
+15F9  4F                 CLR A                      
+15FA  57                 ASR B                      
+15FB  20 2A              BRA      L1627             
+
+15FD  2A 2A              BPL      L1629             
+15FF  2A 04              BPL      L1605             
+1601  49      L1601      ROL A                      
+1602  4C                 INC A                      
+1603  4C                 INC A                      
+1604  45                 *** *        
+1605  47      L1605      ASR A                      
+1606  41                 *** *        
+1607  4C                 INC A                      
+1608  20 46              BRA      L1650             
+
+160A  49                 ROL A                      
+160B  4C      L160B      INC A                      
+160C  45                 *** *        
+160D  20 4E              BRA      L165D             
+
+160F  41                 *** *        
+1610  4D                 TST A                      
+1611  45                 *** *        
+1612  04                 *** *        
+1613  4E      L1613      *** *        
+1614  4F      L1614      CLR A                      
+1615  20 53              BRA      L166A             
+
+1617  55                 *** *        
+1618  43                 COM A                      
+1619  48                 ASL A                      
+161A  20 46              BRA      L1662             
+
+161C  49                 ROL A                      
+161D  4C                 INC A                      
+161E  45                 *** *        
+161F  04                 *** *        
+1620  43                 COM A                      
+1621  48                 ASL A                      
+1622  41                 *** *        
+1623  4E                 *** *        
+1624  47                 ASR A                      
+1625  45                 *** *        
+1626  20 44              BRA      L166C             
+
+1628  49                 ROL A                      
+1629  53      L1629      COM B                      
+162A  4B                 *** *        
+162B  53                 COM B                      
+162C  20 41   L162C      BRA      L166F             
+
+162E  4E                 *** *        
+162F  44                 LSR A                      
+1630  20 48              BRA      L167A             
+
+1632  49                 ROL A                      
+1633  54      L1633      LSR B                      
+1634  20 4B              BRA      L1681             
+
+1636  45                 *** *        
+1637  59                 ROL B                      
+1638  04                 *** *        
+1639  44      L1639      LSR A                      
+163A  41                 *** *        
+163B  54      L163B      LSR B                      
+163C  41                 *** *        
+163D  20 46              BRA      L1685             
+
+163F  49                 ROL A                      
+1640  4C                 INC A                      
+1641  45                 *** *        
+1642  20 4E              BRA      L1692             
+
+1644  41                 *** *        
+1645  4D                 TST A                      
+1646  45                 *** *        
+1647  3F                 SWI                        
+1648  20 04              BRA      L164E             
+
+164A  4D      L164A      TST A                      
+164B  41                 *** *        
+164C  43                 COM A                      
+164D  52                 *** *        
+164E  4F      L164E      CLR A                      
+164F  00                 *** *        
+1650  00      L1650      *** *        
+1651  00                 *** *        
+1652  54                 LSR B                      
+1653  58                 ASL B                      
+1654  54      L1654      LSR B                                    *
+              * External References
+              *
+
+              L0000      EQU      $0000
+              L0003      EQU      $0003
+              L000C      EQU      $000C
+              L000F      EQU      $000F
+              L0017      EQU      $0017
+              L0020      EQU      $0020
+              L0026      EQU      $0026
+              L0027      EQU      $0027
+              L0030      EQU      $0030
+              L0032      EQU      $0032
+              L0033      EQU      $0033
+              L0034      EQU      $0034
+              L0035      EQU      $0035
+              L0036      EQU      $0036
+              L0038      EQU      $0038
+              L0039      EQU      $0039
+              L003B      EQU      $003B
+              L003C      EQU      $003C
+              L003D      EQU      $003D
+              L003E      EQU      $003E
+              L003F      EQU      $003F
+              L0044      EQU      $0044
+              L0048      EQU      $0048
+              L0049      EQU      $0049
+              L004A      EQU      $004A
+              L004B      EQU      $004B
+              L004C      EQU      $004C
+              L004D      EQU      $004D
+              L004E      EQU      $004E
+              L004F      EQU      $004F
+              L0050      EQU      $0050
+              L0051      EQU      $0051
+              L0052      EQU      $0052
+              L0053      EQU      $0053
+              L0054      EQU      $0054
+              L0055      EQU      $0055
+              L0057      EQU      $0057
+              L0058      EQU      $0058
+              L005A      EQU      $005A
+              L005B      EQU      $005B
+              L005C      EQU      $005C
+              L005E      EQU      $005E
+              L005F      EQU      $005F
+              L0060      EQU      $0060
+              L0061      EQU      $0061
+              L0062      EQU      $0062
+              L0063      EQU      $0063
+              L0064      EQU      $0064
+              L0065      EQU      $0065
+              L0066      EQU      $0066
+              L0067      EQU      $0067
+              L0068      EQU      $0068
+              L0069      EQU      $0069
+              L006A      EQU      $006A
+              L006B      EQU      $006B
+              L006C      EQU      $006C
+              L006E      EQU      $006E
+              L0070      EQU      $0070
+              L0071      EQU      $0071
+              L0072      EQU      $0072
+              L0073      EQU      $0073
+              L0074      EQU      $0074
+              L0075      EQU      $0075
+              L0077      EQU      $0077
+              L0078      EQU      $0078
+              L0079      EQU      $0079
+              L007A      EQU      $007A
+              L007C      EQU      $007C
+              L007E      EQU      $007E
+              L007F      EQU      $007F
+              L0080      EQU      $0080
+              L0081      EQU      $0081
+              L0082      EQU      $0082
+              L0083      EQU      $0083
+              L0084      EQU      $0084
+              L0085      EQU      $0085
+              L0086      EQU      $0086
+              L0087      EQU      $0087
+              L0088      EQU      $0088
+              L0089      EQU      $0089
+              L008A      EQU      $008A
+              L008C      EQU      $008C
+              L008D      EQU      $008D
+              L008E      EQU      $008E
+              L0090      EQU      $0090
+              L0091      EQU      $0091
+              L0092      EQU      $0092
+              L0093      EQU      $0093
+              L0096      EQU      $0096
+              L0097      EQU      $0097
+              L009B      EQU      $009B
+              L009C      EQU      $009C
+              L009D      EQU      $009D
+              L009E      EQU      $009E
+              L009F      EQU      $009F
+              L00A1      EQU      $00A1
+              L00A3      EQU      $00A3
+              L00A5      EQU      $00A5
+              L00A9      EQU      $00A9
+              L00AB      EQU      $00AB
+              L00AD      EQU      $00AD
+              L00AE      EQU      $00AE
+              L00AF      EQU      $00AF
+              L00B0      EQU      $00B0
+              L00B1      EQU      $00B1
+              L00B2      EQU      $00B2
+              L00B4      EQU      $00B4
+              L00B5      EQU      $00B5
+              L00B6      EQU      $00B6
+              L00B7      EQU      $00B7
+              L00B8      EQU      $00B8
+              L00B9      EQU      $00B9
+              L00BA      EQU      $00BA
+              L00BC      EQU      $00BC
+              L00BD      EQU      $00BD
+              L00BE      EQU      $00BE
+              L00BF      EQU      $00BF
+              L00C1      EQU      $00C1
+              L00C3      EQU      $00C3
+              L00C4      EQU      $00C4
+              L00C5      EQU      $00C5
+              L00C7      EQU      $00C7
+              L00C9      EQU      $00C9
+              L00CB      EQU      $00CB
+              L00CD      EQU      $00CD
+              L00CF      EQU      $00CF
+              L00D1      EQU      $00D1
+              L00D3      EQU      $00D3
+              L00D5      EQU      $00D5
+              L00D6      EQU      $00D6
+              L00D7      EQU      $00D7
+              L00D9      EQU      $00D9
+              L00DB      EQU      $00DB
+              L00DD      EQU      $00DD
+              L00DF      EQU      $00DF
+              L00E1      EQU      $00E1
+              L00E3      EQU      $00E3
+              L00E5      EQU      $00E5
+              L00E7      EQU      $00E7
+              L00E9      EQU      $00E9
+              L00EB      EQU      $00EB
+              L00ED      EQU      $00ED
+              L00EF      EQU      $00EF
+              L00F7      EQU      $00F7
+              L00F9      EQU      $00F9
+              L0110      EQU      $0110
+              L0124      EQU      $0124
+              L0125      EQU      $0125
+              L01FF      EQU      $01FF
+              L033B      EQU      $033B
+              L034B      EQU      $034B
+              L0372      EQU      $0372
+              L03F0      EQU      $03F0
+              L042B      EQU      $042B
+              L0466      EQU      $0466
+              L048C      EQU      $048C
+              L049C      EQU      $049C
+              L056E      EQU      $056E
+              L058B      EQU      $058B
+              L05F3      EQU      $05F3
+              L0620      EQU      $0620
+              L0689      EQU      $0689
+              L0690      EQU      $0690
+              L06D9      EQU      $06D9
+              L06F2      EQU      $06F2
+              L0705      EQU      $0705
+              L070E      EQU      $070E
+              L0723      EQU      $0723
+              L0753      EQU      $0753
+              L0757      EQU      $0757
+              L076A      EQU      $076A
+              L0773      EQU      $0773
+              L07CA      EQU      $07CA
+              L07D3      EQU      $07D3
+              L07FC      EQU      $07FC
+              L086F      EQU      $086F
+              L0893      EQU      $0893
+              L08B4      EQU      $08B4
+              L08F1      EQU      $08F1
+              L0938      EQU      $0938
+              L0955      EQU      $0955
+              L0A31      EQU      $0A31
+              L0A41      EQU      $0A41
+              L0A4D      EQU      $0A4D
+              L0A51      EQU      $0A51
+              L0A97      EQU      $0A97
+              L0AA3      EQU      $0AA3
+              L0ABC      EQU      $0ABC
+              L0B26      EQU      $0B26
+              L0B6A      EQU      $0B6A
+              L0D5E      EQU      $0D5E
+              L0DBF      EQU      $0DBF
+              L0DC5      EQU      $0DC5
+              L0DC8      EQU      $0DC8
+              L0E10      EQU      $0E10
+              L0F12      EQU      $0F12
+              L0F81      EQU      $0F81
+              L1051      EQU      $1051
+              L1094      EQU      $1094
+              L115E      EQU      $115E
+              L1163      EQU      $1163
+              L11E0      EQU      $11E0
+              L11FD      EQU      $11FD
+              L1209      EQU      $1209
+              L1287      EQU      $1287
+              L129E      EQU      $129E
+              L13B9      EQU      $13B9
+              L13E1      EQU      $13E1
+              L1473      EQU      $1473
+              L14E2      EQU      $14E2
+              L1518      EQU      $1518
+              L153B      EQU      $153B
+              L154F      EQU      $154F
+              L15DB      EQU      $15DB
+              L15E9      EQU      $15E9
+              L15FC      EQU      $15FC
+              L1600      EQU      $1600
+              L1616      EQU      $1616
+              L1627      EQU      $1627
+              L1643      EQU      $1643
+              L1655      EQU      $1655
+              L165D      EQU      $165D
+              L1662      EQU      $1662
+              L166A      EQU      $166A
+              L166C      EQU      $166C
+              L166F      EQU      $166F
+              L167A      EQU      $167A
+              L1681      EQU      $1681
+              L1685      EQU      $1685
+              L1692      EQU      $1692
+              L16F0      EQU      $16F0
+              L16F9      EQU      $16F9
+              L16FB      EQU      $16FB
+              L16FE      EQU      $16FE
+              L1700      EQU      $1700
+              L1701      EQU      $1701
+              L1704      EQU      $1704
+              L1705      EQU      $1705
+              L170A      EQU      $170A
+              L1711      EQU      $1711
+              L171D      EQU      $171D
+              L17E5      EQU      $17E5
+              L17F8      EQU      $17F8
+              L17FD      EQU      $17FD
+              L1849      EQU      $1849
+              L1879      EQU      $1879
+              L187B      EQU      $187B
+              L192F      EQU      $192F
+              L19C5      EQU      $19C5
+              L19C9      EQU      $19C9
+              L1A0F      EQU      $1A0F
+              L1B05      EQU      $1B05
+              L1C45      EQU      $1C45
+              L1D45      EQU      $1D45
+              L1D47      EQU      $1D47
+              L1D81      EQU      $1D81
+              L1E8E      EQU      $1E8E
+              L2020      EQU      $2020
+              L20EE      EQU      $20EE
+              L20F1      EQU      $20F1
+              L20F4      EQU      $20F4
+              L2406      EQU      $2406
+              L2407      EQU      $2407
+              L2481      EQU      $2481
+              L24DF      EQU      $24DF
+              L24F7      EQU      $24F7
+              L2602      EQU      $2602
+              L2604      EQU      $2604
+              L26E4      EQU      $26E4
+              L26F7      EQU      $26F7
+              L2705      EQU      $2705
+              L2709      EQU      $2709
+              L271A      EQU      $271A
+              L2917      EQU      $2917
+              L298D      EQU      $298D
+              L2A01      EQU      $2A01
+              L2FFD      EQU      $2FFD
+              L300A      EQU      $300A
+              L3261      EQU      $3261
+              L3262      EQU      $3262
+              L3417      EQU      $3417
+              L3502      EQU      $3502
+              L389E      EQU      $389E
+              L390F      EQU      $390F
+              L3935      EQU      $3935
+              L3981      EQU      $3981
+              L3996      EQU      $3996
+              L3997      EQU      $3997
+              L39C1      EQU      $39C1
+              L414D      EQU      $414D
+              L4346      EQU      $4346
+              L4457      EQU      $4457
+              L4520      EQU      $4520
+              L4535      EQU      $4535
+              L4556      EQU      $4556
+              L4649      EQU      $4649
+              L4946      EQU      $4946
+              L4A26      EQU      $4A26
+              L4A55      EQU      $4A55
+              L4C54      EQU      $4C54
+              L5053      EQU      $5053
+              L515C      EQU      $515C
+              L544C      EQU      $544C
+              L5F9E      EQU      $5F9E
+              L5FD7      EQU      $5FD7
+              L6496      EQU      $6496
+              L6ED6      EQU      $6ED6
+              L7286      EQU      $7286
+              L72C1      EQU      $72C1
+              L8017      EQU      $8017
+              L810D      EQU      $810D
+              L811A      EQU      $811A
+              L8C17      EQU      $8C17
+              L8D07      EQU      $8D07
+              L8DEC      EQU      $8DEC
+              L8E01      EQU      $8E01
+              L8E16      EQU      $8E16
+              L8E18      EQU      $8E18
+              L9165      EQU      $9165
+              L9239      EQU      $9239
+              L948E      EQU      $948E
+              L94D6      EQU      $94D6
+              L963F      EQU      $963F
+              L965A      EQU      $965A
+              L967D      EQU      $967D
+              L97BC      EQU      $97BC
+              L9A96      EQU      $9A96
+              L9CDF      EQU      $9CDF
+              L9EDF      EQU      $9EDF
+              L9FBA      EQU      $9FBA
+              L9FE7      EQU      $9FE7
+              LA680      EQU      $A680
+              LA70F      EQU      $A70F
+              LA780      EQU      $A780
+              LA89E      EQU      $A89E
+              LB034      EQU      $B034
+              LB286      EQU      $B286
+              LB453      EQU      $B453
+              LBC9E      EQU      $BC9E
+              LBD96      EQU      $BD96
+              LBF0C      EQU      $BF0C
+              LC102      EQU      $C102
+              LC4D6      EQU      $C4D6
+              LCC00      EQU      $CC00
+              LCC01      EQU      $CC01
+              LCC02      EQU      $CC02
+              LCC0C      EQU      $CC0C
+              LCC10      EQU      $CC10
+              LCC11      EQU      $CC11
+              LCC14      EQU      $CC14
+              LCC22      EQU      $CC22
+              LCD24      EQU      $CD24
+              LCD2D      EQU      $CD2D
+              LCD33      EQU      $CD33
+              LCD3F      EQU      $CD3F
+              LCE0D      EQU      $CE0D
+              LCE8E      EQU      $CE8E
+              LD403      EQU      $D403
+              LD406      EQU      $D406
+              LD638      EQU      $D638
+              LD6B5      EQU      $D6B5
+              LD6C5      EQU      $D6C5
+              LDB71      EQU      $DB71
+              LED81      EQU      $ED81
+              LF881      EQU      $F881
+
+                         END      L0200   
